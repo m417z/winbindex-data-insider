@@ -192,7 +192,7 @@ def parse_manifest_file(manifest_path, file_el):
         if (re.search(r'\.(exe|dll|sys|winmd|cpl|ax|node|ocx|efi|acm|scr|tsp|drv)$', filename)):
             if hash in config.file_hashes_non_pe:
                 if file_info:
-                    assert info_source == 'delta' and file_info.keys() == {'size', 'md5'}
+                    assert info_source in ['pe', 'delta'] and file_info.keys() == {'size', 'md5'}
                 else:
                     assert info_source == 'none'
                 assert hash not in file_hashes.get(filename, {})

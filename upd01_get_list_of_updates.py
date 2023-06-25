@@ -5,17 +5,14 @@ import json
 import config
 
 
-def get_builds(arch, min_time=None):
-    url = 'https://uupdump.net/json-api/listid.php?sortByDate=1'
+def get_builds(min_time=None):
+    url = 'https://uupdump.net/json-api/listid.php'
     r = requests.get(url)
     r.raise_for_status()
 
     builds_unfiltered = r.json()['response']['builds']
 
     def filter_build(build):
-        if build['arch'] != arch:
-            return False
-
         if min_time is None:
             return True
 
@@ -30,7 +27,6 @@ def get_builds(arch, min_time=None):
     for build in builds_filtered:
         uuid = build['uuid']
         del build['uuid']
-        del build['arch']
         assert uuid not in builds
         builds[uuid] = build
 
@@ -41,11 +37,11 @@ def get_builds(arch, min_time=None):
 
 def main():
     # Limit to builds created in the last x days.
-    min_time = int(time.time()) - 60 * 60 * 24 * config.updates_days
+    min_time = int(time.time()) - 60 * 60 * 24 * config.updates_max_age_days
 
     while True:
         try:
-            result = get_builds(config.updates_architecture, min_time)
+            result = get_builds(min_time)
             break
         except requests.exceptions.RequestException as e:
             print(e)
@@ -55,7 +51,7 @@ def main():
             time.sleep(delay)
 
     with open(config.out_path.joinpath('updates.json'), 'w') as f:
-        json.dump(result, f, indent=4)
+        json.dump(result, f, indent=4, sort_keys=True)
 
 
 if __name__ == '__main__':

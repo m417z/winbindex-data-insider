@@ -30,7 +30,10 @@ def get_update_download_urls(download_uuid):
     names = set()
     urls = []
     for file in files:
-        if file.lower() == 'Microsoft-Windows-Client-Desktop-Required-Package.ESD'.lower():
+        if file.lower().endswith('.esd') and (
+            file.lower().startswith('microsoft-windows-client-desktop-required') or
+            file.lower().startswith('microsoft-windows-required')
+        ):
             names.add(file)
             urls.append({
                 'name': file,
@@ -105,7 +108,7 @@ def extract_update_files(local_dir: Path):
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
         next_extract_dir_num += 1
 
-        args = ['7z.exe', 'x', esd_file, f'-o{extract_dir}']
+        args = ['7z.exe', 'x', esd_file, f'-o{extract_dir}', '-y']
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
         esd_file.unlink()
 
@@ -122,7 +125,7 @@ def extract_update_files(local_dir: Path):
                     # Ignore files in root folder which have different non-identical copies with the same name.
                     # Also ignore cab archives in the root folder.
                     if source_dir == extract_dir:
-                        if (name in ['update.cat', 'update.mum'] or
+                        if (name in ['update.cat', 'update.mum', '$filehashes$.dat'] or
                             name.endswith('.cab') or
                             name.endswith('.dll')):
                            ignore.append(name)

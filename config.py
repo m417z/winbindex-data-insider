@@ -5,8 +5,7 @@ index_of_hashes_out_path = out_path / 'hashes'
 
 updates_unsupported = {}
 
-updates_architecture = 'amd64'
-updates_days = 90
+updates_max_age_days = 90
 
 verbose_run = False
 verbose_progress = True
@@ -25,6 +24,8 @@ delta_machine_type_values_supported = {
 # Non-PE files (very rare).
 file_hashes_non_pe = {
     'af700c04f4334cdf9fc575727a055a30855e1ab6a8a480ab6335e1b4a7585173',  # tapi.dll
+    '126a00e34a6516c0d382a221071ab4084031c2a89ccb6144cab960ce1f86ee2c',  # compobj.dll
+    'e382ae82d3f529644cb4bd8aa8a592656fa406ae6d805ba869bfc355c7ec682d',  # config.sys
 }
 
 tcb_launcher_large_first_section_virtual_addresses = [0x3000, 0x4000, 0x6000]
@@ -33,6 +34,7 @@ file_hashes_unusual_section_alignment = {
     'ede86c8d8c6b9256b926701f4762bd6f71e487f366dfc7db8d74b8af57e79bbb': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # ftdibus.sys
     '5bec55192eaef43b0fade13bbadfdf77eb0d45b4b281ae19d4b0b7a0c2350836': {'first_section_virtual_address': 0x2d0, 'section_alignment': 0x10},  # onnxruntime.dll
     '09ced31cad8547a9ee5dcf739565def2f4359075e56a7b699cc85971e0905864': {'first_section_virtual_address': 0x310, 'section_alignment': 0x10},  # onnxruntime.dll
+    '3b0a51e1fc4d5bd3e7ec182799ad712aeeaf1dcd761d7e98bec8a0a67f7334af': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # e1g6032e.sys
 }
 
 file_hashes_zero_timestamp = {
@@ -60,6 +62,22 @@ file_hashes_unsigned_with_overlay = {
 
 # Details: https://gist.github.com/m417z/3248c18efd942f63013b8d3035e2dc79
 file_hashes_mismatch = {
+    # Temporary workaround for what seems to be an incorrect SHA256 hash in
+    # KB5017389 and newer Windows 11 22H2 update manifests for some of the
+    # files. The files are language resource files (e.g. resources.en-GB.pri)
+    # for some esoteric apps:
+    # * holocamera_cw5n1h2txyewy
+    # * MixedRealityLearning_cw5n1h2txyewy
+    # * RoomAdjustment_cw5n1h2txyewy
+    ('f8636d2d93606b0069117cb05bc8d91ecb9a09e72e14695d56a693adf419f4e8', '70db27fdd0fd76305fb1dfcd401e8cde'): {'11-22H2'},
+    ('5ca0a43e4be5f7b60cd2170b05eb4627407729c65e7e0b62ed4ef3cdf895f5c5', '6ad932076c6a059db6e9743ae06c62cf'): {'11-22H2'},
+    ('b5a73db6c73c788dd62a1e5c0aa7bc2f50a260d52b04fcec4cd0192a25c6658f', 'af8a7f7b812a40bf8a1c151d3f09a98c'): {'11-22H2'},
+    ('d52440f126d95e94a86465e78849a72df11f0c22115e5b8cda10174d69167a44', 'afbb5df39d32d142a4cca08f89bbbe8e'): {'11-22H2'},
+    ('5a3b750a6dcc984084422d5c28ac99a2f878fdfe26c7261c9bff8de77658e8f8', '7ed0e64f81f63730983913be5b3cce17'): {'11-22H2'},
+    ('5292013c895e0f412c98766ba4ed7ba5ecb24bebf00aac5b56c71bcf44891945', '886ee85f216e28ac547fe71ff2823fc4'): {'11-22H2'},
+    ('b9297098632fbb1a513f96d6d2462926144d6528c4cc426d6caed5ed234438f0', '19aabb40b6431f411f97c85fbe77d7fe'): {'11-22H2'},
+    ('700760afebec6b3d638adac2f1cbb96cb60fbe9a2e2558eb20a63f9ebbd2c74f', '1f91bbe1b8ec8c42f00ffc73cbb72247'): {'11-22H2'},
+    ('994274f4494a852c0fe8c968d054fbaf0f6f7489ea586fc84102c6ebcafeeca3', 'a0d4e4256e8d54ab86ac6505f1272219'): {'11-22H2'},
     # wfascim_uninstall.mof in KB5025298 and newer Windows 11 21H2 updates.
     ('cee501be4532071c6fe1df2933d98f8fccba4803de481746808386c3245ad6a7', '9e51833f306f8c5c59bc8f041a9ec1bb'): {'11-21H2'},
 }

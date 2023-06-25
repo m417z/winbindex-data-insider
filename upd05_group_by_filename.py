@@ -426,7 +426,7 @@ def group_update_assembly_by_filename(input_filename, output_dir, *, windows_ver
             hash_is_sha256 = True
 
         if not hash_is_sha256:
-            print(f'WARNING: No SHA256 hash for {filename} in {assembly_identity}')
+            print(f'WARNING: No SHA256 hash for {filename} ({file_hash}) in {input_filename}')
             continue
 
         # Skip files with what seems to be a hash mismatch.
