@@ -30,10 +30,9 @@ def get_update_download_urls(download_uuid):
     names = set()
     urls = []
     for file in files:
-        if file.lower().endswith('.esd') and (
-            file.lower().startswith('microsoft-windows-client-desktop-required') or
-            file.lower().startswith('microsoft-windows-required')
-        ):
+        if (file.lower().startswith('microsoft-windows-') and
+            file.lower().endswith('.esd') and
+            not file.lower().startswith('microsoft-windows-client-languagepack-')):
             names.add(file)
             urls.append({
                 'name': file,
