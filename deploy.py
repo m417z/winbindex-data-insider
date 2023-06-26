@@ -49,15 +49,12 @@ def prepare_updates():
 
     uptodate_update_kbs = {update_kb for updates in uptodate_updates.values() for update_kb in updates}
 
-    if last_time_update_kbs == uptodate_update_kbs:
+    new_update_kbs = sorted(uptodate_update_kbs - last_time_update_kbs)
+    if len(new_update_kbs) == 0:
         temp_updates_path.unlink()
         print('No new updates')
         return None
 
-    assert len(last_time_update_kbs - uptodate_update_kbs) == 0
-    assert len(uptodate_update_kbs - last_time_update_kbs) > 0
-
-    new_update_kbs = sorted(uptodate_update_kbs - last_time_update_kbs)
     print(f'New updates: {new_update_kbs}')
 
     # Update one at a time.
