@@ -24,8 +24,6 @@ delta_machine_type_values_supported = {
 # Non-PE files (very rare).
 file_hashes_non_pe = {
     'af700c04f4334cdf9fc575727a055a30855e1ab6a8a480ab6335e1b4a7585173',  # tapi.dll
-    '126a00e34a6516c0d382a221071ab4084031c2a89ccb6144cab960ce1f86ee2c',  # compobj.dll
-    'e382ae82d3f529644cb4bd8aa8a592656fa406ae6d805ba869bfc355c7ec682d',  # config.sys
 }
 
 tcb_launcher_large_first_section_virtual_addresses = [0x3000, 0x4000, 0x6000]

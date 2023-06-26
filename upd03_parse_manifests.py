@@ -190,12 +190,20 @@ def parse_manifest_file(manifest_path, file_el):
     if algorithm == 'sha256':
         filename = file_el.attrib['name'].split('\\')[-1].lower()
         if (re.search(r'\.(exe|dll|sys|winmd|cpl|ax|node|ocx|efi|acm|scr|tsp|drv)$', filename)):
-            if hash in config.file_hashes_non_pe:
+            is_pe_file = hash not in config.file_hashes_non_pe
+            if (is_pe_file and
+                file_info and
+                info_source in ['pe', 'delta'] and
+                file_info.keys() == {'size', 'md5'}):
+                is_pe_file = False
+
+            if not is_pe_file:
                 if file_info:
                     assert info_source in ['pe', 'delta'] and file_info.keys() == {'size', 'md5'}
                 else:
                     assert info_source == 'none'
                 assert hash not in file_hashes.get(filename, {})
+                print(f'Skipping non-pe file {filename} with hash {hash}')
             else:
                 assert info_source == 'none' or (file_info and 'machineType' in file_info), (filename, hash)
                 file_hashes_for_filename = file_hashes.setdefault(filename, {})
