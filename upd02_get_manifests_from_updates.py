@@ -1,7 +1,6 @@
 from threading import Thread
 from pathlib import Path
 import subprocess
-import datetime
 import platform
 import time
 import requests
@@ -23,6 +22,11 @@ class UpdateNotSupported(Exception):
 def get_update_download_urls(download_uuid):
     url = f'https://uupdump.net/json-api/get.php?id={download_uuid}'
     r = requests.get(url)
+    if r.status_code == 500:
+        error = r.json()['response']['error']
+        if error == 'EMPTY_FILELIST':
+            raise UpdateNotFound(f'Update {download_uuid} not found')
+
     r.raise_for_status()
 
     files = r.json()['response']['files']
@@ -124,7 +128,8 @@ def extract_update_files(local_dir: Path):
                     # Ignore files in root folder which have different non-identical copies with the same name.
                     # Also ignore cab archives in the root folder.
                     if source_dir == extract_dir:
-                        if (name in ['update.cat', 'update.mum', '$filehashes$.dat'] or
+                        if (name in ['update.mum', '$filehashes$.dat'] or
+                            name.endswith('.cat') or
                             name.endswith('.cab') or
                             name.endswith('.dll')):
                            ignore.append(name)
@@ -214,16 +219,7 @@ def main():
             except UpdateNotSupported:
                 print(f'[{update_kb}] WARNING: Skipping unsupported update')
             except UpdateNotFound:
-                # Only treat as an error if the update is recent. If the update is old,
-                # only show a warning, since old updates are removed from the update catalog
-                # with time.
-                a_while_ago = (datetime.date.today() - datetime.timedelta(days=90)).isoformat()
-                if updates[windows_version][update_kb]['releaseDate'] > a_while_ago:
-                    print(f'[{update_kb}] ERROR: Update wasn\'t found')
-                    if config.exit_on_first_error:
-                        raise
-                else:
-                    print(f'[{update_kb}] WARNING: Update wasn\'t found, it was probably removed from the update catalog')
+                print(f'[{update_kb}] WARNING: Update wasn\'t found, it was probably removed from the update catalog')
             except Exception as e:
                 print(f'[{update_kb}] ERROR: Failed to process update')
                 print(f'[{update_kb}]        {e}')
