@@ -20,7 +20,7 @@ def sigcheck_folder(folder: Path, output_file: Path):
         return f.read()
 
 
-def prase_sigcheck(sigcheck_data, folder, path_filter_callback=None):
+def parse_sigcheck(sigcheck_data, folder, path_filter_callback=None):
     folder_in_correct_case = sigcheck_data[:len(str(folder))]
     assert folder_in_correct_case.lower() == str(folder).lower(), f'{folder_in_correct_case}.lower() == {str(folder)}.lower()'
 
@@ -155,7 +155,7 @@ def extract_data_from_pe_files(folder: Path, callback, path_filter_callback=None
     if verbose:
         print('Running sigcheck...')
 
-    sigcheck_data = prase_sigcheck(sigcheck_folder(folder, sigcheck_file), folder, path_filter_callback)
+    sigcheck_data = parse_sigcheck(sigcheck_folder(folder, sigcheck_file), folder, path_filter_callback)
 
     if verbose:
         print('Parsing PE files...')
