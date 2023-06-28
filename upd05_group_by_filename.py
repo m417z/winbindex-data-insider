@@ -84,27 +84,12 @@ def get_file_info_type(file_info):
 
 def assert_file_info_close_enough(file_info_1, file_info_2):
     def canonical_file_info(file_info):
-        if 'signingStatus' not in file_info or file_info['signingStatus'] == 'Unsigned':
-            return file_info
-
-        file_info = file_info.copy()
-
         # Nullify Catalog file based data since it depends on the computer the scan ran on.
-        if file_info['signatureType'] == 'Catalog file':
+        if file_info.get('signatureType') == 'Catalog file':
             assert 'signingDate' not in file_info
+            file_info = file_info.copy()
             file_info['signingStatus'] = 'Unsigned'
             del file_info['signatureType']
-            return file_info
-
-        # There might be several dates, choose the first one.
-        if 'signingDate' in file_info:
-            dates = file_info['signingDate']
-            file_info['signingDate'] = dates[0]
-            return file_info
-
-        # If the signature is invalid (but exists), VirusTotal doesn't return dates, but we do.
-        if file_info['signingStatus'] != 'Signed':
-            file_info['signingDate'] = '???'
 
         return file_info
 
@@ -138,7 +123,7 @@ def assert_file_info_close_enough(file_info_1, file_info_2):
     file_info_1 = canonical_file_info(file_info_1)
     file_info_2 = canonical_file_info(file_info_2)
 
-    assert file_info_1.keys() == file_info_2.keys()
+    assert file_info_1.keys() - {'signingDate'} == file_info_2.keys() - {'signingDate'}
 
     for key in file_info_1.keys() - {'signingStatus', 'signingDate'}:
         assert file_info_1[key] == file_info_2[key]
@@ -151,15 +136,27 @@ def assert_file_info_close_enough(file_info_1, file_info_2):
         else:
             assert file_info_1['signingStatus'] == file_info_2['signingStatus']
 
-    if 'signingDate' in file_info_1 and file_info_1['signingDate'] != '???' and file_info_2['signingDate'] != '???':
-        datetime1 = datetime.fromisoformat(file_info_1['signingDate'])
-        datetime2 = datetime.fromisoformat(file_info_2['signingDate'])
-        difference = datetime1 - datetime2
-        hours = abs(difference.total_seconds()) / 3600
+    if 'signingDate' in file_info_1 and 'signingDate' in file_info_2:
+        if file_info_1['signingDate'] != [] and file_info_2['signingDate'] != []:
+            # Compare only first date.
+            datetime1 = datetime.fromisoformat(file_info_1['signingDate'][0])
+            datetime2 = datetime.fromisoformat(file_info_2['signingDate'][0])
+            difference = datetime1 - datetime2
+            hours = abs(difference.total_seconds()) / 3600
 
-        # VirusTotal returns the time in a local, unknown timezone.
-        # "the maximum difference could be over 30 hours", https://stackoverflow.com/a/8131056
-        assert hours <= 32, f'{hours} {file_info_1["sha256"]}'
+            # VirusTotal returns the time in a local, unknown timezone.
+            # "the maximum difference could be over 30 hours", https://stackoverflow.com/a/8131056
+            assert hours <= 32, f'{hours} {file_info_1["sha256"]}'
+        else:
+            assert file_info_1['signingDate'] == []
+            assert file_info_2['signingDate'] == []
+    else:
+        # If the signature is invalid (but exists), VirusTotal doesn't return dates, but we do.
+        if 'signingDate' not in file_info_1:
+            assert file_info_1['signingStatus'] != 'Signed'
+
+        if 'signingDate' not in file_info_2:
+            assert file_info_2['signingStatus'] != 'Signed'
 
 
 def update_file_info(existing_file_info, delta_or_pe_file_info, virustotal_file_info, real_file_info):
