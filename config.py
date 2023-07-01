@@ -27,13 +27,19 @@ file_hashes_non_pe = {
     'af700c04f4334cdf9fc575727a055a30855e1ab6a8a480ab6335e1b4a7585173',  # tapi.dll
 }
 
-tcb_launcher_large_first_section_virtual_addresses = [0x3000, 0x4000, 0x6000]
+tcb_launcher_descriptions = ['TCB Launcher', 'TCB Launcher (Prerelease)']
+tcb_launcher_large_first_section_virtual_addresses = [0x1000, 0x3000, 0x4000, 0x6000]
 
 file_hashes_unusual_section_alignment = {
     'ede86c8d8c6b9256b926701f4762bd6f71e487f366dfc7db8d74b8af57e79bbb': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # ftdibus.sys
     '5bec55192eaef43b0fade13bbadfdf77eb0d45b4b281ae19d4b0b7a0c2350836': {'first_section_virtual_address': 0x2d0, 'section_alignment': 0x10},  # onnxruntime.dll
     '09ced31cad8547a9ee5dcf739565def2f4359075e56a7b699cc85971e0905864': {'first_section_virtual_address': 0x310, 'section_alignment': 0x10},  # onnxruntime.dll
     '3b0a51e1fc4d5bd3e7ec182799ad712aeeaf1dcd761d7e98bec8a0a67f7334af': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # e1g6032e.sys
+    '7ae7316c42b47d29f72ea0618c8f2641b412a74dcc707f91e6fd9e156901fd65': {'first_section_virtual_address': 0x600, 'section_alignment': 0x200},  # e100b325.sys
+    '75d5318e35813a6b6a9a17734877e6fb7ce31b415e91914c92d86e3da0a4ffb5': {'first_section_virtual_address': 0x600, 'section_alignment': 0x200},  # e1g60i32.sys
+    '2dbfff4b7bc30453830523e1bdc8737dd6101102b2e178d4fabd051ff8d01dd4': {'first_section_virtual_address': 0x300, 'section_alignment': 0x80},  # efe5b32e.sys
+    'cbd4667fd69c6d40118ea25cafde663a1fe4ca203fb7135e65f682d77a85a3b9': {'first_section_virtual_address': 0x480, 'section_alignment': 0x80},  # nvm62x32.sys
+    '50256eeadbbc5cccf3ebaeb9020d91edb9961e7404bd41067a4290362be6962f': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # nvm62x64.sys
 }
 
 file_hashes_zero_timestamp = {
@@ -49,6 +55,10 @@ file_hashes_small_non_signature_overlay = {
     '69f83db2fda7545ab0a1c60056aee472bf3c70a0af7454c51e1cd449b5c7f43b',  # brltty.exe
     '7a9113d00a274c075c58b22a3ebacf1754e7da7cfb4d3334b90367b602158d78',  # brltty.exe
     'b4cc93cf4d7c2906c1929c079cd98ef00c7a33832e132ac57adde71857082e36',  # libgcc_s_dw2-1.dll
+    'f6f4951f98185ba8ddcdaa43f13b8106b9b667bb7f5ee027dc51b4bca4556adc',  # crtdll.dll
+    'e9c61945c0c7b887ec786832af1056334968d890fc042f0c16b8d7f80a2c0c9a',  # expsrv.dll
+    '078d2cd98918638f40ce0f1fc0c3c9079ee1a6fbd3b45d6c32ab99fda642efe9',  # vbajet32.dll
+    '25681fc405354e54c08e91d2d1cc3212dd17db7cb1fc85c3cb7eee73ab3bbdc8',  # vbajet32.dll
 }
 
 file_hashes_unsigned_with_overlay = {
@@ -57,7 +67,16 @@ file_hashes_unsigned_with_overlay = {
     '9eec7e5188d1a224325281e4d0e6e1d5f9f034f02bd1fadeb792d3612c72319e',  # libpdcurses.dll
     'f9b385e19b9d57a1d1831e744ed2d1c3bb8396d28f48d10120cecfe72595b222',  # libpdcursesu.dll
     '787d5c07ab0bb782dede7564840e86c468e3728e81266dae23eb8ad614bcee95',  # libpdcursesw.dll
+    '6896c1f21cc9a5bc17e2e2fb645669ae708cb378c63e5eef11b3e95527f3da32',  # ctl3d32.dll
+    '94ef91b4c7864bd1ecc0db099e58298708bc5d22da40132ebb1c17feb4675964',  # ctl3d32.dll
+    'c8aacb7314fe061b16c0d1961f4071e144be9aa44e7e00cd89b9b6581aad6430',  # mfc40.dll
+    '3ca65b6f8fca231a266248fe6f67b6a87568ba1dcf810eef355d7699f603aa22',  # mfc40u.dll
+    '3b2f5858bc5181506e84f6fa09eb755fb5b5e87f48c838bb125eb01fa13cf17e',  # msvbvm60.dll
 }
+
+file_details_unsigned_with_overlay = [
+    {'k': 'original name', 'v': 'WofTasks.dll', 'overlay_size': 0x200},
+]
 
 # Details: https://gist.github.com/m417z/3248c18efd942f63013b8d3035e2dc79
 file_hashes_mismatch = {
