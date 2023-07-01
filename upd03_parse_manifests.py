@@ -3,10 +3,10 @@ import xml.etree.ElementTree as ET
 from struct import unpack
 from pathlib import Path
 from typing import List
-import win32api
 import hashlib
 import signify
 import base64
+import ctypes
 import json
 import re
 
@@ -68,44 +68,86 @@ def hash_sum(filename: Path):
     return hash_md5.hexdigest(), hash_sha1.hexdigest(), hash_sha256.hexdigest()
 
 
-# Read properties of the given file and return them as a dictionary.
-# Reference: https://stackoverflow.com/a/7993095
-def get_file_version_info(pathname: Path, prop_names: List[str]):
-    fname = str(pathname)
-    result = {}
+# returns the requested version information from the given file
+#
+# `language` should be an 8-character string combining both the language and
+# codepage (such as "040904b0"); if None, the first language in the translation
+# table is used instead
+#
+# Reference:
+# https://stackoverflow.com/a/56266129
+def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
+    # VerQueryValue() returns an array of that for VarFileInfo\Translation
+    #
+    class LANGANDCODEPAGE(ctypes.Structure):
+        _fields_ = [
+            ("wLanguage", ctypes.c_uint16),
+            ("wCodePage", ctypes.c_uint16)]
 
-    # \VarFileInfo\Translation returns list of available (language, codepage)
-    # pairs that can be used to retrieve string info. We are using only the
-    # first pair.
-    try:
-        lang, codepage = win32api.GetFileVersionInfo(fname, '\\VarFileInfo\\Translation')[0]
-    except win32api.error as e:
+    wstr_file = ctypes.wstring_at(str(pathname))
+
+    # getting the size in bytes of the file version info buffer
+    size = ctypes.windll.version.GetFileVersionInfoSizeExW(2, wstr_file, None)
+    if size == 0:
+        e = ctypes.WinError()
         if e.winerror == 1813:
             # ERROR_RESOURCE_TYPE_NOT_FOUND
-            return result
-        raise
+            return {}
+        raise e
 
-    def get_string_file_info(prop_name, lang, codepage):
-        str_info_path = '\\StringFileInfo\\%04X%04X\\%s' % (lang, codepage, prop_name)
-        return win32api.GetFileVersionInfo(fname, str_info_path)
+    buffer = ctypes.create_string_buffer(size)
 
-    # Any other must be of the form \StringFileInfo\%04X%04X\parm_name, middle
-    # two are language/codepage pair returned from above. Use fallback values
-    # the same way sigcheck does.
+    # getting the file version info data
+    if ctypes.windll.version.GetFileVersionInfoExW(2, wstr_file, None, size, buffer) == 0:
+        raise ctypes.WinError()
+
+    # VerQueryValue() wants a pointer to a void* and DWORD; used both for
+    # getting the default language (if necessary) and getting the actual data
+    # below
+    value = ctypes.c_void_p(0)
+    value_size = ctypes.c_uint(0)
+
+    if language is None:
+        # file version information can contain much more than the version
+        # number (copyright, application name, etc.) and these are all
+        # translatable
+        #
+        # the following arbitrarily gets the first language and codepage from
+        # the list
+        ret = ctypes.windll.version.VerQueryValueW(
+            buffer, ctypes.wstring_at(R"\VarFileInfo\Translation"),
+            ctypes.byref(value), ctypes.byref(value_size))
+
+        if ret == 0:
+            raise ctypes.WinError()
+
+        # value points to a byte inside buffer, value_size is the size in bytes
+        # of that particular section
+
+        # casting the void* to a LANGANDCODEPAGE*
+        lcp = ctypes.cast(value, ctypes.POINTER(LANGANDCODEPAGE))
+
+        # formatting language and codepage to something like "040904b0"
+        language = "{0:04x}{1:04x}".format(
+            lcp.contents.wLanguage, lcp.contents.wCodePage)
+
+    # getting the actual data
+    result = {}
     for prop_name in prop_names:
-        val = get_string_file_info(prop_name, lang, codepage)
+        res = ctypes.windll.version.VerQueryValueW(
+            buffer, ctypes.wstring_at("\\StringFileInfo\\" + language + "\\" + prop_name),
+            ctypes.byref(value), ctypes.byref(value_size))
 
-        if val is None:
-            val = get_string_file_info(prop_name, lang, 1252)
+        if res == 0:
+            e = ctypes.WinError()
+            if e.winerror == 1813:
+                # ERROR_RESOURCE_TYPE_NOT_FOUND
+                continue
+            raise e
 
-        if val is None:
-            val = get_string_file_info(prop_name, 1033, 1252)
-
-        if val is None:
-            val = get_string_file_info(prop_name, 1033, codepage)
-
-        if val is not None:
-            result[prop_name] = val
+        # value points to a string of value_size characters, minus one for the
+        # terminating null
+        result[prop_name] = ctypes.wstring_at(value.value, value_size.value - 1)
 
     return result
 
