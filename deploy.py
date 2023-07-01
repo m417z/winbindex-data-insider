@@ -383,6 +383,8 @@ def init_deploy():
 
 
 def commit_deploy(pr_title):
+    git_cmd = ['git', '-C', config.out_path]
+
     exclude_from_commit = [
         'tools',
         'manifests',
@@ -393,16 +395,16 @@ def commit_deploy(pr_title):
     # https://stackoverflow.com/a/51914162
     exclude_params = [f':!{path}/*' for path in exclude_from_commit]
 
-    subprocess.check_call(['git', 'add', '-A', '--'] + exclude_params)
+    subprocess.check_call(git_cmd + ['add', '-A', '--'] + exclude_params)
 
     # https://stackoverflow.com/a/2659808
-    result = subprocess.run(['git', 'diff-index', '--quiet', '--cached', 'HEAD'])
+    result = subprocess.run(git_cmd + ['diff-index', '--quiet', '--cached', 'HEAD'])
     if result.returncode == 0:
         print('No changes to commit')
         return
 
-    subprocess.check_call(['git', 'commit', '-m', pr_title])
-    subprocess.check_call(['git', 'push'])
+    subprocess.check_call(git_cmd + ['commit', '-m', pr_title])
+    subprocess.check_call(git_cmd + ['push'])
 
 
 def clean_deploy_files():

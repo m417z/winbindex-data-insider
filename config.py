@@ -1,6 +1,7 @@
 from pathlib import Path
 
-out_path = Path('.')
+out_path_override = Path('.out_path_override')
+out_path = Path(out_path_override.read_text().strip() if out_path_override.exists() else '.')
 index_of_hashes_out_path = out_path / 'hashes'
 
 updates_unsupported = {}
