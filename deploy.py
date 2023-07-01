@@ -6,7 +6,6 @@ import shutil
 import html
 import json
 import time
-import os
 import re
 
 from upd01_get_list_of_updates import main as upd01_get_list_of_updates

@@ -1,13 +1,13 @@
 from threading import Thread
 from pathlib import Path
 import subprocess
-import platform
 import time
 import requests
 import hashlib
 import shutil
 import json
 
+from delta_patch import unpack_null_differential_file
 import config
 
 
@@ -153,26 +153,21 @@ def extract_update_files(local_dir: Path):
         shutil.rmtree(extract_dir)
 
     # Unpack null differential files.
-    if platform.system() == 'Windows':
-        from delta_patch import unpack_null_differential_file
-
-        for file in local_dir.glob('*/n/**/*'):
-            if file.is_file():
-                unpack_null_differential_file(file, file)
+    for file in local_dir.glob('*/n/**/*'):
+        if file.is_file():
+            unpack_null_differential_file(file, file)
 
     # Use DeltaDownloader to extract meaningful data from delta files:
     # https://github.com/m417z/DeltaDownloader
-    if platform.system() == 'Windows':
-        # Avoid path limitations by using a UNC path.
-        local_dir_unc = Rf'\\?\{local_dir.absolute()}'
-        args = ['tools/DeltaDownloader/DeltaDownloader.exe', '/g', local_dir_unc]
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+    # Avoid path limitations by using a UNC path.
+    local_dir_unc = Rf'\\?\{local_dir.absolute()}'
+    args = ['tools/DeltaDownloader/DeltaDownloader.exe', '/g', local_dir_unc]
+    subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     # Starting with Windows 11, manifest files are compressed with the DCM v1 format.
     # Use SYSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
-    if platform.system() == 'Windows':
-        args = ['tools/sxsexp64.exe', local_dir, local_dir]
-        subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+    args = ['tools/sxsexp64.exe', local_dir, local_dir]
+    subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
 
 def get_files_from_update(windows_version: str, update_kb: str):
