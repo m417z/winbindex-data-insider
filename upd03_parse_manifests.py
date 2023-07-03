@@ -151,7 +151,19 @@ def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
 
         # value points to a string of value_size characters, minus one for the
         # terminating null
-        result[prop_name] = ctypes.wstring_at(value.value, value_size.value - 1)
+        prop = ctypes.wstring_at(value.value, value_size.value - 1)
+
+        # some resource strings contain null characters, but they indicate the
+        # end of the string for most tools; removing them
+        #
+        # example:
+        # imjppsgf.fil
+        # https://www.virustotal.com/gui/file/42deb76551bc087d791eac266a6570032246ec78f4471e7a8922ceb7eb2e91c3/details
+        # FileVersion: '15.0.2271.1000\x001000'
+        # FileDescription: '\u5370[...]\u3002\x00System Dictionary File'
+        prop = prop.split('\0', 1)[0]
+
+        result[prop_name] = prop
 
     return result
 
