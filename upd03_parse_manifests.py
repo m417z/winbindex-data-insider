@@ -70,13 +70,12 @@ def hash_sum(filename: Path):
 
 # returns the requested version information from the given file
 #
-# `language` should be an 8-character string combining both the language and
-# codepage (such as "040904b0"); if None, the first language in the translation
-# table is used instead
+# if language, codepage are None, the first translation in the translation table
+# is used instead, as well as common fallback translations
 #
-# Reference:
-# https://stackoverflow.com/a/56266129
-def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
+# Reference: https://stackoverflow.com/a/56266129
+def get_file_version_info(pathname: Path, prop_names: List[str],
+                          language: int | None = None, codepage: int | None = None):
     # VerQueryValue() returns an array of that for VarFileInfo\Translation
     #
     class LANGANDCODEPAGE(ctypes.Structure):
@@ -102,12 +101,14 @@ def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
         raise ctypes.WinError()
 
     # VerQueryValue() wants a pointer to a void* and DWORD; used both for
-    # getting the default language (if necessary) and getting the actual data
+    # getting the default translation (if necessary) and getting the actual data
     # below
     value = ctypes.c_void_p(0)
     value_size = ctypes.c_uint(0)
 
-    if language is None:
+    translations = []
+
+    if language is None and codepage is None:
         # file version information can contain much more than the version
         # number (copyright, application name, etc.) and these are all
         # translatable
@@ -122,48 +123,72 @@ def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
             e = ctypes.WinError()
             if e.winerror == 1813:
                 # ERROR_RESOURCE_TYPE_NOT_FOUND
-                return {}
-            raise e
+                first_language, first_codepage = None, None
+            else:
+                raise e
+        else:
+            # value points to a byte inside buffer, value_size is the size in bytes
+            # of that particular section
 
-        # value points to a byte inside buffer, value_size is the size in bytes
-        # of that particular section
+            # casting the void* to a LANGANDCODEPAGE*
+            lcp = ctypes.cast(value, ctypes.POINTER(LANGANDCODEPAGE))
 
-        # casting the void* to a LANGANDCODEPAGE*
-        lcp = ctypes.cast(value, ctypes.POINTER(LANGANDCODEPAGE))
+            first_language, first_codepage = lcp.contents.wLanguage, lcp.contents.wCodePage
 
-        # formatting language and codepage to something like "040904b0"
-        language = "{0:04x}{1:04x}".format(
-            lcp.contents.wLanguage, lcp.contents.wCodePage)
+            translation = first_language, first_codepage
+            translations.append(translation)
+
+        # use fallback values the same way sigcheck does
+        translation = first_language, 1252
+        if first_language and translation not in translations:
+            translations.append(translation)
+
+        translation = 1033, 1252
+        if translation not in translations:
+            translations.append(translation)
+
+        translation = 1033, first_codepage
+        if first_codepage and translation not in translations:
+            translations.append(translation)
+    else:
+        assert language is not None and codepage is not None
+        translation = language, codepage
+        translations.append(translation)
 
     # getting the actual data
     result = {}
     for prop_name in prop_names:
-        res = ctypes.windll.version.VerQueryValueW(
-            buffer, ctypes.wstring_at("\\StringFileInfo\\" + language + "\\" + prop_name),
-            ctypes.byref(value), ctypes.byref(value_size))
+        for language_id, codepage_id in translations:
+            # formatting language and codepage to something like "040904b0"
+            translation = "{0:04x}{1:04x}".format(language_id, codepage_id)
 
-        if res == 0:
-            e = ctypes.WinError()
-            if e.winerror == 1813:
-                # ERROR_RESOURCE_TYPE_NOT_FOUND
-                continue
-            raise e
+            res = ctypes.windll.version.VerQueryValueW(
+                buffer, ctypes.wstring_at("\\StringFileInfo\\" + translation + "\\" + prop_name),
+                ctypes.byref(value), ctypes.byref(value_size))
 
-        # value points to a string of value_size characters, minus one for the
-        # terminating null
-        prop = ctypes.wstring_at(value.value, value_size.value - 1)
+            if res == 0:
+                e = ctypes.WinError()
+                if e.winerror == 1813:
+                    # ERROR_RESOURCE_TYPE_NOT_FOUND
+                    continue
+                raise e
 
-        # some resource strings contain null characters, but they indicate the
-        # end of the string for most tools; removing them
-        #
-        # example:
-        # imjppsgf.fil
-        # https://www.virustotal.com/gui/file/42deb76551bc087d791eac266a6570032246ec78f4471e7a8922ceb7eb2e91c3/details
-        # FileVersion: '15.0.2271.1000\x001000'
-        # FileDescription: '\u5370[...]\u3002\x00System Dictionary File'
-        prop = prop.split('\0', 1)[0]
+            # value points to a string of value_size characters, minus one for the
+            # terminating null
+            prop = ctypes.wstring_at(value.value, value_size.value - 1)
 
-        result[prop_name] = prop
+            # some resource strings contain null characters, but they indicate the
+            # end of the string for most tools; removing them
+            #
+            # example:
+            # imjppsgf.fil
+            # https://www.virustotal.com/gui/file/42deb76551bc087d791eac266a6570032246ec78f4471e7a8922ceb7eb2e91c3/details
+            # FileVersion: '15.0.2271.1000\x001000'
+            # FileDescription: '\u5370[...]\u3002\x00System Dictionary File'
+            prop = prop.split('\0', 1)[0]
+
+            result[prop_name] = prop
+            break
 
     return result
 
