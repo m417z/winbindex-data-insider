@@ -468,8 +468,10 @@ def group_update_assembly_by_filename(input_filename, output_dir, *, windows_ver
             hash_is_sha256 = True
 
         if not hash_is_sha256:
-            print(f'WARNING: No SHA256 hash for {filename} ({file_hash}) in {input_filename}')
-            continue
+            if config.allow_missing_sha256_hash:
+                print(f'WARNING: No SHA256 hash for {filename} ({file_hash}) in {input_filename}')
+                continue
+            raise Exception('No SHA256 hash')
 
         # Skip files with what seems to be a hash mismatch.
         file_hash_md5 = file_item.get('fileInfo', {}).get('md5')

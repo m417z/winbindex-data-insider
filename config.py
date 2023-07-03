@@ -7,6 +7,9 @@ index_of_hashes_out_path = out_path / 'hashes'
 updates_unsupported = {}
 
 updates_max_age_days = 60
+updates_never_removed = False
+allow_missing_sha256_hash = True
+allow_unknown_non_pe_files = True
 
 verbose_run = False
 verbose_progress = True

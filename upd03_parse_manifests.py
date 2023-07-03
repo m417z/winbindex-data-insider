@@ -378,7 +378,10 @@ def parse_manifest_file(manifest_path, file_el):
                 file_info and
                 info_source in ['pe', 'delta'] and
                 file_info.keys() == {'size', 'md5'}):
-                is_pe_file = False
+                if config.allow_unknown_non_pe_files:
+                    is_pe_file = False
+                else:
+                    raise Exception(f'Unknown non-pe file {filename} with hash {hash}')
 
             if not is_pe_file:
                 if file_info:
