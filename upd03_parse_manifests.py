@@ -119,7 +119,11 @@ def get_file_version_info(pathname: Path, prop_names: List[str], language=None):
             ctypes.byref(value), ctypes.byref(value_size))
 
         if ret == 0:
-            raise ctypes.WinError()
+            e = ctypes.WinError()
+            if e.winerror == 1813:
+                # ERROR_RESOURCE_TYPE_NOT_FOUND
+                return {}
+            raise e
 
         # value points to a byte inside buffer, value_size is the size in bytes
         # of that particular section
