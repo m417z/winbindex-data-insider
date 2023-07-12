@@ -198,6 +198,15 @@ def update_file_info(existing_file_info, delta_or_pe_file_info, virustotal_file_
     file_infos = [existing_file_info, delta_or_pe_file_info, virustotal_file_info, real_file_info]
     file_infos = [x for x in file_infos if x is not None]
 
+    # Temporary workaround for some incorrect info for comctl32.dll files.
+    if (existing_file_info and
+        existing_file_info.get('description') == 'User Experience Controls Library' and
+        existing_file_info.get('version') == '6.10 (WinBuild.160101.0800)' and
+        delta_or_pe_file_info and
+        existing_file_info | {'description': '', 'version': ''} == delta_or_pe_file_info | {'description': '', 'version': ''}):
+        return delta_or_pe_file_info
+    # End of temporary workaround.
+
     for file_info_1, file_info_2 in itertools.combinations(file_infos, 2):
         assert_file_info_close_enough(file_info_1, file_info_2)
 
