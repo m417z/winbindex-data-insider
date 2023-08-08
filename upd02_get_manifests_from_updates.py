@@ -20,29 +20,39 @@ class UpdateNotSupported(Exception):
 
 
 def get_update_download_urls(download_uuid):
-    url = f'https://uupdump.net/json-api/get.php?id={download_uuid}'
+    url = f'https://uupdump.net/json-api/get.php?id={download_uuid}&lang=en-us&edition=professional'
     r = requests.get(url)
+
     if r.status_code == 500:
         error = r.json()['response']['error']
         if error == 'EMPTY_FILELIST':
-            raise UpdateNotFound(f'Update {download_uuid} not found')
+            raise UpdateNotFound
+
+    if r.status_code == 400:
+        error = r.json()['response']['error']
+        if error == 'UNSUPPORTED_COMBINATION':
+            raise UpdateNotSupported
 
     r.raise_for_status()
 
     files = r.json()['response']['files']
 
-    names = set()
     urls = []
     for file in files:
-        if (file.lower().startswith('microsoft-windows-') and
-            file.lower().endswith('.esd') and
-            not file.lower().startswith('microsoft-windows-client-languagepack-') and
-            not file.lower().startswith('microsoft-windows-server-languagepack-')):
-            names.add(file)
-            urls.append({
-                'name': file,
-                'url': files[file]['url'],
-            })
+        if file.lower() in [
+            'professional_en-us.esd',
+            'metadataesd_professional_en-us.esd',
+        ]:
+            continue
+
+        extension = Path(file).suffix.lower()
+        if extension not in ['.cab', '.esd', '.psf']:
+            raise Exception(f'Unknown file extension: {extension}')
+
+        urls.append({
+            'name': file,
+            'url': files[file]['url'],
+        })
 
     return urls
 
@@ -88,25 +98,35 @@ def sha256sum(filename):
 
 
 def extract_update_files(local_dir: Path):
+    def cab_extract(pattern: str, from_file: Path, to_dir: Path):
+        to_dir.mkdir()
+        args = ['expand', '-r', f'-f:{pattern}', from_file, to_dir]
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
     next_extract_dir_num = 1
 
-    # Extract delta files from the CAB/PSF files.
-    # References:
-    # https://www.betaarchive.com/forum/viewtopic.php?t=43163
-    # https://github.com/Secant1006/PSFExtractor
+    # Extract CAB files.
     cab_files = list(local_dir.glob('*.cab'))
     for cab_file in cab_files:
-        psf_file = cab_file.with_suffix('.psf')
-        args = ['tools/PSFExtractor.exe', cab_file]
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
-        cab_file.unlink()
-        psf_file.unlink()
-
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
         next_extract_dir_num += 1
-        cab_file.with_suffix('').rename(extract_dir)
 
-    # Extract delta files from the ESD files.
+        psf_file = cab_file.with_suffix('.psf')
+        if psf_file.exists():
+            # Extract CAB/PSF files.
+            # References:
+            # https://www.betaarchive.com/forum/viewtopic.php?t=43163
+            # https://github.com/Secant1006/PSFExtractor
+            args = ['tools/PSFExtractor.exe', cab_file]
+            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+            psf_file.unlink()
+            cab_file.with_suffix('').rename(extract_dir)
+        else:
+            cab_extract('*', cab_file, extract_dir)
+
+        cab_file.unlink()
+
+    # Extract ESD files.
     esd_files = list(local_dir.glob('*.esd'))
     for esd_file in esd_files:
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
@@ -213,7 +233,7 @@ def main():
             try:
                 get_files_from_update(windows_version, update_kb)
             except UpdateNotSupported:
-                print(f'[{update_kb}] WARNING: Skipping unsupported update')
+                print(f'[{update_kb}] Skipping unsupported update')
             except UpdateNotFound:
                 print(f'[{update_kb}] WARNING: Update wasn\'t found, it was probably removed from the update catalog')
             except Exception as e:
