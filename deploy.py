@@ -422,13 +422,13 @@ def commit_deploy(pr_title):
         new_body = f'{last_commit_body.strip()}\n\n[{current_time_iso}] {pr_title}'
         subprocess.check_call(git_cmd + ['commit', '--amend', '-m', new_body])
         subprocess.check_call(git_cmd + ['push', '--force-with-lease'])
+
+        # Free disk space by removing old objects.
+        subprocess.check_call(git_cmd + ['reflog', 'expire', '--expire=all', '--all'])
+        subprocess.check_call(git_cmd + ['gc', '--prune=now'])
     else:
         subprocess.check_call(git_cmd + ['commit', '-m', pr_title])
         subprocess.check_call(git_cmd + ['push'])
-
-    # Free disk space by removing old objects.
-    subprocess.check_call(git_cmd + ['reflog', 'expire', '--expire=all', '--all'])
-    subprocess.check_call(git_cmd + ['gc', '--prune=now'])
 
 
 def clean_deploy_files():
