@@ -36,7 +36,6 @@ jobs:
       - name: Install Windows dependencies
         run: |
           choco install -y aria2 tor
-          7z x tools.zip -otools
       - name: Cache Python dependencies
         uses: actions/cache@v3
         with:

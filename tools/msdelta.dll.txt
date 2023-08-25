@@ -1,0 +1,11 @@
+Necessary for PSFExtractor to extract some files.
+
+Relevant issue:
+https://github.com/Secant1006/PSFExtractor/issues/4
+
+Another reference:
+https://forums.mydigitallife.net/threads/windows-editions-reconstruction-project.80939/page-611#post-1797588
+
+File source:
+Windows 11 Insider Preview 25931.1000 (rs_prerelease)
+UUP 69bc492e-73cc-46b1-a9e0-7a60cb183674
