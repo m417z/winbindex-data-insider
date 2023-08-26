@@ -25,7 +25,6 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
-          fetch-depth: 2  # Checkout HEAD^ to allow force push while preserving history
       - name: Override out_path
         run: |
           echo ./gh-pages > .out_path_override
