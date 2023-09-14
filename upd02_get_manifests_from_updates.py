@@ -22,55 +22,72 @@ class UpdateNotSupported(Exception):
 
 
 def get_update_download_urls(download_uuid):
-    url = f'https://uup.rg-adguard.net/api/GetFiles?id={download_uuid}&lang=en-us&edition=professional&pack=en-US&default=yes'
+    url = f'https://uup.rg-adguard.net/api/GetFiles?id={download_uuid}&lang=en-us&edition=professional&txt=yes'
     r = requests.get(url)
 
     r.raise_for_status()
 
-    html = r.text
+    download_sources = r.text
 
-    if html.startswith('Error!!! We did not find any data on these parameters.'):
+    if download_sources.startswith('Error!!! We did not find any data on these parameters.'):
         # The server returns the same error message for both unsupported and not
         # found updates.
         raise UpdateNotSupported
 
-    p = r'<tr style="[^"]+"><td><a href="([^"]+)" rel="noreferrer">([^<]*)</a></td>'
-    file_links = re.findall(p, html)
-    assert len(file_links) > 0
+    download_source_lines = download_sources.splitlines()
+    if len(download_source_lines) % 3 != 0:
+        raise Exception(f'Unsupported download source content')
 
-    # Make sure that we got the correct amount of links.
-    textarea_start = '<textarea class="textarea2" onfocus="this.select()" readonly="readonly" readonly rows=20 cols=110 id="filerename" name="dl">\n'
-    textarea_start_pos = html.find(textarea_start)
-    assert textarea_start_pos != -1
-    textarea_start_pos += len(textarea_start)
-    textarea_end = '</textarea>'
-    textarea_end_pos = html.find(textarea_end, textarea_start_pos)
-    assert textarea_end_pos != -1
-    textarea_content = html[textarea_start_pos:textarea_end_pos]
-    textarea_lines = textarea_content.count('\n')
-    assert textarea_lines == len(file_links)
+    names_lower = set()
+    file_links = []
+    for i in range(0, len(download_source_lines), 3):
+        url = download_source_lines[i]
+        name = download_source_lines[i + 1]
+        checksum = download_source_lines[i + 2]
+
+        if (not url.startswith('http') or
+            not name.startswith('  out=') or
+            not checksum.startswith('  checksum=')):
+            raise Exception(f'Unsupported download source content')
+
+        name = name.removeprefix('  out=')
+        names_lower.add(name.lower())
+        file_links.append((url, name))
 
     urls = []
     for url, name in file_links:
         if not re.fullmatch(r'[^\\/:*?"<>|]+', name):
             raise Exception(f'Invalid file name: {name}')
 
-        if name.lower() in [
+        name_lower = name.lower()
+        stem = Path(name_lower).stem
+        extension = Path(name_lower).suffix
+
+        # Skip metadata ESD files which contain partial content and can't be
+        # extracted with 7z.
+        if name_lower in [
             'professional_en-us.esd',
             'metadataesd_professional_en-us.esd',
         ]:
             continue
 
-        extension = Path(name).suffix.lower()
-
+        # Skip files which don't have a name. Their id is used in this case.
         if extension == '':
             if not re.fullmatch(r'[0-9a-f]{40}', name):
                 raise Exception(f'Unknown file name: {name}')
             continue
 
-        if name.lower().startswith('ssu-') and extension in ['.cab', '.psf']:
+        # According to uup-dump: "if equivalent cab files exist, exclude updates
+        # msu files (from download only)"
+        # https://github.com/uup-dump/api/commit/a46a5628c0841055db0c4563d74216d36dc3e402
+        if extension == '.msu' and stem + '.cab' in names_lower:
             continue
 
+        # Skip servicing stack updates (SSU).
+        if name_lower.startswith('ssu-') and extension in ['.cab', '.psf']:
+            continue
+
+        # Skip apps.
         if extension in ['.msix', '.msixbundle', '.appx', '.appxbundle']:
             continue
 
