@@ -1,34 +1,64 @@
+from email.utils import parsedate_to_datetime
+import xml.etree.ElementTree as ET
 import requests
 import json
 import time
+import re
 
 import config
 
 
-def get_builds(min_time=None):
-    url = 'https://uupdump.net/json-api/listid.php'
+def get_builds():
+    url = 'https://uup.rg-adguard.net/rss'
     r = requests.get(url)
     r.raise_for_status()
 
-    builds_unfiltered = r.json()['response']['builds']
+    rss_tree = ET.fromstring(r.content)
+    rss_items = rss_tree.findall('channel/item')
 
-    def filter_build(build):
-        if min_time is None:
-            return True
-
-        if build['created'] is None or build['created'] < min_time:
-            return False
-
-        return True
-
-    builds_filtered = list(filter(filter_build, builds_unfiltered))
+    # https://stackoverflow.com/a/32229368
+    ns = {
+        'content': 'http://purl.org/rss/1.0/modules/content/',
+    }
 
     builds = {}
-    for build in builds_filtered:
-        uuid = build['uuid']
-        del build['uuid']
+    for item in rss_items:
+        title = item.findtext('title')
+        assert title
+
+        link = item.findtext('link')
+        assert link
+
+        pubDate = item.findtext('pubDate')
+        assert pubDate
+
+        category = item.findtext('category')
+        assert category == 'Windows Update (UUP)'
+
+        content = item.findtext('content:encoded', namespaces=ns)
+        assert content
+
+        uuid = link.removeprefix('https://uup.rg-adguard.net/?id=')
+
+        # To unix timestamp.
+        # https://stackoverflow.com/a/1258623
+        created = int(parsedate_to_datetime(pubDate).timestamp())
+
+        match = re.search(r'<b>Build:</b> (.*?)<br>', content)
+        assert match
+        build = match.group(1)
+
+        match = re.search(r'<b>Architecture:</b> (.*?)<br>', content)
+        assert match
+        arch = match.group(1)
+
         assert uuid not in builds
-        builds[uuid] = build
+        builds[uuid] = {
+            'title': title,
+            'created': created,
+            'build': build,
+            'arch': arch,
+        }
 
     return {
         'builds': builds,
@@ -36,12 +66,9 @@ def get_builds(min_time=None):
 
 
 def main():
-    # Limit to builds created in the last x days.
-    min_time = int(time.time()) - 60 * 60 * 24 * config.updates_max_age_days
-
     while True:
         try:
-            result = get_builds(min_time)
+            result = get_builds()
             break
         except requests.exceptions.RequestException as e:
             print(e)
