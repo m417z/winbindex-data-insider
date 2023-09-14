@@ -132,46 +132,24 @@ def extract_update_files(local_dir: Path):
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     def msu_extract(from_file: Path, to_dir: Path):
-        args = ['7z.exe', 'l', from_file, '-ba', '-slt']
-        output = subprocess.check_output(args, text=True)
-        paths = [x.removeprefix('Path = ') for x in output.splitlines() if x.startswith('Path = ')]
-
         wim_file = from_file.with_suffix('.wim')
-        if wim_file.name in paths:
-            if wim_file.exists():
-                raise Exception(f'WIM file already exists: {wim_file}')
+        if wim_file.exists():
+            raise Exception(f'WIM file already exists: {wim_file}')
 
-            psf_file = from_file.with_suffix('.psf')
-            if wim_file.exists():
-                raise Exception(f'PSF file already exists: {psf_file}')
+        psf_file = from_file.with_suffix('.psf')
+        if wim_file.exists():
+            raise Exception(f'PSF file already exists: {psf_file}')
 
-            args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', wim_file.name, psf_file.name]
-            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', wim_file.name, psf_file.name]
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
-            args = ['7z.exe', 'x', wim_file, f'-o{to_dir}', '-y']
-            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
-            wim_file.unlink()
+        args = ['7z.exe', 'x', wim_file, f'-o{to_dir}', '-y']
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        wim_file.unlink()
 
-            args = ['tools/PSFExtractor.exe', '-v2', psf_file, to_dir.joinpath('express.psf.cix.xml'), to_dir]
-            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
-            psf_file.unlink()
-
-            return
-
-        psfx_cab_file = from_file.with_stem(from_file.stem + '_PSFX').with_suffix('.cab')
-        if psfx_cab_file.name in paths:
-            if psfx_cab_file.exists():
-                raise Exception(f'PSFX CAB file already exists: {psfx_cab_file}')
-
-            args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', psfx_cab_file.name]
-            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
-
-            cab_extract('*', psfx_cab_file, to_dir)
-            psfx_cab_file.unlink()
-
-            return
-
-        raise Exception(f'Unsupported MSU file: {from_file}')
+        args = ['tools/PSFExtractor.exe', '-v2', psf_file, to_dir.joinpath('express.psf.cix.xml'), to_dir]
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        psf_file.unlink()
 
     next_extract_dir_num = 1
 
