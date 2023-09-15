@@ -10,7 +10,7 @@ deploy_git_name = 'winbindex-deploy-bot'
 deploy_save_disk_space = True
 deploy_amend_last_commit = True
 
-updates_unsupported = {}
+updates_unsupported = set()
 
 updates_never_removed = False
 allow_missing_sha256_hash = True
