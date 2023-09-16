@@ -22,21 +22,32 @@ class UpdateNotSupported(Exception):
 
 
 def get_update_download_urls(download_uuid):
-    url = f'https://uup.rg-adguard.net/api/GetFiles?id={download_uuid}&lang=en-us&edition=professional&txt=yes'
-    r = requests.get(url)
+    while True:
+        url = f'https://uup.rg-adguard.net/api/GetFiles?id={download_uuid}&lang=en-us&edition=professional&txt=yes'
+        r = requests.get(url)
 
-    r.raise_for_status()
+        r.raise_for_status()
 
-    download_sources = r.text
+        download_sources = r.text
 
-    if download_sources.startswith('Error!!! We did not find any data on these parameters.'):
-        # The server returns the same error message for both unsupported and not
-        # found updates.
-        raise UpdateNotSupported
+        if download_sources.startswith('Error!!! We did not find any data on these parameters.'):
+            # The server returns the same error message for both unsupported and not
+            # found updates.
+            raise UpdateNotSupported
 
-    download_source_lines = download_sources.splitlines()
-    if len(download_source_lines) % 3 != 0:
-        raise Exception(f'Unsupported download source content')
+        download_source_lines = download_sources.splitlines()
+
+        if len(download_source_lines) <= 1:
+            print('Unsupported download source content:')
+            print(download_sources)
+            print('Retrying in 60 seconds...')
+            time.sleep(60)
+            continue
+
+        if len(download_source_lines) % 3 != 0:
+            raise Exception(f'Unsupported download source content')
+
+        break
 
     names_lower = set()
     file_links = []
