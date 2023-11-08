@@ -51,3 +51,5 @@ jobs:
       - name: Run periodic update
         run: |
           python -u deploy.py
+        env:
+          UUP_RSS_URL: ${{ secrets.UUP_RSS_URL }}

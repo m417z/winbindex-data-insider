@@ -3,13 +3,14 @@ import xml.etree.ElementTree as ET
 import requests
 import json
 import time
+import os
 import re
 
 import config
 
 
 def get_builds():
-    url = 'https://uup.rg-adguard.net/rss'
+    url = os.environ.get('UUP_RSS_URL', 'https://uup.rg-adguard.net/rss')
     r = requests.get(url)
     r.raise_for_status()
 
