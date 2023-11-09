@@ -10,7 +10,7 @@ import config
 
 
 def get_builds():
-    url = os.environ.get('UUP_RSS_URL', 'https://uup.rg-adguard.net/rss')
+    url = os.environ.get('UUP_RSS_URL') or 'https://uup.rg-adguard.net/rss'
     r = requests.get(url)
     r.raise_for_status()
 

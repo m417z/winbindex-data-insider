@@ -1,4 +1,3 @@
-import xml.etree.ElementTree as ET
 from threading import Thread
 from pathlib import Path
 import subprocess
@@ -7,6 +6,7 @@ import hashlib
 import shutil
 import json
 import time
+import os
 import re
 
 from delta_patch import unpack_null_differential_file
@@ -23,7 +23,7 @@ class UpdateNotSupported(Exception):
 
 def get_update_download_urls(download_uuid):
     while True:
-        url = f'https://uup.rg-adguard.net/api/GetFiles?id={download_uuid}&lang=en-us&edition=professional&txt=yes'
+        url = (os.environ.get('UUP_GET_FILES_URL') or 'https://uup.rg-adguard.net/api/GetFiles?id={}&lang=en-us&edition=professional&txt=yes').format(download_uuid)
         r = requests.get(url)
 
         r.raise_for_status()

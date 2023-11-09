@@ -53,3 +53,4 @@ jobs:
           python -u deploy.py
         env:
           UUP_RSS_URL: ${{ secrets.UUP_RSS_URL }}
+          UUP_GET_FILES_URL: ${{ secrets.UUP_GET_FILES_URL }}
