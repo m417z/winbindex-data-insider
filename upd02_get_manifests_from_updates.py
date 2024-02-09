@@ -82,6 +82,14 @@ def get_update_download_urls(download_uuid):
         ]:
             continue
 
+        # Skip other unsupported files.
+        if name_lower in [
+            'winre.wim',
+            'wim_edge.wim',
+            'edge.wim',
+        ]:
+            continue
+
         # Skip files which don't have a name. Their id is used in this case.
         if extension == '':
             if not re.fullmatch(r'[0-9a-f]{40}', name):
