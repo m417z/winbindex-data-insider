@@ -140,10 +140,10 @@ def download_update(windows_version, update_kb):
         name = download_url['name']
         url = download_url['url']
 
-        local_path = local_dir.joinpath(name)
-
-        args = ['aria2c', '-x4', '-o', local_path, '--allow-overwrite=true', url]
+        args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url]
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+        local_path = local_dir.joinpath(name)
 
         print(f'[{update_kb}] Downloaded {local_path.stat().st_size} bytes to {name} from {url}')
 
