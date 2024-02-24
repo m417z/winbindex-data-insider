@@ -193,6 +193,7 @@ def extract_update_files(local_dir: Path):
     cab_files = list(local_dir.glob('*.cab'))
     for cab_file in cab_files:
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
+        print(f'Extracting {cab_file} to {extract_dir}')
         next_extract_dir_num += 1
 
         psf_file = cab_file.with_suffix('.psf')
@@ -214,6 +215,7 @@ def extract_update_files(local_dir: Path):
     esd_files = list(local_dir.glob('*.esd'))
     for esd_file in esd_files:
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
+        print(f'Extracting {esd_file} to {extract_dir}')
         next_extract_dir_num += 1
 
         args = ['7z.exe', 'x', esd_file, f'-o{extract_dir}', '-y']
@@ -224,6 +226,7 @@ def extract_update_files(local_dir: Path):
     msu_files = list(local_dir.glob('*.msu'))
     for msu_file in msu_files:
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
+        print(f'Extracting {msu_file} to {extract_dir}')
         next_extract_dir_num += 1
 
         msu_extract(msu_file, extract_dir)
@@ -270,7 +273,7 @@ def extract_update_files(local_dir: Path):
                             raise Exception(f'A destination item already exists and is not a file: {destination_file}')
 
                         if sha256sum(source_file) != sha256sum(destination_file):
-                            raise Exception(f'A different file copy already exists: {destination_file}')
+                            raise Exception(f'A different file copy already exists: {destination_file} (source: {source_file})')
 
                         ignore.append(name)
 
