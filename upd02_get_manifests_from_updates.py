@@ -236,14 +236,12 @@ def extract_update_files(local_dir: Path):
     local_dir_unc = Rf'\\?\{local_dir_resolved}'
 
     # Starting with Windows 11, manifest files are compressed with the DCM v1
-    # format. Use SYSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
-    # Avoid some path length limitations by using a resolved path (the limit is
-    # still MAX_PATH).
+    # format. Use SXSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
     #
     # Note: Run this before moving the files to a single folder (below).
     # Otherwise, there could be a file which is sometimes compressed and
     # sometimes isn't, and the equality check will fail.
-    args = ['tools/sxsexp64.exe', local_dir_resolved, local_dir_resolved]
+    args = ['tools/sxsexp64.exe', local_dir, local_dir]
     subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     # Move all extracted files from all folders to the target folder.
