@@ -183,8 +183,10 @@ def extract_update_files(local_dir: Path):
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
         wim_file.unlink()
 
-        args = ['tools/PSFExtractor.exe', '-v2', psf_file, to_dir.joinpath('express.psf.cix.xml'), to_dir]
+        description_file = to_dir.joinpath('express.psf.cix.xml')
+        args = ['tools/PSFExtractor.exe', '-v2', psf_file, description_file, to_dir]
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        description_file.unlink()
         psf_file.unlink()
 
     next_extract_dir_num = 1
