@@ -179,6 +179,24 @@ def extract_update_files(local_dir: Path):
         args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', wim_file.name, psf_file.name]
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
+        if not wim_file.exists() and not psf_file.exists():
+            # Special case handling.
+            if from_file.name == 'Windows11.0-KB5037140-x64.msu':
+                cab_file = from_file.with_name('Windows11.0-KB5037140-Hotpatch-x64.cab')
+                if cab_file.exists():
+                    raise Exception(f'CAB file already exists: {cab_file}')
+
+                args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', cab_file.name]
+                subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+                assert cab_file.exists()
+
+                cab_extract('*', cab_file, to_dir)
+                cab_file.unlink()
+                return
+
+        assert wim_file.exists() and psf_file.exists()
+
         args = ['7z.exe', 'x', wim_file, f'-o{to_dir}', '-y']
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
         wim_file.unlink()
