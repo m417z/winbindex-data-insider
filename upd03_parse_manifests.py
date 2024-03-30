@@ -220,6 +220,13 @@ def get_delta_data_for_manifest_file(manifest_path: Path, name: str):
     for key, value in key_value:
         delta_data[key] = value.strip()
 
+    # Skip delta files without RiftTable. In this case, it was also observed
+    # that machineType doesn't have the correct value.
+    if delta_data['Code'] != 'Raw' and delta_data['RiftTable'] == '(none)':
+        assert name.lower() in config.delta_data_without_rift_table_names, name
+        assert int(delta_data['TimeStamp']) == 0
+        return None
+
     result = {}
 
     result['size'] = int(delta_data['TargetSize'])

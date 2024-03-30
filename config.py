@@ -30,6 +30,12 @@ delta_machine_type_values_supported = {
     'CLI4_ARM64',
 }
 
+delta_data_without_rift_table_names = {
+    'updatepolicycore.dll.mui',
+    'wuapi.dll.mui',
+    'wuapicore.dll.mui',
+}
+
 # Non-PE files (very rare).
 file_hashes_non_pe = {
     'af700c04f4334cdf9fc575727a055a30855e1ab6a8a480ab6335e1b4a7585173',  # tapi.dll
