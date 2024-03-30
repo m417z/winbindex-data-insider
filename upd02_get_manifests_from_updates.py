@@ -164,7 +164,7 @@ def sha256sum(filename):
 def extract_update_files(local_dir: Path):
     def cab_extract(pattern: str, from_file: Path, to_dir: Path):
         to_dir.mkdir()
-        args = ['expand', '-r', f'-f:{pattern}', from_file, to_dir]
+        args = ['tools/expand/expand.exe', '-r', f'-f:{pattern}', from_file, to_dir]
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     def msu_extract(from_file: Path, to_dir: Path):
