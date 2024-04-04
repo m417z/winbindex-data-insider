@@ -208,15 +208,6 @@ def update_file_info(existing_file_info, new_file_info, new_file_info_source):
     if new_file_info is None:
         return existing_file_info
 
-    # Temporary workaround for some incorrect info for comctl32.dll files.
-    if (existing_file_info and
-        existing_file_info.get('description') == 'User Experience Controls Library' and
-        existing_file_info.get('version') == '6.10 (WinBuild.160101.0800)' and
-        new_file_info and
-        new_file_info_source == 'update' and
-        existing_file_info | {'description': '', 'version': ''} == new_file_info | {'description': '', 'version': ''}):
-        return new_file_info
-
     assert_file_info_close_enough(existing_file_info, new_file_info)
 
     if new_file_info_source == 'iso':
