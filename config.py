@@ -31,9 +31,7 @@ delta_machine_type_values_supported = {
 }
 
 delta_data_without_rift_table_names = {
-    'updatepolicycore.dll.mui',
-    'wuapi.dll.mui',
-    'wuapicore.dll.mui',
+    '*.mui',
 }
 
 # Non-PE files (very rare).
