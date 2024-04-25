@@ -37,6 +37,8 @@ delta_data_without_rift_table_names = {
 # Non-PE files (very rare).
 file_hashes_non_pe = {
     'af700c04f4334cdf9fc575727a055a30855e1ab6a8a480ab6335e1b4a7585173',  # tapi.dll
+    '3d922f8b608401af4f34f71dbacfa458cef1f7bfffedd7febee0a968e51d6dce',  # twain.dll
+    '103035a32e7893d702ced974faa4434828bc03b0cc54d1b2e1205a2f2575e7c9',  # twunk_16.exe
 }
 
 tcb_launcher_descriptions = ['TCB Launcher', 'TCB Launcher (Prerelease)']
