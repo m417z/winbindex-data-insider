@@ -161,6 +161,26 @@ def sha256sum(filename):
     return h.hexdigest()
 
 
+# Delta files might be identical except for the checksum and timestamp.
+#
+# Header file format: [4 bytes checksum] ['PA31'] [8 bytes timestamp]
+def delta_files_equal(source_file: Path, destination_file: Path):
+    source_file_size = source_file.stat().st_size
+    destination_file_size = destination_file.stat().st_size
+    if source_file_size <= 16 or source_file_size != destination_file_size:
+        return False
+
+    source_data = source_file.read_bytes()
+    destination_data = destination_file.read_bytes()
+
+    source_header = source_data[4:8]
+    destination_header = destination_data[4:8]
+    if source_header != b'PA31' or source_header != destination_header:
+        return False
+
+    return source_data[16:] == destination_data[16:]
+
+
 def extract_update_files(local_dir: Path):
     def cab_extract(pattern: str, from_file: Path, to_dir: Path):
         to_dir.mkdir()
@@ -268,7 +288,8 @@ def extract_update_files(local_dir: Path):
     for extract_dir in local_dir.glob('_extract_*'):
         def ignore_files(path, names):
             source_dir = Path(path)
-            destination_dir = local_dir.joinpath(Path(path).relative_to(extract_dir))
+            relative_dir = source_dir.relative_to(extract_dir)
+            destination_dir = local_dir.joinpath(relative_dir)
 
             ignore = []
             for name in names:
@@ -290,7 +311,13 @@ def extract_update_files(local_dir: Path):
                         if not destination_file.is_file():
                             raise Exception(f'A destination item already exists and is not a file: {destination_file}')
 
-                        if sha256sum(source_file) != sha256sum(destination_file):
+                        can_ignore = False
+                        if sha256sum(source_file) == sha256sum(destination_file):
+                            can_ignore = True
+                        elif 'f' in relative_dir.parts and delta_files_equal(source_file, destination_file):
+                            can_ignore = True
+
+                        if not can_ignore:
                             raise Exception(f'A different file copy already exists: {destination_file} (source: {source_file})')
 
                         ignore.append(name)
