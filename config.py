@@ -34,6 +34,10 @@ delta_machine_type_values_supported = {
 delta_data_without_rift_table_names = {
     '*.mui',
 }
+delta_data_without_rift_table_manifests = {
+    'amd64_microsoft-nxt-boottocloud-windows365-app_*',
+    'arm64_microsoft-nxt-boottocloud-windows365-app_*',
+}
 
 # Non-PE files (very rare).
 file_hashes_non_pe = {
