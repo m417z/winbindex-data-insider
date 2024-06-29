@@ -272,9 +272,6 @@ def extract_update_files(local_dir: Path):
         msu_extract(msu_file, extract_dir)
         msu_file.unlink()
 
-    local_dir_resolved = local_dir.resolve(strict=True)
-    local_dir_unc = Rf'\\?\{local_dir_resolved}'
-
     # Starting with Windows 11, manifest files are compressed with the DCM v1
     # format. Use SXSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
     #
@@ -282,7 +279,7 @@ def extract_update_files(local_dir: Path):
     # Otherwise, there could be a file which is sometimes compressed and
     # sometimes isn't, and the equality check will fail.
     args = ['tools/sxsexp64.exe', local_dir, local_dir]
-    subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+    subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     # Move all extracted files from all folders to the target folder.
     for extract_dir in local_dir.glob('_extract_*'):
@@ -334,8 +331,7 @@ def extract_update_files(local_dir: Path):
 
     # Use DeltaDownloader to extract meaningful data from delta files:
     # https://github.com/m417z/DeltaDownloader
-    # Avoid path length limitations by using a UNC path.
-    args = ['tools/DeltaDownloader/DeltaDownloader.exe', '/g', local_dir_unc]
+    args = ['tools/DeltaDownloader/DeltaDownloader.exe', '/g', local_dir]
     subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
 
