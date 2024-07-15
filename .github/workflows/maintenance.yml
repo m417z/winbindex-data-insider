@@ -1,0 +1,63 @@
+name: Winbindex maintenance
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * SUN'
+
+concurrency: winbindex-maintenance
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 0
+          filter: 'blob:none'
+      - name: Override out_path
+        run: |
+          echo ./gh-pages > .out_path_override
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install isal orjson
+      - name: Squash old commits
+        run: ./maintenance_squash_old_commits.sh gh-pages "7 days ago"
+      - name: Push squashed repo gradually with temporary sliding tags
+        run: |
+          cd gh-pages
+          for i in $(git rev-list --reverse HEAD); do
+            echo "Pushing $i"
+            git tag "_temp_tag_for_squash_$i" "$i"
+            git push origin tag "_temp_tag_for_squash_$i"
+          done
+      - name: Push squashed repo
+        run: git -C gh-pages push --force-with-lease
+      - name: Remove temporary sliding tags
+        run: |
+          cd gh-pages
+          for i in $(git rev-list --reverse HEAD); do
+            git tag -d "_temp_tag_for_squash_$i"
+            git push origin -d "_temp_tag_for_squash_$i"
+          done
+      - name: Delete old items
+        run: |
+          python -u maintenance_delete_old_items.py 180
+          cd gh-pages
+          git add .
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git diff-index --quiet HEAD || git commit -m "Delete data older than 180 days"
+          git push
