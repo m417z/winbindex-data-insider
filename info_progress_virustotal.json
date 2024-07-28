@@ -1,7 +1,23 @@
 {
-"next": null,
+"next": [
+"mqsvc.exe",
+"83187d89a1ce73ce22eabdc3a6041d1edcb1ff3589b87f1eb1d43fb00782e76e"
+],
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"cliconfg.exe",
+"3c168153a81f9855c42a0cf042d648b4903167d4850e85564a739013481aca94"
+],
+[
+"credwiz.exe",
+"7031ced3ef131a2319c535ae5040b85ead90e02773c819dfefb3f1cf3ae3b4f7"
+],
+[
+"mouclass.sys",
+"f790545f4bbb5bbe4f46386b930f5fc042fcf1b4fcd9602cea9504933d578773"
+]
+],
 "updates": null
 }
