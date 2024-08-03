@@ -96,6 +96,12 @@
             "created": 1722013291,
             "title": "Windows 11 Insider Preview 10.0.26120.1330 (ge_release_svc_betaflt_upr)"
         },
+        "80380bee-6c60-455b-ad20-d995a61addbb": {
+            "arch": "amd64",
+            "build": "22635.4005",
+            "created": 1722618131,
+            "title": "Windows 11 Insider Preview 10.0.22635.4005 (ni_release)"
+        },
         "895aa2b3-2f6e-4c0c-a25a-322f714a305e": {
             "arch": "arm64",
             "build": "26257.5000",
@@ -155,6 +161,12 @@
             "build": "22635.3936",
             "created": 1721682087,
             "title": "Windows 11 Insider Preview 10.0.22635.3936 (ni_release)"
+        },
+        "bd5c1ffa-f272-4d32-a0c5-6cdf88b0d5a7": {
+            "arch": "arm64",
+            "build": "22635.4005",
+            "created": 1722618100,
+            "title": "Windows 11 Insider Preview 10.0.22635.4005 (ni_release)"
         },
         "c23488fb-fbd2-4b19-b22d-b2ad7c334d1d": {
             "arch": "arm64",
