@@ -12,11 +12,23 @@
             "created": 1722373571,
             "title": "Windows 11, version 24H2"
         },
+        "1d955247-f3cf-4df1-85e4-d9ea220cd27f": {
+            "arch": "arm64",
+            "build": "26100.1301",
+            "created": 1722850472,
+            "title": "2024-07 Cumulative Update Preview for Windows 11 Version 24H2 for arm64-based Systems (KB5040529)"
+        },
         "1e09c05b-1824-4ee1-814b-76826a2e5da6": {
             "arch": "amd64",
             "build": "26252.5000",
             "created": 1720630992,
             "title": "Windows Server Insider Preview 26252.5000 (ge_prerelease)"
+        },
+        "2bb3c0d0-7d08-4b35-a3a0-b28101f6f5b0": {
+            "arch": "amd64",
+            "build": "26120.1340",
+            "created": 1722891696,
+            "title": "Windows 11 Insider Preview 10.0.26120.1340 (ge_release_svc_betaflt_upr)"
         },
         "3f9711e1-f937-4682-936a-2276d2732fbc": {
             "arch": "arm64",
@@ -101,6 +113,12 @@
             "build": "22635.4005",
             "created": 1722618131,
             "title": "Windows 11 Insider Preview 10.0.22635.4005 (ni_release)"
+        },
+        "81c4bcc2-7795-42f2-a615-69f0cdabb51d": {
+            "arch": "arm64",
+            "build": "26120.1340",
+            "created": 1722891692,
+            "title": "Windows 11 Insider Preview 10.0.26120.1340 (ge_release_svc_betaflt_upr)"
         },
         "895aa2b3-2f6e-4c0c-a25a-322f714a305e": {
             "arch": "arm64",
