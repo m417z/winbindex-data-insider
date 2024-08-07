@@ -1,5 +1,11 @@
 {
     "builds": {
+        "0cb4a4de-f97b-4cb5-8c01-13f17c40581e": {
+            "arch": "amd64",
+            "build": "26100.1301",
+            "created": 1722976429,
+            "title": "2024-07 Cumulative Update Preview for Windows 11 Version 24H2 for x64-based Systems (KB5040529)"
+        },
         "1370329f-38a3-443d-a3a1-99206b0bf483": {
             "arch": "arm64",
             "build": "26100.1150",
