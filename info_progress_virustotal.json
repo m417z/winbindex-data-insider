@@ -2,6 +2,19 @@
 "next": null,
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"aarsvc.dll",
+"0430e4d9d9c8b27f41dc0e78496a1dea2acbe11af1dff6e28872ee45812f75a1"
+],
+[
+"csiagent.dll",
+"f89522345b84e9c453b290811754f7c7c485065f47aa15fc51fa553de33127e2"
+],
+[
+"windowsbackupclient.exe",
+"cbeba117c85e444f654d3f3fb3febbc73bed792325d951d1938e8ff0c6dee8e6"
+]
+],
 "updates": null
 }
