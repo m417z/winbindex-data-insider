@@ -90,6 +90,12 @@
             "created": 1725987694,
             "title": "Feature update to Windows 10, version 1809 x86 2024-09B"
         },
+        "89da9278-1ece-4c82-b791-d624d229924d": {
+            "arch": "amd64",
+            "build": "26100.1882",
+            "created": 1727808111,
+            "title": "2024-09 Cumulative Update Preview for Windows 11 Version 24H2 for x64-based Systems (KB5043178)"
+        },
         "8a883ae4-4260-4972-b8ec-17b0f311acdc": {
             "arch": "amd64",
             "build": "25398.1128",
@@ -155,6 +161,12 @@
             "build": "19044.4894",
             "created": 1725987851,
             "title": "Feature update to Windows 10, version 21H2"
+        },
+        "d0c7e4bd-ec05-44e0-9b4a-6c6b2a8be61e": {
+            "arch": "arm64",
+            "build": "26100.1882",
+            "created": 1727808247,
+            "title": "2024-09 Cumulative Update Preview for Windows 11 Version 24H2 for arm64-based Systems (KB5043178)"
         },
         "d0fe8e34-c34e-4565-9ec8-e2c8fca2f0dc": {
             "arch": "arm64",
