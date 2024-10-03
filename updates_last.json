@@ -132,6 +132,12 @@
             "created": 1727730301,
             "title": "Windows 11, version 24H2"
         },
+        "9c9aaa4d-3424-4334-aa1c-86b82f95b7ba": {
+            "arch": "amd64",
+            "build": "27718.1000",
+            "created": 1727888728,
+            "title": "Windows 11 Insider Preview 27718.1000 (rs_prerelease)"
+        },
         "9df40897-d4d8-480a-9f06-cc0eae85ff69": {
             "arch": "arm64",
             "build": "22000.3197",
@@ -221,6 +227,12 @@
             "build": "20348.2700",
             "created": 1725987826,
             "title": "Feature update to Microsoft server operating system, version 21H2"
+        },
+        "fb79fe84-1a55-428e-8216-2445573932d2": {
+            "arch": "arm64",
+            "build": "27718.1000",
+            "created": 1727888643,
+            "title": "Windows 11 Insider Preview 27718.1000 (rs_prerelease)"
         },
         "fe1f57e3-f40a-4e10-a34a-0607b5998c9a": {
             "arch": "x86",
