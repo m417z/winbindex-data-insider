@@ -36,6 +36,12 @@
             "created": 1725987925,
             "title": "Windows 11"
         },
+        "49935233-dfee-4dee-8feb-9d6b5a4da325": {
+            "arch": "amd64",
+            "build": "22635.4300",
+            "created": 1728061339,
+            "title": "Windows 11 Insider Preview 10.0.22635.4300 (ni_release)"
+        },
         "4a41291d-1f1b-4dc4-85de-42de6da84f76": {
             "arch": "arm64",
             "build": "22621.4249",
@@ -132,6 +138,12 @@
             "created": 1727730301,
             "title": "Windows 11, version 24H2"
         },
+        "9c6443e2-4652-4d3d-b0b6-34895deca5a6": {
+            "arch": "amd64",
+            "build": "26120.1930",
+            "created": 1728061302,
+            "title": "Windows 11 Insider Preview 10.0.26120.1930 (ge_release_upr)"
+        },
         "9c9aaa4d-3424-4334-aa1c-86b82f95b7ba": {
             "arch": "amd64",
             "build": "27718.1000",
@@ -186,6 +198,12 @@
             "created": 1727370102,
             "title": "Windows 11, version 23H2"
         },
+        "d73a7f11-58e3-4274-ad8b-7003cee545b5": {
+            "arch": "arm64",
+            "build": "22635.4300",
+            "created": 1728061339,
+            "title": "Windows 11 Insider Preview 10.0.22635.4300 (ni_release)"
+        },
         "d991198d-989d-4440-8d7f-9eb3096120a7": {
             "arch": "amd64",
             "build": "26120.1912",
@@ -197,6 +215,12 @@
             "build": "26120.1843",
             "created": 1726851699,
             "title": "Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr)"
+        },
+        "ebe2f593-f542-40a1-bb75-e35a18c4c2bd": {
+            "arch": "arm64",
+            "build": "26120.1930",
+            "created": 1728061288,
+            "title": "Windows 11 Insider Preview 10.0.26120.1930 (ge_release_upr)"
         },
         "efe7a171-e601-412a-b2e7-abefe4f1509b": {
             "arch": "amd64",
