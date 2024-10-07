@@ -1,23 +1,7 @@
 {
-"next": [
-"kerb3961kernel.sys",
-"fa83bc0800e7bd8f5dfbfbc34872a05173c8e01eba4c7680f49729ca2e7526c9"
-],
+"next": null,
 "next_updates": null,
 "pending": {},
-"retry": [
-[
-"sysprepetw.dll",
-"aaf27181ccc8efff5120c1465945dbaf38e8256b66f13e9665b074fa482e0cc1"
-],
-[
-"vpci.sys",
-"05354e6c009f527fa87a0b3a541e748ce3fea793bf349dc82854f1896b25052e"
-],
-[
-"wdiwifi.sys",
-"5560fb4abff5637d450fe0e52dcae4051f47a270979037f2b8fe51a5adfbd166"
-]
-],
+"retry": [],
 "updates": null
 }
