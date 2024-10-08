@@ -141,7 +141,17 @@ def download_update(windows_version, update_kb):
         url = download_url['url']
 
         args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url]
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        while True:
+            result = subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+            if result.returncode == 0:
+                break
+
+            # https://aria2.github.io/manual/en/html/aria2c.html#exit-status
+            if result.returncode != 1:
+                raise Exception(f'Failed to download {name} from {url} (exit code {result.returncode})')
+
+            print(f'[{update_kb}] Retrying download of {name} from {url}...')
+            time.sleep(10)
 
         local_path = local_dir.joinpath(name)
 
