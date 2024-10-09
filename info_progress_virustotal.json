@@ -3,41 +3,8 @@
 "windows.media.devices.dll",
 "2d3b9e98d9b0bc36a307dac47b8680c928ec8d40c970c34812a573997780efc1"
 ],
-"next_updates": [
-"rdpclip.exe",
-"5a0121ab560d7aeeffe14ad76a65c742c051ba080aab6dce0892b9a559f48315"
-],
+"next_updates": null,
 "pending": {},
-"retry": [
-[
-"iertutil.dll",
-"26178acff010d3c3342373acdbe004484233b8d189b4c0fc456879168eb0950a"
-]
-],
-"updates": [
-"41a574f2-b782-4e2b-92a4-f79c120fb017",
-"97666913-1b77-41d4-9ebf-916d140b18e6",
-"be0f42b1-33d4-423f-9ed9-22b58395bc04",
-"1d73161d-38ed-4230-a859-f7a9fc61c2f4",
-"6c4d3b77-0e39-4067-9063-0c455490f07c",
-"7ba8ab7b-8c58-49e3-8cd4-85f80951b3fb",
-"dca8c1ab-fc64-4681-89b2-b6abb63a1e76",
-"7e33f1ba-a017-4656-a354-4142565b0a3c",
-"f36aeac0-15d7-4592-b8ce-aef2866ece92",
-"c7875964-1296-4bfd-8048-8a66673dcbee",
-"bd62ff21-f7b6-485c-897b-0931d197d72e",
-"fba7e852-3fcc-4dad-8561-42c455cfffd7",
-"ad910233-da99-4ab9-9b91-6b72f768fc72",
-"f548dcf7-683b-42f6-828a-9f9d2ff146af",
-"ffbedf42-a052-4c3b-88f5-6fe471454ddc",
-"3150d96f-4a35-47b1-b8d4-ca3a3a193511",
-"a128eb2d-d3ac-4beb-a5a6-33052256a954",
-"fe74ffc1-ed59-4cfa-8f3e-07db720d53a8",
-"35630b7b-4509-45b6-83a1-d4c75d5aa9b6",
-"4596a622-905b-4876-bb7f-c48b7b6226ad",
-"d6c8b547-a2c2-4539-bde3-f9343fb7c757",
-"d21ae8c0-008f-4103-9f55-37e9e37ecf8f",
-"7a25f043-fbfb-43f1-b1ef-dee8694dd06a",
-"bbb80b23-aba7-4b88-86bd-b505cc94c704"
-]
+"retry": [],
+"updates": null
 }
