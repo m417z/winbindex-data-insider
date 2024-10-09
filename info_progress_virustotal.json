@@ -3,9 +3,17 @@
 "windows.media.devices.dll",
 "2d3b9e98d9b0bc36a307dac47b8680c928ec8d40c970c34812a573997780efc1"
 ],
-"next_updates": null,
+"next_updates": [
+"rdpclip.exe",
+"5a0121ab560d7aeeffe14ad76a65c742c051ba080aab6dce0892b9a559f48315"
+],
 "pending": {},
-"retry": [],
+"retry": [
+[
+"iertutil.dll",
+"26178acff010d3c3342373acdbe004484233b8d189b4c0fc456879168eb0950a"
+]
+],
 "updates": [
 "41a574f2-b782-4e2b-92a4-f79c120fb017",
 "97666913-1b77-41d4-9ebf-916d140b18e6",
