@@ -30,6 +30,12 @@
             "created": 1728407108,
             "title": "Windows 11"
         },
+        "41748193-33d3-4ce3-a653-a3021dc01d01": {
+            "arch": "amd64",
+            "build": "27723.1000",
+            "created": 1728493400,
+            "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)"
+        },
         "41a574f2-b782-4e2b-92a4-f79c120fb017": {
             "arch": "amd64",
             "build": "17763.6414",
@@ -65,6 +71,12 @@
             "build": "22635.4291",
             "created": 1727730142,
             "title": "Windows 11 Insider Preview 10.0.22635.4291 (ni_release)"
+        },
+        "65ad0e64-c404-4506-be3a-f77ebe32bfaf": {
+            "arch": "arm64",
+            "build": "27723.1000",
+            "created": 1728493379,
+            "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)"
         },
         "6a853eea-c9ef-4a6c-81e3-4083fffe08f4": {
             "arch": "arm64",
