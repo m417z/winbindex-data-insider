@@ -5,9 +5,27 @@
 ],
 "next_updates": null,
 "pending": {},
-"retry": [],
-"updates": [
-"65ad0e64-c404-4506-be3a-f77ebe32bfaf",
-"41748193-33d3-4ce3-a653-a3021dc01d01"
+"retry": [
+[
+"wudfhost.exe",
+"de8ab2618c054b8790c0c69fb94b629db6211a2090ffa945b4bdae44f721f0da"
+],
+[
+"wudfplatform.dll",
+"dc4f4a321df9750024393a3c03105e618dc4b3e5311b258d661f5c25669b42e7"
+],
+[
+"wudfusbcciddriver.dll",
+"ead88275cae3cca2a5a7f1c7822cc279bbe51fa6abde28da850b5219cdba4e75"
+],
+[
+"wudfx02000.dll",
+"1321da310dc98a41084a1fcf305adabfa8809aa8890a7c3265bb02b50982a99c"
+],
+[
+"xmllite.dll",
+"f0eaeda6115142e778428d36079575a53c4b68783251c61c37676341d580a4f7"
 ]
+],
+"updates": null
 }
