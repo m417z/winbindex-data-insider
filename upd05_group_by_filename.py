@@ -266,9 +266,9 @@ def update_file_info(existing_file_info, new_file_info, new_file_info_source):
             other_file_info_type not in ['vt', 'vt_or_file']
             and other_file_info.get('signingDate') != unknown_sig_file_info.get('signingDate')
         ):
-            raise Exception(
-                f'WARNING: Different signing date of {other_file_info["sha256"]}:'
-                f' {other_file_info["signingDate"]} vs.'
+            print(
+                f'WARNING: Updating signing date of {other_file_info["sha256"]}:'
+                f' {other_file_info["signingDate"]} ->'
                 f' {unknown_sig_file_info["signingDate"]}'
             )
 
