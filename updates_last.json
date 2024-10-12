@@ -132,6 +132,12 @@
             "created": 1728406889,
             "title": "Feature update to Windows 10, version 1809 x86 2024-10B"
         },
+        "9bc796dd-3eca-4553-8fb6-32b1cc1f0297": {
+            "arch": "arm64",
+            "build": "26120.2122",
+            "created": 1728666088,
+            "title": "Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr)"
+        },
         "9c6443e2-4652-4d3d-b0b6-34895deca5a6": {
             "arch": "amd64",
             "build": "26120.1930",
@@ -156,11 +162,23 @@
             "created": 1727219027,
             "title": "Windows 11 Insider Preview 27695.1000 (rs_prerelease)"
         },
+        "a495c8ac-f626-4839-9c4f-231eb4ad5ce2": {
+            "arch": "amd64",
+            "build": "26120.2122",
+            "created": 1728666100,
+            "title": "Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr)"
+        },
         "a4da2b41-0ac3-4987-9b07-30c19c5d594f": {
             "arch": "amd64",
             "build": "26100.2152",
             "created": 1728594212,
             "title": "Windows 11, version 24H2"
+        },
+        "a9af177b-6bea-4ab5-92c7-48a8787ce5f8": {
+            "arch": "amd64",
+            "build": "22635.4367",
+            "created": 1728666136,
+            "title": "Windows 11 Insider Preview 10.0.22635.4367 (ni_release)"
         },
         "ad910233-da99-4ab9-9b91-6b72f768fc72": {
             "arch": "arm64",
@@ -228,6 +246,12 @@
             "created": 1728406959,
             "title": "Feature update to Windows 10, version 21H2"
         },
+        "de0d9bf4-e672-4766-bc6c-81fc55f38142": {
+            "arch": "amd64",
+            "build": "26304.5000",
+            "created": 1728666336,
+            "title": "Windows Server Insider Preview 26304.5000 (ge_prerelease)"
+        },
         "e27f002d-e3b6-4f24-a4d8-8b09d279fe5b": {
             "arch": "amd64",
             "build": "26120.1843",
@@ -269,6 +293,12 @@
             "build": "19044.5011",
             "created": 1728407023,
             "title": "Feature update to Windows 10, version 21H2"
+        },
+        "f5c87fb6-f98e-4465-8232-fa53c5ab1a78": {
+            "arch": "arm64",
+            "build": "22635.4367",
+            "created": 1728666135,
+            "title": "Windows 11 Insider Preview 10.0.22635.4367 (ni_release)"
         },
         "fb79fe84-1a55-428e-8216-2445573932d2": {
             "arch": "arm64",
