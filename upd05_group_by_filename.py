@@ -256,11 +256,21 @@ def update_file_info(existing_file_info, new_file_info, new_file_info_source):
             other_file_info_type not in ['vt', 'vt_or_file']
             and other_file_info.get('signingDate') != unknown_sig_file_info.get('signingDate')
         ):
-            print(
-                f'WARNING: Updating signing date of {other_file_info["sha256"]}:'
-                f' {other_file_info["signingDate"]} ->'
-                f' {unknown_sig_file_info["signingDate"]}'
-            )
+            # Temporary log, will become an error in the future.
+            current_date = datetime.now().isoformat()
+            if current_date <= '2025-05-14':
+                print(
+                    f'WARNING: Updating signing date of {other_file_info["sha256"]}:'
+                    f' {other_file_info["signingDate"]} ->'
+                    f' {unknown_sig_file_info["signingDate"]}'
+                )
+            else:
+            # Temporary log end.
+                raise Exception(
+                    f'Different signing date of {other_file_info["sha256"]}:'
+                    f' {other_file_info["signingDate"]} !='
+                    f' {unknown_sig_file_info["signingDate"]}'
+                )
 
         return unknown_sig_file_info | {
             'signingStatus': other_file_info.get('signingStatus'),
