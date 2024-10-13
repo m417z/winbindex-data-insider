@@ -1,0 +1,63 @@
+{
+"next": [
+"windows.media.devices.dll",
+"2d3b9e98d9b0bc36a307dac47b8680c928ec8d40c970c34812a573997780efc1"
+],
+"next_updates": null,
+"pending": {},
+"retry": [
+[
+"credui.dll",
+"83ea4fe07af93f03caf4d73c1bb2163290685ae74ccf92a21bb0f6c628f3f6b1"
+],
+[
+"devicedirectoryclient.dll",
+"843ffa61d84bcfde68c2dd5a2e9941595dbbc75cca49a2a0c28dbf7971b05949"
+],
+[
+"feclient.dll",
+"57213130ac7c8b0e67db214157616956972600970d3b166b863be7e58ca0e8fc"
+],
+[
+"iphlpsvc.dll",
+"f4feebd977b96b07a8cd0e93a0ffca17b1c9c53a1122935660f3410921e90daf"
+],
+[
+"ipmidrv.sys",
+"a3560ec86d834c633564d5a2870ad8ddf1b203148a0ab88fd279d41661072b07"
+],
+[
+"kbdus.dll",
+"87e74ce0dff1a7eed7e099eb2260935e0a6c256990b885284479549cd716e545"
+],
+[
+"languageoverlayserver.dll",
+"d575526e21c369abd72bbf51dbb454a7c11dc66c10e20fec4abc00efb648c8fe"
+],
+[
+"mpssvc.dll",
+"cbc8ccc8a184a8ecea0a9d13cb167ecf58173160f0e245cd9bba31b60cc50ee5"
+],
+[
+"perfos.dll",
+"02c3c67b07af2b023a37c545d6232d33ea7b7a939fd96c0b21b89fd76638dbe6"
+],
+[
+"servermanager.exe",
+"e302ade08a2ac0c92ccda86ba5ea88fffc4d2cc722e6a83a8f5f3d19a63bcdc9"
+],
+[
+"tbs.dll",
+"0ee73f473bec92e41e29b66ab9d118352a475f87097b5d83b1bf3dd71674b8f6"
+],
+[
+"tcpipreg.sys",
+"c4d54b872ec8bc5198c3f5a43e0a708e7ee7e04e636eb677d165be82bb41e5e1"
+],
+[
+"textinputframework.dll",
+"0373471bf56c6512d3e4be6bcd890852d22518e6ce4184429b1c8b5837092ce9"
+]
+],
+"updates": null
+}
