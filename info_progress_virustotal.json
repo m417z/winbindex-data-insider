@@ -4,32 +4,8 @@
 "pending": {},
 "retry": [
 [
-"dnsapi.dll",
-"d7f586453f10d91d05e9791e90da26d462ff0d7602edfd24322b317712dbdfda"
-],
-[
 "explorerframe.dll",
 "9a0f8704e16761e679322ec26ca68e2f798b193a5d433f8524ed752cbb31839b"
-],
-[
-"textinputframework.dll",
-"5a5345ef3bf0fa605a34e3819eef6acd00dddaaf31dd1f3d3ca7f98cfb5b2af8"
-],
-[
-"updatenotificationmgr.exe",
-"6c2aa11bd7434b95bdcdff3cbcc64dbc901d03881925f0acccefcae1fa93fe59"
-],
-[
-"usb4devicerouter.sys",
-"66f6adb9ea52a95ba2613ecfffcef145c0a8fb06e713eef1f0d699d3f9cb1476"
-],
-[
-"waasmedicsvc.dll",
-"e9bd3bb0d3ff8533528280887339555e3e618fd7aee71181f02c88370e83d00f"
-],
-[
-"wuaucltcore.exe",
-"af8188e58664dd7a34009ad36e072ede55061bebe27ca88d4d2c0fd95777c70f"
 ]
 ],
 "updates": null
