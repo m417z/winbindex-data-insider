@@ -6,6 +6,12 @@
             "created": 1728594163,
             "title": "2024-10 Cumulative Update Preview for Windows 11 Version 22H2 for x64-based Systems (KB5044380)"
         },
+        "1061081c-949c-4964-ad7c-bbcdb61ace4d": {
+            "arch": "x86",
+            "build": "19045.5070",
+            "created": 1728939689,
+            "title": "Feature update to Windows 10, version 22H2"
+        },
         "12d5c7af-8e10-49f2-a094-a1ee07d62ae3": {
             "arch": "arm64",
             "build": "26120.1912",
@@ -42,12 +48,6 @@
             "created": 1728406877,
             "title": "Feature update to Windows 10, version 1809 x64 2024-10B"
         },
-        "4596a622-905b-4876-bb7f-c48b7b6226ad": {
-            "arch": "amd64",
-            "build": "19045.5011",
-            "created": 1728407134,
-            "title": "Feature update to Windows 10, version 22H2"
-        },
         "49935233-dfee-4dee-8feb-9d6b5a4da325": {
             "arch": "amd64",
             "build": "22635.4300",
@@ -72,11 +72,23 @@
             "created": 1727730142,
             "title": "Windows 11 Insider Preview 10.0.22635.4291 (ni_release)"
         },
+        "64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a": {
+            "arch": "amd64",
+            "build": "19045.5070",
+            "created": 1728939702,
+            "title": "Feature update to Windows 10, version 22H2"
+        },
         "65ad0e64-c404-4506-be3a-f77ebe32bfaf": {
             "arch": "arm64",
             "build": "27723.1000",
             "created": 1728493379,
             "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)"
+        },
+        "67d2d29f-5cdb-4943-9516-e27b9b632d53": {
+            "arch": "arm64",
+            "build": "19045.5070",
+            "created": 1728939714,
+            "title": "Feature update to Windows 10, version 22H2"
         },
         "6a853eea-c9ef-4a6c-81e3-4083fffe08f4": {
             "arch": "arm64",
@@ -101,12 +113,6 @@
             "build": "22631.4387",
             "created": 1728594118,
             "title": "Windows 11, version 23H2"
-        },
-        "7ba8ab7b-8c58-49e3-8cd4-85f80951b3fb": {
-            "arch": "x86",
-            "build": "19045.5011",
-            "created": 1728406951,
-            "title": "Feature update to Windows 10, version 22H2"
         },
         "7e33f1ba-a017-4656-a354-4142565b0a3c": {
             "arch": "amd64",
@@ -179,12 +185,6 @@
             "build": "22635.4367",
             "created": 1728666136,
             "title": "Windows 11 Insider Preview 10.0.22635.4367 (ni_release)"
-        },
-        "ad910233-da99-4ab9-9b91-6b72f768fc72": {
-            "arch": "arm64",
-            "build": "19045.5011",
-            "created": 1728407021,
-            "title": "Feature update to Windows 10, version 22H2"
         },
         "bbb80b23-aba7-4b88-86bd-b505cc94c704": {
             "arch": "amd64",
