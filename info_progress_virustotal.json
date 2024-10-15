@@ -4,8 +4,16 @@
 "pending": {},
 "retry": [
 [
-"explorerframe.dll",
-"9a0f8704e16761e679322ec26ca68e2f798b193a5d433f8524ed752cbb31839b"
+"devicengccredprov.dll",
+"d115692a4bb8762e05b1e4d094cde7521772ad0ff7f8275ce458f0e095e73509"
+],
+[
+"presentationcore.dll",
+"b1694130e89fe73fab44dc738311bdbdfb601b694ceff438a447bc6145b08791"
+],
+[
+"wkspbroker.exe",
+"150a02a3e6114a8f542eb08301f76211bb24c2dda75a77c2c08162ba3c2162b4"
 ]
 ],
 "updates": null
