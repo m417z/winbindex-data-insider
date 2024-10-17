@@ -4,36 +4,16 @@
 "pending": {},
 "retry": [
 [
-"msxml3.dll",
-"e26a75ba3fbf66bbe738db16c86c5e53e9a2a6daa4e9efea28d88db0a474195e"
+"amdwps.sys",
+"69be437ad012dc83dfdc8e99faeb6c24b754c4b42d41f82998e57722406f4259"
 ],
 [
-"networkux.dll",
-"b2c32c1d2d9d8f4c6f42bae3db47a47a992c45d781586a9bad65a60d0cdbc809"
+"bcastdvruserservice.dll",
+"962bd0d995c225048588c813640520222d01dc1a86eda4a67219acbbca76d595"
 ],
 [
 "printworkflowservice.dll",
 "4c0aa0deded5e2903a1dee70ae080332e70aaa03416275d97b2a9d0a85fdb4a6"
-],
-[
-"schannel.dll",
-"b3b2b73e8d5974e813f4d4db86269cccb191db632b9773f15e34d258e50a6e08"
-],
-[
-"windows.internal.management.dll",
-"337561d4fa0b73e618c8afaa4c8a8ce1cfb9a521a30ec7f28bd54cb19378ebe4"
-],
-[
-"windows.internal.securitymitigationsbroker.dll",
-"03f9495b4e5dccae9904eec100c370ca4d09cfd735995ea2a35fab0f34462e81"
-],
-[
-"windows.media.dll",
-"d072cedccadb85cef4496efb005d5becee38c9faeda707cdfc9fc55c62125d12"
-],
-[
-"wintrust.dll",
-"3bc81ef2bb255f776c7fa1561f5be488a837f79dcc35b74c23fac001273bb876"
 ]
 ],
 "updates": null
