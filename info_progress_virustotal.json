@@ -4,16 +4,12 @@
 "pending": {},
 "retry": [
 [
-"amdwps.sys",
-"69be437ad012dc83dfdc8e99faeb6c24b754c4b42d41f82998e57722406f4259"
+"cidiag.exe",
+"9dce1ca90ea9d02d540c64385f68362dbe1af8f2935f42c2fe8cfe4a88107a64"
 ],
 [
-"bcastdvruserservice.dll",
-"962bd0d995c225048588c813640520222d01dc1a86eda4a67219acbbca76d595"
-],
-[
-"printworkflowservice.dll",
-"4c0aa0deded5e2903a1dee70ae080332e70aaa03416275d97b2a9d0a85fdb4a6"
+"resetengine.exe",
+"1a2ead533109bb4b550acbb8d61955d445c331433c1d791190948bfb2bb8ba20"
 ]
 ],
 "updates": null
