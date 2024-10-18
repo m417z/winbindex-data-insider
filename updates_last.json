@@ -36,6 +36,12 @@
             "created": 1728407108,
             "title": "Windows 11"
         },
+        "3aea992b-0595-4df0-b639-329bffa7f4dc": {
+            "arch": "arm64",
+            "build": "27729.1000",
+            "created": 1729199294,
+            "title": "Windows 11 Insider Preview 27729.1000 (rs_prerelease)"
+        },
         "41748193-33d3-4ce3-a653-a3021dc01d01": {
             "arch": "amd64",
             "build": "27723.1000",
@@ -119,6 +125,12 @@
             "build": "20349.2762",
             "created": 1728406962,
             "title": "Feature update to Azure Stack HCI, version 22H2"
+        },
+        "87fc0e98-760c-4c72-95b6-a9b04ecf0d9c": {
+            "arch": "amd64",
+            "build": "27729.1000",
+            "created": 1729199361,
+            "title": "Windows 11 Insider Preview 27729.1000 (rs_prerelease)"
         },
         "89da9278-1ece-4c82-b791-d624d229924d": {
             "arch": "amd64",
