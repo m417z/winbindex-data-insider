@@ -281,7 +281,7 @@ def update_file_info(existing_file_info, new_file_info, new_file_info_source):
         return new_file_info
 
     if sources.index(new_file_info_type) == sources.index(existing_file_info_type):
-        assert new_file_info == existing_file_info
+        assert new_file_info == existing_file_info, (existing_file_info, new_file_info)
 
     return existing_file_info
 
