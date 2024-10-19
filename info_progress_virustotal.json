@@ -4,12 +4,12 @@
 "pending": {},
 "retry": [
 [
-"cidiag.exe",
-"9dce1ca90ea9d02d540c64385f68362dbe1af8f2935f42c2fe8cfe4a88107a64"
+"userinit.exe",
+"d6af04526703203a6ec4658579618e97ac1ce12271b5c7305a3ae8c81d4aed04"
 ],
 [
-"resetengine.exe",
-"1a2ead533109bb4b550acbb8d61955d445c331433c1d791190948bfb2bb8ba20"
+"xwreg.dll",
+"67b1c94b79bf5a1af2ead7b2d57b6bbeaf6fd575509f4358947cf5ae180a5edc"
 ]
 ],
 "updates": null
