@@ -1,34 +1,11 @@
 {
-"next": [
-"vmswitch.sys",
-"85b79824a1a0d5ea2478bed985531496315b9020914314f7b77ca9ad77a8f089"
-],
+"next": null,
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"appmon.dll",
-"86d819f8df70f403a1df2f72244064c34ddedcb9b2e4951aab59e6242fbaefd5"
-],
-[
-"cmi2migxml.dll",
-"1eb6182620e1d8209b554d40e7f4630ec08984d911075090b26ce33cbb3baeb6"
-],
-[
-"dhcpcore.dll",
-"d734156d219c3886ffc32f3e283141fddbcceb5caf2c4dfa2dba9639f314fe3b"
-],
-[
 "launchtm.exe",
 "230e834ff2bc513f0e3462acc19b58708dbd42dcf81d9289fd9aa3cc56be51da"
-],
-[
-"sensorservice.dll",
-"add76494ecf6b0c8a92fb8d5406c4e8aefddfc030a2ec7d819baa49bf9fb80c7"
-],
-[
-"useraccountcontrolsettings.exe",
-"f9097a7ba5da7ebe8a778f1507a0fa583702fd5201e0465a2728baf169dd3799"
 ]
 ],
 "updates": null
