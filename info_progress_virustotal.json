@@ -2,6 +2,19 @@
 "next": null,
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"gamebarpresencewriter.exe",
+"9879dcbc26df858fad5c977f941bcea722177110965f48f8d8d61480cce6ebbd"
+],
+[
+"kernel32.dll",
+"610eb92c4053347a364e49793674ff46cc4824c5be5625a84c44cd4f6168c228"
+],
+[
+"smartcardcredentialprovider.dll",
+"c7df6c46ce3a7775ad3697736cdbb78cf5c81a5fb5b5851cb0e951246419916f"
+]
+],
 "updates": null
 }
