@@ -4,12 +4,8 @@
 "pending": {},
 "retry": [
 [
-"msconfig.exe",
-"8c02a25744912f76ad6fb160e0b1bb8b8658c0dca6c80fe0ae57f462bc1be852"
-],
-[
-"nlansp_c.dll",
-"d17d0e6fe2dceda61fa645ca204ba8c910d0f507c2594c1a799343139a8dde95"
+"nslookup.exe",
+"1048747746aaf75b2223a90f9ac238f9db0f9cacab7d370466ab712c12347518"
 ]
 ],
 "updates": null
