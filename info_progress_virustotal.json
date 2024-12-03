@@ -2,11 +2,6 @@
 "next": null,
 "next_updates": null,
 "pending": {},
-"retry": [
-[
-"nslookup.exe",
-"1048747746aaf75b2223a90f9ac238f9db0f9cacab7d370466ab712c12347518"
-]
-],
+"retry": [],
 "updates": null
 }
