@@ -39,14 +39,24 @@ def get_update_download_urls(download_uuid):
 
     urls = []
     for file in files:
+        # Skip metadata ESD files which contain partial content and can't be
+        # extracted with 7z.
         if file.lower() in [
             'professional_en-us.esd',
             'metadataesd_professional_en-us.esd',
         ]:
             continue
 
+        # Skip other unsupported files.
+        if file.lower() in [
+            'winre.wim',
+            'wim_edge.wim',
+            'edge.wim',
+        ]:
+            continue
+
         extension = Path(file).suffix.lower()
-        if extension not in ['.cab', '.esd', '.psf', '.msu']:
+        if extension not in ['.cab', '.esd', '.psf', '.msu', '.wim']:
             raise Exception(f'Unknown file extension: {extension}')
 
         urls.append({
@@ -128,10 +138,44 @@ def delta_files_equal(source_file: Path, destination_file: Path):
 
 
 def extract_update_files(local_dir: Path):
-    def cab_extract(pattern: str, from_file: Path, to_dir: Path):
+    def cab_extract(from_file: Path, to_dir: Path):
         to_dir.mkdir()
-        args = ['tools/expand/expand.exe', '-r', f'-f:{pattern}', from_file, to_dir]
+        args = ['tools/expand/expand.exe', '-r', '-f:*', from_file, to_dir]
         subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+    def run_7z_extract(from_file: Path, to_dir: Path, files: list[str] = []):
+        args = ['7z.exe', 'x', from_file, f'-o{to_dir}', '-y'] + files
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+    def psf_extract(from_file: Path, to_dir: Path, delete=False):
+        # Extract delta files from the PSF file which can be found in Windows 11
+        # updates. References:
+        # https://www.betaarchive.com/forum/viewtopic.php?t=43163
+        # https://github.com/Secant1006/PSFExtractor
+        description_file = from_file.parent.joinpath('express.psf.cix.xml')
+        if not description_file.exists():
+            cab_file = from_file.with_suffix('.cab')
+            wim_file = from_file.with_suffix('.wim')
+            if cab_file.exists() and wim_file.exists():
+                raise Exception(f'PSF description ambiguity: {from_file}')
+            elif cab_file.exists():
+                cab_extract(cab_file, to_dir)
+                if delete:
+                    cab_file.unlink()
+            elif wim_file.exists():
+                run_7z_extract(wim_file, to_dir)
+                if delete:
+                    wim_file.unlink()
+            else:
+                raise Exception(f'PSF description file not found: {from_file}')
+
+            description_file = to_dir.joinpath('express.psf.cix.xml')
+
+        args = ['tools/PSFExtractor.exe', '-v2', from_file, description_file, to_dir]
+        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+        if delete:
+            from_file.unlink()
 
     def msu_extract(from_file: Path, to_dir: Path):
         wim_file = from_file.with_suffix('.wim')
@@ -142,8 +186,7 @@ def extract_update_files(local_dir: Path):
         if wim_file.exists():
             raise Exception(f'PSF file already exists: {psf_file}')
 
-        args = ['7z.exe', 'x', from_file, f'-o{from_file.parent}', '-y', wim_file.name, psf_file.name]
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        run_7z_extract(from_file, from_file.parent, [wim_file.name, psf_file.name])
 
         if not wim_file.exists() and not psf_file.exists():
             # Special case handling.
@@ -157,14 +200,13 @@ def extract_update_files(local_dir: Path):
 
                 assert cab_file.exists()
 
-                cab_extract('*', cab_file, to_dir)
+                cab_extract(cab_file, to_dir)
                 cab_file.unlink()
                 return
 
         assert wim_file.exists() and psf_file.exists()
 
-        args = ['7z.exe', 'x', wim_file, f'-o{to_dir}', '-y']
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        run_7z_extract(wim_file, to_dir)
         wim_file.unlink()
 
         description_file = to_dir.joinpath('express.psf.cix.xml')
@@ -175,27 +217,17 @@ def extract_update_files(local_dir: Path):
 
     next_extract_dir_num = 1
 
-    # Extract CAB files.
-    cab_files = list(local_dir.glob('*.cab'))
-    for cab_file in cab_files:
+    # Extract PSF file.
+    psf_files = list(local_dir.glob('*.psf'))
+    if psf_files:
+        # Only one PSF file per update was observed so far.
+        assert len(psf_files) == 1, psf_files
+        p = psf_files[0]
+
         extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
-        print(f'Extracting {cab_file} to {extract_dir}')
+        print(f'Extracting {p} to {extract_dir}')
         next_extract_dir_num += 1
-
-        psf_file = cab_file.with_suffix('.psf')
-        if psf_file.exists():
-            # Extract CAB/PSF files.
-            # References:
-            # https://www.betaarchive.com/forum/viewtopic.php?t=43163
-            # https://github.com/Secant1006/PSFExtractor
-            args = ['tools/PSFExtractor.exe', cab_file]
-            subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
-            psf_file.unlink()
-            cab_file.with_suffix('').rename(extract_dir)
-        else:
-            cab_extract('*', cab_file, extract_dir)
-
-        cab_file.unlink()
+        psf_extract(p, extract_dir, delete=True)
 
     # Extract ESD files.
     esd_files = list(local_dir.glob('*.esd'))
@@ -204,8 +236,7 @@ def extract_update_files(local_dir: Path):
         print(f'Extracting {esd_file} to {extract_dir}')
         next_extract_dir_num += 1
 
-        args = ['7z.exe', 'x', esd_file, f'-o{extract_dir}', '-y']
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+        run_7z_extract(esd_file, extract_dir)
         esd_file.unlink()
 
     # Extract MSU files.
@@ -217,6 +248,16 @@ def extract_update_files(local_dir: Path):
 
         msu_extract(msu_file, extract_dir)
         msu_file.unlink()
+
+    # Extract CAB files.
+    cab_files = list(local_dir.glob('*.cab'))
+    for cab_file in cab_files:
+        extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
+        print(f'Extracting {cab_file} to {extract_dir}')
+        next_extract_dir_num += 1
+
+        cab_extract(cab_file, extract_dir)
+        cab_file.unlink()
 
     # Starting with Windows 11, manifest files are compressed with the DCM v1
     # format. Use SXSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
@@ -239,11 +280,11 @@ def extract_update_files(local_dir: Path):
                 source_file = source_dir.joinpath(name)
                 if source_file.is_file():
                     # Ignore files in root folder which have different non-identical copies with the same name.
-                    # Also ignore cab archives in the root folder.
+                    # Also ignore small cab archives in the root folder.
                     if source_dir == extract_dir:
                         if (name in ['update.mum', '$filehashes$.dat'] or
                             name.endswith('.cat') or
-                            name.endswith('.cab') or
+                            (name.endswith('.cab') and source_file.stat().st_size < 1024 * 1024 * 10) or
                             name.endswith('.dll')):
                            ignore.append(name)
                            continue
@@ -269,6 +310,11 @@ def extract_update_files(local_dir: Path):
 
         shutil.copytree(extract_dir, local_dir, copy_function=shutil.move, dirs_exist_ok=True, ignore=ignore_files)
         shutil.rmtree(extract_dir)
+
+    # Make sure there are no archive files left.
+    for p in local_dir.glob('*'):
+        if p.suffix in {'.cab', '.psf', '.wim', '.msu', '.esd'}:
+            raise Exception(f'Unexpected archive file left: {p}')
 
     # Unpack null differential files.
     for file in local_dir.glob('*/n/**/*'):
