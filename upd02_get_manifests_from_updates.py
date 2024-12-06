@@ -244,6 +244,15 @@ def extract_update_files(local_dir: Path):
         cab_extract(cab_file, extract_dir)
         cab_file.unlink()
 
+        cab_files_nested = list(extract_dir.glob('*.cab'))
+        for cab_file in cab_files_nested:
+            extract_dir = local_dir.joinpath(f'_extract_{next_extract_dir_num}')
+            print(f'Extracting nested {cab_file} to {extract_dir}')
+            next_extract_dir_num += 1
+
+            cab_extract(cab_file, extract_dir)
+            cab_file.unlink()
+
     # Starting with Windows 11, manifest files are compressed with the DCM v1
     # format. Use SXSEXP to de-compress them: https://github.com/hfiref0x/SXSEXP
     #
