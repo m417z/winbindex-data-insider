@@ -36,11 +36,23 @@
             "created": 1733335210,
             "title": "Windows 11 Insider Preview 27758.1000 (rs_prerelease)"
         },
+        "a0300238-bf98-4de5-975f-2134a6808b3a": {
+            "arch": "arm64",
+            "build": "26100.2454",
+            "created": 1732212035,
+            "title": "Windows 11, version 24H2 (26100.2454) (2)"
+        },
         "a710576a-f453-4981-8b06-7908b24f329f": {
             "arch": "amd64",
             "build": "26334.5000",
             "created": 1733421712,
             "title": "Windows Server Insider Preview 26334.5000 (ge_prerelease)"
+        },
+        "ec8096fc-dc44-483f-a6df-73d6e1ddfb26": {
+            "arch": "amd64",
+            "build": "26100.2454",
+            "created": 1732212040,
+            "title": "Windows 11, version 24H2 (26100.2454) (2)"
         }
     }
 }
