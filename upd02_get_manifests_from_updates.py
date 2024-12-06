@@ -312,9 +312,9 @@ def extract_update_files(local_dir: Path):
         shutil.rmtree(extract_dir)
 
     # Make sure there are no archive files left.
-    for p in local_dir.glob('*'):
-        if p.suffix in {'.cab', '.psf', '.wim', '.msu', '.esd'}:
-            raise Exception(f'Unexpected archive file left: {p}')
+    archives_left = [p for p in local_dir.glob('*') if p.suffix in {'.cab', '.psf', '.wim', '.msu', '.esd'}]
+    if archives_left:
+        raise Exception(f'Unexpected archive files left: {archives_left}')
 
     # Unpack null differential files.
     for file in local_dir.glob('*/n/**/*'):
