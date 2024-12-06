@@ -10,6 +10,7 @@ deploy_amend_last_commit = True
 
 updates_unsupported = set()
 
+updates_max_age_days = 60
 updates_never_removed = False
 allow_missing_sha256_hash = True
 allow_unknown_non_pe_files = True

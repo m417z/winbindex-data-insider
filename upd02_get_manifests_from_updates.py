@@ -6,8 +6,6 @@ import hashlib
 import shutil
 import json
 import time
-import os
-import re
 
 from delta_patch import unpack_null_differential_file
 import config
@@ -22,100 +20,38 @@ class UpdateNotSupported(Exception):
 
 
 def get_update_download_urls(download_uuid):
-    while True:
-        url = (os.environ.get('UUP_GET_FILES_URL') or 'https://uup.rg-adguard.net/api/GetFiles?id={}&lang=en-us&edition=professional&txt=yes').format(download_uuid)
-        r = requests.get(url)
+    url = f'https://uupdump.net/json-api/get.php?id={download_uuid}&lang=en-us&edition=professional'
+    r = requests.get(url)
 
-        r.raise_for_status()
+    if r.status_code == 500:
+        error = r.json()['response']['error']
+        if error == 'EMPTY_FILELIST':
+            raise UpdateNotFound
 
-        download_sources = r.text
-
-        if download_sources.startswith('Error!!! We did not find any data on these parameters.'):
-            # The server returns the same error message for both unsupported and not
-            # found updates.
+    if r.status_code == 400:
+        error = r.json()['response']['error']
+        if error == 'UNSUPPORTED_COMBINATION':
             raise UpdateNotSupported
 
-        download_source_lines = download_sources.splitlines()
+    r.raise_for_status()
 
-        if len(download_source_lines) <= 1:
-            print('Unsupported download source content:')
-            print(download_sources)
-            print('Retrying in 60 seconds...')
-            time.sleep(60)
-            continue
-
-        if len(download_source_lines) % 3 != 0:
-            raise Exception(f'Unsupported download source content')
-
-        break
-
-    names_lower = set()
-    file_links = []
-    for i in range(0, len(download_source_lines), 3):
-        url = download_source_lines[i]
-        name = download_source_lines[i + 1]
-        checksum = download_source_lines[i + 2]
-
-        if (not url.startswith('http') or
-            not name.startswith('  out=') or
-            not checksum.startswith('  checksum=')):
-            raise Exception(f'Unsupported download source content')
-
-        name = name.removeprefix('  out=')
-        names_lower.add(name.lower())
-        file_links.append((url, name))
+    files = r.json()['response']['files']
 
     urls = []
-    for url, name in file_links:
-        if not re.fullmatch(r'[^\\/:*?"<>|]+', name):
-            raise Exception(f'Invalid file name: {name}')
-
-        name_lower = name.lower()
-        stem = Path(name_lower).stem
-        extension = Path(name_lower).suffix
-
-        # Skip metadata ESD files which contain partial content and can't be
-        # extracted with 7z.
-        if name_lower in [
+    for file in files:
+        if file.lower() in [
             'professional_en-us.esd',
             'metadataesd_professional_en-us.esd',
         ]:
             continue
 
-        # Skip other unsupported files.
-        if name_lower in [
-            'winre.wim',
-            'wim_edge.wim',
-            'edge.wim',
-        ]:
-            continue
-
-        # Skip files which don't have a name. Their id is used in this case.
-        if extension == '':
-            if not re.fullmatch(r'[0-9a-f]{40}', name):
-                raise Exception(f'Unknown file name: {name}')
-            continue
-
-        # According to uup-dump: "if equivalent cab files exist, exclude updates
-        # msu files (from download only)"
-        # https://github.com/uup-dump/api/commit/a46a5628c0841055db0c4563d74216d36dc3e402
-        if extension == '.msu' and stem + '.cab' in names_lower:
-            continue
-
-        # Skip servicing stack updates (SSU).
-        if name_lower.startswith('ssu-') and extension in ['.cab', '.psf']:
-            continue
-
-        # Skip apps.
-        if extension in ['.msix', '.msixbundle', '.appx', '.appxbundle']:
-            continue
-
+        extension = Path(file).suffix.lower()
         if extension not in ['.cab', '.esd', '.psf', '.msu']:
             raise Exception(f'Unknown file extension: {extension}')
 
         urls.append({
-            'name': name,
-            'url': url,
+            'name': file,
+            'url': files[file]['url'],
         })
 
     return urls
