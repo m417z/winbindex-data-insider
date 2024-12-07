@@ -2,10 +2,12 @@ from threading import Thread
 from pathlib import Path
 import subprocess
 import requests
+import tempfile
 import hashlib
 import shutil
 import json
 import time
+import os
 
 from delta_patch import unpack_null_differential_file
 import config
@@ -139,9 +141,23 @@ def delta_files_equal(source_file: Path, destination_file: Path):
 
 def extract_update_files(local_dir: Path):
     def cab_extract(from_file: Path, to_dir: Path):
+        args = ['tools/expand/expand.exe', '-r', '-f:*']
+        stdout = None if config.verbose_run else subprocess.DEVNULL
         to_dir.mkdir()
-        args = ['tools/expand/expand.exe', '-r', '-f:*', from_file, to_dir]
-        subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
+
+        from_file_absolute = from_file.resolve(strict=True)
+        if len(str(from_file_absolute)) <= 259:
+            args += [from_file_absolute, to_dir]
+            subprocess.check_call(args, stdout=stdout)
+            return
+
+        # Long paths are not supported by expand.exe. Use a temporary directory
+        # and a shorter path via a hard link.
+        with tempfile.TemporaryDirectory(dir=os.environ.get('WINBINDEX_TEMP')) as tmpdirname:
+            tmp_cab = Path(tmpdirname).joinpath('a.cab')
+            os.link(from_file_absolute, tmp_cab)
+            args += [tmp_cab, to_dir]
+            subprocess.check_call(args, stdout=stdout)
 
     def run_7z_extract(from_file: Path, to_dir: Path, files: list[str] = []):
         args = ['7z.exe', 'x', from_file, f'-o{to_dir}', '-y'] + files
@@ -280,8 +296,8 @@ def extract_update_files(local_dir: Path):
                             name.endswith('.cat') or
                             (name.endswith('.cab') and source_file.stat().st_size < 1024 * 1024 * 10) or
                             name.endswith('.dll')):
-                           ignore.append(name)
-                           continue
+                            ignore.append(name)
+                            continue
 
                     # Ignore files which already exist as long as they're identical.
                     destination_file = destination_dir.joinpath(name)
