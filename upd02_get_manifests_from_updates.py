@@ -194,6 +194,21 @@ def extract_update_files(local_dir: Path):
             from_file.unlink()
 
     def msu_extract(from_file: Path, to_dir: Path):
+        # Temporary special cases.
+        cab_file = None
+        if from_file.name.lower() == 'Windows11.0-KB5046696-x64.msu'.lower():
+            cab_file = from_file.with_name('Windows11.0-KB5046696-Hotpatch-x64.cab')
+        elif from_file.name.lower() == 'Windows11.0-KB5046696-arm64.msu'.lower():
+            cab_file = from_file.with_name('Windows11.0-KB5046696-Hotpatch-arm64.cab')
+
+        if cab_file:
+            if cab_file.exists():
+                raise Exception(f'cab file already exists: {cab_file}')
+            run_7z_extract(from_file, from_file.parent, [cab_file.name])
+            cab_extract(cab_file, to_dir)
+            cab_file.unlink()
+            return
+
         wim_file = from_file.with_suffix('.wim')
         if wim_file.exists():
             raise Exception(f'WIM file already exists: {wim_file}')
