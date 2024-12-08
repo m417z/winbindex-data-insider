@@ -180,12 +180,6 @@
             "created": 1733405379,
             "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.2454)"
         },
-        "41748193-33d3-4ce3-a653-a3021dc01d01": {
-            "arch": "amd64",
-            "build": "27723.1000",
-            "created": 1728493212,
-            "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)"
-        },
         "418cb9c8-dac2-4730-a9c6-d7e219f7692b": {
             "arch": "amd64",
             "build": "26120.2415",
@@ -306,12 +300,6 @@
             "created": 1729789389,
             "title": "Windows Server Insider Preview 26311.5000 (ge_prerelease)"
         },
-        "65ad0e64-c404-4506-be3a-f77ebe32bfaf": {
-            "arch": "arm64",
-            "build": "27723.1000",
-            "created": 1728493217,
-            "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)"
-        },
         "67d2d29f-5cdb-4943-9516-e27b9b632d53": {
             "arch": "arm64",
             "build": "19045.5070",
@@ -353,6 +341,12 @@
             "build": "22631.4387",
             "created": 1728594041,
             "title": "Windows 11, version 23H2 (22631.4387)"
+        },
+        "7635931b-6834-440e-8d9b-84ea36d3bfee": {
+            "arch": "amd64",
+            "build": "26100.2240",
+            "created": 1731435319,
+            "title": "Windows 11, version 24H2 (26100.2240)"
         },
         "7ab4fc06-757e-4b13-897e-7f76bba9e469": {
             "arch": "amd64",
