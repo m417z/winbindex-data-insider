@@ -504,6 +504,12 @@
             "created": 1732299350,
             "title": "Windows 11 Insider Preview 10.0.22635.4515 (ni_release)"
         },
+        "917411fe-c5e5-4ab5-85c5-d7c044f2c73e": {
+            "arch": "arm64",
+            "build": "26100.2528",
+            "created": 1733853937,
+            "title": "Windows 11, version 24H2 (26100.2528)"
+        },
         "95691112-1533-4744-8554-1a17b8137fc2": {
             "arch": "arm64",
             "build": "22621.4541",
@@ -666,6 +672,12 @@
             "created": 1731434557,
             "title": "Windows Server 2025 (26100.2314)"
         },
+        "c6177e06-31cb-403d-b0c0-821d3bef5dd2": {
+            "arch": "amd64",
+            "build": "26100.2528",
+            "created": 1733853951,
+            "title": "Windows 11, version 24H2 (26100.2528)"
+        },
         "c6a3b32d-b489-4ad4-ab73-bdebcef74e08": {
             "arch": "amd64",
             "build": "26120.2213",
@@ -737,6 +749,12 @@
             "build": "20348.2966",
             "created": 1733853744,
             "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2966)"
+        },
+        "d6633097-6beb-41e9-92d4-d95c7d89a296": {
+            "arch": "amd64",
+            "build": "25398.1308",
+            "created": 1733854623,
+            "title": "Windows Server, version 23H2 (25398.1308)"
         },
         "d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fa": {
             "arch": "amd64",
