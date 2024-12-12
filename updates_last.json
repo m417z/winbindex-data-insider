@@ -300,6 +300,12 @@
             "created": 1732125611,
             "title": "Windows 11 Insider Preview 27754.1000 (rs_prerelease)"
         },
+        "5444b584-bb1c-457c-840f-c6455f6fe1cd": {
+            "arch": "amd64",
+            "build": "27764.1000",
+            "created": 1733940013,
+            "title": "Windows 11 Insider Preview 27764.1000 (rs_prerelease)"
+        },
         "5490ab3b-a78e-43d1-9883-fcd9ca2579ba": {
             "arch": "amd64",
             "build": "22621.4391",
@@ -467,6 +473,12 @@
             "build": "19044.5247",
             "created": 1733853691,
             "title": "Feature update to Windows 10, version 21H2 (19044.5247)"
+        },
+        "80b59c77-386a-4455-afd9-0957d9663529": {
+            "arch": "arm64",
+            "build": "27764.1000",
+            "created": 1733940009,
+            "title": "Windows 11 Insider Preview 27764.1000 (rs_prerelease)"
         },
         "87fc0e98-760c-4c72-95b6-a9b04ecf0d9c": {
             "arch": "amd64",
