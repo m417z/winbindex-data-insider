@@ -498,6 +498,12 @@
             "created": 1732039236,
             "title": "Windows 11, version 23H2 (22631.4541)"
         },
+        "8a09d53a-3594-488e-85db-f5d84191b78d": {
+            "arch": "amd64",
+            "build": "26100.2528",
+            "created": 1734033196,
+            "title": "Cumulative Update for Microsoft server operating system Version 24H2 (Hotpatch capable) (26100.2528)"
+        },
         "8e99fe48-06d3-4f0a-9a09-a849f7f2551c": {
             "arch": "amd64",
             "build": "26120.2130",
@@ -803,6 +809,12 @@
             "build": "9290.1",
             "created": 1731607239,
             "title": "Cumulative Update Preview for .NET Framework for Windows 11, version 24H2 (9290.1)"
+        },
+        "e13a9f92-91ad-4330-8737-cff96f02af00": {
+            "arch": "arm64",
+            "build": "26100.2528",
+            "created": 1734033324,
+            "title": "Cumulative Update for Microsoft server operating system Version 24H2 (Hotpatch capable) (26100.2528)"
         },
         "e1885854-aea0-453d-9e64-bfd00535a925": {
             "arch": "amd64",
