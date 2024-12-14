@@ -7,12 +7,20 @@
 "pending": {},
 "retry": [
 [
-"devicecenter.dll",
-"bb3b7dc8fc6df4e05e139e7ca234bf7719f03a12a29751bc5ad92f6a87957be6"
+"explorer.exe",
+"ff4f612a680c5721067e084b08ea74c7df609c60e4cc9fa6ae3872738b12b625"
 ],
 [
-"snmpapi.dll",
-"5396a99993e590b62f9cfcd3760945b913f5dad3479636f6ebe2d79348ebb058"
+"pcaui.exe",
+"ed84af131377d48dbfba4b31b2a6e9574a5ced187bf7258848afd375bd2f4f5b"
+],
+[
+"termsrv.dll",
+"efa2aaac5e46b4508ff6b82490c006e37502e48dfb6fda7622eee092ba464e87"
+],
+[
+"ucpd.sys",
+"a450fe863f32f29f295de088dd94fe3faa1bf2ca347c0b2f90e17c309efbc571"
 ]
 ],
 "updates": null
