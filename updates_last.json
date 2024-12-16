@@ -300,6 +300,12 @@
             "created": 1729593021,
             "title": "Cumulative Update for Azure Stack HCI version 21H2 (20348.2700)"
         },
+        "4db85aad-3842-412d-8b63-aa31d0e94acf": {
+            "arch": "amd64",
+            "build": "9290.1",
+            "created": 1734252305,
+            "title": "Cumulative Update Preview for .NET Framework for Windows 11 Insider Preview (9290.1)"
+        },
         "4dc66cae-459f-42df-91cb-5df44739843a": {
             "arch": "amd64",
             "build": "27754.1000",
