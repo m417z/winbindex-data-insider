@@ -4,32 +4,8 @@
 "pending": {},
 "retry": [
 [
-"dsregcmd.exe",
-"76a02d08f01ea27dc840a7996b444fbd15b274358752777729b7532ff14e78e0"
-],
-[
-"rassstp.sys",
-"f90d6064587dc44fdda74769d619d2fc6c7bf09c776fe30a8cd3bc88da26b347"
-],
-[
-"tzsync.exe",
-"078e081a5aaa90fb3f64bfddc6570523ef9972f9b3578050314aa064664d4318"
-],
-[
-"usbhub.sys",
-"0027fcdecef38fdc3df871b269d2fd0408bc297c35a015213e241e8bc1051bbe"
-],
-[
 "wbemprox.dll",
 "91392a316d252c5fdc06918be6a22c1344dd8b3f81c58b83387730231e1cb9ae"
-],
-[
-"windows.media.streaming.ps.dll",
-"67e7f74ff4335923fd936bdbb4c881cb304c1b329b366966686e752fcca3dd4c"
-],
-[
-"windows.storage.dll",
-"e2129677aaa9e4be378c9e2bdc6d892a197b53f2e508d23f1b22afe619494d5f"
 ]
 ],
 "updates": null
