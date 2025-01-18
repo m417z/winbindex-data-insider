@@ -322,9 +322,7 @@ def add_file_info_from_update(data, *,
     if 'updateInfo' not in x:
         x['updateInfo'] = update_info
     else:
-        # TODO: revert
-        # assert x['updateInfo'] == update_info, (x['updateInfo'], update_info)
-        assert (x['updateInfo'] | {'created': 0, 'title': ''}) == (update_info | {'created': 0, 'title': ''}), (x['updateInfo'], update_info)
+        assert x['updateInfo'] == update_info, (x['updateInfo'], update_info)
 
     x = x.setdefault('assemblies', {})
     x = x.setdefault(manifest_name, {})
