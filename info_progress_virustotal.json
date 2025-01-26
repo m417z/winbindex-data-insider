@@ -1,7 +1,19 @@
 {
-"next": null,
+"next": [
+"wmsgapi.dll",
+"0588f5b906aacaaed9b1de3281a5b89236a358222f387fdc7389b63b5309cfef"
+],
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"ehstorclass.sys",
+"eaab41982774f11fe30d6484f9df5da641b16071f470cff4f71096a06962e18f"
+],
+[
+"snmptrap.exe",
+"3ce72eaa51cedb17739bd6b3a87b7ef8bfc0917625164dfb326954c81966959b"
+]
+],
 "updates": null
 }
