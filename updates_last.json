@@ -306,6 +306,18 @@
             "created": 1737496822,
             "title": "Windows 11, version 24H2 (26100.3025)"
         },
+        "96875621-f0da-4684-b65e-f0d8a05d8208": {
+            "arch": "arm64",
+            "build": "9294.1",
+            "created": 1737986976,
+            "title": "Cumulative Update for .NET Framework for Windows 11, version 24H2 (9294.1)"
+        },
+        "9b35154b-4c03-449e-9858-a194359049c1": {
+            "arch": "amd64",
+            "build": "9297.1",
+            "created": 1738015263,
+            "title": "Cumulative Update Preview for .NET Framework for Windows 11, version 24H2 (9297.1)"
+        },
         "9befb3e0-b8fa-404c-a62c-754a45ce693b": {
             "arch": "amd64",
             "build": "25398.1369",
