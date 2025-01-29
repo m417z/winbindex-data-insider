@@ -90,6 +90,12 @@
             "created": 1734544817,
             "title": "Windows 11 Insider Preview 10.0.26120.2705 (ge_release_upr)"
         },
+        "31d8d08b-fac4-47c0-8adb-c42dd7dec639": {
+            "arch": "amd64",
+            "build": "26100.3037",
+            "created": 1738101616,
+            "title": "Windows 11, version 24H2 (26100.3037)"
+        },
         "3567214b-53e7-445b-96a3-37b3dc2b6638": {
             "arch": "amd64",
             "build": "26120.2702",
@@ -107,6 +113,12 @@
             "build": "26120.2510",
             "created": 1733508906,
             "title": "Windows 11 Insider Preview 10.0.26120.2510 (ge_release_upr)"
+        },
+        "38fe135f-8914-4efd-8e2f-582db7d57230": {
+            "arch": "arm64",
+            "build": "26100.3037",
+            "created": 1738101632,
+            "title": "Windows 11, version 24H2 (26100.3037)"
         },
         "3f5dc602-69f1-47e0-a241-f4174867392a": {
             "arch": "amd64",
@@ -270,6 +282,12 @@
             "created": 1733940009,
             "title": "Windows 11 Insider Preview 27764.1000 (rs_prerelease)"
         },
+        "88cab3af-a5e9-4e4e-9637-e52a6065b138": {
+            "arch": "x86",
+            "build": "19045.5440",
+            "created": 1738101690,
+            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
+        },
         "8a09d53a-3594-488e-85db-f5d84191b78d": {
             "arch": "amd64",
             "build": "26100.2528",
@@ -323,6 +341,12 @@
             "build": "25398.1369",
             "created": 1736877731,
             "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1369)"
+        },
+        "9cfe297d-ab55-4c82-899d-91e6eccdeb4f": {
+            "arch": "amd64",
+            "build": "19045.5440",
+            "created": 1738101660,
+            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
         },
         "9d5cb72b-7a20-4d61-87c9-5f3297ea0bc0": {
             "arch": "arm64",
@@ -527,6 +551,12 @@
             "build": "19044.5371",
             "created": 1736877715,
             "title": "Feature update to Windows 10, version 21H2 (19044.5371)"
+        },
+        "ed542f2f-339a-4a7c-84cd-5d3747e57ac8": {
+            "arch": "arm64",
+            "build": "19045.5440",
+            "created": 1738101689,
+            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
         },
         "ed603b9a-f2f0-47dc-8090-232b014c8d58": {
             "arch": "amd64",
