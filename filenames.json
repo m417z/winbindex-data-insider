@@ -29342,6 +29342,7 @@
 "vmbus.sys.mui",
 "vmbushid.sys",
 "vmbuspipe.dll",
+"vmbuspipe.sys",
 "vmbuspiper.dll",
 "vmbusproxy.sys",
 "vmbusr.sys",
