@@ -1,22 +1,19 @@
 {
-"next": [
-"telemetry.common.dll",
-"41f05a5b3ed78cd042f7aabe1772bd97391adbeac8d5b69f7e8e5f66a7454994"
-],
+"next": null,
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"speechruntime.exe",
-"31e3d291ea41a021adef5e51d29a1f6172140dccee28c73753cbd0c5cf76c491"
+"dmosconfig.dll",
+"878fb661d660b5e3a8f969645d4d97f086c229fd83cd78738653856b15d447cb"
 ],
 [
-"voiceaccess.exe",
-"920c5ca60dc72abdd7c61f4bac3571153dd8d40860dc07451c15e6556818cc3b"
+"usocoreworker.exe",
+"8f7eff87a0148d6180f49f756d9a4a69d586bbe24db9e32d097c27181c47e2be"
 ],
 [
-"windows.security.credentials.ui.credentialpicker.dll",
-"cb1979890dfb1a4a06521b8a35237b45b6c6ccd0e579341cc1093e286836f0b3"
+"vmwp.exe",
+"1d8643714c5952bf3f72c8b55a9b172e73f5892833a4bc59c7cef40901358075"
 ]
 ],
 "updates": null
