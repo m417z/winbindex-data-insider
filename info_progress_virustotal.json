@@ -4,16 +4,40 @@
 "pending": {},
 "retry": [
 [
-"dmosconfig.dll",
-"878fb661d660b5e3a8f969645d4d97f086c229fd83cd78738653856b15d447cb"
+"autopilot.dll",
+"c560f33600c5d47bb4af21c54265d1d1b64c27a1aba66d515e5c2e484a982bcf"
 ],
 [
-"usocoreworker.exe",
-"8f7eff87a0148d6180f49f756d9a4a69d586bbe24db9e32d097c27181c47e2be"
+"dxdiag.exe",
+"f6fc7c573356a031b0196f2c2bab073beb6abc0858066d25918318450afa6a12"
+],
+[
+"icacls.exe",
+"f130528744e75e6c03ed9b89231a9f959653fc7eacfd1d485a7328d03301deac"
+],
+[
+"memtest.efi",
+"0664cb4cf6cf04135522570ce0ed14e4f06d205c13e49406360fabe7862a4843"
+],
+[
+"readclouddatasettings.exe",
+"a5cf5b7636dd80e00c0f5a613e558b51294f748dc5b94ccd80c0bd31645306d1"
+],
+[
+"settingshandlers_sharedexperiences_rome.dll",
+"19db657a4c7398cbf3978ca8ff0e26ea594542df3463219c3a0c8f54cd4671b5"
+],
+[
+"utcutil.dll",
+"01dfc3e3a860c96418e2c4fe179061c374b3c5133cc7918008e5e95dcfa6e92e"
 ],
 [
 "vmwp.exe",
 "1d8643714c5952bf3f72c8b55a9b172e73f5892833a4bc59c7cef40901358075"
+],
+[
+"windows.internal.management.dll",
+"509965f6fdfe6d39b31e625d47333bebcfc6251eaadecf04f649fd9ea09a9c76"
 ]
 ],
 "updates": null
