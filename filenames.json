@@ -3238,6 +3238,7 @@
 "azsqlext.dll",
 "azsqlext.dll.mui",
 "azure arc setup.lnk",
+"azure_no_drv.inf_loc",
 "azurearcsetup.exe",
 "azurearcsetup.exe.config",
 "azurearcsetup.resources.dll",
