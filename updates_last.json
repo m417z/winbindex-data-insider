@@ -654,6 +654,12 @@
             "created": 1738596625,
             "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.3037)"
         },
+        "fcd13e26-ca18-447b-8130-dc4dbb781733": {
+            "arch": "amd64",
+            "build": "17763.6893",
+            "created": 1739678229,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.6893)"
+        },
         "fd386e36-5c3f-42de-8356-28e6dbf4aada": {
             "arch": "amd64",
             "build": "19045.5371",
