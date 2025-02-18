@@ -1,26 +1,15 @@
 {
-"next": [
-"sensece.exe",
-"f44859433983acc5d99c40e9740291f54fe915f5fbb1a24eebcbf9a9738508db"
-],
+"next": null,
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"appxdeploymentclient.dll",
-"08fcd6c1cd0f5e99711913a122536e9645675240d37c7dc1951d9e88205155d3"
+"edgemanager.dll",
+"6822871cdde3b481f0923f9b1754d291c2886863e3b14eac679525795cfb413d"
 ],
 [
-"iesettingsync.exe",
-"17b7f26e552c6f446d6a58f7d45155b6b89e9767ea8c11693c30344c87ea4ddb"
-],
-[
-"senseap.exe",
-"97e490d092c213c1061dbd8e2e03f89adf071d070020f74297b96e5947cf82c3"
-],
-[
-"wpdshextautoplay.exe",
-"bc36c9e960bf7f4c18a158fbb793af2938f240804c16250d0e9c176f2e6d3ef5"
+"sppsvc.exe",
+"42bc6e993ac6e3e6121cb8a5a0b5a1274a93714e815cff08c24b37fecf3d7773"
 ]
 ],
 "updates": null
