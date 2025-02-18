@@ -2,15 +2,6 @@
 "next": null,
 "next_updates": null,
 "pending": {},
-"retry": [
-[
-"edgemanager.dll",
-"6822871cdde3b481f0923f9b1754d291c2886863e3b14eac679525795cfb413d"
-],
-[
-"sppsvc.exe",
-"42bc6e993ac6e3e6121cb8a5a0b5a1274a93714e815cff08c24b37fecf3d7773"
-]
-],
+"retry": [],
 "updates": null
 }
