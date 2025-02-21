@@ -2,6 +2,23 @@
 "next": null,
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"pcaui.exe",
+"7de10ca8efa4106e599d4aba6dafdb3a8595971c526b4422320da938a6ddff4f"
+],
+[
+"relpost.exe",
+"1a0ea491dea34d63b6520caad3831bb1abfaf263bf9bcaf47915d8b73bc0e58a"
+],
+[
+"tabtip.exe",
+"17b5f57fe1b8772414d914def550ddddf633fe6203c2ab3335f232aca6638979"
+],
+[
+"useraccountcontrolsettings.exe",
+"4f247a41e37b78eb5af338ffcea5eb346f6bff94ba7b5bccdec2baad0b96cc24"
+]
+],
 "updates": null
 }
