@@ -408,6 +408,12 @@
             "created": 1739296899,
             "title": "Feature update to Azure Stack HCI, version 22H2 (20349.3207)"
         },
+        "b19f6cb2-6095-4667-b865-eeb78f20c360": {
+            "arch": "amd64",
+            "build": "26120.3291",
+            "created": 1740160855,
+            "title": "Windows 11 Insider Preview 10.0.26120.3291 (ge_release_upr)"
+        },
         "b4bc31f6-e5c7-4143-9ea3-0b76b8101f80": {
             "arch": "arm64",
             "build": "9294.1",
@@ -581,6 +587,12 @@
             "build": "22631.4890",
             "created": 1739296828,
             "title": "Windows 11, version 23H2 (22631.4890)"
+        },
+        "efca4238-4c6f-4027-8523-0a75f403b3bc": {
+            "arch": "amd64",
+            "build": "22635.4950",
+            "created": 1740160859,
+            "title": "Windows 11 Insider Preview 10.0.22635.4950 (ni_release)"
         },
         "f01c6fad-ac54-482d-99ad-0c5425ebed34": {
             "arch": "amd64",
