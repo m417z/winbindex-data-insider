@@ -5,6 +5,7 @@ from pathlib import Path
 import requests
 import orjson
 import json
+import time
 
 import config
 
@@ -102,12 +103,15 @@ def get_symbol_server_links_for_file(session, hash, name, data):
         urls_and_virtual_sizes[url] = size
         size -= PAGE_SIZE
 
+    sleep_time = 1
     while True:
         try:
             valid_urls = test_symbol_server_urls(session, urls_and_virtual_sizes.keys())
             break
         except Exception as e:
             print(e)
+            time.sleep(sleep_time)
+            sleep_time = min(sleep_time * 2, 60 * 5)
             print(f'Retrying {hash}')
 
     if len(valid_urls) != 1:
