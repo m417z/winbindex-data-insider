@@ -209,7 +209,7 @@ def get_file_signing_times(pathname: Path):
     return signing_times
 
 
-def get_delta_data_for_manifest_file(manifest_path: Path, name: str):
+def get_delta_data_for_manifest_file(manifest_path: Path, name: str, algorithm_to_assert: str, hash_to_assert: str):
     delta_path = manifest_path.parent.joinpath(manifest_path.stem, 'f', name + '.dd.txt')
     if not delta_path.exists():
         return None
@@ -221,13 +221,23 @@ def get_delta_data_for_manifest_file(manifest_path: Path, name: str):
     for key, value in key_value:
         delta_data[key] = value.strip()
 
+    if delta_data['HashAlgorithm'] == 'CALG_MD5':
+        if algorithm_to_assert == 'md5':
+            assert delta_data['Hash'].lower() == hash_to_assert
+    elif delta_data['HashAlgorithm'] == 'CALG_SHA_256':
+        if algorithm_to_assert == 'sha256':
+            assert delta_data['Hash'].lower() == hash_to_assert
+    else:
+        assert False, delta_data['HashAlgorithm']
+
     # Skip delta files without RiftTable. In this case, it was also observed
     # that machineType doesn't have the correct value.
     if delta_data['Code'] != 'Raw' and delta_data['RiftTable'] == '(none)':
         assert (
             any(fnmatch.fnmatch(name.lower(), p) for p in config.delta_data_without_rift_table_names) or
-            any(fnmatch.fnmatch(manifest_path.name.lower(), p) for p in config.delta_data_without_rift_table_manifests)
-        ), (name, manifest_path, delta_data_raw, delta_data)
+            any(fnmatch.fnmatch(manifest_path.name.lower(), p) for p in config.delta_data_without_rift_table_manifests) or
+            delta_data['Hash'].lower() in config.delta_data_without_rift_table_hashes
+        ), (name, manifest_path, delta_data)
         assert int(delta_data['TimeStamp']) == 0
         return None
 
@@ -378,7 +388,7 @@ def parse_manifest_file(manifest_path, file_el):
     if file_info:
         info_source = 'pe'
     else:
-        file_info = get_delta_data_for_manifest_file(manifest_path, file_el.attrib['name'])
+        file_info = get_delta_data_for_manifest_file(manifest_path, file_el.attrib['name'], algorithm, hash)
         if file_info:
             info_source = 'delta'
 
