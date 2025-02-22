@@ -228,6 +228,12 @@
             "created": 1736877715,
             "title": "Feature update to Windows 10, version 21H2 (19044.5371)"
         },
+        "6d80605d-7b16-4d0a-b6af-7f6e477b6eb7": {
+            "arch": "arm64",
+            "build": "22635.4950",
+            "created": 1740161516,
+            "title": "Windows 11 Insider Preview 10.0.22635.4950 (ni_release)"
+        },
         "6d9654d8-6001-4fc4-9026-09ffd0a051c2": {
             "arch": "amd64",
             "build": "17763.6775",
@@ -305,6 +311,12 @@
             "build": "26100.3025",
             "created": 1737496826,
             "title": "Windows 11, version 24H2 (26100.3025)"
+        },
+        "8e1de320-a5c9-4244-9d0b-0c4d9b98a493": {
+            "arch": "arm64",
+            "build": "26120.3291",
+            "created": 1740161486,
+            "title": "Windows 11 Insider Preview 10.0.26120.3291 (ge_release_upr)"
         },
         "8f548457-7656-4ffe-8350-0aa593cc3d1c": {
             "arch": "arm64",
