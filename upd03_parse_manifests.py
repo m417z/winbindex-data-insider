@@ -227,7 +227,7 @@ def get_delta_data_for_manifest_file(manifest_path: Path, name: str):
         assert (
             any(fnmatch.fnmatch(name.lower(), p) for p in config.delta_data_without_rift_table_names) or
             any(fnmatch.fnmatch(manifest_path.name.lower(), p) for p in config.delta_data_without_rift_table_manifests)
-        ), (name, manifest_path)
+        ), (name, manifest_path, delta_data_raw, delta_data)
         assert int(delta_data['TimeStamp']) == 0
         return None
 
