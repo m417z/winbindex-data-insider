@@ -1,7 +1,15 @@
 {
-"next": null,
+"next": [
+"xboxnetapisvc.dll",
+"2a0bb4654b117ddc4ff254494b78817315d3f5cf6bffd9cde6635000720f37fa"
+],
 "next_updates": null,
 "pending": {},
-"retry": [],
+"retry": [
+[
+"w32tm.exe",
+"771b70b063fbe9dc32ecfc5d8324db12bc0629ef68f50450a97879fa84a92588"
+]
+],
 "updates": null
 }
