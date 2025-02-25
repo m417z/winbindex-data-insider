@@ -4,24 +4,16 @@
 "pending": {},
 "retry": [
 [
-"msoobe.exe",
-"a5a69faa8ab90b4484a7f24497efe17bf1514e46855a832743b4c9112a794c3c"
-],
-[
-"rmactivate_ssp.exe",
-"3986b29f0e32feb23b0d606529b80885076db6161a7ad77c101f53db30852543"
+"imjpcac.dll",
+"eeed0d4da598c1ace8a5554332e4821217016533d238c94ae79da038c24c9452"
 ],
 [
 "slui.exe",
 "7a626d0b6dafb9314a3c070fe172f6d33cda6d60d76a6beda8f85bf36a18073b"
 ],
 [
-"speechruntime.exe",
-"c37847ad51dad630c9b6c6fca154758e7524b909f44956a44cd758277136475d"
-],
-[
-"wsecedit.dll",
-"77f0f62adf7a6eaef9bc5a8d5a2d2bc261c6842b8857cbc5704a33aeb8cd920b"
+"systemsettings.exe",
+"28e8c572db7821b133f111fd93b4093b8be4d4a8ec5eb91d2f13a24968f015ab"
 ]
 ],
 "updates": null
