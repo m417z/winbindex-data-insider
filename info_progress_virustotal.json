@@ -4,16 +4,12 @@
 "pending": {},
 "retry": [
 [
-"imjpcac.dll",
-"eeed0d4da598c1ace8a5554332e4821217016533d238c94ae79da038c24c9452"
+"edpcleanup.exe",
+"b6f68c8cf136bf040c5ef684d8903ea55e5349f3fe5b40d588a9162077ef8c81"
 ],
 [
-"slui.exe",
-"7a626d0b6dafb9314a3c070fe172f6d33cda6d60d76a6beda8f85bf36a18073b"
-],
-[
-"systemsettings.exe",
-"28e8c572db7821b133f111fd93b4093b8be4d4a8ec5eb91d2f13a24968f015ab"
+"powershell.exe",
+"75f490d70f821afbbbb28d8ae45fa712c0ef39f73832af5ff0df284beb22a9fc"
 ]
 ],
 "updates": null

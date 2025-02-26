@@ -522,6 +522,12 @@
             "created": 1736877739,
             "title": "Cumulative Update for Microsoft server operating system version 24H2 (26100.2894)"
         },
+        "ca69eb60-2c7f-4009-9a6e-e1c761bc8be5": {
+            "arch": "amd64",
+            "build": "26100.3323",
+            "created": 1740520822,
+            "title": "Windows 11, version 24H2 (26100.3323)"
+        },
         "cb3df62d-1bcf-4630-80fc-b17ad8968ad2": {
             "arch": "arm64",
             "build": "19045.5371",
@@ -623,6 +629,12 @@
             "build": "22631.4890",
             "created": 1739296832,
             "title": "Windows 11, version 23H2 (22631.4890)"
+        },
+        "edb4fab2-8d2e-4121-9d43-e4a1c1dc6890": {
+            "arch": "arm64",
+            "build": "26100.3323",
+            "created": 1740520833,
+            "title": "Windows 11, version 24H2 (26100.3323)"
         },
         "eebb654f-366c-4c91-9053-4c137bf0a8c5": {
             "arch": "arm64",
