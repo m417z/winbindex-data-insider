@@ -102,6 +102,12 @@
             "created": 1736877741,
             "title": "Cumulative Update for Microsoft server operating system version 24H2 (26100.2894)"
         },
+        "2c0c133c-dd03-4250-8941-2ee7f5a687f5": {
+            "arch": "amd64",
+            "build": "9297.1",
+            "created": 1740692201,
+            "title": "Cumulative Update Preview for .NET Framework for Windows 11 Insider Preview (9297.1)"
+        },
         "316c3193-7c7a-4d41-8776-e0d20dacc59b": {
             "arch": "amd64",
             "build": "22621.4890",
