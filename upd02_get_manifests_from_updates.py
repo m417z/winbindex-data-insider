@@ -334,6 +334,56 @@ def extract_update_files(local_dir: Path):
 
             return ignore
 
+        # Special cases for duplicate manifests with the same name but different content.
+        for manifest_name in [
+            # 10.0.26100.3613 x64
+            'amd64_dual_tpm.inf_31bf3856ad364e35_10.0.26100.3613_none_bb0d74004378951e',
+            'amd64_microsoft-windows-apisetschema-server_31bf3856ad364e35_10.0.26100.3613_none_87680f1423804054',
+            'amd64_microsoft-windows-apisetschema-windows_31bf3856ad364e35_10.0.26100.3613_none_c5d98eaf0ac07e10',
+            'amd64_microsoft-windows-b..vironment-os-loader_31bf3856ad364e35_10.0.26100.3613_none_f6d3b9591cbd3655',
+            'amd64_microsoft-windows-c..egrity-driverpolicy_31bf3856ad364e35_10.0.26100.3613_none_4fe2fc8b9427845c',
+            'amd64_microsoft-windows-codeintegrity_31bf3856ad364e35_10.0.26100.3613_none_3c24f064b4d63a53',
+            'amd64_microsoft-windows-i..dsetup-rejuvenation_31bf3856ad364e35_10.0.26100.3613_none_ee461ec5c0d1f3e3',
+            'amd64_microsoft-windows-lddmcore_31bf3856ad364e35_10.0.26100.3613_none_477597c593a31b89',
+            'amd64_microsoft-windows-os-kernel_31bf3856ad364e35_10.0.26100.3613_none_07dd60c764396875',
+            'amd64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_54a078e14a9d1fcd',
+            'amd64_microsoft-windows-win32kbase_31bf3856ad364e35_10.0.26100.3613_none_4a2344ef16d3b29c',
+            'amd64_microsoft-windows-win32kbasers_31bf3856ad364e35_10.0.26100.3613_none_8c00f390d7be4e6f',
+            'amd64_microsoft-windows-winpe_tools_31bf3856ad364e35_10.0.26100.3613_none_96aca207e6f620ac',
+            'amd64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.3613_none_65aa9cdb2028863c',
+            'wow64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_5ef523337efde1c8',
+
+            # 10.0.26100.3613 ARM64
+            'arm64_dual_tpm.inf_31bf3856ad364e35_10.0.26100.3613_none_bb0d7c3a437889ba',
+            'arm64_microsoft-windows-apisetschema-server_31bf3856ad364e35_10.0.26100.3613_none_8768174e238034f0',
+            'arm64_microsoft-windows-apisetschema-windows_31bf3856ad364e35_10.0.26100.3613_none_c5d996e90ac072ac',
+            'arm64_microsoft-windows-b..vironment-os-loader_31bf3856ad364e35_10.0.26100.3613_none_f6d3c1931cbd2af1',
+            'arm64_microsoft-windows-c..egrity-driverpolicy_31bf3856ad364e35_10.0.26100.3613_none_4fe304c5942778f8',
+            'arm64_microsoft-windows-codeintegrity_31bf3856ad364e35_10.0.26100.3613_none_3c24f89eb4d62eef',
+            'arm64_microsoft-windows-i..dsetup-rejuvenation_31bf3856ad364e35_10.0.26100.3613_none_ee4626ffc0d1e87f',
+            'arm64_microsoft-windows-lddmcore_31bf3856ad364e35_10.0.26100.3613_none_47759fff93a31025',
+            'arm64_microsoft-windows-os-kernel_31bf3856ad364e35_10.0.26100.3613_none_07dd690164395d11',
+            'arm64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_54a0811b4a9d1469',
+            'arm64_microsoft-windows-win32kbase_31bf3856ad364e35_10.0.26100.3613_none_4a234d2916d3a738',
+            'arm64_microsoft-windows-win32kbasers_31bf3856ad364e35_10.0.26100.3613_none_8c00fbcad7be430b',
+            'arm64_microsoft-windows-winpe_tools_31bf3856ad364e35_10.0.26100.3613_none_96acaa41e6f61548',
+            'arm64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.3613_none_65aaa51520287ad8',
+            'arm64.x86_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_fa357839ceef2191',
+        ]:
+            if (
+                extract_dir.joinpath(manifest_name).exists() and
+                extract_dir.joinpath(f'{manifest_name}.manifest').exists() and
+                local_dir.joinpath(manifest_name).exists() and
+                local_dir.joinpath(f'{manifest_name}.manifest').exists()
+            ):
+                manifest_dup_dir = extract_dir.joinpath(f'{manifest_name}_dup1')
+                assert not manifest_dup_dir.exists()
+                extract_dir.joinpath(manifest_name).rename(manifest_dup_dir)
+                
+                manifest_dup_file = extract_dir.joinpath(f'{manifest_name}_dup1.manifest')
+                assert not manifest_dup_file.exists()
+                extract_dir.joinpath(f'{manifest_name}.manifest').rename(manifest_dup_file)
+
         shutil.copytree(extract_dir, local_dir, copy_function=shutil.move, dirs_exist_ok=True, ignore=ignore_files)
         shutil.rmtree(extract_dir)
 
