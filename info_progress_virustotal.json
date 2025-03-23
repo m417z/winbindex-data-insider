@@ -1,0 +1,15 @@
+{
+"next": [
+"gpme.dll",
+"2480b5b15b1397603f7ab7f353874a109adaa7ed09f44b0253bdc6e355b14803"
+],
+"next_updates": null,
+"pending": {},
+"retry": [
+[
+"vc_redist.arm64.exe",
+"8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+]
+],
+"updates": null
+}
