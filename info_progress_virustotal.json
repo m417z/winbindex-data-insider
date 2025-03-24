@@ -1,14 +1,14 @@
 {
 "next": [
-"searchprotocolhost.exe",
-"94c063f055fa4123baeff9fab81d671967da19a9e6cae0afe6944c108c1a27cd"
+"das.dll",
+"7402134d55b256c158cb73db5cfbd867c69ef1d36dc0dbf9136d91dec871f672"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"pcasvc.dll",
-"92ab30008ad0d2dc59903686d436ed3ec10a696f1bb153841cc4caa4892d331d"
+"certutil.exe",
+"ce1d0717b24737926f72b7f8f3027b7e82cc45d7ea3cc1cbfb5ebcbedea7900a"
 ],
 [
 "vc_redist.arm64.exe",
