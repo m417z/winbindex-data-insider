@@ -7,10 +7,6 @@
 "pending": {},
 "retry": [
 [
-"certutil.exe",
-"ce1d0717b24737926f72b7f8f3027b7e82cc45d7ea3cc1cbfb5ebcbedea7900a"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ]
