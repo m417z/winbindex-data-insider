@@ -6,6 +6,12 @@
             "created": 1739296839,
             "title": "Windows 11, version 22H2 (22621.4890)"
         },
+        "03e0af59-a9f4-4f81-9bee-901c3cc4bb25": {
+            "arch": "arm64",
+            "build": "22631.5126",
+            "created": 1742936489,
+            "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.5126)"
+        },
         "069bfcf6-2c67-4392-9378-69339f737981": {
             "arch": "amd64",
             "build": "26100.3476",
@@ -209,6 +215,12 @@
             "build": "19045.5608",
             "created": 1741712467,
             "title": "Feature update to Windows 10, version 22H2 (19045.5608)"
+        },
+        "378bd772-2791-4e42-a8ae-83a8b226a620": {
+            "arch": "amd64",
+            "build": "22631.5126",
+            "created": 1742936488,
+            "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.5126)"
         },
         "38fe135f-8914-4efd-8e2f-582db7d57230": {
             "arch": "arm64",

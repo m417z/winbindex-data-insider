@@ -7,6 +7,14 @@
 "pending": {},
 "retry": [
 [
+"msdt.exe",
+"f15c09e2d25c4a4ac99e83055818f0e1fac678703da04c88405cb190e3c02516"
+],
+[
+"photoscreensaver.scr",
+"41b1448e50abcfa1e3edb75ab27bfbe96c208197feb07288cedc1693cfab99ab"
+],
+[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ]
