@@ -7,16 +7,24 @@
 "pending": {},
 "retry": [
 [
-"msdt.exe",
-"f15c09e2d25c4a4ac99e83055818f0e1fac678703da04c88405cb190e3c02516"
+"ie4uinit.exe",
+"27da52146fd38e4f3f9cc7ae2f00c34b8ba1ab1fdd892d6e247c1a6e9a22ec9f"
 ],
 [
-"photoscreensaver.scr",
-"41b1448e50abcfa1e3edb75ab27bfbe96c208197feb07288cedc1693cfab99ab"
+"runonce.exe",
+"7ff700146c12b64548728bc155f3b2616d74fc53ba594b02cba2c75ee94b6823"
+],
+[
+"slui.exe",
+"e0c3c007df7733d5c001fb158da10908553e63a301361ab2335d78c1414bf2e6"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vdsldr.exe",
+"d8cd58c97e6e132e9678c6b921799c59fc70f9490843bb7e45e908e1ca216e84"
 ]
 ],
 "updates": null
