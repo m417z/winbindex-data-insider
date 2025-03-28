@@ -7,12 +7,16 @@
 "pending": {},
 "retry": [
 [
-"ie4uinit.exe",
-"27da52146fd38e4f3f9cc7ae2f00c34b8ba1ab1fdd892d6e247c1a6e9a22ec9f"
+"coremessaging.dll",
+"22555f111f86a1e16ddd97f9ba56db1a73a399941a9cc67205cd8854ac81ef5a"
 ],
 [
-"runonce.exe",
-"7ff700146c12b64548728bc155f3b2616d74fc53ba594b02cba2c75ee94b6823"
+"devicedirectoryclient.dll",
+"0f72ad8f12e370cab408a6d01e6250dc2e2b0720c968f6fbba8a1dc4e980a266"
+],
+[
+"ie4uinit.exe",
+"27da52146fd38e4f3f9cc7ae2f00c34b8ba1ab1fdd892d6e247c1a6e9a22ec9f"
 ],
 [
 "slui.exe",
@@ -21,10 +25,6 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"vdsldr.exe",
-"d8cd58c97e6e132e9678c6b921799c59fc70f9490843bb7e45e908e1ca216e84"
 ]
 ],
 "updates": null
