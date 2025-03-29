@@ -7,29 +7,13 @@
 "pending": {},
 "retry": [
 [
-"coremessaging.dll",
-"22555f111f86a1e16ddd97f9ba56db1a73a399941a9cc67205cd8854ac81ef5a"
-],
-[
-"devicedirectoryclient.dll",
-"0f72ad8f12e370cab408a6d01e6250dc2e2b0720c968f6fbba8a1dc4e980a266"
-],
-[
-"ie4uinit.exe",
-"27da52146fd38e4f3f9cc7ae2f00c34b8ba1ab1fdd892d6e247c1a6e9a22ec9f"
-],
-[
-"slui.exe",
-"e0c3c007df7733d5c001fb158da10908553e63a301361ab2335d78c1414bf2e6"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"wow64.dll",
+"d35e80d1f19dc804a933df91b6f048f4348016ef7490ef51d56ac145e5504571"
 ]
 ],
-"updates": [
-"7521ce51-ee34-4966-8439-5fa32d88b812",
-"17c7727a-f40f-4a50-9647-7e4abb7b9a72",
-"7a3b007b-11a8-4b6c-aa40-d96798c580cf"
-]
+"updates": null
 }
