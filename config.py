@@ -41,7 +41,7 @@ delta_data_without_rift_table_manifests = {
 delta_data_without_rift_table_hashes = {
     # Microsoft.GroupPolicy.Interop.dll
     # arm64_microsoft.grouppolicy.interop_31bf3856ad364e35_10.0.26100.3291_none_5dbc2b426d0016aa.manifest
-    "6002a1cca83236256f0a76a7aa1c95a35a318cf4acf21a9d9718adefce79e8ee",
+    '6002a1cca83236256f0a76a7aa1c95a35a318cf4acf21a9d9718adefce79e8ee',
 }
 
 # Non-PE files (very rare).
