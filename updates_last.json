@@ -96,6 +96,12 @@
             "created": 1739296887,
             "title": "Feature update to Windows 10, version 1809 (17763.6893)"
         },
+        "17c7727a-f40f-4a50-9647-7e4abb7b9a72": {
+            "arch": "amd64",
+            "build": "26200.5516",
+            "created": 1743181227,
+            "title": "Windows 11 Insider Preview 10.0.26200.5516 (ge_release_upr)"
+        },
         "181aba35-ce83-4c7d-9009-8d3351574ea8": {
             "arch": "amd64",
             "build": "25398.1486",
