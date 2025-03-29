@@ -374,6 +374,22 @@ def extract_update_files(local_dir: Path):
             'arm64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.3613_none_65aaa51520287ad8',
             'arm64.x86_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_fa357839ceef2191',
 
+            # 10.0.26100.3653 x64
+            'amd64_microsoft-windows-apisetschema-server_31bf3856ad364e35_10.0.26100.3653_none_876c103c237ca5b0',
+            'amd64_microsoft-windows-apisetschema-windows_31bf3856ad364e35_10.0.26100.3653_none_c5dd8fd70abce36c',
+            'amd64_microsoft-windows-b..ux-winre.deployment_31bf3856ad364e35_10.0.26100.3653_none_02312a09f104737f',
+            'amd64_microsoft-windows-b..vironment-os-loader_31bf3856ad364e35_10.0.26100.3653_none_f6d7ba811cb99bb1',
+            'amd64_microsoft-windows-codeintegrity_31bf3856ad364e35_10.0.26100.3653_none_3c28f18cb4d29faf',
+            'amd64_microsoft-windows-i..dsetup-rejuvenation_31bf3856ad364e35_10.0.26100.3653_none_ee4a1fedc0ce593f',
+            'amd64_microsoft-windows-lddmcore_31bf3856ad364e35_10.0.26100.3653_none_477998ed939f80e5',
+            'amd64_microsoft-windows-os-kernel_31bf3856ad364e35_10.0.26100.3653_none_07e161ef6435cdd1',
+            'amd64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3653_none_54a47a094a998529',
+            'amd64_microsoft-windows-win32kbase_31bf3856ad364e35_10.0.26100.3653_none_4a27461716d017f8',
+            'amd64_microsoft-windows-winpe_tools_31bf3856ad364e35_10.0.26100.3653_none_96b0a32fe6f28608',
+            'amd64_microsoft-windows-winre-cloudrec_31bf3856ad364e35_10.0.26100.3653_none_e2a31072888a8484',
+            'amd64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.3653_none_65ae9e032024eb98',
+            'wow64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3653_none_5ef9245b7efa4724',
+
             # 10.0.26100.5516 x64
             'amd64_microsoft-windows-b..vironment-os-loader_31bf3856ad364e35_10.0.26100.5516_none_f6de48b91cb56195',
             'amd64_microsoft-windows-i..dsetup-rejuvenation_31bf3856ad364e35_10.0.26100.5516_none_ee50ae25c0ca1f23',
