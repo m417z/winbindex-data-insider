@@ -123,7 +123,7 @@ def sha256sum(filename):
 # Delta files might be identical except for the checksum and timestamp.
 #
 # Header file format: [4 bytes checksum] ['PA31'] [8 bytes timestamp]
-def delta_files_equal(source_file: Path, destination_file: Path):
+def delta_files_identical_except_metadata(source_file: Path, destination_file: Path):
     source_file_size = source_file.stat().st_size
     destination_file_size = destination_file.stat().st_size
     if source_file_size <= 16 or source_file_size != destination_file_size:
@@ -138,6 +138,26 @@ def delta_files_equal(source_file: Path, destination_file: Path):
         return False
 
     return source_data[16:] == destination_data[16:]
+
+
+def delta_files_identical(source_file: Path, destination_file: Path):
+    if delta_files_identical_except_metadata(source_file, destination_file):
+        return True
+
+    # Some delta files only differ in fields which we don't use. Consider them
+    # identical.
+    delta_downloader_path = 'tools/DeltaDownloader/DeltaDownloader.exe'
+
+    args = [delta_downloader_path, '/i', source_file]
+    source_file_info = subprocess.check_output(args, text=True)
+
+    args = [delta_downloader_path, '/i', destination_file]
+    destination_file_info = subprocess.check_output(args, text=True)
+
+    def normalize_info(info):
+        return re.sub(r'^(Flags|AdditionalHash): .*$', '', info, flags=re.MULTILINE)
+
+    return normalize_info(source_file_info) == normalize_info(destination_file_info)
 
 
 def extract_update_files(local_dir: Path):
@@ -324,7 +344,7 @@ def extract_update_files(local_dir: Path):
                         can_ignore = False
                         if sha256sum(source_file) == sha256sum(destination_file):
                             can_ignore = True
-                        elif 'f' in relative_dir.parts and delta_files_equal(source_file, destination_file):
+                        elif 'f' in relative_dir.parts and delta_files_identical(source_file, destination_file):
                             can_ignore = True
 
                         if not can_ignore:
