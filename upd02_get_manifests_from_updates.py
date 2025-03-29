@@ -373,6 +373,18 @@ def extract_update_files(local_dir: Path):
             'arm64_microsoft-windows-winpe_tools_31bf3856ad364e35_10.0.26100.3613_none_96acaa41e6f61548',
             'arm64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.3613_none_65aaa51520287ad8',
             'arm64.x86_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.3613_none_fa357839ceef2191',
+
+            # 10.0.26100.5516 x64
+            'amd64_microsoft-windows-b..vironment-os-loader_31bf3856ad364e35_10.0.26100.5516_none_f6de48b91cb56195',
+            'amd64_microsoft-windows-i..dsetup-rejuvenation_31bf3856ad364e35_10.0.26100.5516_none_ee50ae25c0ca1f23',
+            'amd64_microsoft-windows-lddmcore_31bf3856ad364e35_10.0.26100.5516_none_47802725939b46c9',
+            'amd64_microsoft-windows-os-kernel_31bf3856ad364e35_10.0.26100.5516_none_07e7f027643193b5',
+            'amd64_microsoft-windows-s..tform-media-onecore_31bf3856ad364e35_10.0.26100.5516_none_a0de9c05919d4924',
+            'amd64_microsoft-windows-u..te-orchestratorcore_31bf3856ad364e35_10.0.26100.5516_none_2289e22c34819d64',
+            'amd64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.5516_none_54ab08414a954b0d',
+            'amd64_microsoft-windows-win32kbase_31bf3856ad364e35_10.0.26100.5516_none_4a2dd44f16cbdddc',
+            'amd64_microsoft-windows-winre-tools_31bf3856ad364e35_10.0.26100.5516_none_65b52c3b2020b17c',
+            'wow64_microsoft-windows-win32k_31bf3856ad364e35_10.0.26100.5516_none_5effb2937ef60d08',
         ]:
             if (
                 extract_dir.joinpath(manifest_name).exists() and
