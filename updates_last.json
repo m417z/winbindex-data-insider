@@ -420,6 +420,12 @@
             "created": 1741712498,
             "title": "Feature update to Windows 10, version 21H2 (19044.5608)"
         },
+        "7a3b007b-11a8-4b6c-aa40-d96798c580cf": {
+            "arch": "amd64",
+            "build": "26120.3653",
+            "created": 1743181233,
+            "title": "Windows 11 Insider Preview 10.0.26120.3653 (ge_release_upr)"
+        },
         "7ca6a8fc-8c2a-4366-85d9-358cb5c95ab6": {
             "arch": "arm64",
             "build": "26120.3576",
