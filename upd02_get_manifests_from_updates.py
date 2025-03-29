@@ -295,6 +295,7 @@ def extract_update_files(local_dir: Path):
     subprocess.check_call(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
 
     # Move all extracted files from all folders to the target folder.
+    got_duplicates = False
     for extract_dir in local_dir.glob('_extract_*'):
         def ignore_files(path, names):
             source_dir = Path(path)
@@ -328,7 +329,10 @@ def extract_update_files(local_dir: Path):
                             can_ignore = True
 
                         if not can_ignore:
-                            raise Exception(f'A different file copy already exists: {destination_file} (source: {source_file})')
+                            print(f'A different file copy already exists: {destination_file} (source: {source_file})')
+                            nonlocal got_duplicates
+                            got_duplicates = True
+                            can_ignore = True
 
                         ignore.append(name)
 
@@ -386,6 +390,9 @@ def extract_update_files(local_dir: Path):
 
         shutil.copytree(extract_dir, local_dir, copy_function=shutil.move, dirs_exist_ok=True, ignore=ignore_files)
         shutil.rmtree(extract_dir)
+
+    if got_duplicates:
+        raise Exception('Duplicate files found')
 
     # Make sure there are no archive files left.
     archives_left = [p for p in local_dir.glob('*') if p.suffix in {'.cab', '.psf', '.wim', '.msu', '.esd'}]
