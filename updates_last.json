@@ -180,12 +180,6 @@
             "created": 1739296842,
             "title": "Windows 11, version 22H2 (22621.4890)"
         },
-        "31d8d08b-fac4-47c0-8adb-c42dd7dec639": {
-            "arch": "amd64",
-            "build": "26100.3037",
-            "created": 1738101616,
-            "title": "Windows 11, version 24H2 (26100.3037)"
-        },
         "32322205-7c4e-4e20-9dc7-7f93dae10af9": {
             "arch": "amd64",
             "build": "17763.6893",
@@ -227,12 +221,6 @@
             "build": "22631.5126",
             "created": 1742936488,
             "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.5126)"
-        },
-        "38fe135f-8914-4efd-8e2f-582db7d57230": {
-            "arch": "arm64",
-            "build": "26100.3037",
-            "created": 1738101632,
-            "title": "Windows 11, version 24H2 (26100.3037)"
         },
         "3a1398ec-b305-471b-a7df-573cc2d2bf3c": {
             "arch": "amd64",
@@ -329,6 +317,12 @@
             "build": "26120.3073",
             "created": 1738346434,
             "title": "Windows 11 Insider Preview 10.0.26120.3073 (ge_release_upr)"
+        },
+        "5c94a683-9a93-4137-8d31-7142ed375962": {
+            "arch": "amd64",
+            "build": "22635.5097",
+            "created": 1743308484,
+            "title": "Cumulative Update for Windows 11 Insider Preview (10.0.22635.5097)"
         },
         "5ce71f9b-a345-4223-a1e5-62feec6b46d8": {
             "arch": "arm64",
@@ -486,12 +480,6 @@
             "created": 1738951223,
             "title": "Windows 11 Insider Preview 10.0.22635.4880 (ni_release)"
         },
-        "88cab3af-a5e9-4e4e-9637-e52a6065b138": {
-            "arch": "x86",
-            "build": "19045.5440",
-            "created": 1738101690,
-            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
-        },
         "88e4674c-33b5-4ba6-aef8-8efff653dd93": {
             "arch": "amd64",
             "build": "27788.1000",
@@ -569,12 +557,6 @@
             "build": "26360.5000",
             "created": 1739469669,
             "title": "Windows Server Insider Preview 26360.5000 (ge_prerelease)"
-        },
-        "9cfe297d-ab55-4c82-899d-91e6eccdeb4f": {
-            "arch": "amd64",
-            "build": "19045.5440",
-            "created": 1738101660,
-            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
         },
         "9e281b81-d992-4933-94bb-75aeedc4e484": {
             "arch": "amd64",
@@ -845,12 +827,6 @@
             "build": "19044.5608",
             "created": 1741712498,
             "title": "Feature update to Windows 10, version 21H2 (19044.5608)"
-        },
-        "ed542f2f-339a-4a7c-84cd-5d3747e57ac8": {
-            "arch": "arm64",
-            "build": "19045.5440",
-            "created": 1738101689,
-            "title": "Feature update to Windows 10, version 22H2 (19045.5440)"
         },
         "ed923794-5926-441f-90b7-42edb0086961": {
             "arch": "amd64",
