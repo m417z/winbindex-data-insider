@@ -1,38 +1,14 @@
 {
 "next": [
-"netlogon.dll",
-"ad292d4f4a63694578d06c86fa4c7ab2e15cde4f7cf38241b5c1457d649b2bd2"
+"vmms.exe",
+"c68ff7a308b3f32ec0eb804705c6a67d09225943362273bf047b9bd589a2a811"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"conhost.exe",
-"a5bb41828b0c1d5784511f51f249517127382e735ebf8e34b5efa93bbff608b5"
-],
-[
-"explorer.exe",
-"ca159e5f7df7b33ceedb10b3656229e00839c84a56a1e554e2c68cf2b31ddbf2"
-],
-[
-"ie4uinit.exe",
-"24275659875372a85dd708c1c3fdd93c56349735181830be4cd88e0b91d47b1f"
-],
-[
-"mbbcx.sys",
-"983283080262d2922273815536e16ca7ffa7b859fdc57625fe10afddcb76514b"
-],
-[
-"mdmagent.exe",
-"2763b47b9f0f5587972e68a802079e69f459234217e21dc2c2c66dc4332067da"
-],
-[
-"securityhealthservice.exe",
-"5d48444ccb90b59c84dc2e9e9c5dff42e182d26b4c5bb3084ec7997c62a82b3f"
-],
-[
-"sppsvc.exe",
-"1fdf27f3640319f60fc161e0e2577b83bbc407c246b251c87424552539148d8b"
+"sgrmbroker.exe",
+"6b7eb8abaca282d32ab8531df00ee55a5196c9f78732d8200dce6e13bdb5d324"
 ],
 [
 "systemsettingsbroker.exe",
