@@ -1,22 +1,46 @@
 {
 "next": [
-"vmms.exe",
-"c68ff7a308b3f32ec0eb804705c6a67d09225943362273bf047b9bd589a2a811"
+"cscript.exe",
+"80bfe2d1c63b77b2a0a15c79585a06130567121b1350f083cfc78d1c297ca655"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"sgrmbroker.exe",
-"6b7eb8abaca282d32ab8531df00ee55a5196c9f78732d8200dce6e13bdb5d324"
+"acmigration.dll",
+"d3c30fc0aa984eed9ffb0b023593088f0006e86f1c9539ca98ff4060009bacd8"
 ],
 [
-"systemsettingsbroker.exe",
-"d077caeff5a253c28dc4b2b2294895f68ea3e6430d6235b501992d0abfd45f19"
+"appidcertstorecheck.exe",
+"0ca937e2eecca73dd20a2b6f1f19105f9f62bdcf2144061ac7ba8b4072f2ad42"
+],
+[
+"checknetisolation.exe",
+"1e774bcc7104fd34ec41959e7208232d0eb867354ced083d3d30cff6dc2bf293"
+],
+[
+"checknetisolation.exe",
+"d8007e23cec0c2218b85e8780cbfe939dbf443c0b4e664bf2e6259d20d30c24c"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"windows.staterepository.dll",
+"40e7afadc0685351519d1485a5df1edd245509e0476c19b5df8fc6715df27900"
+],
+[
+"windowstrustedrtproxy.sys",
+"e6dc14888784450fba277f359ea2a99a4f19fd25dd47917ffba23eebd38f882a"
+],
+[
+"wini3ctarget.sys",
+"5ec6bcbf5f3fc69d8f381d0d2fb8e15d0c60984d9737482a3a911c678d0d00fd"
+],
+[
+"wpr.exe",
+"ec46f877618fec1a96f91245ba5597a0c818318b03843c8cad6a8e5467d9e62b"
 ]
 ],
 "updates": null
