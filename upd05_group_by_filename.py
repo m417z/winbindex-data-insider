@@ -146,9 +146,6 @@ def assert_file_info_close_enough(file_info_1, file_info_2):
     delta_or_pe_types = ['delta', 'delta+', 'pe']
     if get_file_info_type(file_info_1) in delta_or_pe_types or get_file_info_type(file_info_2) in delta_or_pe_types:
         for key in file_info_1.keys() & file_info_2.keys():
-            # Temporary special case for windows365.exe, TODO: remove.
-            if key == 'virtualSize' and file_info_1['sha256'] == '70c612c28f65c1177884aab81aefb25b8eb20b3702b3efc55650613e5a1f41ef':
-                continue
             assert file_info_1[key] == file_info_2[key]
         return
 
