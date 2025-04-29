@@ -50,11 +50,11 @@ def create_virustotal_urllib_session():
     return session
 
 
-def lookup_virustotal_bulk_hashes_exist(file_hashes):
+def lookup_virustotal_bulk_hashes_exist(session: requests.Session, file_hashes):
     url = 'https://www.virustotal.com/partners/sysinternals/file-reports?apikey=4e3202fdbe953d628f650229af5b3eb49cd46b2d3bfe5546ae3c5fa48b554e0c'
     body = [{'hash': hash} for hash in file_hashes]
 
-    response = requests.post(url, json=body, headers={'User-Agent': 'VirusTotal'})
+    response = session.post(url, verify=False, json=body, headers={'User-Agent': 'VirusTotal'})
     response.raise_for_status()
     response = response.json()
 
@@ -191,14 +191,16 @@ def get_virustotal_data_for_files(names_and_hashes, session: requests.Session, o
     count = 0
 
     for names_and_hashes_chunk in chunks(names_and_hashes, chunk_size):
+        sleep_time = 1
         while True:
             try:
-                hashes_found = lookup_virustotal_bulk_hashes_exist([hash for name, hash in names_and_hashes_chunk])
+                hashes_found = lookup_virustotal_bulk_hashes_exist(session, [hash for name, hash in names_and_hashes_chunk])
                 break
             except Exception as e:
-                print(f'ERROR: failed to do bulk lookup, retrying in 10 seconds')
-                print(f'       {e}')
-                time.sleep(10)
+                print(e)
+                time.sleep(sleep_time)
+                sleep_time = min(sleep_time * 2, 60 * 5)
+                print('Retrying')
 
         print(f'Found {sum(hashes_found.values())} hashes of {len(hashes_found)}')
 
