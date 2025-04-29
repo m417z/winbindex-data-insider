@@ -1,3 +1,4 @@
+from typing import Optional, Any
 from multiprocessing import Pool
 from isal import igzip as gzip
 from datetime import datetime
@@ -36,7 +37,7 @@ def write_all_file_info():
         json.dump(all_filenames, f, indent=0, sort_keys=True)
 
 
-def get_file_info_type(file_info):
+def get_file_info_type(file_info: dict[str, Any]):
     if 'machineType' not in file_info:
         k = {'size'}
         if k < file_info.keys() <= k | {'md5', 'sha256'}:
@@ -98,8 +99,10 @@ def get_file_info_type(file_info):
     return 'vt_or_file'
 
 
-def assert_file_info_close_enough(file_info_1, file_info_2):
-    def canonical_file_info(file_info):
+def assert_file_info_close_enough(
+    file_info_1: dict[str, Any], file_info_2: dict[str, Any]
+):
+    def canonical_file_info(file_info: dict[str, Any]):
         file_info = file_info.copy()
 
         # VirusTotal strips whitespaces in descriptions.
@@ -188,7 +191,11 @@ def assert_file_info_close_enough(file_info_1, file_info_2):
             assert file_info_2['signingStatus'] != 'Signed'
 
 
-def update_file_info(existing_file_info, new_file_info, new_file_info_source):
+def update_file_info(
+    existing_file_info: Optional[dict[str, Any]],
+    new_file_info: Optional[dict[str, Any]],
+    new_file_info_source: str,
+):
     if existing_file_info is None:
         return new_file_info
 
@@ -288,16 +295,19 @@ def update_file_info(existing_file_info, new_file_info, new_file_info_source):
     return existing_file_info
 
 
-def add_file_info_from_update(data, *,
-                              file_hash,
-                              virustotal_file_info,
-                              windows_version,
-                              update_kb,
-                              update_info,
-                              manifest_name,
-                              assembly_identity,
-                              attributes,
-                              delta_or_pe_file_info):
+def add_file_info_from_update(
+    data: dict[str, Any],
+    *,
+    file_hash: str,
+    virustotal_file_info: Optional[dict[str, Any]],
+    windows_version: str,
+    update_kb: str,
+    update_info: dict[str, Any],
+    manifest_name: str,
+    assembly_identity: dict[str, Any],
+    attributes: dict[str, Any],
+    delta_or_pe_file_info: Optional[dict[str, Any]],
+):
     x = data.setdefault(file_hash, {})
 
     updated_file_info = update_file_info(x.get('fileInfo'), delta_or_pe_file_info, 'update')
@@ -330,10 +340,10 @@ def add_file_info_from_update(data, *,
     return data
 
 
-virustotal_info_cache = {}
+virustotal_info_cache: dict[str, Any] = {}
 
 
-def get_virustotal_info(file_hash):
+def get_virustotal_info(file_hash: str):
     # https://stackoverflow.com/a/57027610
     def is_power_of_two(n):
         return (n != 0) and (n & (n-1) == 0)
@@ -464,10 +474,15 @@ def get_virustotal_info(file_hash):
     return info
 
 
-def group_update_assembly_by_filename(filename, file_manifest_data, output_dir: Path, *,
-                                      windows_version,
-                                      update_kb,
-                                      update_info):
+def group_update_assembly_by_filename(
+    filename: str,
+    file_manifest_data: list[dict[str, Any]],
+    output_dir: Path,
+    *,
+    windows_version: str,
+    update_kb: str,
+    update_info: dict[str, Any],
+):
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
@@ -557,24 +572,33 @@ def get_file_details_from_assembly(assembly_path: Path):
     return result
 
 
-def group_update_assembly_by_filename_worker(filename,
-                                             file_details,
-                                             output_dir,
-                                             windows_version,
-                                             update_kb,
-                                             update,
-                                             time_to_stop):
+def group_update_assembly_by_filename_worker(
+    filename: str,
+    file_details: list[dict[str, Any]],
+    output_dir: Path,
+    windows_version: str,
+    update_kb: str,
+    update: dict[str, Any],
+    time_to_stop: Optional[datetime],
+):
     if time_to_stop and datetime.now() >= time_to_stop:
         return False
 
     group_update_assembly_by_filename(filename, file_details, output_dir,
-                                        windows_version=windows_version,
-                                        update_kb=update_kb,
-                                        update_info=update)
+                                      windows_version=windows_version,
+                                      update_kb=update_kb,
+                                      update_info=update)
     return True
 
 
-def group_update_by_filename(windows_version, update_kb, update, parsed_dir: Path, progress_state=None, time_to_stop=None):
+def group_update_by_filename(
+    windows_version: str,
+    update_kb: str,
+    update: dict[str, Any],
+    parsed_dir: Path,
+    progress_state: Optional[dict[str, Any]] = None,
+    time_to_stop: Optional[datetime] = None,
+):
     output_dir = config.out_path.joinpath('by_filename_compressed')
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -647,7 +671,10 @@ def group_update_by_filename(windows_version, update_kb, update, parsed_dir: Pat
         progress_state['files_processed'] = sorted(files_processed)
 
 
-def process_updates(progress_state=None, time_to_stop=None):
+def process_updates(
+    progress_state: Optional[dict[str, Any]] = None,
+    time_to_stop: Optional[datetime] = None,
+):
     updates_path = config.out_path.joinpath('updates.json')
     if updates_path.is_file():
         with open(updates_path) as f:
@@ -670,7 +697,9 @@ def process_updates(progress_state=None, time_to_stop=None):
         progress_state['files_total'] = 0
 
 
-def add_file_info_from_virustotal_data(filename, output_dir, *, file_hash, file_info):
+def add_file_info_from_virustotal_data(
+    filename: str, output_dir: Path, *, file_hash: str, file_info: dict[str, Any]
+):
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
@@ -742,7 +771,16 @@ def process_virustotal_data():
     virustotal_info_cache.clear()
 
 
-def add_file_info_from_iso_data(filename, output_dir, *, file_hash, file_info, source_path, windows_version, windows_version_info):
+def add_file_info_from_iso_data(
+    filename: str,
+    output_dir: Path,
+    *,
+    file_hash: str,
+    file_info: dict[str, Any],
+    source_path: str,
+    windows_version: str,
+    windows_version_info: dict[str, Any],
+):
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
@@ -776,7 +814,7 @@ def add_file_info_from_iso_data(filename, output_dir, *, file_hash, file_info, s
     file_info_data[filename] = data
 
 
-def group_iso_data_by_filename(iso_data_file):
+def group_iso_data_by_filename(iso_data_file: Path):
     output_dir = config.out_path.joinpath('by_filename_compressed')
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -814,7 +852,10 @@ def process_iso_files():
             group_iso_data_by_filename(iso_data_file)
 
 
-def main(progress_state=None, time_to_stop=None):
+def main(
+    progress_state: Optional[dict[str, Any]] = None,
+    time_to_stop: Optional[datetime] = None,
+):
     print('Processing data from updates')
     process_updates(progress_state, time_to_stop)
 
