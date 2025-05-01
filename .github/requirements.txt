@@ -1,0 +1,6 @@
+git+https://github.com/m417z/pymultitor.git
+isal
+mitmproxy
+orjson
+requests
+signify
