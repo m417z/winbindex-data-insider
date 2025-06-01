@@ -1,0 +1,35 @@
+{
+"next": [
+"taskhostw.exe",
+"acbcc69ab1f7ef172f899d211a591e9efa17ba111a2f2937502cf90e12a46348"
+],
+"next_updates": null,
+"pending": {},
+"retry": [
+[
+"bootrec.exe",
+"aba686b3d777131a1396c966ab72a1281795378f332342a9f3428d626de65b90"
+],
+[
+"ekaioopl.dll",
+"fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
+],
+[
+"ekaiostr.dll",
+"81999de8fa119fad5e1ddb06a19bb140319e8d408d06cb14b666232a386c8b3b"
+],
+[
+"ekaioxps.dll",
+"c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
+],
+[
+"printercleanuptask.dll",
+"7cdc81afa5cec416aacc00854eb8dc75189b9f003af8db6b361f0126d941a580"
+],
+[
+"vc_redist.arm64.exe",
+"8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+]
+],
+"updates": null
+}
