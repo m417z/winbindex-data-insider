@@ -756,6 +756,12 @@
             "created": 1747155614,
             "title": "Windows 11, version 24H2 (26100.4061)"
         },
+        "a6fa8fea-d8bc-4c98-99a1-a7b3ec64de0d": {
+            "arch": "amd64",
+            "build": "22631.5415",
+            "created": 1748814231,
+            "title": "Windows 11, version 23H2 (22631.5415)"
+        },
         "a728473c-e8b0-4ae3-ad66-846b87ef536a": {
             "arch": "amd64",
             "build": "25398.1611",
