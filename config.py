@@ -33,6 +33,7 @@ delta_machine_type_values_supported = {
 delta_data_without_rift_table_names = {
     '*.mui',
     'powershell_ise.exe',
+    'stdole32.tlb',
 }
 delta_data_without_rift_table_manifests = {
     'amd64_microsoft-nxt-boottocloud-windows365-app_*',
@@ -42,6 +43,14 @@ delta_data_without_rift_table_hashes = {
     # Microsoft.GroupPolicy.Interop.dll
     # arm64_microsoft.grouppolicy.interop_31bf3856ad364e35_10.0.26100.3291_none_5dbc2b426d0016aa.manifest
     '6002a1cca83236256f0a76a7aa1c95a35a318cf4acf21a9d9718adefce79e8ee',
+
+    # stdole32.tlb
+    # amd64_microsoft-windows-o..ion-legacy-stdole32_31bf3856ad364e35_10.0.26100.5622_none_7d7ec94cc80e316a.manifest
+    '96a24b79118cda0ca2ed3adfbfe38d3dc0250057ddf8655be8fdf9e6a04c0726',
+
+    # stdole32.tlb
+    # arm64_microsoft-windows-o..ion-legacy-stdole32_31bf3856ad364e35_10.0.26100.5622_none_7d7ed186c80e2606.manifest
+    '8386EC4AD7A3BD5F9A40328DF54C259D01633202996CF9C48F15997096D51732',
 }
 
 # Non-PE files (very rare).
