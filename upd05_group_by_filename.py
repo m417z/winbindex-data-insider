@@ -234,22 +234,14 @@ def update_file_info(
     unknown_sig_file_info = None
     other_file_info = None
     other_file_info_type = None
-    # Temporary: If both are "Unknown", prefer the new one as it has the correct signing time.
-    if existing_file_info_type == 'file_unknown_sig' and new_file_info_type == 'file_unknown_sig':
+    if existing_file_info_type == 'file_unknown_sig':
+        unknown_sig_file_info = existing_file_info
+        other_file_info = new_file_info
+        other_file_info_type = new_file_info_type
+    elif new_file_info_type == 'file_unknown_sig':
         unknown_sig_file_info = new_file_info
         other_file_info = existing_file_info
         other_file_info_type = existing_file_info_type
-        assert unknown_sig_file_info | {'signingDate': None} == other_file_info | {'signingDate': None}, (unknown_sig_file_info, other_file_info)
-    else:
-        # Temporary end.
-        if existing_file_info_type == 'file_unknown_sig':
-            unknown_sig_file_info = existing_file_info
-            other_file_info = new_file_info
-            other_file_info_type = new_file_info_type
-        elif new_file_info_type == 'file_unknown_sig':
-            unknown_sig_file_info = new_file_info
-            other_file_info = existing_file_info
-            other_file_info_type = existing_file_info_type
 
     if unknown_sig_file_info and other_file_info and other_file_info_type:
         if 'signingStatus' not in other_file_info:
@@ -263,21 +255,11 @@ def update_file_info(
             other_file_info_type not in ['vt', 'vt_or_file']
             and other_file_info.get('signingDate') != unknown_sig_file_info.get('signingDate')
         ):
-            # Temporary log, will become an error in the future.
-            current_date = datetime.now().isoformat()
-            if current_date <= '2025-07-01':
-                print(
-                    f'WARNING: Updating signing date of {other_file_info["sha256"]}:'
-                    f' {other_file_info["signingDate"]} ->'
-                    f' {unknown_sig_file_info["signingDate"]}'
-                )
-            else:
-                # Temporary log end.
-                raise Exception(
-                    f'Different signing date of {other_file_info["sha256"]}:'
-                    f' {other_file_info["signingDate"]} !='
-                    f' {unknown_sig_file_info["signingDate"]}'
-                )
+            raise Exception(
+                f'Different signing date of {other_file_info["sha256"]}:'
+                f' {other_file_info["signingDate"]} !='
+                f' {unknown_sig_file_info["signingDate"]}'
+            )
 
         return unknown_sig_file_info | {
             'signingStatus': other_file_info.get('signingStatus'),
