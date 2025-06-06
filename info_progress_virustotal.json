@@ -7,10 +7,6 @@
 "pending": {},
 "retry": [
 [
-"defrag.exe",
-"d44246d6c3b2581be7b3b32c365050350a8bdda6f3f521b832f3f2b8c9300408"
-],
-[
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
 ],
@@ -23,41 +19,13 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"logonui.exe",
-"74749e7273172a6715bc9bb055764bdb0a0f4a857e7c7c241caf79c7992cdc92"
-],
-[
-"mptfcustomizeiosignalclient.sys",
-"b4a7db517f1aea7bff31570edc5c927813d847c5084b98b004cb85b5b398e1aa"
-],
-[
-"setupugc.exe",
-"575ca11faf17673f24ce8399e8c7dba1746d7f3abcfa53fc62da23650b234ac3"
-],
-[
-"taskhostw.exe",
-"79020a951b473137c28e138413c36d5f29674d720162d2459811fa3d8b46d466"
+"gamebarpresencewriter.exe",
+"481d1b9777e2650f22d9067ea775f2e6b98f1b950a9ce30592ec4aaba031ce79"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ]
 ],
-"updates": [
-"15cf816b-d62f-46c0-a7b5-3c7a4639df3a",
-"0af04257-e42a-412a-8e2f-43354b109597",
-"262338bd-6b7d-434d-a6c6-db316e296cb0",
-"3c1625b1-b215-414f-bb04-ef05a5fb1bc8",
-"c2a7e866-b17a-418e-9a81-dba26a43ad30",
-"c706b9f0-3dc0-4d46-9098-79971642bb38",
-"ddb0f1bc-9222-4338-8979-530935b1e5e9",
-"fdbc109d-f052-452c-828e-454ce4f8b7b1",
-"502e47af-6eaa-4f04-84a7-bb739569a3a2",
-"b7871ebd-39ef-4ba6-970f-fb7957457380",
-"4ee7a35c-9789-4aec-8459-ebed8dd6b838",
-"46b98eca-d393-4724-8917-d9ab539b1135",
-"b1abd61a-598e-424b-a9ed-709f02e94fa3",
-"d2c32db9-d237-460d-aa7b-336bf662e5bb",
-"7d888ca7-52c8-4d4f-a6a1-9f8f280aa22e"
-]
+"updates": null
 }
