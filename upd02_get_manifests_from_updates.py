@@ -96,7 +96,7 @@ def download_update(windows_version, update_kb):
                 break
 
             # https://aria2.github.io/manual/en/html/aria2c.html#exit-status
-            if result.returncode != 1:
+            if result.returncode not in [1, 22]:
                 raise Exception(f'Failed to download {name} from {url} (exit code {result.returncode})')
 
             print(f'[{update_kb}] Retrying download of {name} from {url}...')
