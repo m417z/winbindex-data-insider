@@ -1,7 +1,7 @@
 {
 "next": [
-"csiagent.dll",
-"fff8226ccc9b428682de91e4dd9add222d1dadc4ab620bcd704e14310b2b8ede"
+"rdpsa.exe",
+"52617f7a20ca2ef11ef4e70c1933bd69b604c87f2fb1aa25215d8fb287d4fea9"
 ],
 "next_updates": null,
 "pending": {},
@@ -19,28 +19,20 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"usbehci.sys",
-"c1738ee3ac7fd4bd0186269a7b2bca1cf44bbc7d042dbadbba2979cbb3ffa0da"
+"imjpdct.exe",
+"ac60e64ed8fb9ad4fb1ae25b0b34c9fd19a62d0d16888b6a8ce2bcb2b82d3373"
 ],
 [
-"usbhub3.sys",
-"54f7537325e8cce4894235b19d6b171a07484d682c2980951d039722381db381"
+"ldp.exe",
+"09bcca9f9eb4d6d6c3ead9d51d6247cca23fae74e38658db22ed8386ee406ee5"
 ],
 [
-"utilman.exe",
-"8e809fa0b688397394bee762e2275c18a37faa3cc8c37b7783a85d47a9ee9e10"
+"msinfo32.exe",
+"6b049d8bceb3e712ccd17a3ce2130d19680db26fa3839c0bfdee8efb115d2df3"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"wificx.sys",
-"5f44b9db55e27fc55fa07f7f25b6ed622709d784f08d65769c23c2247e5c4aaa"
-],
-[
-"winsrv.dll",
-"444e29ca220dc77cfc013529515d6e912d91c04e99e3d1430e9a0e89fe96a8e3"
 ]
 ],
 "updates": null
