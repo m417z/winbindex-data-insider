@@ -7,6 +7,10 @@
 "pending": {},
 "retry": [
 [
+"clfs.sys",
+"1fa9a36ef1a3f5566ae61d774c72f568d3439163457b8e395bae4cfa73e0d74d"
+],
+[
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
 ],
@@ -19,16 +23,24 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"rmactivate_ssp_isv.exe",
-"17b25d12918596c78ec833bfba2eda37c719761bac53960b83ba190bcb15bbd0"
+"iediagcmd.exe",
+"cb485d042d2284b28d214369b6b16ed64ce5e07ecc20ebecb8a6d06d313ae637"
 ],
 [
-"sc.exe",
-"c5d6d23cc371d11a06666fbc98cd94ba4cc21800a22b35508c0eddb46801feec"
+"iesettingsync.exe",
+"0bd6eba68d83bdb151544f3b361ae2f8b0434877f7bd43a79fc5c940fe815681"
 ],
 [
-"sdiagnhost.exe",
-"a19574483c8705d53530d56c70a4432184bbec9b4102e2d8c8bd6215ee3b155f"
+"ksecpkg.sys",
+"bf5c2b86b76ee215242c2f0ade06ce7332641f657c764145bc1284db039fbf1d"
+],
+[
+"rdpinit.exe",
+"36470e64ae18ea6a7f54a650fde56f3f2c5c43672dbeed8e98f4e6a60bd1d09d"
+],
+[
+"rdpsign.exe",
+"86b4508db5c112dd767237edf21d6ad991559187320e3fd2bba1939692c127fd"
 ],
 [
 "spaceparser.sys",
