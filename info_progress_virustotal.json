@@ -7,14 +7,6 @@
 "pending": {},
 "retry": [
 [
-"alg.exe",
-"a3127f97b8d09ec5430bec7da4dcd969088a3ac7c82f15583a270e7ef07d6dc3"
-],
-[
-"appinfo.dll",
-"f8ce4e25a5b7cf8a397f5abd8eaea92c2a9886eec72462b686136c321c34f772"
-],
-[
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
 ],
@@ -31,16 +23,12 @@
 "17b25d12918596c78ec833bfba2eda37c719761bac53960b83ba190bcb15bbd0"
 ],
 [
-"scesrv.dll",
-"6bfa0ad7ca69a67b8891a11a6213fb9f1b22968ba9b1c7b2c16135b6fce18f0a"
+"sc.exe",
+"c5d6d23cc371d11a06666fbc98cd94ba4cc21800a22b35508c0eddb46801feec"
 ],
 [
 "sdiagnhost.exe",
 "a19574483c8705d53530d56c70a4432184bbec9b4102e2d8c8bd6215ee3b155f"
-],
-[
-"setupugc.exe",
-"fc6f19c324ae62b03bea5ad60718f03ee97cd2484913f61274415a6157fc1ce7"
 ],
 [
 "spaceparser.sys",
@@ -49,13 +37,7 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"winsat.exe",
-"30838fd0bd61960463de87f101a976ac9c677f72dfec4764ba71078b449f19ed"
 ]
 ],
-"updates": [
-"b7ab26e7-c473-401c-b3e2-8bc32850c10d"
-]
+"updates": null
 }
