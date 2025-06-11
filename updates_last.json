@@ -288,6 +288,12 @@
             "created": 1745600449,
             "title": "Windows 11 Insider Preview 10.0.26120.3941 (ge_release_upr)"
         },
+        "3ae3e8b1-0e9a-48db-8170-e29811c81baa": {
+            "arch": "arm64",
+            "build": "26100.4270",
+            "created": 1749602574,
+            "title": "Windows 11, version 24H2 (26100.4270)"
+        },
         "3bd3c20d-232c-4141-b019-16212cbbff1e": {
             "arch": "amd64",
             "build": "22621.4541",
@@ -1170,12 +1176,6 @@
             "created": 1747675512,
             "title": "Feature update to Windows 10, version 22H2 (19045.5856)"
         },
-        "ea289cb3-bd10-40d2-a647-e1d63dd3a95c": {
-            "arch": "amd64",
-            "build": "22631.5192",
-            "created": 1744418171,
-            "title": "Windows 11, version 23H2 (22631.5192)"
-        },
         "ea4d5cd2-56f1-4bdd-ae0d-09a0b3ac2c18": {
             "arch": "amd64",
             "build": "19044.5859",
@@ -1199,6 +1199,12 @@
             "build": "22631.5335",
             "created": 1747155640,
             "title": "Windows 11, version 23H2 (22631.5335)"
+        },
+        "f5727cef-667c-476d-9369-c1ae6bca4593": {
+            "arch": "amd64",
+            "build": "20348.3692",
+            "created": 1749627252,
+            "title": "Cumulative Update for Azure Stack HCI version 21H2 (20348.3692)"
         },
         "f6fca382-97b9-4188-be84-f24dae7b3d18": {
             "arch": "arm64",
