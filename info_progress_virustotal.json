@@ -19,10 +19,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"facerecognitionengineadapterresources_v3.dll",
-"65c72133de7863ea77174ec0842842cb358edf5c975c994d3357456d782d46c4"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -35,16 +31,16 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
+"senseimdscollector.exe",
+"4cb3359f462c087367c28d292bb62b82702b81777a8586a504c6af9cc00628c8"
+],
+[
+"sihclient.exe",
+"75da408272593ffa52015f82232a5644915de8b9b5de709ba97ca99a2406df5e"
+],
+[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"windows.internal.taskbar.dll",
-"e60fc0d7cd92d8bc6190e88353851e52f8e6889f447afdaa518ea8f1b02e48b0"
-],
-[
-"windows.networking.ux.eaprequesthandler.dll",
-"97769e52bb372290e01945bfc94e8bfc489122e80683381daa87553c093ea502"
 ]
 ],
 "updates": null
