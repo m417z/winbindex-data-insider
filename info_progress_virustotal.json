@@ -1,19 +1,11 @@
 {
 "next": [
-"psapi.dll",
-"5942e200edaad1848ea7615aed2b0a9535b9477208ac541a706c5abe30892238"
+"apmon.dll",
+"96901da41f3b6394676637e0db94f61e66818cdf39c70c820c144dcfbfc3b4e1"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"bthport.sys",
-"fce1c6ef603705b07e945154236139e56e5e6c2994c504befca1db717d863f53"
-],
-[
-"dnsapi.dll",
-"e0dc4a95ffae9f5ddd82816a56ce4bb1ba365aa9fac893f89448d4ec17e2fd8c"
-],
 [
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
@@ -43,12 +35,20 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"shellappruntime.exe",
-"4f018c3d57d732832b285fcbbde2f67c28fe6e2a4bf4a11969082d99e5c60684"
+"rasadhlp.dll",
+"b96b4e2a84404d884a6bf4543550402920a8dcf4f46b9f840025dd8e0cb4d19b"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vmcomputeagent.exe",
+"0a1bd50c370782fcc7d61253f0955b124cd65753b1ca2869ea43bdc56a05fcb2"
+],
+[
+"voiceaccess.exe",
+"61e22a17b2311c7f6ebc810db5f69fce4cf5f5129629d5ef305684cb6d969a2a"
 ]
 ],
 "updates": null
