@@ -19,10 +19,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"filehistory.exe",
-"b94d737fb605c7a5c39a5f11ef81d2f864b8fbaaa017782724a35eded6478530"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -35,20 +31,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"rasadhlp.dll",
-"b96b4e2a84404d884a6bf4543550402920a8dcf4f46b9f840025dd8e0cb4d19b"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"vmcomputeagent.exe",
-"0a1bd50c370782fcc7d61253f0955b124cd65753b1ca2869ea43bdc56a05fcb2"
-],
-[
-"voiceaccess.exe",
-"61e22a17b2311c7f6ebc810db5f69fce4cf5f5129629d5ef305684cb6d969a2a"
 ]
 ],
 "updates": null
