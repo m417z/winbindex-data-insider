@@ -1,11 +1,23 @@
 {
 "next": [
-"apmon.dll",
-"96901da41f3b6394676637e0db94f61e66818cdf39c70c820c144dcfbfc3b4e1"
+"microsoft.bluetooth.avrcptransport.sys",
+"165efd662e8923a692e9dbbddc368bedc57d076431ecc5e42a0de70c6af0fbd9"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
+[
+"aritransformer.dll",
+"837beb4575a9a2c941ab8b7b360de9c26e24d8143235bfc69ab083b8c4875977"
+],
+[
+"cliprenew.exe",
+"d892c5f303fb4adbd0a68460b79958c7ab5fa36161e0c1118d7920dcc6088e7b"
+],
+[
+"configureieoptionalcomponentsai.dll",
+"a145b04341598f9211a373b52ca90258358fa390b9957ef9b488575daefdad43"
+],
 [
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
@@ -17,6 +29,30 @@
 [
 "ekaioxps.dll",
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
+],
+[
+"esscli.dll",
+"ab4967acf6ac632c9db3ac691d3f615b3f531f1e2261756f7f1f9df7ca07a0ec"
+],
+[
+"featuresettingsoverride.dll",
+"1d361992b1e9e9b04ec8d90fd4a25b574b74ee9241f8bd4c9ba81ee066aaa42f"
+],
+[
+"fveupdateai.dll",
+"7fbdcbe31c3e7b5f58317ee517b8170385f6f16919dfd7f058a96738c3255464"
+],
+[
+"iefileinstallai.dll",
+"2533130027391e7ea603f3fdc71b84a4d799780cedd20be8e2f81c1f324f2cb6"
+],
+[
+"implatsetup.dll",
+"f1ed3e988928b12e4ff9c4c83578770ad3f30d673ab1912e1707395fa5846f4f"
+],
+[
+"microsoft.aad.brokerplugin.exe",
+"ee1e4ff01cace3c036cf0e22edaa22e7f7466b36c28715ee10399764891d02c2"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
