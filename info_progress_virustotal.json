@@ -19,10 +19,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"microsoft.aad.brokerplugin.exe",
-"ee1e4ff01cace3c036cf0e22edaa22e7f7466b36c28715ee10399764891d02c2"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -35,20 +31,9 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"pku2u.dll",
-"517850bafb8c8823851c198763418d297a1abd9703177c7970cdd6f6f39796ca"
-],
-[
-"repdrvfs.dll",
-"3c53b0951fb7d34d405b74b10331627c6a02b2d75e6854deeb5a16601606aece"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ]
 ],
-"updates": [
-"a65e5849-be58-42a1-aa4d-9a85f2b8c158",
-"bca2cbef-970f-4251-bf19-125a60a63735"
-]
+"updates": null
 }
