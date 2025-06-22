@@ -1,0 +1,63 @@
+{
+"next": [
+"pnputil.exe",
+"e56c66ca1108491a341e4e51bb63bd3b2d708e0470a10e27c6d4644c72f51544"
+],
+"next_updates": null,
+"pending": {},
+"retry": [
+[
+"easeofaccessdialog.exe",
+"5925f2d37b9885f81a61d2727835d0f37af2a7f1898a91bc6041d531ca4564a0"
+],
+[
+"ekaioopl.dll",
+"fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
+],
+[
+"ekaiostr.dll",
+"81999de8fa119fad5e1ddb06a19bb140319e8d408d06cb14b666232a386c8b3b"
+],
+[
+"ekaioxps.dll",
+"c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
+],
+[
+"enterpriseappmgmtsvc.dll",
+"3a5bba7f2166ab430f63dbdd9db1be0011aadce25bbabc497997ab3a42f55444"
+],
+[
+"inputhost.dll",
+"9473642dadf73a4b2c96daac6d5d308dbbfff901f648431ddaab9bad5c6d6008"
+],
+[
+"microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
+"1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
+],
+[
+"microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
+"0bf23e9042cad8fdefbafeededf08cc8e8d9d3789fd561c040de2f66e1d8b9de"
+],
+[
+"microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll",
+"920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
+],
+[
+"vc_redist.arm64.exe",
+"8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"winpeshl.exe",
+"29d6b35482407916f7ddd21fc1935a520945108868cc5c63793a0ad116ec2d47"
+],
+[
+"wpeinit.exe",
+"1e8e2469e4aeb80b9d6951d8bff3de8de2aaa380e0d3043baa787aa9fbf38793"
+],
+[
+"wpeutil.dll",
+"4e96b486544b11926355ac3e01d9466161942c1d579fe6325bd3c4db65f43079"
+]
+],
+"updates": null
+}
