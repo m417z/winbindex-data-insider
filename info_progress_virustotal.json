@@ -1,7 +1,7 @@
 {
 "next": [
-"fwpkclnt.sys",
-"a196005b8154bc61bdfd241384da6732189403a158df32c09cfed382b4a8ae11"
+"wuceffects.dll",
+"0fecc67d655d4aeb0ef1a6a44ad77988cd0566ee1be5485b2a54546980b3f4d2"
 ],
 "next_updates": null,
 "pending": {},
@@ -17,10 +17,6 @@
 [
 "ekaioxps.dll",
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
-],
-[
-"fontdrvhost.exe",
-"ededd5b767d01af770413d228393f5a23306b9fa5594d5c42b31bf85ef1d797f"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
