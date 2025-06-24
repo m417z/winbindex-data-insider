@@ -31,8 +31,20 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
+"shellappruntime.exe",
+"1a36de98adf690c37e540c0d37e109ba64c73e5ba6951ff9234af3ea3c9d2015"
+],
+[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"win32kfull.sys",
+"92f8a25849a8fea23b37aa9dd197087111c061ae0931098d164c57e2d3364a8a"
+],
+[
+"win32webviewhost.exe",
+"5d0fa0a96e09774f1933e9da1a1f60154541fd613b9a2caa6d5154e64f52133d"
 ]
 ],
 "updates": null
