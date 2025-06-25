@@ -1,11 +1,27 @@
 {
 "next": [
-"wuceffects.dll",
-"0fecc67d655d4aeb0ef1a6a44ad77988cd0566ee1be5485b2a54546980b3f4d2"
+"penservice.dll",
+"5174b9a6e9e08fca92efd1c39b07b46cc5508c8d0ce1000bb963b290c71ccf5e"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
+[
+"applytrustoffline.exe",
+"4298f1bf1cd676833795f8a93f5b9b766bc8c80bc54fefc086bd1e1a9502e53b"
+],
+[
+"dsregcmd.exe",
+"44b2389aae0f0c9335f0929708f561be11efb4b1432129009c663507f952f4d8"
+],
+[
+"dxgmms1.sys",
+"7fbd99c7a51889a5e995451b1de0bcf857ba6df3ef0ec69ba3757a2291535753"
+],
+[
+"easeofaccessdialog.exe",
+"0218b9abe4849d2a7e7e9318122cd59150a3768e776fc938c419d73622ce7fc3"
+],
 [
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
@@ -17,6 +33,14 @@
 [
 "ekaioxps.dll",
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
+],
+[
+"ie4ushowie.exe",
+"431f61093b6aa42432c0c38cdbf8083db4fcb207c5e330e1e63b3ee901ffdb9a"
+],
+[
+"ldp.exe",
+"cab0baff970dc1b4ac1f9103f61c87de04ee27a3858024e245239bbf8ae801c3"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
@@ -31,20 +55,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"shellappruntime.exe",
-"1a36de98adf690c37e540c0d37e109ba64c73e5ba6951ff9234af3ea3c9d2015"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"win32kfull.sys",
-"92f8a25849a8fea23b37aa9dd197087111c061ae0931098d164c57e2d3364a8a"
-],
-[
-"win32webviewhost.exe",
-"5d0fa0a96e09774f1933e9da1a1f60154541fd613b9a2caa6d5154e64f52133d"
 ]
 ],
 "updates": null
