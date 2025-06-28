@@ -108,6 +108,12 @@
             "created": 1750712440,
             "title": "Cumulative Update for Windows 11 Insider Preview (10.0.26120.4452)"
         },
+        "13e417f4-de07-41d0-89f5-6042f6db6bc4": {
+            "arch": "arm64",
+            "build": "26100.4484",
+            "created": 1751068820,
+            "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.4484)"
+        },
         "143f898c-7a45-4578-b3a8-7e1cc421451a": {
             "arch": "x86",
             "build": "19045.6029",
@@ -617,6 +623,12 @@
             "build": "26100.4351",
             "created": 1750016270,
             "title": "Cumulative Update for Windows 11 Version 24H2 (26100.4351)"
+        },
+        "73d4be2f-c31f-4970-87e6-f391913ebd3d": {
+            "arch": "amd64",
+            "build": "26100.4484",
+            "created": 1751062004,
+            "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.4484)"
         },
         "7605e73b-1674-42c6-86e4-8082d2f35242": {
             "arch": "amd64",
