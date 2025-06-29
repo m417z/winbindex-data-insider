@@ -60,6 +60,12 @@
             "created": 1748466070,
             "title": "Feature update to Windows 10, version 22H2 (19045.5917)"
         },
+        "096d8922-1234-444b-b42b-0f2a2475491b": {
+            "arch": "amd64",
+            "build": "17763.7434",
+            "created": 1751137983,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.7434)"
+        },
         "0a83323e-d9cd-4d3a-aa75-3e710b4193b0": {
             "arch": "amd64",
             "build": "26120.4250",
@@ -647,6 +653,12 @@
             "build": "26120.3950",
             "created": 1746478832,
             "title": "Windows 11 Insider Preview 10.0.26120.3950 (ge_release_upr)"
+        },
+        "78128e18-4534-43c2-b6e6-adac27a094ff": {
+            "arch": "amd64",
+            "build": "17763.2145",
+            "created": 1751137878,
+            "title": "Cumulative Update Preview for Windows Server 2019 (1809) (17763.2145)"
         },
         "7847a2fa-d4cc-43b7-90b9-3317d905efd9": {
             "arch": "amd64",

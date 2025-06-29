@@ -31,20 +31,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"mousocoreworker.exe",
-"9122faab1d5a26a9d26fdf836b232c2ddfa99b314024b1183481581d5ff90706"
-],
-[
-"printdialog.exe",
-"044f35c238b95218247d56cad99b5f714aba000b2e5a8e05086d2a0a77d9cb5b"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"w3wp.exe",
-"74901e03af663867457ce090b06088fca947893bad868375f5392caed707ac72"
 ]
 ],
 "updates": null
