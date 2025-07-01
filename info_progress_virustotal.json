@@ -1,26 +1,14 @@
 {
 "next": [
-"cmservice.dll",
-"15df895c2df3d6f12cdc9c04841fc2ef831bd38bcc5a93a37acc6a12dcb12fd7"
+"settingshandlers_user.dll",
+"e47f83ca59468580dd5f792c06dd2a8b0bd8fb091ffe15c38dc6b2ed4d71b1b6"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"applessd.sys",
-"2a5307e5c399906ae9896c247e1e1937873ab7fa5dc7abf983c8069220ba6a33"
-],
-[
-"bam.sys",
-"f6b865d39b9afa289c67c42a3ec6d04e68cf0ad279163ed90a028eb76adcfe37"
-],
-[
-"cmimageworker.exe",
-"84a6e46aca3179e113979c6ffee788af9eaafa301232ac58a07a9e8be4a6c41f"
-],
-[
-"dxgmms1.sys",
-"3f824e8d2df44d0f38614da3f47dfd143aebdf2dbfa4a0da6183019c021f6ad3"
+"csiagent.dll",
+"d4e9931c8d13fe2919bf84fbc991959dee1d4ae2e638ca620435688d60171915"
 ],
 [
 "ekaioopl.dll",
@@ -47,20 +35,16 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"usoclient.exe",
-"e58be925a4d2ace3fbc6753ddbfc989556dff04d048c0996d358c4f374d653bb"
+"searchprotocolhost.exe",
+"14dbcc0679a21165e7a2ba56c16b9ca8e8255bf4272538466e34044e030042da"
+],
+[
+"securekernel.exe",
+"4dcd8deac628dc81e6a5e5e009d10e4685c8c6c28ca54789d35cbdcfa8363cfd"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"windowsbackupclient.exe",
-"ea2b45005c5fae8b91c4f044e84ef414ab5faaa71e5498dea1527abf526e4c30"
-],
-[
-"wpcmon.exe",
-"6e83ebddc65e1eace0f3b09f7149dec4bf23de7e732a20d100a41ba3c64a047a"
 ]
 ],
 "updates": null
