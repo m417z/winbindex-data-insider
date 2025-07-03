@@ -7,10 +7,6 @@
 "pending": {},
 "retry": [
 [
-"csiagent.dll",
-"d4e9931c8d13fe2919bf84fbc991959dee1d4ae2e638ca620435688d60171915"
-],
-[
 "ekaioopl.dll",
 "fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91"
 ],
