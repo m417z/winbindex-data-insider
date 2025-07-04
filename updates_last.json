@@ -96,12 +96,6 @@
             "created": 1747156223,
             "title": "Cumulative Update for Windows CPC OS (10.0.26100.4061)"
         },
-        "1030b143-5ba3-4ae8-a998-b2ef64b59535": {
-            "arch": "amd64",
-            "build": "22621.5262",
-            "created": 1746368926,
-            "title": "Windows 11, version 22H2 (22621.5262)"
-        },
         "106c465e-2197-433d-b56c-6ed9069db0c3": {
             "arch": "amd64",
             "build": "26433.1000",
@@ -467,12 +461,6 @@
             "build": "19044.5859",
             "created": 1748384897,
             "title": "Feature update to Windows 10, version 21H2 (19044.5859)"
-        },
-        "58ddbb00-947e-420a-b296-a2451ae6ac0b_rev.2": {
-            "arch": "amd64",
-            "build": "16299.19",
-            "created": 1746369282,
-            "title": "Feature update to Windows 10, version 1709 (16299.19)"
         },
         "58ed03da-551d-4f2b-9a59-cb47ed36e3c6": {
             "arch": "arm64",
@@ -942,6 +930,12 @@
             "created": 1748384930,
             "title": "Feature update to Windows 10, version 21H2 (19044.5859)"
         },
+        "af79c254-2483-4430-b793-1ce0f0c8a7ae": {
+            "arch": "arm64",
+            "build": "27891.1000",
+            "created": 1751562019,
+            "title": "Windows 11 Insider Preview 27891.1000 (rs_prerelease)"
+        },
         "afac5b26-bfc9-4d27-b153-63535544bc37": {
             "arch": "amd64",
             "build": "26100.4349",
@@ -1043,6 +1037,12 @@
             "build": "27881.1000",
             "created": 1750352418,
             "title": "Windows 11 Insider Preview 27881.1000 (rs_prerelease)"
+        },
+        "bd8d3d91-5716-4f3d-8f00-4c30bc6f6bfa_rev.2": {
+            "arch": "x86",
+            "build": "16299.19",
+            "created": 1751614394,
+            "title": "Feature update to Windows 10, version 1709 (16299.19)"
         },
         "bdc0ae5c-c24b-4a24-aa6e-a24ac0442e92": {
             "arch": "arm64",
@@ -1265,6 +1265,12 @@
             "build": "22621.4541",
             "created": 1749159500,
             "title": "Windows 11, version 22H2 (22621.4541)"
+        },
+        "f7a38889-7868-4e9a-8d4f-6255df6a2a42": {
+            "arch": "amd64",
+            "build": "27891.1000",
+            "created": 1751562016,
+            "title": "Windows 11 Insider Preview 27891.1000 (rs_prerelease)"
         },
         "fadd14b9-dcb5-43ba-8f8d-e37e1d69d1a0": {
             "arch": "amd64",
