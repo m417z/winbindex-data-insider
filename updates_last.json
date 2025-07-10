@@ -12,6 +12,12 @@
             "created": 1747700913,
             "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.5409)"
         },
+        "01909ec7-adea-4d77-95ac-7f1757e66ebb": {
+            "arch": "arm64",
+            "build": "16299.248",
+            "created": 1752098199,
+            "title": "Feature update to Windows 10, version 1709 (16299.248)"
+        },
         "030dda92-8799-4481-9351-a5ddc46f45fa": {
             "arch": "amd64",
             "build": "20348.3807",
@@ -258,6 +264,12 @@
             "created": 1747736724,
             "title": "Cumulative Update for Microsoft server operating system Version 24H2 (Hotpatch capable) (26100.3981)"
         },
+        "2dba42e9-a4ce-4736-a22e-dc2daa247dd0": {
+            "arch": "x86",
+            "build": "16299.125",
+            "created": 1752098106,
+            "title": "Feature update to Windows 10, version 1709 (16299.125)"
+        },
         "2f29f768-37c1-4ae8-a4ac-11936713deeb": {
             "arch": "amd64",
             "build": "26100.4066",
@@ -371,6 +383,12 @@
             "build": "20348.3807",
             "created": 1749574975,
             "title": "Feature update to Microsoft server operating system, version 21H2 (20348.3807)"
+        },
+        "4822fba2-5040-42ec-aa73-35a63401a60e": {
+            "arch": "amd64",
+            "build": "16299.251",
+            "created": 1752098270,
+            "title": "Feature update to Windows 10, version 1709 (16299.251)"
         },
         "486f5c22-cbbf-4ca9-a28a-790a5eff549c": {
             "arch": "arm64",
@@ -570,6 +588,12 @@
             "created": 1748384520,
             "title": "Cumulative Update for Microsoft server operating system version 24H2 (26100.4066)"
         },
+        "64f27a51-5c22-4ab0-9338-b6e5d9f08709": {
+            "arch": "arm64",
+            "build": "16299.251",
+            "created": 1752098282,
+            "title": "Feature update to Windows 10, version 1709 (16299.251)"
+        },
         "6528ccaf-5236-4ea8-832a-eac13c8fea62": {
             "arch": "amd64",
             "build": "26200.5651",
@@ -593,6 +617,12 @@
             "build": "26120.4250",
             "created": 1749502837,
             "title": "Windows 11 Insider Preview 10.0.26120.4250 (ge_release_upr)"
+        },
+        "6cd0d756-21c2-4399-bd69-320f3d856020": {
+            "arch": "amd64",
+            "build": "16299.309",
+            "created": 1752098324,
+            "title": "Feature update to Windows 10, version 1709 (16299.309)"
         },
         "6ce17744-d411-4f9e-ba95-4cad5fb4271c": {
             "arch": "amd64",
@@ -623,6 +653,12 @@
             "build": "19045.6036",
             "created": 1750784446,
             "title": "Feature update to Windows 10, version 22H2 (19045.6036)"
+        },
+        "71e30e21-7a62-4f18-b0b6-f9ebdfc2b4fb": {
+            "arch": "x86",
+            "build": "16299.251",
+            "created": 1752098240,
+            "title": "Feature update to Windows 10, version 1709 (16299.251)"
         },
         "72759b3a-be01-46a8-b6c7-6a5e7772f6c4": {
             "arch": "amd64",
@@ -774,6 +810,12 @@
             "created": 1751437128,
             "title": "Windows 11, version 22H2 (22621.5548)"
         },
+        "87d62dde-f2a8-4833-86d6-cfa7325a674b": {
+            "arch": "arm64",
+            "build": "16299.125",
+            "created": 1752098027,
+            "title": "Feature update to Windows 10, version 1709 (16299.125)"
+        },
         "88068b7d-28b6-4236-8880-f04814a41dec": {
             "arch": "amd64",
             "build": "19045.6029",
@@ -918,6 +960,12 @@
             "created": 1749698822,
             "title": "Cumulative Update for Microsoft server operating system Version 24H2 (Hotpatch capable) (26100.4270)"
         },
+        "a00eab2c-02ce-4beb-9d7f-713b760b646f": {
+            "arch": "amd64",
+            "build": "16299.248",
+            "created": 1752098177,
+            "title": "Feature update to Windows 10, version 1709 (16299.248)"
+        },
         "a079578a-f688-4076-a4f8-185788b1bf5d": {
             "arch": "amd64",
             "build": "26100.4202",
@@ -972,6 +1020,12 @@
             "created": 1748814231,
             "title": "Windows 11, version 23H2 (22631.5415)"
         },
+        "a7048188-42ea-48a2-a96f-d78ad71d7efc": {
+            "arch": "arm64",
+            "build": "16299.309",
+            "created": 1752098315,
+            "title": "Feature update to Windows 10, version 1709 (16299.309)"
+        },
         "a728473c-e8b0-4ae3-ad66-846b87ef536a": {
             "arch": "amd64",
             "build": "25398.1611",
@@ -983,6 +1037,12 @@
             "build": "25398.1665",
             "created": 1749574950,
             "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1665)"
+        },
+        "aa094a3f-031a-44b0-9ac0-305384dc4c3f": {
+            "arch": "x86",
+            "build": "16299.248",
+            "created": 1752098208,
+            "title": "Feature update to Windows 10, version 1709 (16299.248)"
         },
         "ab7e9681-3590-449d-94ef-3bb8818edba9": {
             "arch": "amd64",
@@ -1469,6 +1529,12 @@
             "build": "22621.4974",
             "created": 1749159280,
             "title": "Windows 11, version 22H2 (22621.4974)"
+        },
+        "fe2ba97f-43c5-48be-97e6-acb9de47c182": {
+            "arch": "amd64",
+            "build": "16299.125",
+            "created": 1752098059,
+            "title": "Feature update to Windows 10, version 1709 (16299.125)"
         },
         "fe7c18e4-abf4-47ba-95ad-10ec5ff39564": {
             "arch": "amd64",
