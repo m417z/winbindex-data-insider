@@ -264,6 +264,12 @@
             "created": 1750352527,
             "title": "Windows Server Insider Preview 26433.1000 (ge_prereleaseserver)"
         },
+        "3192eef0-6592-4f07-a905-e400dc14015c": {
+            "arch": "x86",
+            "build": "16299.371",
+            "created": 1752097640,
+            "title": "Feature update to Windows 10, version 1709 (16299.371)"
+        },
         "34fd770a-248a-426c-9761-ed45cde7ef85": {
             "arch": "amd64",
             "build": "26200.5641",
@@ -1391,6 +1397,12 @@
             "build": "27891.1000",
             "created": 1751562016,
             "title": "Windows 11 Insider Preview 27891.1000 (rs_prerelease)"
+        },
+        "f871b882-95f6-4ef8-9bd7-ffdc238ba06e": {
+            "arch": "amd64",
+            "build": "16299.371",
+            "created": 1752097633,
+            "title": "Feature update to Windows 10, version 1709 (16299.371)"
         },
         "f970a98f-1b39-440a-8954-50722caba0c2": {
             "arch": "arm64",
