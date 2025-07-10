@@ -41,7 +41,7 @@ def get_update_download_urls(download_uuid):
     files = r.json()['response']['files']
 
     urls = []
-    for file in files:
+    for file, file_info in files.items():
         # Skip metadata ESD files which contain partial content and can't be
         # extracted with 7z.
         if file.lower() in [
@@ -64,7 +64,8 @@ def get_update_download_urls(download_uuid):
 
         urls.append({
             'name': file,
-            'url': files[file]['url'],
+            'url': file_info['url'],
+            'sha256': file_info['sha256'],
         })
 
     return urls
@@ -88,15 +89,16 @@ def download_update(windows_version, update_kb):
     for download_url in download_urls:
         name = download_url['name']
         url = download_url['url']
+        sha256 = download_url['sha256']
 
-        args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url]
+        args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url, '--checksum=sha-256=' + sha256]
         while True:
             result = subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
             if result.returncode == 0:
                 break
 
             # https://aria2.github.io/manual/en/html/aria2c.html#exit-status
-            if result.returncode not in [1, 22]:
+            if result.returncode not in [1, 22, 32]:
                 raise Exception(f'Failed to download {name} from {url} (exit code {result.returncode})')
 
             print(f'[{update_kb}] Retrying download of {name} from {url}...')
