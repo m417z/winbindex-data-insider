@@ -5,7 +5,7 @@ and updates it on a regular basis with GitHub Actions.
 
 The data in this repository is indexed with the help of [UUP
 dump](https://uupdump.net/), using the [UUP dump
-API](https://github.com/uup-dump/json-api). When new builds are released, the
+API](https://git.uupdump.net/uup-dump/api). When new builds are released, the
 scripts extract and index all supported binaries.
 
 ## Winbindex
