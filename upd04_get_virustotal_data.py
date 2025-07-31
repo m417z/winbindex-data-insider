@@ -54,7 +54,7 @@ def lookup_virustotal_bulk_hashes_exist(session: requests.Session, file_hashes):
     url = 'https://www.virustotal.com/partners/sysinternals/file-reports?apikey=4e3202fdbe953d628f650229af5b3eb49cd46b2d3bfe5546ae3c5fa48b554e0c'
     body = [{'hash': hash} for hash in file_hashes]
 
-    response = session.post(url, verify=False, json=body, headers={'User-Agent': 'VirusTotal'})
+    response = session.post(url, verify=False, json=body, headers={'User-Agent': 'VirusTotal'}, timeout=30)
     response.raise_for_status()
     response = response.json()
 
