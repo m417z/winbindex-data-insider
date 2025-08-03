@@ -201,6 +201,8 @@ def run_virustotal_updates():
 
     if not check_pymultitor():
         start_pymultitor([
+            '--request-timeout', '30',
+            '--on-timeout',
             '--on-status-code', '403', '429',
             '--tor-timeout', '0',
         ])

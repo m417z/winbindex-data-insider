@@ -54,7 +54,7 @@ def lookup_virustotal_bulk_hashes_exist(session: requests.Session, file_hashes):
     url = 'https://www.virustotal.com/partners/sysinternals/file-reports?apikey=4e3202fdbe953d628f650229af5b3eb49cd46b2d3bfe5546ae3c5fa48b554e0c'
     body = [{'hash': hash} for hash in file_hashes]
 
-    response = session.post(url, verify=False, json=body, headers={'User-Agent': 'VirusTotal'}, timeout=30)
+    response = session.post(url, verify=False, json=body, headers={'User-Agent': 'VirusTotal'})
     response.raise_for_status()
     response = response.json()
 
@@ -126,7 +126,7 @@ def get_virustotal_data_for_file(session: requests.Session, file_hash, output_di
     }
 
     try:
-        r = session.get(url, verify=False, headers=headers, timeout=30)
+        r = session.get(url, verify=False, headers=headers)
     except Exception as e:
         print(f'ERROR: failed to get {url}')
         print(f'       {e}')
@@ -162,7 +162,7 @@ def get_virustotal_data_for_file(session: requests.Session, file_hash, output_di
 
     if result == 'no_pe_info':
         try:
-            r = session.post(url + '/analyse', verify=False, headers=headers, timeout=30)
+            r = session.post(url + '/analyse', verify=False, headers=headers)
             print(f'Submitted {file_hash} for analysis, response: {r.status_code}')
         except Exception as e:
             print(f'ERROR: failed to submit {file_hash} for analysis')
