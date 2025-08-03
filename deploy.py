@@ -2,11 +2,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import subprocess
 import requests
-import tempfile
 import inspect
 import html
 import json
-import time
+import os
 import re
 
 from upd01_get_list_of_updates import main as upd01_get_list_of_updates
@@ -18,6 +17,7 @@ from symbol_server_link_enumerate import main as symbol_server_link_enumerate
 import config
 
 deploy_start_time = datetime.now()
+pymultitor_token = os.urandom(32).hex()
 
 
 def filter_updates(updates, update_kbs):
@@ -159,38 +159,38 @@ def is_handling_update_in_info_progress_virustotal():
         return True
 
 
-def check_pymultitor(proxy='http://127.0.0.1:8080'):
+def check_pymultitor(endpoint='http://127.0.0.1:8080/status'):
     try:
-        url = 'http://0.0.0.0/'
-        requests.get(url, proxies={'http': proxy}, timeout=30)
-        return True
+        response = requests.get(endpoint, timeout=30, headers={
+            'Host': 'pymultitor',
+            'Proxy-Authorization': f'PyMultitor {pymultitor_token}',
+        })
     except requests.exceptions.RequestException:
         return False
 
+    response.raise_for_status()
+    data = response.json()
+
+    if data['status'] == 'stopped':
+        return False
+
+    if data['status'] != 'running':
+        raise Exception(f'PyMultitor unexpected status: {data["status"]}')
+
+    return True
+
 
 def start_pymultitor(args):
-    # Using check_pymultitor while pymultitor is starting leads to errors. Use
-    # --ready-marker-file instead.
-
-    with tempfile.NamedTemporaryFile() as tmp:
-        temp_file = Path(tmp.name)
-
-    subprocess.Popen([
-        'pymultitor',
-        '--ready-marker-file', temp_file,
-        *args
-    ])
+    subprocess.Popen(['pymultitor'] + args, env={
+        **os.environ,
+        'PYMULTITOR_TOKEN': pymultitor_token,
+    })
 
     while True:
-        try:
-            if temp_file.read_text() == '1':
-                break
-        except FileNotFoundError:
-            pass
+        if check_pymultitor():
+            return
 
-        time.sleep(1)
-
-    temp_file.unlink()
+        print('Waiting for PyMultitor to start...')
 
 
 def run_virustotal_updates():
