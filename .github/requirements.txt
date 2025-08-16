@@ -3,4 +3,4 @@ isal
 mitmproxy
 orjson
 requests
-signify
+signify[msi]
