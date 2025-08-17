@@ -1,14 +1,18 @@
 {
 "next": [
-"trustedsignalcredprov.dll",
-"32223eaaf39802e486879cd2d75279a07cf6b4439f467dcb7905e15f7646b067"
+"eapp3hst.dll",
+"9a70a58f31d02cad69e9b2117524b4b817fbd5b689e191f9d09e881b528b3111"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"dimsjob.dll",
-"1d9ec3e8767e0cdf9153001d5c196d0195c175bd9610718b5f3f98f721fbd711"
+"appidpolicyconverter.exe",
+"b98ddeb3627e4252f2d608bf7e4a33cccacc94a5eb2374311493895ca8d95c13"
+],
+[
+"cscript.exe",
+"7d7b4b64b9135d659827ccf3d8824962325225ca9b60f9b26db8f0811f77466f"
 ],
 [
 "ekaioopl.dll",
