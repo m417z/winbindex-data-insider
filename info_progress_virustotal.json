@@ -1,7 +1,7 @@
 {
 "next": [
-"qmgr.dll",
-"058c1f97ae3e891ab1c08ac8474938b03a45d6a104cdea87546a35af1a44d52a"
+"bthusb.sys",
+"da2c64278e8aa1d8457fc663f830b75c4287b0abfe67d67a752a085147375d10"
 ],
 "next_updates": null,
 "pending": {},
@@ -31,10 +31,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"iissetup.exe",
-"519f892005fd934820406de4d2193162cd3829402f8d77a82a27647d87382e72"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -47,8 +43,52 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
+"rdpshell.exe",
+"8286452f4b67a2ba3341c19d39455c426d68e217fa19580f2b8f95b6d730a33b"
+],
+[
+"roamingsecurity.dll",
+"9a6a89669e3cc10e0409f9adf5bec9f5bbfca3e1c2be6f12a53e280610e0e2eb"
+],
+[
+"sdiagnhost.exe",
+"3f66b877acdfe0d7ad4469d3c9806d863ac4b2c0263c66ed37fc38cd3a4bd1d7"
+],
+[
+"sdiagnhost.exe",
+"f4ce16d3c6c01f5d779efafa56c9be3459ff9b7cc89a052f532c60d8ff2c15fc"
+],
+[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vmbus.sys",
+"be361dca5378db32a70b5281a980a3a2539b1f89750614891d683fe741737de5"
+],
+[
+"vmconnect.exe",
+"182b6969eac1978dbef32220fbf3c639f66ede8929aa060b75a675c44d699bd2"
+],
+[
+"vssadmin.exe",
+"00ba173ed097db8a8e963e5ec629aedfb708887213f8ab7f84c0f197deee7452"
+],
+[
+"win32kbase_rs.sys",
+"e4c2f266418b44fe6f4dbf5dcb877de2f6e20bc0f9bac001d73fc18133034b67"
+],
+[
+"wininit.exe",
+"00c7e4961096c2eff406c2cdf0c7a439552415dde462c54cbe55f47067d0cc42"
+],
+[
+"xboxgip.sys",
+"35fdf4597d346470da129a1a8fc7905437e5afd599aede7f9fb154c4b6fbb492"
+],
+[
+"xcopy.exe",
+"cee56c03cc37dd6ca2f67c7e550a02b9f9543cbbb1f1f2bcf324781282fb1b29"
 ]
 ],
 "updates": null
