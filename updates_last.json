@@ -564,6 +564,12 @@
             "created": 1752613327,
             "title": "Feature update to Windows 10, version 22H2 (19045.6159)"
         },
+        "77e605ec-b711-4996-8128-bec76698123e": {
+            "arch": "amd64",
+            "build": "27928.1",
+            "created": 1755709208,
+            "title": "Windows 11 Insider Preview 27928.1 (br_release)"
+        },
         "78128e18-4534-43c2-b6e6-adac27a094ff": {
             "arch": "amd64",
             "build": "17763.2145",
@@ -731,6 +737,12 @@
             "build": "26200.5751",
             "created": 1755277217,
             "title": "Windows 11 Insider Preview 10.0.26200.5751 (ge_release_upr)"
+        },
+        "8c950947-309e-4038-93e7-210500fd74fd": {
+            "arch": "arm64",
+            "build": "27928.1",
+            "created": 1755709209,
+            "title": "Windows 11 Insider Preview 27928.1 (br_release)"
         },
         "8cd45712-c6ea-49da-853b-d13aedeebcf5": {
             "arch": "x86",

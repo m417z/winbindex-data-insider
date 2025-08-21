@@ -7,6 +7,18 @@
 "pending": {},
 "retry": [
 [
+"backgroundtaskhost.exe",
+"687973e7744b528fa81fe18f2fbcfee294e1e774e237bc3cb6d8ab027017fbbc"
+],
+[
+"backgroundtaskhost.exe",
+"adf3401da2d76da3cf5217d1ebcbd1d02bcd6413219a0e2a5a2195500249e6de"
+],
+[
+"cmd.exe",
+"84f26c34dedc38067b783849bdd8a69f2e192ed7903c3114922165c4ab5bd6aa"
+],
+[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
@@ -31,6 +43,10 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
+"ie4ushowie.exe",
+"0261ec1556a04f4b477df03751018437f0583d3dc8c28f53893a4ce41ef4adfc"
+],
+[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -47,8 +63,12 @@
 "21df6cba6a8b183549b21a700da535afe2a2d248caa766fd54493e0822374469"
 ],
 [
-"sdiagnhost.exe",
-"f4ce16d3c6c01f5d779efafa56c9be3459ff9b7cc89a052f532c60d8ff2c15fc"
+"userinit.exe",
+"1281b3dae949a280e4a91a89e69909c55e9be04f62642dc83a65493796d3cf61"
+],
+[
+"usoclient.exe",
+"ed3598c54d0967227fdbf60e93312af485fc68ac08328a1754ac6c49cf756e8d"
 ],
 [
 "vc_redist.arm64.exe",
