@@ -7,6 +7,10 @@
 "pending": {},
 "retry": [
 [
+"cxcredprov.dll",
+"bff5e7c2f571dcaf99e57e6580b63e77a4e2388ae1decd5bbe4ebdfa06a34af8"
+],
+[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
@@ -43,28 +47,12 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"shellexperiencehost.exe",
-"9f8f17bbf934619ca6f087b9ce1a3b7da4eafe5eb97687898d6ac93f8958ab07"
-],
-[
-"usoclient.exe",
-"60c78b55e74965edebd7aa64a27ef34ea4ffd6f7249039e780fab3fd2aa89820"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ],
 [
 "vds.exe",
 "055a2ccec80eed5883e4eb188769f4e7ae4333d4b00a4a16e9ceeb99dc7d562e"
-],
-[
-"wiawow64.exe",
-"68d2f0242232f828f6ae42a4ec3ab6b1f2f1f25ba7125b952d4bde405a962985"
-],
-[
-"wmic.exe",
-"dcbcb19f885a17eede85234feedc69db5fcb0651821041c06a6473e8443984ce"
 ]
 ],
 "updates": null
