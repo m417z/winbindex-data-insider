@@ -16558,8 +16558,6 @@
 "microsoft.windows.imaging.dll",
 "microsoft.windows.imaging.winmd",
 "microsoft.windows.imaginginternal.winmd",
-"microsoft.windows.internal.ai.winmd",
-"microsoft.windows.internal.imagecreation.winmd",
 "microsoft.windows.internal.imaging.winmd",
 "microsoft.windows.internal.semanticsearch.winmd",
 "microsoft.windows.internal.sessionmock.winmd",
