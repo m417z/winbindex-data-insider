@@ -432,6 +432,12 @@
             "created": 1752166844,
             "title": "Windows 11, version 23H2 (22631.5696)"
         },
+        "5c2cdcc4-9e47-40d1-8e33-e9614951ce1e": {
+            "arch": "amd64",
+            "build": "22621.5768",
+            "created": 1756053151,
+            "title": "Cumulative Update for Windows 11 Version 22H2 (22621.5768)"
+        },
         "5e1e7bfd-eedd-455b-8ae8-8c4548847d61": {
             "arch": "amd64",
             "build": "22621.5771",
