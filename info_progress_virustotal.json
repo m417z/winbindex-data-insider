@@ -1,7 +1,7 @@
 {
 "next": [
-"securityhealthhost.exe",
-"e1380bbcde8923e595c37c69869b4ba79fb54c5059a45efd6cfdbfd0821702ba"
+"appresolver.dll",
+"4e4cab0fb46cbd0de4f05acd39002091be06ec62fcffabce4c05bc639676dc13"
 ],
 "next_updates": null,
 "pending": {},
@@ -43,8 +43,44 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
+"setupapi.dll",
+"652d875601f50bbe8142054a4686058f91f6c20303dedc7b52540691a8dc5879"
+],
+[
+"spoolsv.exe",
+"2314782ffda3d8f65d339495ec5dabcf0c88082db1c75f53d93bad435c7c5b92"
+],
+[
+"user32.dll",
+"bc4651d87574f9935c259aedd858e219df472aa65d5032bf21a6632a0ed72b08"
+],
+[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vssadmin.exe",
+"c7bd676d68625b9855055c9f4e6a05d0f1d7983392ba5c7b3df3f03a67346598"
+],
+[
+"wevtutil.exe",
+"758182368bbb6eae1b785bf14c042a1a9a385fc721d584fd70044d6c20bd0337"
+],
+[
+"win32k.sys",
+"5e3ea49fc14f56ea68268a07ddbdbb86dd4e5447504c94105ae4fcbc3ddb21e2"
+],
+[
+"win32u.dll",
+"6c96defee7b770a0ebf20d70e44eb9e39e487a7965f1ac7b4a792042486f0865"
+],
+[
+"windowscodecs.dll",
+"724a85087b078a76c9e5ef744ae9556e0c5a7f94ae239560d49fa0dc20107939"
+],
+[
+"wmpnetwk.exe",
+"46f1d590ff7a721e29de1128a792357340d666771a87d7e5042df89716241e5e"
 ]
 ],
 "updates": null
