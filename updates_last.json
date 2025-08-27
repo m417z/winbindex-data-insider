@@ -108,12 +108,6 @@
             "created": 1753203611,
             "title": "Windows 11, version 24H2 (26100.4770)"
         },
-        "13e417f4-de07-41d0-89f5-6042f6db6bc4": {
-            "arch": "arm64",
-            "build": "26100.4484",
-            "created": 1751068820,
-            "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.4484)"
-        },
         "14a53d10-8e00-4676-a476-6edd147ef95a": {
             "arch": "x86",
             "build": "19045.6280",
@@ -570,12 +564,6 @@
             "created": 1754748687,
             "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 (9310.1)"
         },
-        "73d4be2f-c31f-4970-87e6-f391913ebd3d": {
-            "arch": "amd64",
-            "build": "26100.4484",
-            "created": 1751062004,
-            "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.4484)"
-        },
         "7619f775-a5b7-4142-be95-ac5533f786ae": {
             "arch": "arm64",
             "build": "9310.1",
@@ -617,6 +605,12 @@
             "build": "17134.254",
             "created": 1752182110,
             "title": "Cumulative Update for Windows 10 Version 1803 (17134.254)"
+        },
+        "794fb234-40ed-4255-9cb5-7aeeab3d39cb": {
+            "arch": "arm64",
+            "build": "19045.6282",
+            "created": 1756269094,
+            "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6282)"
         },
         "7a3240c9-8290-4198-ad62-aa3284d33aa5": {
             "arch": "amd64",
@@ -785,6 +779,12 @@
             "build": "26200.5751",
             "created": 1755277217,
             "title": "Windows 11 Insider Preview 10.0.26200.5751 (ge_release_upr)"
+        },
+        "8beed7cf-abfc-4fa1-a265-91d308e97218": {
+            "arch": "x86",
+            "build": "19045.6282",
+            "created": 1756269094,
+            "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6282)"
         },
         "8c950947-309e-4038-93e7-210500fd74fd": {
             "arch": "arm64",
@@ -1157,6 +1157,12 @@
             "build": "26100.4652",
             "created": 1751994118,
             "title": "Cumulative Update for Microsoft server operating system version 24H2 (26100.4652)"
+        },
+        "c7e90d32-5a3e-4be7-96dc-00f0e7946643": {
+            "arch": "amd64",
+            "build": "19045.6282",
+            "created": 1756269095,
+            "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6282)"
         },
         "c9d93c4b-15be-436d-9f4d-06382e2c1847": {
             "arch": "amd64",

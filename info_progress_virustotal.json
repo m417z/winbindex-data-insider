@@ -45,10 +45,6 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"win32k.sys",
-"5e3ea49fc14f56ea68268a07ddbdbb86dd4e5447504c94105ae4fcbc3ddb21e2"
 ]
 ],
 "updates": null
