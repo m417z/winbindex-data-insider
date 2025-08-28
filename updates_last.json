@@ -66,12 +66,6 @@
             "created": 1755304249,
             "title": "Cumulative Update for Windows 10 Version 21H2 (19044.6216)"
         },
-        "096d8922-1234-444b-b42b-0f2a2475491b": {
-            "arch": "amd64",
-            "build": "17763.7434",
-            "created": 1751137983,
-            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.7434)"
-        },
         "0b86f7fa-bc82-4fd0-9f82-3fde958c69cc": {
             "arch": "x86",
             "build": "16299.64",
@@ -594,12 +588,6 @@
             "created": 1755709208,
             "title": "Windows 11 Insider Preview 27928.1 (br_release)"
         },
-        "78128e18-4534-43c2-b6e6-adac27a094ff": {
-            "arch": "amd64",
-            "build": "17763.2145",
-            "created": 1751137878,
-            "title": "Cumulative Update Preview for Windows Server 2019 (1809) (17763.2145)"
-        },
         "787f7138-0927-4167-917b-19b8f93bffda": {
             "arch": "x86",
             "build": "17134.254",
@@ -647,6 +635,12 @@
             "build": "26120.5722",
             "created": 1753736427,
             "title": "Windows 11 Insider Preview 10.0.26120.5722 (ge_release_upr)"
+        },
+        "7cbcc54d-3f6a-4371-a62a-67e55cf9e604": {
+            "arch": "amd64",
+            "build": "26470.1000",
+            "created": 1756314019,
+            "title": "Windows Server Insider Preview 26470.1000 (ge_prereleaseserver)"
         },
         "7e463e9d-3e53-4039-91d9-847a70d93d88": {
             "arch": "arm64",
@@ -1199,6 +1193,12 @@
             "build": "19045.6159",
             "created": 1752613325,
             "title": "Feature update to Windows 10, version 22H2 (19045.6159)"
+        },
+        "d423cda1-ea9d-4242-8c83-ec20630514ad": {
+            "arch": "arm64",
+            "build": "26470.1000",
+            "created": 1756314067,
+            "title": "Windows Server Insider Preview 26470.1000 (ge_prereleaseserver)"
         },
         "d4743cce-51b5-4749-9d7f-1cc3867afe36": {
             "arch": "arm64",
