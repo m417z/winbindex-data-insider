@@ -636,6 +636,12 @@
             "created": 1753736427,
             "title": "Windows 11 Insider Preview 10.0.26120.5722 (ge_release_upr)"
         },
+        "7c293943-7bc1-4e80-802b-200a7f86c09f": {
+            "arch": "arm64",
+            "build": "22621.5768",
+            "created": 1756402552,
+            "title": "Cumulative Update for Windows 11 Version 22H2 (22621.5768)"
+        },
         "7cbcc54d-3f6a-4371-a62a-67e55cf9e604": {
             "arch": "amd64",
             "build": "26470.1000",
