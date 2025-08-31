@@ -1,27 +1,11 @@
 {
 "next": [
-"appresolver.dll",
-"4e4cab0fb46cbd0de4f05acd39002091be06ec62fcffabce4c05bc639676dc13"
+"kerberos.dll",
+"5e05db1e8a363b1b2266bcff2f26ffd0ea786cdbf2d09f2f3476803a280935ee"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"bcdedit.exe",
-"7eefee4aecdc9bc7a0b50c5b8b3958431e1e99e86dcd79fd68eafdc4bbca1b95"
-],
-[
-"cscript.exe",
-"b6bb6713fb9fdedeef03c4900de883ef3c7c717f92198c18affc8c43eb6554c5"
-],
-[
-"ctfmon.exe",
-"4d409d199314a67682936abde33139d7da96a04630aa7d61da9f7bc378199e01"
-],
-[
-"devicecensus.exe",
-"2d51f1bfe27c56141cd07ab201ba6d7ddaf63c5a79b3520de996f94ea10d925e"
-],
 [
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
@@ -47,20 +31,8 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"find.exe",
-"a4affbda6e944004539a21d4c57e667b96ca0c9ab3ac43db8b0d9c03132f04db"
-],
-[
-"fsquirt.exe",
-"ad33774898690a98b62dbd298850d6157f9b087c0b6d84bb6c37b8980f51ccbf"
-],
-[
-"logonui.exe",
-"98c97c00c922decc613e52e8d39ae5514b89fe74581ad76fe312ce3be283dc24"
-],
-[
-"mdmdiagnosticstool.exe",
-"485c1ae059e11f1911761d148ac760cf26179c76376b18a357fbc02628269009"
+"fodhelper.exe",
+"ce89ef18ae558d1ae21fabc85cda2d61468dde66a5732c862992757eea052275"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
@@ -75,28 +47,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"netsh.exe",
-"7f03dac028a4d309112cdbbeb1398a1b1d8b393a0300025b28eb9ff872be126c"
-],
-[
-"oobeldr.exe",
-"9f8c707525c23ddc08343d61bf93572560e2a4527c75d2a3cc74e2bdf45e2e91"
-],
-[
-"rundll32.exe",
-"ea4aac5ba68dbf465d47651353c5a44827591d93d707523637f749a5d74c0f93"
-],
-[
-"sppextcomobj.exe",
-"6a20e7e76a9213bd1633a8d03d90e7433443b583bc6b460560ecf312aba047a3"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"wevtutil.exe",
-"3a82e22792ba292bd1194e00659c20ca1dd2a8974ec19768411cb9c702756b79"
 ]
 ],
 "updates": null
