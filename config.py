@@ -127,6 +127,10 @@ file_hashes_unusual_section_alignment = {
     '50256eeadbbc5cccf3ebaeb9020d91edb9961e7404bd41067a4290362be6962f': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # nvm62x64.sys
 }
 
+file_names_zero_timestamp = {
+    'microsoft.ink.dll',
+}
+
 file_hashes_zero_timestamp = {
     '18dd945c04ce0fbe882cd3f234c2da2d0faa12b23bd6df7b1edc31faecf51c69',  # brlapi-0.8.dll
     '7a9113d00a274c075c58b22a3ebacf1754e7da7cfb4d3334b90367b602158d78',  # brltty.exe

@@ -343,7 +343,7 @@ def add_file_info_from_update(
 virustotal_info_cache: dict[str, Any] = {}
 
 
-def get_virustotal_info(file_hash: str):
+def get_virustotal_info(filename: str, file_hash: str):
     # https://stackoverflow.com/a/57027610
     def is_power_of_two(n):
         return (n != 0) and (n & (n-1) == 0)
@@ -394,7 +394,10 @@ def get_virustotal_info(file_hash: str):
     if 'timestamp' in attr['pe_info']:
         timestamp = attr['pe_info']['timestamp']
     else:
-        assert file_hash in config.file_hashes_zero_timestamp, file_hash
+        assert (
+            filename in config.file_names_zero_timestamp or
+            file_hash in config.file_hashes_zero_timestamp
+        ), (filename, file_hash)
         timestamp = 0
 
     info = {
@@ -509,7 +512,7 @@ def group_update_assembly_by_filename(
             hash_is_sha256 = False
             file_hash = file_hash_sha1
 
-        virustotal_info = get_virustotal_info(file_hash)
+        virustotal_info = get_virustotal_info(filename, file_hash)
         if virustotal_info and file_hash != virustotal_info['sha256']:
             assert file_hash == virustotal_info['sha1']
             file_hash = virustotal_info['sha256']
@@ -745,7 +748,7 @@ def process_virustotal_data():
                 continue
 
             try:
-                virustotal_info = get_virustotal_info(file_hash)
+                virustotal_info = get_virustotal_info(filename, file_hash)
                 assert virustotal_info is not None
                 if file_hash != virustotal_info['sha256']:
                     assert file_hash == virustotal_info['sha1']
