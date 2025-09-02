@@ -1,7 +1,7 @@
 {
 "next": [
-"sppextcomobj.exe",
-"595d5533346112938830a3b1b7273b44c1b2b1fdab9a75f5ca7e956e084dcc1f"
+"combase.dll",
+"86efe6060390238796e4d92426cc5c1114581b5b04ea04c2129158773bdb647b"
 ],
 "next_updates": null,
 "pending": {},
@@ -31,14 +31,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"la57setup.exe",
-"e773bbd8b7e20d5aec962e49d8c95366ca8daf6614338f90d719bcb1eaa35375"
-],
-[
-"lockapp.exe",
-"888f849aaf3e276ca84cee6f7aa3bd92d0f369eeaf17b4e22f0fb6c5f07b8d72"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -51,28 +43,16 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"mofcomp.exe",
-"655bf3a3e65ac76c1f2aaff445fcd3f5bd71337a1c8817a02231d922ea1793d7"
-],
-[
-"narrator.exe",
-"86bd5a690f812a0ea2005427ebbd754fa5d40b5f14cf8d01acea84ebb458d041"
-],
-[
-"ntoskrnl.exe",
-"1a15589d458f49f741770c69d026fb61a4343fc4fa95016cb8db384a249bd132"
-],
-[
-"sapisvr.exe",
-"de8f86237eb80e564b26a50b3b643f2c9fb853c6d90a2583e307751d85d68777"
-],
-[
-"sndvol.exe",
-"c64b4ce0a39ed5ea3883983667cafbeb717aada4673fd27fae9663ec32132cab"
+"utilman.exe",
+"2bcebff166853ecbf8efed688dbf1ca469247ef18225c87e6a58f9626e4fb2a6"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"windows.system.launcher.dll",
+"c4b3880bd26a6b9e2235816a9a5db3278afc84bf128b465cf93f63d483b9282d"
 ]
 ],
 "updates": null
