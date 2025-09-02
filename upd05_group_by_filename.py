@@ -343,7 +343,7 @@ def add_file_info_from_update(
 virustotal_info_cache: dict[str, Any] = {}
 
 
-def get_virustotal_info(filename: str, file_hash: str):
+def get_virustotal_info(target_filename: str, file_hash: str):
     # https://stackoverflow.com/a/57027610
     def is_power_of_two(n):
         return (n != 0) and (n & (n-1) == 0)
@@ -395,9 +395,9 @@ def get_virustotal_info(filename: str, file_hash: str):
         timestamp = attr['pe_info']['timestamp']
     else:
         assert (
-            filename in config.file_names_zero_timestamp or
+            target_filename in config.file_names_zero_timestamp or
             file_hash in config.file_hashes_zero_timestamp
-        ), (filename, file_hash)
+        ), (target_filename, file_hash)
         timestamp = 0
 
     info = {
@@ -741,8 +741,8 @@ def process_virustotal_data():
 
     errors = 0
 
-    for name in pending:
-        for file_hash in pending[name]:
+    for filename in pending:
+        for file_hash in pending[filename]:
             if file_hash in virustotal_info_cache:
                 # Was already added with one of the updates.
                 continue
@@ -754,7 +754,7 @@ def process_virustotal_data():
                     assert file_hash == virustotal_info['sha1']
                     file_hash = virustotal_info['sha256']
 
-                add_file_info_from_virustotal_data(name, output_dir,
+                add_file_info_from_virustotal_data(filename, output_dir,
                     file_hash=file_hash,
                     file_info=virustotal_info)
             except Exception:
