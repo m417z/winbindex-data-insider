@@ -1,7 +1,7 @@
 {
 "next": [
-"combase.dll",
-"86efe6060390238796e4d92426cc5c1114581b5b04ea04c2129158773bdb647b"
+"rdpserverbase.dll",
+"052f2f24184928864a265847e83e0a9e3fd65d0992c76f2b35ded2c93321ac9f"
 ],
 "next_updates": null,
 "pending": {},
@@ -43,16 +43,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"utilman.exe",
-"2bcebff166853ecbf8efed688dbf1ca469247ef18225c87e6a58f9626e4fb2a6"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"windows.system.launcher.dll",
-"c4b3880bd26a6b9e2235816a9a5db3278afc84bf128b465cf93f63d483b9282d"
 ]
 ],
 "updates": null
