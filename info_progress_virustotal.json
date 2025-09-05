@@ -1,15 +1,11 @@
 {
 "next": [
-"kernel.appcore.dll",
-"a32738d3f4d58bc4acf96d446b405be2f4a0225bff1d486370ef49702829d8eb"
+"utcutil.dll",
+"c42f5cdf4f3511a38b7648f37dda6ce297773da7f07629d896dd83930603da8c"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"atapi.sys",
-"eb4889cc6ea93ef4f11c08423c277e8f75290297eab94a32f7b7b3bfcb34b4bf"
-],
 [
 "ataport.sys",
 "b82b2e2f5031113e798021a3d28412f0c2c1116e4678834690f2e2ba23712393"
@@ -39,8 +35,8 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"hvsocket.sys",
-"edb18ef8ca75d3f4deb7829b01dbe8780032b749bfc9cc0d43590b75c434e05e"
+"ksthunk.sys",
+"a409b869c0837eebc2668bd0991f7e5f197ee843e9b09f5f2e2d3f6ec53f3e32"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
@@ -55,16 +51,12 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"system.net.http.webrequest.dll",
-"e2bb825378431d88c58b2f178f7ee027f53b2c12801580b460ddba55fec1e7c2"
+"mouhid.sys",
+"610d5f81d0ff78154904b3ebabc228278681c5d644ecab3a26c3be3453aa0daa"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"xcopy.exe",
-"c6bf7e57526069a5587be71cae58bdebadaee9102b85e1069beb4270414ec7f9"
 ]
 ],
 "updates": null
