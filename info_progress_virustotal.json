@@ -7,10 +7,6 @@
 "pending": {},
 "retry": [
 [
-"ataport.sys",
-"b82b2e2f5031113e798021a3d28412f0c2c1116e4678834690f2e2ba23712393"
-],
-[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
@@ -35,10 +31,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"ksthunk.sys",
-"a409b869c0837eebc2668bd0991f7e5f197ee843e9b09f5f2e2d3f6ec53f3e32"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -49,10 +41,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll",
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
-],
-[
-"mouhid.sys",
-"610d5f81d0ff78154904b3ebabc228278681c5d644ecab3a26c3be3453aa0daa"
 ],
 [
 "vc_redist.arm64.exe",
