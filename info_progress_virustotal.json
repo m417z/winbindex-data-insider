@@ -1,7 +1,7 @@
 {
 "next": [
-"utcutil.dll",
-"c42f5cdf4f3511a38b7648f37dda6ce297773da7f07629d896dd83930603da8c"
+"fse.sys",
+"ea10da0b6882bcb6ffc639e837a1194d52e76ea6a11be89dcf03de8361a231db"
 ],
 "next_updates": null,
 "pending": {},
@@ -45,6 +45,10 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"whoami.exe",
+"9719c6a6cb0d932bcd93a223f1202bce46d3be11e896e7369cbc45558ea22df5"
 ]
 ],
 "updates": null
