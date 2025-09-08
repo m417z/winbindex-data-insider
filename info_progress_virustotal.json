@@ -1,7 +1,7 @@
 {
 "next": [
-"fse.sys",
-"ea10da0b6882bcb6ffc639e837a1194d52e76ea6a11be89dcf03de8361a231db"
+"upnphost.dll",
+"76a858cca6000405fa7ea2f4ed75f96b108704b1cf743c02d534c115f1f08bce"
 ],
 "next_updates": null,
 "pending": {},
@@ -31,6 +31,14 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
+"geolocation.dll",
+"ef4df11797b13482d1d89a7b76ff94ee7ffc4ab29a79cb5f67fc668301e87172"
+],
+[
+"installutillib.dll",
+"1fbcbdec9000338579670d46616a2b0ebf46d08d51d7fb761398f07160c5f586"
+],
+[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -43,12 +51,12 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"vc_redist.arm64.exe",
-"8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+"raspppoe.sys",
+"e941da816ec10b92511b71d5a5dcd5b928424207f21294d5a6177edf9226b01d"
 ],
 [
-"whoami.exe",
-"9719c6a6cb0d932bcd93a223f1202bce46d3be11e896e7369cbc45558ea22df5"
+"vc_redist.arm64.exe",
+"8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
 ]
 ],
 "updates": null
