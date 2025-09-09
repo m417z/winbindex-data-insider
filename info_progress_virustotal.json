@@ -7,6 +7,14 @@
 "pending": {},
 "retry": [
 [
+"cleanmgr.exe",
+"ea432c69ee3ef084005fad2eec0a5b7d1fa148bd1e3fd47690c7ea2ac0a11c82"
+],
+[
+"compattelrunner.exe",
+"1f9812cb1fcc7b872a0ccaf817d6e1282cb3a9622b3b5685e275403e5989014e"
+],
+[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
@@ -31,8 +39,8 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"geolocation.dll",
-"ef4df11797b13482d1d89a7b76ff94ee7ffc4ab29a79cb5f67fc668301e87172"
+"findstr.exe",
+"1710de58b8973637e8542a24e18f185b54b88f153d558e0214f8bb63c3349747"
 ],
 [
 "installutillib.dll",
@@ -51,12 +59,24 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"raspppoe.sys",
-"e941da816ec10b92511b71d5a5dcd5b928424207f21294d5a6177edf9226b01d"
+"srtasks.exe",
+"b35801d2ebfde1d64bb6707444781408a8776768f944873d9d356cf00c3f5496"
+],
+[
+"taskhostw.exe",
+"327c4d26bb19e9ded8ab677b481794846bb4ebcaf0d2cfff63593a4c8ee9165d"
 ],
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"wevtutil.exe",
+"b97d68c1917422215e7bbfd1b8934124300e8c6b89f7c46e953d9dab2892ece9"
+],
+[
+"wmiprvse.exe",
+"59de55407ab1e1422e4c3948e19d2c3e231f4f1772dcdbb085eb9834c4afcae6"
 ]
 ],
 "updates": null
