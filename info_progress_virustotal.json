@@ -1,11 +1,39 @@
 {
 "next": [
-"upnphost.dll",
-"76a858cca6000405fa7ea2f4ed75f96b108704b1cf743c02d534c115f1f08bce"
+"filterds.dll",
+"6ae240cd6c9bd956641f37491b9ee2a637e0cba890694aab997f7f68d5dd3e47"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
+[
+"basicdisplay.sys",
+"947fe93b8256e7048cbb96f8a264ed968dd5bc5f16ea9b48c9c97b71e097ca2b"
+],
+[
+"bioenrollmenthost.exe",
+"ed795dd0268fc0a3f1073c02f9db4c0fc4c27bf2a48794a861d6435f3d6df33d"
+],
+[
+"cxltype3.sys",
+"d251cdf5c3d8605ffd6a0b29bc077c57f6ca0f22d4b29d0e7122c905e66cadfc"
+],
+[
+"devrtl.dll",
+"a6b3e6f06e69dd9c2ef027054223f2a62ccbbf4b7f38a3937619918e31bda1d8"
+],
+[
+"difxapi.dll",
+"54ba7b7829371e93a53f9a9ae5470d6b1e90c23a7ed2462deab1917892e4db7f"
+],
+[
+"diskpart.exe",
+"e6c717c017c0649cd92375099714c090d2a7fffbc47066d67b0811de4c7e57e2"
+],
+[
+"dispex.dll",
+"0e8433ba852448edefd32491c59f04fc463f932f41a8900679edc0ca45f0e41a"
+],
 [
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
@@ -45,6 +73,14 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vssadmin.exe",
+"49a8aceb42782c429e3f8eec25d4cda392f4a48f90996662c6308ea755cb06b2"
+],
+[
+"wevtutil.exe",
+"89130722c67652367f5017425b65ecb46adecfb4b811ee5bcd3a1592c956088f"
 ],
 [
 "wevtutil.exe",
