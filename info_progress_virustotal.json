@@ -7,16 +7,8 @@
 "pending": {},
 "retry": [
 [
-"difxapi.dll",
-"54ba7b7829371e93a53f9a9ae5470d6b1e90c23a7ed2462deab1917892e4db7f"
-],
-[
 "dispex.dll",
 "0e8433ba852448edefd32491c59f04fc463f932f41a8900679edc0ca45f0e41a"
-],
-[
-"dmclient.exe",
-"b16eefefc152288cc5f76eb92c1b04767cecbcf2a19d83482ceeb911c5347ca0"
 ],
 [
 "ekaioopl.dll",
@@ -55,12 +47,12 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"mobsync.exe",
-"b799e8a1179eaaf7461f4a9b73721d9da13719a5837980f466db29df13f5fa18"
+"mousocoreworker.exe",
+"adeb53b86d380308065ba27c286fce7865cab3561a9d84473f35add39c6d589f"
 ],
 [
-"mousocoreworker.exe",
-"c9c45e509139c36a27ecb88fc6e95a98d87e2090d08c49ba38274b171a10cced"
+"omadmclient.exe",
+"ebaeb1177c2f1204892378738b30f1291bd8ee9f59032d91a9f0d94609ab2882"
 ],
 [
 "vc_redist.arm64.exe",
