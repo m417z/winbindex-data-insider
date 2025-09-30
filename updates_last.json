@@ -132,6 +132,12 @@
             "created": 1755646051,
             "title": "Feature update to Windows 10, version 22H2 (19045.6218)"
         },
+        "1c1cd77c-1770-4a2a-a460-986fd9ab89d6": {
+            "arch": "amd64",
+            "build": "26100.6725",
+            "created": 1759248416,
+            "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.6725)"
+        },
         "1d4a360b-36a6-41e8-9a27-174cbdb049ba": {
             "arch": "amd64",
             "build": "9316.1",
@@ -516,12 +522,6 @@
             "created": 1758301223,
             "title": "Windows 11 Insider Preview 10.0.26220.6690 (ge_release_upr)"
         },
-        "6b43135f-1353-4aec-b62a-766e2e427d6a": {
-            "arch": "amd64",
-            "build": "26120.5733",
-            "created": 1754067649,
-            "title": "Windows 11 Insider Preview 10.0.26120.5733 (ge_release_upr)"
-        },
         "6b78a1c3-d724-47ec-a0eb-a0ee25322ef9": {
             "arch": "amd64",
             "build": "27934.1",
@@ -593,12 +593,6 @@
             "build": "19045.6282",
             "created": 1756269094,
             "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6282)"
-        },
-        "7a3240c9-8290-4198-ad62-aa3284d33aa5": {
-            "arch": "amd64",
-            "build": "26200.5733",
-            "created": 1754067634,
-            "title": "Windows 11 Insider Preview 10.0.26200.5733 (ge_release_upr)"
         },
         "7a3abf64-f277-4eae-8377-2b3987468e1f": {
             "arch": "arm64",
@@ -791,12 +785,6 @@
             "build": "26120.6682",
             "created": 1757696432,
             "title": "Windows 11 Insider Preview 10.0.26120.6682 (ge_release_upr)"
-        },
-        "998ddff8-f1d7-4ab7-929e-d20be6aa2c86": {
-            "arch": "arm64",
-            "build": "26120.5733",
-            "created": 1754067646,
-            "title": "Windows 11 Insider Preview 10.0.26120.5733 (ge_release_upr)"
         },
         "9a078cb5-6961-4cc5-bcb9-843c0ddfe007": {
             "arch": "arm64",
@@ -1139,12 +1127,6 @@
             "build": "19045.6280",
             "created": 1755806219,
             "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6280)"
-        },
-        "d8f3cfc2-a5ae-4d6c-9934-3e063269dc10": {
-            "arch": "arm64",
-            "build": "26200.5733",
-            "created": 1754067636,
-            "title": "Windows 11 Insider Preview 10.0.26200.5733 (ge_release_upr)"
         },
         "da5d6795-7f1d-4c6b-8a11-780ac9ce1379": {
             "arch": "arm64",
