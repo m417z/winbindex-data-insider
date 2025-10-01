@@ -665,7 +665,7 @@ def group_update_by_filename(
                                                   update_info=update)
                 files_processed.add(filename)
             except Exception as e:
-                print(f'ERROR: failed to process {path}')
+                print(f'ERROR: failed to process {filename}')
                 print(f'       {e}')
                 if config.exit_on_first_error:
                     raise
