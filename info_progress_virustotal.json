@@ -1,15 +1,11 @@
 {
 "next": [
-"fveupdateai.dll",
-"6f1807d9d770806be155e8d5c967a3831c78c91fbe11add9371b7f15d6e8eefa"
+"sppinst.dll",
+"88e979754a604251f2881fa079d496266465dbb9209d7266e74877d9f4595bd7"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"d3d11.dll",
-"4fc812f0d4193ed15321e9dc6cecd6e8159b123b8729dc9603fe170fd893b7cb"
-],
 [
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
