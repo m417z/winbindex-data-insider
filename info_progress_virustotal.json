@@ -1,7 +1,7 @@
 {
 "next": [
-"sppinst.dll",
-"88e979754a604251f2881fa079d496266465dbb9209d7266e74877d9f4595bd7"
+"credprovhelper.dll",
+"551e394e560c6a771a9af8194eab41458fa9e95fbdbfb414aee25c95c29deaa3"
 ],
 "next_updates": null,
 "pending": {},
@@ -41,6 +41,10 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll",
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
+],
+[
+"termsrv.dll",
+"8455e2d5e033562e10e27eacba8cc38c71e0533e76c3cc4311f484b65c330747"
 ],
 [
 "vc_redist.arm64.exe",
