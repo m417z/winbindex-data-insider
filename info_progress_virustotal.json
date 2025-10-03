@@ -1,7 +1,7 @@
 {
 "next": [
-"credprovhelper.dll",
-"551e394e560c6a771a9af8194eab41458fa9e95fbdbfb414aee25c95c29deaa3"
+"settingshandlers_notifications.dll",
+"45e0a5f92582274449cc660867f39c0523bb7b3b5365c0f3b41ba7e0cba3d67a"
 ],
 "next_updates": null,
 "pending": {},
@@ -41,10 +41,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll",
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
-],
-[
-"termsrv.dll",
-"8455e2d5e033562e10e27eacba8cc38c71e0533e76c3cc4311f484b65c330747"
 ],
 [
 "vc_redist.arm64.exe",
