@@ -54,6 +54,12 @@
             "created": 1755806226,
             "title": "Cumulative Update Preview for Windows 10 Version 22H2 (19045.6280)"
         },
+        "079f8c49-178e-4b14-afd2-f52a0a60172c": {
+            "arch": "amd64",
+            "build": "19045.6332",
+            "created": 1759720691,
+            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.6332)"
+        },
         "07d8405b-c498-4546-9610-9d44633d42fa": {
             "arch": "amd64",
             "build": "19045.6276",
