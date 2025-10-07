@@ -7,6 +7,26 @@
 "pending": {},
 "retry": [
 [
+"acmigration.dll",
+"d5b5a56ba320c02808113c86aee6d0fb93976c329d3b5b1f46858fb156906743"
+],
+[
+"certutil.exe",
+"dd8cbfb6ac18955d38ff416830cc77d68c3f5a31ed8ae9c5fbbceb66322785a3"
+],
+[
+"cmimageworker.exe",
+"82d9e74a380770bafa716460b4fd491b50719e503451e5fe3d2e54061bd995b9"
+],
+[
+"credentialuibroker.exe",
+"5aa1e6b06375bc274ed3bff22caf63c1653d1255a006ae6a184f56bb8c4ffd4e"
+],
+[
+"defrag.exe",
+"dcf2813547e0dc664fd0844432e1a9c827fc9983628cf33316c5f7ab26d7482e"
+],
+[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
@@ -41,6 +61,10 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll",
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
+],
+[
+"taskmgr.exe",
+"95794ebcec2c2b74f54eb928bd611d5f6e276d7bb9c3047c4beae53e3b41ac53"
 ],
 [
 "vc_redist.arm64.exe",
