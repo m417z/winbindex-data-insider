@@ -1,4 +1,4 @@
-from signify.authenticode.signed_pe import SignedPEFile
+from signify.authenticode.signed_file import SignedPEFile
 import xml.etree.ElementTree as ET
 from struct import unpack
 from pathlib import Path
@@ -201,9 +201,11 @@ def get_file_signing_times(pathname: Path):
     signing_times = []
     with open(pathname, 'rb') as f:
         pefile = SignedPEFile(f)
-        for signed_data in pefile.iter_signed_datas(ignore_parse_errors=False):
+        for signed_data in pefile.iter_embedded_signatures(ignore_parse_errors=False):
             if signed_data.signer_info.countersigner is not None:
                 signing_time = signed_data.signer_info.countersigner.signing_time
+                if signing_time is None:
+                    raise Exception('Countersigner without signing time')
                 signing_times.append(signing_time.isoformat().removesuffix('+00:00'))
 
     return signing_times
