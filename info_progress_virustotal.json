@@ -1,31 +1,11 @@
 {
 "next": [
-"dpx.dll",
-"d3e3fbf3f2515ed20ca0f96fb5328f701448931b5616b516a07e35ae25e192db"
+"settingshandlers_camera.dll",
+"19ffaced90a1671a261c1e0875845c55f86b34c33c217f9de421b440764e34e6"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"acmigration.dll",
-"d5b5a56ba320c02808113c86aee6d0fb93976c329d3b5b1f46858fb156906743"
-],
-[
-"certutil.exe",
-"dd8cbfb6ac18955d38ff416830cc77d68c3f5a31ed8ae9c5fbbceb66322785a3"
-],
-[
-"cmimageworker.exe",
-"82d9e74a380770bafa716460b4fd491b50719e503451e5fe3d2e54061bd995b9"
-],
-[
-"credentialuibroker.exe",
-"5aa1e6b06375bc274ed3bff22caf63c1653d1255a006ae6a184f56bb8c4ffd4e"
-],
-[
-"defrag.exe",
-"dcf2813547e0dc664fd0844432e1a9c827fc9983628cf33316c5f7ab26d7482e"
-],
 [
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
@@ -51,6 +31,14 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
+"gamebarpresencewriter.exe",
+"238ce850fe680aa340be07fcc691f9e44c10a161000c70604dd13ba2c8e981d7"
+],
+[
+"la57setup.exe",
+"a9b7d82331a7c5e7f94ba05efa3cea66382f37d04701ebdd08d6c0ef147eba2f"
+],
+[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -63,8 +51,12 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"taskmgr.exe",
-"95794ebcec2c2b74f54eb928bd611d5f6e276d7bb9c3047c4beae53e3b41ac53"
+"mpssvc.dll",
+"3c43145fafb324b940b3cacb46994ca01eecd413bdf6d809906b14364b355e22"
+],
+[
+"pickerhost.exe",
+"637ad3c15aeeee6e6bfb778e0858c4bc804d2cd23a8a987fda2b21a0f1508d43"
 ],
 [
 "vc_redist.arm64.exe",
