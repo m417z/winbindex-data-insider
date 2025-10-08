@@ -1,7 +1,7 @@
 {
 "next": [
-"settingshandlers_camera.dll",
-"19ffaced90a1671a261c1e0875845c55f86b34c33c217f9de421b440764e34e6"
+"cng.sys",
+"4da6bfe74c2b3a5f930c579795b7778e01ad111ce17848191e7a59de3f67c61c"
 ],
 "next_updates": null,
 "pending": {},
@@ -31,14 +31,6 @@
 "c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099"
 ],
 [
-"gamebarpresencewriter.exe",
-"238ce850fe680aa340be07fcc691f9e44c10a161000c70604dd13ba2c8e981d7"
-],
-[
-"la57setup.exe",
-"a9b7d82331a7c5e7f94ba05efa3cea66382f37d04701ebdd08d6c0ef147eba2f"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9"
 ],
@@ -51,12 +43,8 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"mpssvc.dll",
-"3c43145fafb324b940b3cacb46994ca01eecd413bdf6d809906b14364b355e22"
-],
-[
-"pickerhost.exe",
-"637ad3c15aeeee6e6bfb778e0858c4bc804d2cd23a8a987fda2b21a0f1508d43"
+"tabsvc.dll",
+"624b72e35113349bf37754e386ca054782c30bf9e662ad382992be5b5e4b148d"
 ],
 [
 "vc_redist.arm64.exe",
