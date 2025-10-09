@@ -43,12 +43,16 @@
 "920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51"
 ],
 [
-"tabsvc.dll",
-"624b72e35113349bf37754e386ca054782c30bf9e662ad382992be5b5e4b148d"
-],
-[
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
+],
+[
+"vcruntime140.dll",
+"915c9541388598d7b289a6c47c46e6db491f7dc6835c08dbe02409264ce110b9"
+],
+[
+"vdsldr.exe",
+"638aa9ea26a27f1ae3a316b10802a972d5b8e9d6daaeeda5721ad0b3be5fc739"
 ]
 ],
 "updates": null

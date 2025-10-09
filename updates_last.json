@@ -582,23 +582,11 @@
             "created": 1757696430,
             "title": "Windows 11 Insider Preview 10.0.26120.6682 (ge_release_upr)"
         },
-        "70e417a4-2f71-4f94-977c-10be81ddcd0f": {
-            "arch": "arm64",
-            "build": "26120.5742",
-            "created": 1754672434,
-            "title": "Windows 11 Insider Preview 10.0.26120.5742 (ge_release_upr)"
-        },
         "7144122c-e675-43ec-b67a-4543b5e10533": {
             "arch": "amd64",
             "build": "26100.6584",
             "created": 1757441803,
             "title": "Cumulative Update for Windows CPC OS (10.0.26100.6584) (26100.6584)"
-        },
-        "73c67098-0174-4743-a4a2-8c0014af3d90": {
-            "arch": "arm64",
-            "build": "9310.1",
-            "created": 1754748687,
-            "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 (9310.1)"
         },
         "774615b3-a1a5-4138-a87c-8b1583b82d78": {
             "arch": "arm64",
@@ -678,17 +666,17 @@
             "created": 1756486832,
             "title": "Windows 11 Insider Preview 10.0.26220.5770 (ge_release_upr)"
         },
+        "81599c5f-cfbd-4dfe-823e-ce29e13cb81b": {
+            "arch": "arm64",
+            "build": "27965.1",
+            "created": 1759957219,
+            "title": "Windows 11 Insider Preview 27965.1 (br_release)"
+        },
         "8290e096-fa2a-4cc8-a0c6-4127b1cf7d08": {
             "arch": "arm64",
             "build": "26100.6584",
             "created": 1757441803,
             "title": "Cumulative Update for Windows CPC OS (10.0.26100.6584) (26100.6584)"
-        },
-        "82ce56d0-8d9e-4594-a790-7d952f5006d2": {
-            "arch": "amd64",
-            "build": "26120.5742",
-            "created": 1754672437,
-            "title": "Windows 11 Insider Preview 10.0.26120.5742 (ge_release_upr)"
         },
         "85fc7c00-a0f8-469e-aabc-06ee2c1faa3c": {
             "arch": "arm64",
@@ -1020,11 +1008,11 @@
             "created": 1758042031,
             "title": "Windows 11, version 23H2 (22631.5984)"
         },
-        "b789b593-18ca-48af-9468-da48a1df4682": {
+        "b6902382-2359-4cc1-9ef8-56a13f782558": {
             "arch": "amd64",
-            "build": "26200.5742",
-            "created": 1754672417,
-            "title": "Windows 11 Insider Preview 10.0.26200.5742 (ge_release_upr)"
+            "build": "27965.1",
+            "created": 1759957213,
+            "title": "Windows 11 Insider Preview 27965.1 (br_release)"
         },
         "b9013723-ae55-401e-b8b0-a6719a39597b": {
             "arch": "x86",
@@ -1097,12 +1085,6 @@
             "build": "26100.5061",
             "created": 1756477920,
             "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.5061)"
-        },
-        "ca86d94d-45e7-4d74-9958-21e0346d1227": {
-            "arch": "arm64",
-            "build": "27919.1000",
-            "created": 1754672414,
-            "title": "Windows 11 Insider Preview 27919.1000 (rs_prerelease)"
         },
         "ca9d9e22-f6c6-45ff-aa09-3cef1e849dfa": {
             "arch": "arm64",
@@ -1187,12 +1169,6 @@
             "build": "9319.1",
             "created": 1757437219,
             "title": "Cumulative Update for .NET Framework for Windows 11, version 25H2 (9319.1)"
-        },
-        "db4e3e18-f5c7-499f-aa40-b47e50610e58": {
-            "arch": "amd64",
-            "build": "27919.1000",
-            "created": 1754672407,
-            "title": "Windows 11 Insider Preview 27919.1000 (rs_prerelease)"
         },
         "dbb0c959-da2a-488d-a131-3e669a94d64c": {
             "arch": "amd64",
@@ -1319,12 +1295,6 @@
             "build": "19045.6388",
             "created": 1757610071,
             "title": "Feature update to Windows 10, version 22H2 (19045.6388)"
-        },
-        "ecbe8a42-df80-4276-8bd9-3a2768cc3db9": {
-            "arch": "arm64",
-            "build": "26200.5742",
-            "created": 1754672422,
-            "title": "Windows 11 Insider Preview 10.0.26200.5742 (ge_release_upr)"
         },
         "ed69aa8c-8b84-429c-bb9f-e09429823abc": {
             "arch": "amd64",
