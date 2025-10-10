@@ -45,14 +45,6 @@
 [
 "vc_redist.arm64.exe",
 "8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c"
-],
-[
-"vcruntime140.dll",
-"915c9541388598d7b289a6c47c46e6db491f7dc6835c08dbe02409264ce110b9"
-],
-[
-"vdsldr.exe",
-"638aa9ea26a27f1ae3a316b10802a972d5b8e9d6daaeeda5721ad0b3be5fc739"
 ]
 ],
 "updates": null

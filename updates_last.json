@@ -498,6 +498,12 @@
             "created": 1755644119,
             "title": "Windows 11, version 22H2 (22621.5771)"
         },
+        "5f3f7bb7-83cf-43e5-9613-b03f91e7594e": {
+            "arch": "amd64",
+            "build": "26501.1000",
+            "created": 1760029294,
+            "title": "Windows Server Insider Preview 26501.1000 (ge_prereleaseserver)"
+        },
         "5f43a486-22b5-4d3a-ab76-34cadcbb261d": {
             "arch": "amd64",
             "build": "25398.1849",
@@ -1031,6 +1037,12 @@
             "build": "26100.5074",
             "created": 1756486855,
             "title": "Windows 11, version 24H2 (26100.5074)"
+        },
+        "bc94140e-c654-47ce-96ea-fbdffba7c6f1": {
+            "arch": "arm64",
+            "build": "26501.1000",
+            "created": 1760029295,
+            "title": "Windows Server Insider Preview 26501.1000 (ge_prereleaseserver)"
         },
         "beb9d9b7-ef2d-49c5-8d99-f6708b1da0e4": {
             "arch": "arm64",
