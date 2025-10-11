@@ -7,6 +7,10 @@
 "pending": {},
 "retry": [
 [
+"curl.exe",
+"bec2b15c2fb3e24314c72c69b00e3253ba47e12d6058ab6df043cecfe7db3beb"
+],
+[
 "ekaioopl.dll",
 "1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582"
 ],
