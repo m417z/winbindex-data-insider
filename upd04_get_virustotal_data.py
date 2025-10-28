@@ -65,7 +65,7 @@ def lookup_virustotal_bulk_hashes_exist(session: requests.Session, file_hashes):
     return hashes_found
 
 
-def identify_virustotal_result(file_hash, virustotal_json):
+def identify_virustotal_result(file_hash: str, virustotal_json: dict) -> str:
     try:
         type_tag = virustotal_json['data']['attributes']['type_tag']
         if type_tag == 'neexe':
@@ -102,8 +102,38 @@ def identify_virustotal_result(file_hash, virustotal_json):
 
     if not type_tag or not pe_info or missing_version_info:
         # VirusTotal often doesn't have PE information for large files.
-        # https://twitter.com/sixtyvividtails/status/1697355272568643970
+        # https://x.com/sixtyvividtails/status/1697355272568643970
         if virustotal_json['data']['attributes']['size'] > 250000000:
+            return 'too_large_no_pe_info'
+
+        if file_hash.lower() in [
+            # Mysterious files with no PE info.
+            # https://x.com/m417z/status/1983105172218749222
+            # ekaioopl.dll
+            '1c857a17a6aacfa38a1c95cc6e6f45fee7c7c46f14e0b1a409e0af532b455582',
+            # ekaioopl.dll
+            'fc443f74eecbd77c2b48e6f26db5dbcf8d68ff1a2cd474caa7f8d69f0ea08d91',
+            # ekaiostr.dll
+            '81999de8fa119fad5e1ddb06a19bb140319e8d408d06cb14b666232a386c8b3b',
+            # ekaiostr.dll
+            '96aa482f2d38e6a08502875b5130250f0775e0bbd2f2d7afd5b4e62e707789a1',
+            # ekaioxps.dll
+            '62ca4eda8830d9324c1ee1b553c01e70a7f2fa824038dfdbacace108db83b355',
+            # ekaioxps.dll
+            'c91e3c60231614e1e800567e2c12ed1e153ac589373c5b44139d166129d6d099',
+            # microsoft.ceres.docparsing.formathandlers.common.configuration.dll
+            '1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9',
+            # microsoft.ceres.docparsing.formathandlers.common.configuration.dll
+            '4e8408f9b66ecf316e03887226086458471abbb4aa59815d911a785c02efa154',
+            # microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll
+            '0118e0fcd676509ed9a750bf47467282e1c57332f8ed4a928d833a9faf57e23c',
+            # microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll
+            '0bf23e9042cad8fdefbafeededf08cc8e8d9d3789fd561c040de2f66e1d8b9de',
+            # microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll
+            '920a9eb0e61ee13af50e07abcc77bcc0202108b4b7ab84acecbd7add2ffd7b51',
+            # vc_redist.arm64.exe
+            '8a81a52b7ff6b194cb88e1bb48d597b6588d2b840552909359f286fb1699235c',
+        ]:
             return 'too_large_no_pe_info'
 
         # No PE info, need to rescan it on VirusTotal.
