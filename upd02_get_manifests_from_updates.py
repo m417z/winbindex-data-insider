@@ -330,7 +330,7 @@ def extract_update_files(local_dir: Path):
                     # Ignore files in root folder which have different non-identical copies with the same name.
                     # Also ignore small cab archives in the root folder.
                     if source_dir == extract_dir:
-                        if (name in ['update.mum', '$filehashes$.dat'] or
+                        if (name in ['update.mum', '$filehashes$.dat', 'DesktopTargetCompDB_Tools.xml'] or
                             name.endswith('.cat') or
                             (name.endswith('.cab') and source_file.stat().st_size < 1024 * 1024 * 10) or
                             name.endswith('.dll')):
