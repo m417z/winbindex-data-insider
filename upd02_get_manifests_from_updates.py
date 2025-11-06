@@ -225,14 +225,6 @@ def extract_update_files(local_dir: Path):
         if wim_file.exists():
             raise Exception(f'PSF file already exists: {psf_file}')
 
-        # Temporary special cases.
-        if from_file.name.lower() == 'Windows11.0-KB5071419-arm64.msu'.lower():
-            wim_file = from_file.with_name('Windows11.0-KB5067115-arm64.wim')
-            psf_file = from_file.with_name('Windows11.0-KB5067115-arm64.psf')
-        elif from_file.name.lower() == 'Windows11.0-KB5071419-x64.msu'.lower():
-            wim_file = from_file.with_name('Windows11.0-KB5067115-x64.wim')
-            psf_file = from_file.with_name('Windows11.0-KB5067115-x64.psf')
-
         run_7z_extract(from_file, from_file.parent, [wim_file.name, psf_file.name])
 
         if wim_file.exists() and psf_file.exists():
