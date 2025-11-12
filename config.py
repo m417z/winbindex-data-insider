@@ -129,6 +129,7 @@ file_hashes_unusual_section_alignment = {
 
 file_names_zero_timestamp = {
     'microsoft.ink.dll',
+    'microsoft.certificateservices.certenroll.interop.dll',
 }
 
 file_hashes_zero_timestamp = {
