@@ -327,13 +327,22 @@ def extract_update_files(local_dir: Path):
             for name in names:
                 source_file = source_dir.joinpath(name)
                 if source_file.is_file():
-                    # Ignore files in root folder which have different non-identical copies with the same name.
-                    # Also ignore small cab archives in the root folder.
                     if source_dir == extract_dir:
+                        # Ignore files in root folder which have different
+                        # non-identical copies with the same name.
                         if (name in ['update.mum', '$filehashes$.dat', 'DesktopTargetCompDB_Tools.xml'] or
                             name.endswith('.cat') or
-                            (name.endswith('.cab') and source_file.stat().st_size < 1024 * 1024 * 10) or
                             name.endswith('.dll')):
+                            ignore.append(name)
+                            continue
+
+                        # Also ignore historycix.cab and small cab archives in
+                        # the root folder. historycix.cab seems to contain an
+                        # XML with file info such as hashes.
+                        if name in ['historycix.cab'] or (
+                            name.endswith('.cab')
+                            and source_file.stat().st_size < 1024 * 1024 * 10
+                        ):
                             ignore.append(name)
                             continue
 
@@ -377,7 +386,11 @@ def extract_update_files(local_dir: Path):
         shutil.rmtree(extract_dir)
 
     # Make sure there are no archive files left.
-    archives_left = [p for p in local_dir.glob('*') if p.suffix in {'.cab', '.psf', '.wim', '.msu', '.esd'}]
+    archives_left = [
+        p
+        for p in local_dir.glob('*')
+        if p.suffix.lower() in {'.cab', '.psf', '.wim', '.msu', '.esd'}
+    ]
     if archives_left:
         raise Exception(f'Unexpected archive files left: {archives_left}')
 
