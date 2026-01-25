@@ -10,6 +10,10 @@ import time
 import config
 
 
+class ServerTooManyRetries(Exception):
+    pass
+
+
 def write_to_gzip_file(file, data):
     with open(file, 'wb') as fd:
         with gzip.GzipFile(fileobj=fd, mode='w', compresslevel=config.compression_level, filename='', mtime=0) as gz:
@@ -103,6 +107,7 @@ def get_symbol_server_links_for_file(session, hash, name, data):
         urls_and_virtual_sizes[url] = size
         size -= PAGE_SIZE
 
+    started_time = time.time()
     sleep_time = 1
     while True:
         try:
@@ -110,6 +115,8 @@ def get_symbol_server_links_for_file(session, hash, name, data):
             break
         except Exception as e:
             print(e)
+            if time.time() - started_time > 60 * 30:
+                raise ServerTooManyRetries(f'Giving up on {hash} ({name}) after 30 minutes of retries')
             time.sleep(sleep_time)
             sleep_time = min(sleep_time * 2, 60 * 5)
             print(f'Retrying {hash}')
@@ -127,6 +134,7 @@ def get_symbol_server_links_for_files(names_and_hashes, session, time_to_stop):
         'found': set(),
         'not_found': set(),
         'next': None,
+        'too_many_retries': False,
     }
 
     output_dir = config.out_path.joinpath('by_filename_compressed')
@@ -150,7 +158,14 @@ def get_symbol_server_links_for_files(names_and_hashes, session, time_to_stop):
                 data = orjson.loads(f.read())
                 data_modified = False
 
-        new_data = get_symbol_server_links_for_file(session, hash, name, data)
+        try:
+            new_data = get_symbol_server_links_for_file(session, hash, name, data)
+        except ServerTooManyRetries as e:
+            print(e)
+            result['next'] = (name, hash)
+            result['too_many_retries'] = True
+            break
+
         if new_data:
             data = new_data
             data_modified = True
@@ -236,7 +251,7 @@ def main(time_to_stop=None):
     with open(info_progress_symbol_server_path, 'w') as f:
         json.dump(info_progress_symbol_server, f, indent=0, sort_keys=True)
 
-    return len(result['found'])
+    return len(result['found']), result['too_many_retries']
 
 
 if __name__ == '__main__':

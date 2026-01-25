@@ -19,6 +19,9 @@ import config
 deploy_start_time = datetime.now()
 pymultitor_token = os.urandom(32).hex()
 
+# If true, don't proceed with other tasks.
+stop_deploy = False
+
 
 def filter_updates(updates, update_kbs):
     filtered = {}
@@ -113,9 +116,15 @@ def run_symbol_server_updates():
         return None
 
     print('Running symbol_server_link_enumerate')
-    num_files = symbol_server_link_enumerate(time_to_stop)
-    if num_files is None:
+    result = symbol_server_link_enumerate(time_to_stop)
+    if result is None:
         return None
+
+    num_files, too_many_retries = result
+
+    if too_many_retries:
+        global stop_deploy
+        stop_deploy = True
 
     return f'Updated info of {num_files} files from Microsoft Symbol Server'
 
@@ -526,6 +535,10 @@ def main():
         update_readme_stats()
 
         commit_deploy(pr_title)
+
+        if stop_deploy:
+            print('Stopping deploy since the last commit indicated so')
+            return
 
         # Stop once we get non-update files from VirusTotal. Otherwise, continue
         # as long as there are other tasks.
