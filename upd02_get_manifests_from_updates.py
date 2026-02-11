@@ -124,7 +124,7 @@ def sha256sum(filename):
 
 # Delta files might be identical except for the checksum and timestamp.
 #
-# Header file format: [4 bytes checksum] ['PA31'] [8 bytes timestamp]
+# Header file format: [4 bytes checksum] ['PA30' or 'PA31'] [8 bytes timestamp]
 def delta_files_identical_except_metadata(source_file: Path, destination_file: Path):
     source_file_size = source_file.stat().st_size
     destination_file_size = destination_file.stat().st_size
@@ -136,7 +136,7 @@ def delta_files_identical_except_metadata(source_file: Path, destination_file: P
 
     source_header = source_data[4:8]
     destination_header = destination_data[4:8]
-    if source_header != b'PA31' or source_header != destination_header:
+    if source_header not in (b'PA30', b'PA31') or source_header != destination_header:
         return False
 
     return source_data[16:] == destination_data[16:]
