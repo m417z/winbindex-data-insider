@@ -355,7 +355,8 @@ def extract_update_files(local_dir: Path):
                         can_ignore = False
                         if sha256sum(source_file) == sha256sum(destination_file):
                             can_ignore = True
-                        elif 'f' in relative_dir.parts and delta_files_identical(source_file, destination_file):
+                        elif (('f' in relative_dir.parts or 'n' in relative_dir.parts) and
+                              delta_files_identical(source_file, destination_file)):
                             can_ignore = True
 
                         if not can_ignore:
