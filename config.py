@@ -189,3 +189,15 @@ file_hashes_mismatch = {
     # wfascim_uninstall.mof in KB5025298 and newer Windows 11 21H2 updates.
     ('cee501be4532071c6fe1df2933d98f8fccba4803de481746808386c3245ad6a7', '9e51833f306f8c5c59bc8f041a9ec1bb'): {'builds'},
 }
+
+
+def djb2_hash(s: str) -> int:
+    h = 5381
+    for c in s:
+        h = ((h << 5) + h + ord(c)) & 0xFFFFFFFF
+    return h
+
+
+def by_filename_path(output_dir: Path, filename: str) -> Path:
+    subfolder = f"{djb2_hash(filename) & 0xFF:02x}"
+    return output_dir / subfolder / (filename + '.json.gz')

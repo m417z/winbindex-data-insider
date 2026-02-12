@@ -23,7 +23,7 @@ def write_to_gzip_file(file, data):
 def get_file_hashes_of_updates(name, updates):
     output_dir = config.out_path.joinpath('by_filename_compressed')
 
-    with gzip.open(output_dir.joinpath(f'{name}.json.gz'), 'r') as f:
+    with gzip.open(config.by_filename_path(output_dir, name), 'r') as f:
         data = orjson.loads(f.read())
 
     file_hashes = set()
@@ -148,12 +148,12 @@ def get_symbol_server_links_for_files(names_and_hashes, session, time_to_stop):
             result['next'] = (name, hash)
             break
 
-        new_output_path = output_dir.joinpath(f'{name}.json.gz')
+        new_output_path = config.by_filename_path(output_dir, name)
         if new_output_path != output_path:
             if output_path and data_modified:
                 write_to_gzip_file(output_path, orjson.dumps(data))
 
-            output_path = output_dir.joinpath(f'{name}.json.gz')
+            output_path = config.by_filename_path(output_dir, name)
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
                 data_modified = False

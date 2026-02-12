@@ -26,12 +26,13 @@ def write_all_file_info():
     for filename in file_info_data:
         data = file_info_data[filename]
 
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
     file_info_data.clear()
 
-    all_filenames = sorted(path.with_suffix('').stem for path in output_dir.glob('*.json.gz'))
+    all_filenames = sorted(path.with_suffix('').stem for path in output_dir.rglob('*.json.gz'))
 
     with open(config.out_path.joinpath('filenames.json'), 'w') as f:
         json.dump(all_filenames, f, indent=0, sort_keys=True)
@@ -489,7 +490,7 @@ def group_update_assembly_by_filename(
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
@@ -546,7 +547,8 @@ def group_update_assembly_by_filename(
     if config.high_mem_usage_for_performance:
         file_info_data[filename] = data
     else:
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
 
@@ -706,7 +708,7 @@ def add_file_info_from_virustotal_data(
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
@@ -722,7 +724,8 @@ def add_file_info_from_virustotal_data(
     if config.high_mem_usage_for_performance:
         file_info_data[filename] = data
     else:
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
 
@@ -787,7 +790,7 @@ def add_file_info_from_iso_data(
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = output_dir.joinpath(filename + '.json.gz')
+        output_path = config.by_filename_path(output_dir, filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rt', encoding='utf-8') as f:
                 data = json.load(f)

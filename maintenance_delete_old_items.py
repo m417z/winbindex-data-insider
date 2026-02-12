@@ -54,7 +54,7 @@ def delete_old_data_for_file(name: str, path: Path, min_date: int):
 
 
 def update_filenames_json(output_dir: Path):
-    all_filenames = sorted(path.with_suffix('').stem for path in output_dir.glob('*.json.gz'))
+    all_filenames = sorted(path.with_suffix('').stem for path in output_dir.rglob('*.json.gz'))
 
     with open(config.out_path.joinpath('filenames.json'), 'w') as f:
         json.dump(all_filenames, f, indent=0, sort_keys=True)
@@ -87,7 +87,7 @@ def delete_old_data(min_date: int):
 
     print('Deleting old items')
     deleted_file_hashes = set()
-    for path in output_dir.glob('*.json.gz'):
+    for path in output_dir.rglob('*.json.gz'):
         name = path.name.removesuffix('.json.gz')
         print(f'Deleting old items in {name}')
         deleted_file_hashes |= delete_old_data_for_file(name, path, min_date)

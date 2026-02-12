@@ -15,7 +15,7 @@ import config
 def get_file_hashes_of_updates(name, updates):
     output_dir = config.out_path.joinpath('by_filename_compressed')
 
-    with gzip.open(output_dir.joinpath(f'{name}.json.gz'), 'r') as f:
+    with gzip.open(config.by_filename_path(output_dir, name), 'r') as f:
         data = orjson.loads(f.read())
 
     file_hashes = set()
