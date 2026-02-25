@@ -21,9 +21,7 @@ def write_to_gzip_file(file, data):
 
 
 def get_file_hashes_of_updates(name, updates):
-    output_dir = config.out_path.joinpath('by_filename_compressed')
-
-    with gzip.open(config.by_filename_path(output_dir, name), 'r') as f:
+    with gzip.open(config.compressed_filename_path(name), 'r') as f:
         data = orjson.loads(f.read())
 
     file_hashes = set()
@@ -137,7 +135,6 @@ def get_symbol_server_links_for_files(names_and_hashes, session, time_to_stop):
         'too_many_retries': False,
     }
 
-    output_dir = config.out_path.joinpath('by_filename_compressed')
     output_path = None
     data = None
     data_modified = False
@@ -148,12 +145,12 @@ def get_symbol_server_links_for_files(names_and_hashes, session, time_to_stop):
             result['next'] = (name, hash)
             break
 
-        new_output_path = config.by_filename_path(output_dir, name)
+        new_output_path = config.compressed_filename_path(name)
         if new_output_path != output_path:
             if output_path and data_modified:
                 write_to_gzip_file(output_path, orjson.dumps(data))
 
-            output_path = config.by_filename_path(output_dir, name)
+            output_path = config.compressed_filename_path(name)
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
                 data_modified = False

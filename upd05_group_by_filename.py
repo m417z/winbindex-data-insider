@@ -21,18 +21,17 @@ def write_to_gzip_file(file, data):
 
 
 def write_all_file_info():
-    output_dir = config.out_path.joinpath('by_filename_compressed')
-
     for filename in file_info_data:
         data = file_info_data[filename]
 
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
     file_info_data.clear()
 
-    all_filenames = sorted(path.with_suffix('').stem for path in output_dir.rglob('*.json.gz'))
+    by_filename_compressed_dir = config.out_path / 'by_filename_compressed'
+    all_filenames = sorted(path.name.removesuffix('.json.gz') for path in by_filename_compressed_dir.rglob('*.json.gz'))
 
     with open(config.out_path.joinpath('filenames.json'), 'w') as f:
         json.dump(all_filenames, f, indent=0, sort_keys=True)
@@ -481,7 +480,6 @@ def get_virustotal_info(target_filename: str, file_hash: str):
 def group_update_assembly_by_filename(
     filename: str,
     file_manifest_data: list[dict[str, Any]],
-    output_dir: Path,
     *,
     windows_version: str,
     update_kb: str,
@@ -490,7 +488,7 @@ def group_update_assembly_by_filename(
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
@@ -547,7 +545,7 @@ def group_update_assembly_by_filename(
     if config.high_mem_usage_for_performance:
         file_info_data[filename] = data
     else:
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
@@ -580,7 +578,6 @@ def get_file_details_from_assembly(assembly_path: Path):
 def group_update_assembly_by_filename_worker(
     filename: str,
     file_details: list[dict[str, Any]],
-    output_dir: Path,
     windows_version: str,
     update_kb: str,
     update: dict[str, Any],
@@ -589,7 +586,7 @@ def group_update_assembly_by_filename_worker(
     if time_to_stop and datetime.now() >= time_to_stop:
         return False
 
-    group_update_assembly_by_filename(filename, file_details, output_dir,
+    group_update_assembly_by_filename(filename, file_details,
                                       windows_version=windows_version,
                                       update_kb=update_kb,
                                       update_info=update)
@@ -604,9 +601,6 @@ def group_update_by_filename(
     progress_state: Optional[dict[str, Any]] = None,
     time_to_stop: Optional[datetime] = None,
 ):
-    output_dir = config.out_path.joinpath('by_filename_compressed')
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     if progress_state:
         assert progress_state['update_kb'] == update_kb
         files_processed = set(progress_state['files_processed'])
@@ -644,7 +638,6 @@ def group_update_by_filename(
             results = pool.starmap(group_update_assembly_by_filename_worker, zip(
                 file_details_from_assembly.keys(),
                 file_details_from_assembly.values(),
-                repeat(output_dir),
                 repeat(windows_version),
                 repeat(update_kb),
                 repeat(update),
@@ -661,7 +654,7 @@ def group_update_by_filename(
                 break
 
             try:
-                group_update_assembly_by_filename(filename, file_details, output_dir,
+                group_update_assembly_by_filename(filename, file_details,
                                                   windows_version=windows_version,
                                                   update_kb=update_kb,
                                                   update_info=update)
@@ -703,12 +696,12 @@ def process_updates(
 
 
 def add_file_info_from_virustotal_data(
-    filename: str, output_dir: Path, *, file_hash: str, file_info: dict[str, Any]
+    filename: str, *, file_hash: str, file_info: dict[str, Any]
 ):
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rb') as f:
                 data = orjson.loads(f.read())
@@ -724,15 +717,12 @@ def add_file_info_from_virustotal_data(
     if config.high_mem_usage_for_performance:
         file_info_data[filename] = data
     else:
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         write_to_gzip_file(output_path, orjson.dumps(data))
 
 
 def process_virustotal_data():
-    output_dir = config.out_path.joinpath('by_filename_compressed')
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     info_progress_virustotal_path = config.out_path.joinpath('info_progress_virustotal.json')
     if info_progress_virustotal_path.is_file():
         with open(info_progress_virustotal_path, 'r') as f:
@@ -757,7 +747,7 @@ def process_virustotal_data():
                     assert file_hash == virustotal_info['sha1']
                     file_hash = virustotal_info['sha256']
 
-                add_file_info_from_virustotal_data(filename, output_dir,
+                add_file_info_from_virustotal_data(filename,
                     file_hash=file_hash,
                     file_info=virustotal_info)
             except Exception:
@@ -779,7 +769,6 @@ def process_virustotal_data():
 
 def add_file_info_from_iso_data(
     filename: str,
-    output_dir: Path,
     *,
     file_hash: str,
     file_info: dict[str, Any],
@@ -790,7 +779,7 @@ def add_file_info_from_iso_data(
     if filename in file_info_data:
         data = file_info_data[filename]
     else:
-        output_path = config.by_filename_path(output_dir, filename)
+        output_path = config.compressed_filename_path(filename)
         if output_path.is_file():
             with gzip.open(output_path, 'rt', encoding='utf-8') as f:
                 data = json.load(f)
@@ -821,9 +810,6 @@ def add_file_info_from_iso_data(
 
 
 def group_iso_data_by_filename(iso_data_file: Path):
-    output_dir = config.out_path.joinpath('by_filename_compressed')
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     with open(iso_data_file) as f:
         iso_data = json.load(f)
 
@@ -841,7 +827,7 @@ def group_iso_data_by_filename(iso_data_file: Path):
 
         source_path = file_item.pop('path')
 
-        add_file_info_from_iso_data(filename, output_dir,
+        add_file_info_from_iso_data(filename,
             file_hash=file_item['sha256'],
             file_info=file_item,
             source_path=source_path,
