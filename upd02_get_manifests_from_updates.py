@@ -71,11 +71,10 @@ def get_update_download_urls(download_uuid):
     return urls
 
 
-def download_update(windows_version, update_kb):
+def get_update_download_urls_with_retry(download_uuid):
     while True:
         try:
-            download_urls = get_update_download_urls(update_kb)
-            break
+            return get_update_download_urls(download_uuid)
         except requests.exceptions.RequestException as e:
             print(e)
 
@@ -83,30 +82,48 @@ def download_update(windows_version, update_kb):
             print(f'Retrying in {delay} seconds...')
             time.sleep(delay)
 
+
+def download_update(windows_version, update_kb):
+    download_urls = get_update_download_urls_with_retry(update_kb)
+
     local_dir = config.out_path.joinpath('manifests', windows_version, update_kb)
     local_dir.mkdir(parents=True, exist_ok=True)
 
-    for download_url in download_urls:
-        name = download_url['name']
-        url = download_url['url']
-        sha256 = download_url['sha256']
+    downloaded = set()
 
-        args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url, '--checksum=sha-256=' + sha256]
-        while True:
+    while True:
+        needs_new_urls = False
+
+        for download_url in download_urls:
+            name = download_url['name']
+            url = download_url['url']
+            sha256 = download_url['sha256']
+
+            if (name, sha256) in downloaded:
+                continue
+
+            args = ['aria2c', '-x4', '-d', local_dir, '-o', name, '--allow-overwrite=true', url, '--checksum=sha-256=' + sha256]
             result = subprocess.run(args, stdout=None if config.verbose_run else subprocess.DEVNULL)
             if result.returncode == 0:
-                break
+                local_path = local_dir.joinpath(name)
+                print(f'[{update_kb}] Downloaded {local_path.stat().st_size} bytes to {name} from {url}')
+                downloaded.add((name, sha256))
+                continue
 
             # https://aria2.github.io/manual/en/html/aria2c.html#exit-status
             if result.returncode not in [1, 22, 32]:
                 raise Exception(f'Failed to download {name} from {url} (exit code {result.returncode})')
 
-            print(f'[{update_kb}] Retrying download of {name} from {url}...')
+            # Fetch new URLs since tokens may have expired.
+            print(f'[{update_kb}] Download of {name} failed, fetching new URLs...')
             time.sleep(10)
 
-        local_path = local_dir.joinpath(name)
+            download_urls = get_update_download_urls_with_retry(update_kb)
+            needs_new_urls = True
+            break
 
-        print(f'[{update_kb}] Downloaded {local_path.stat().st_size} bytes to {name} from {url}')
+        if not needs_new_urls:
+            break
 
     return local_dir
 
