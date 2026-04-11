@@ -174,7 +174,7 @@ def delta_files_identical(source_file: Path, destination_file: Path):
     destination_file_info = subprocess.check_output(args, text=True)
 
     def normalize_info(info):
-        return re.sub(r'^(Flags|AdditionalHash): .*$', '', info, flags=re.MULTILINE)
+        return re.sub(r'^(FileTime|Flags|AdditionalHash): .*$', '', info, flags=re.MULTILINE)
 
     return normalize_info(source_file_info) == normalize_info(destination_file_info)
 
