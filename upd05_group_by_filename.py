@@ -732,7 +732,7 @@ def process_virustotal_data():
 
     pending = info_progress_virustotal.get('pending', {})
 
-    errors = 0
+    errors = []
 
     for filename in pending:
         for file_hash in pending[filename]:
@@ -742,24 +742,24 @@ def process_virustotal_data():
 
             try:
                 virustotal_info = get_virustotal_info(filename, file_hash)
-                assert virustotal_info is not None
-                if file_hash != virustotal_info['sha256']:
-                    assert file_hash == virustotal_info['sha1']
-                    file_hash = virustotal_info['sha256']
-
-                add_file_info_from_virustotal_data(filename,
-                    file_hash=file_hash,
-                    file_info=virustotal_info)
             except Exception:
-                print(f'Error while processing VirusTotal data of {file_hash}')
+                print(f'ERROR: Failed to get VirusTotal data of {file_hash}')
                 traceback.print_exc()
-                errors += 1
+                errors.append((filename, file_hash))
                 continue
 
-    if errors > 0:
-        raise Exception(f'Aborting due to {errors} errors')
+            assert virustotal_info is not None
+            if file_hash != virustotal_info['sha256']:
+                assert file_hash == virustotal_info['sha1']
+                file_hash = virustotal_info['sha256']
+
+            add_file_info_from_virustotal_data(filename,
+                file_hash=file_hash,
+                file_info=virustotal_info)
 
     info_progress_virustotal['pending'] = {}
+    existing_retry = [tuple(x) for x in info_progress_virustotal.get('retry', [])]
+    info_progress_virustotal['retry'] = sorted(set(existing_retry) | set(errors))
 
     with open(info_progress_virustotal_path, 'w') as f:
         json.dump(info_progress_virustotal, f, indent=0, sort_keys=True)
