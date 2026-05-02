@@ -123,8 +123,12 @@ def identify_virustotal_result(file_hash: str, virustotal_json: dict) -> str:
             '1950daee95a5548f70abb69695a97a96b2506ae6b8296033ea4c28ba0329abd9',
             # microsoft.ceres.docparsing.formathandlers.common.configuration.dll
             '4e8408f9b66ecf316e03887226086458471abbb4aa59815d911a785c02efa154',
+            # microsoft.ceres.docparsing.formathandlers.common.configuration.dll
+            '86e2eac22ac346a33f1e8a0907786d6cc9b2a6c492d98fac7e5a237d95acfe58',
             # microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll
             '0118e0fcd676509ed9a750bf47467282e1c57332f8ed4a928d833a9faf57e23c',
+            # microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll
+            '04f8591186445243c2e6a8f8161852de4f027381f077e8c78fadc09ee022f899',
             # microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll
             '0bf23e9042cad8fdefbafeededf08cc8e8d9d3789fd561c040de2f66e1d8b9de',
             # microsoft.ceres.docparsing.formathandlers.common.linkdetector.dll
