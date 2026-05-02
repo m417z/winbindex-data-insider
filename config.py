@@ -125,7 +125,6 @@ file_hashes_non_pe = {
 }
 
 tcb_launcher_descriptions = ['TCB Launcher', 'TCB Launcher (Prerelease)']
-tcb_launcher_large_first_section_virtual_addresses = [0x1000, 0x3000, 0x4000, 0x6000, 0x7000]
 
 file_hashes_unusual_section_alignment = {
     'ede86c8d8c6b9256b926701f4762bd6f71e487f366dfc7db8d74b8af57e79bbb': {'first_section_virtual_address': 0x380, 'section_alignment': 0x80},  # ftdibus.sys

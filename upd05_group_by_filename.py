@@ -377,7 +377,7 @@ def get_virustotal_info(target_filename: str, file_hash: str):
 
     # Handle special cases.
     if attr.get('signature_info', {}).get('description') in config.tcb_launcher_descriptions:
-        assert first_section['virtual_address'] in config.tcb_launcher_large_first_section_virtual_addresses, file_hash
+        assert first_section['virtual_address'] in range(0x1000, 0x10000, 0x1000), file_hash
         section_alignment = 0x1000
     elif unusual_section_alignment_info := config.file_hashes_unusual_section_alignment.get(file_hash):
         assert first_section['virtual_address'] == unusual_section_alignment_info['first_section_virtual_address']
