@@ -349,8 +349,11 @@ def main(time_to_stop=None):
 
     # Update status of files for which full information was found.
     for name, hash in result['found']:
-        assert info_sources[name][hash] not in ['vt', 'file']
-        info_sources[name][hash] = 'vt'
+        if info_sources[name][hash] == 'vt':
+            assert (name, hash) in names_and_hashes_to_retry
+        else:
+            assert info_sources[name][hash] != 'file'
+            info_sources[name][hash] = 'vt'
         pending_for_file = info_progress_virustotal.setdefault('pending', {}).setdefault(name, [])
         if hash not in pending_for_file:
             pending_for_file.append(hash)
