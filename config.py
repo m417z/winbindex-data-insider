@@ -142,6 +142,11 @@ file_names_zero_timestamp = {
     'microsoft.ink.dll',
     'microsoft.certificateservices.certenroll.interop.dll',
     'windows.foundation.winmd',
+    'windows.applicationmodel.winmd',
+    'windows.security.winmd',
+    'windows.storage.winmd',
+    'windows.system.winmd',
+    'windows.ui.winmd',
 }
 
 file_hashes_zero_timestamp = {
