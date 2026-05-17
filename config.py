@@ -147,6 +147,7 @@ file_names_zero_timestamp = {
     'windows.storage.winmd',
     'windows.system.winmd',
     'windows.ui.winmd',
+    'failoverclusters.fcagent.interop.dll',
 }
 
 file_hashes_zero_timestamp = {
