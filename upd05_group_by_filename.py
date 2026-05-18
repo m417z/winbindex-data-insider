@@ -3,6 +3,7 @@ from multiprocessing import Pool
 from isal import igzip as gzip
 from datetime import datetime
 from itertools import repeat
+from fnmatch import fnmatch
 from pathlib import Path
 import traceback
 import bisect
@@ -395,7 +396,7 @@ def get_virustotal_info(target_filename: str, file_hash: str):
         timestamp = attr['pe_info']['timestamp']
     else:
         assert (
-            target_filename in config.file_names_zero_timestamp or
+            any(fnmatch(target_filename, p) for p in config.file_names_zero_timestamp) or
             file_hash in config.file_hashes_zero_timestamp
         ), (target_filename, file_hash)
         timestamp = 0

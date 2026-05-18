@@ -139,15 +139,14 @@ file_hashes_unusual_section_alignment = {
 }
 
 file_names_zero_timestamp = {
+    '*.interop.dll',
     'microsoft.ink.dll',
-    'microsoft.certificateservices.certenroll.interop.dll',
     'windows.foundation.winmd',
     'windows.applicationmodel.winmd',
     'windows.security.winmd',
     'windows.storage.winmd',
     'windows.system.winmd',
     'windows.ui.winmd',
-    'failoverclusters.fcagent.interop.dll',
 }
 
 file_hashes_zero_timestamp = {
