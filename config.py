@@ -47,6 +47,11 @@ delta_data_without_rift_table_names = {
     'powershell_ise.exe',
     'stdole32.tlb',
     'microsoft.grouppolicy.interop.dll',
+    'microsoft.hostcompute.interop.dll',
+    'microsoft.hostcompute.powershell.cmdlets.dll',
+    'microsoft.hostcompute.powershell.views.dll',
+    'microsoft.hyperv.schema.marshal.dll',
+    'microsoft.hyperv.schema.dll',
 }
 delta_data_without_rift_table_manifests = {
     'amd64_microsoft-nxt-boottocloud-windows365-app_*',
