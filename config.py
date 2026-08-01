@@ -6,15 +6,19 @@ index_of_hashes_title = 'Winbindex Insider Hashes'
 index_of_hashes_out_path = out_path / 'hashes'
 
 
-def compressed_filename_path(filename: str) -> Path:
-    def djb2_hash(s: str) -> int:
-        h = 5381
-        for c in s:
-            h = ((h << 5) + h + ord(c)) & 0xFFFFFFFF
-        return h
+def djb2_hash(s: str) -> int:
+    h = 5381
+    for c in s:
+        h = ((h << 5) + h + ord(c)) & 0xFFFFFFFF
+    return h
 
-    subfolder = f"{djb2_hash(filename) & 0xFF:02x}"
-    return out_path / 'by_filename_compressed' / subfolder / (filename + '.json.gz')
+
+def filename_bucket(filename: str) -> str:
+    return f"{djb2_hash(filename) & 0xFF:02x}"
+
+
+def compressed_filename_path(filename: str) -> Path:
+    return out_path / 'by_filename_compressed' / filename_bucket(filename) / (filename + '.json.gz')
 
 
 deploy_save_disk_space = True

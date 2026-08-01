@@ -62,7 +62,7 @@ def update_filenames_json(output_dir: Path):
         json.dump(all_filenames, f, indent=0, sort_keys=True)
 
 
-def update_info_sources_json(deleted_file_hashes: set):
+def update_info_sources(deleted_file_hashes: set):
     info_sources = InfoSources.load()
     info_sources.remove_file_hashes(deleted_file_hashes)
     info_sources.save()
@@ -81,8 +81,8 @@ def delete_old_data(min_date: int):
     print('Updating filenames.json')
     update_filenames_json(output_dir)
 
-    print('Updating info_sources.json')
-    update_info_sources_json(deleted_file_hashes)
+    print('Updating info sources')
+    update_info_sources(deleted_file_hashes)
 
     print('Done')
 
