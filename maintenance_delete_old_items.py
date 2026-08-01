@@ -6,6 +6,7 @@ import sys
 import orjson
 from isal import igzip as gzip
 
+from info_sources import InfoSources
 import config
 
 
@@ -61,25 +62,9 @@ def update_filenames_json(output_dir: Path):
 
 
 def update_info_sources_json(deleted_file_hashes: set):
-    info_sources_path = config.out_path.joinpath('info_sources.json')
-    with open(info_sources_path, 'r') as f:
-        info_sources = json.load(f)
-
-    info_sources_new = {}
-
-    for name in info_sources:
-        file_hashes_for_name_new = {}
-        for hash in info_sources[name]:
-            if (name, hash) in deleted_file_hashes:
-                continue
-
-            file_hashes_for_name_new[hash] = info_sources[name][hash]
-
-        if file_hashes_for_name_new != {}:
-            info_sources_new[name] = file_hashes_for_name_new
-
-    with open(info_sources_path, 'w') as f:
-        json.dump(info_sources_new, f, indent=0, sort_keys=True)
+    info_sources = InfoSources.load()
+    info_sources.remove_file_hashes(deleted_file_hashes)
+    info_sources.save()
 
 
 def delete_old_data(min_date: int):
