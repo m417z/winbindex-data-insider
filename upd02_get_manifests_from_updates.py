@@ -353,6 +353,15 @@ def extract_update_files(local_dir: Path):
                             ignore.append(name)
                             continue
 
+                        # Ignore CimFS package skeletons. A *.cim.recipe.cab
+                        # holds a signed *.sk.cim image which describes the
+                        # component store layout the package expands to and
+                        # carries no payload, so it only duplicates the
+                        # manifests extracted from the package itself.
+                        if name.endswith('.cim.recipe.cab') or name.endswith('.sk.cim'):
+                            ignore.append(name)
+                            continue
+
                         # Also ignore historycix.cab and small cab archives in
                         # the root folder. historycix.cab seems to contain an
                         # XML with file info such as hashes.
@@ -407,7 +416,7 @@ def extract_update_files(local_dir: Path):
     archives_left = [
         p
         for p in local_dir.glob('*')
-        if p.suffix.lower() in {'.cab', '.psf', '.wim', '.msu', '.esd'}
+        if p.suffix.lower() in {'.cab', '.psf', '.wim', '.msu', '.esd', '.cim'}
     ]
     if archives_left:
         raise Exception(f'Unexpected archive files left: {archives_left}')
