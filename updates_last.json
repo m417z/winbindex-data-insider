@@ -228,6 +228,12 @@
             "created": 1786467708,
             "title": "Security Update for Azure Stack HCI (26100.33296)"
         },
+        "3e74b4fa-6f03-42bd-a336-5873f8fb0837": {
+            "arch": "amd64",
+            "build": "28000.9344",
+            "created": 1788059719,
+            "title": ".NET Framework Security Update for Windows 11 - KB5120711 (28000.9344) (2)"
+        },
         "3eed2252-912c-4342-8afc-895bae4ae096": {
             "arch": "arm64",
             "build": "19045.7548",
