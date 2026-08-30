@@ -1,0 +1,31 @@
+{
+"next": [
+"dism.exe",
+"1d5384e01ea0c89131128a1d256a3f913da1edf2c3db52ea731a80495065982c"
+],
+"next_updates": null,
+"pending": {},
+"retry": [
+[
+"autochk.exe",
+"966d40885670b162f25b2761bd4059b7ebc5cea2d1523c7cb0d14559ccfe69dd"
+],
+[
+"ci.dll",
+"a15d45cfdc911f8130bf4a8f1c07023b4e48febde3c1bdb13f2f26274a7343a1"
+],
+[
+"ci.dll",
+"a8f3efcf032602899ca3b396af5e1a07fa20014b781a7e5fb764833987a6de9e"
+],
+[
+"microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
+"563ba711761821f9e3fcd5cac84e52a74b26f1a5e94208792e7940823a4618c7"
+],
+[
+"microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
+"ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
+]
+],
+"updates": null
+}
