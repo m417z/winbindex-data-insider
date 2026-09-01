@@ -372,6 +372,12 @@
             "created": 1787000444,
             "title": "Windows 11 Insider Preview Feature Update (26340.9212)"
         },
+        "5a92041d-7bf8-40e4-a048-64cc5ace2f95": {
+            "arch": "amd64",
+            "build": "28020.2818",
+            "created": 1788211085,
+            "title": "Windows 11 Insider Preview Feature Update (28020.2818)"
+        },
         "5b051c9c-0219-4087-b306-7fc6a2814d47": {
             "arch": "amd64",
             "build": "17763.9020",
@@ -486,6 +492,12 @@
             "created": 1787850662,
             "title": "Critical OOBE Update for Windows 11 - KB5122035 (26100.9258) (2)"
         },
+        "714654ee-5f9e-49c2-bab8-4ab97d9a18ff": {
+            "arch": "arm64",
+            "build": "28120.2824",
+            "created": 1788211536,
+            "title": "Windows 11 Insider Preview Quality Update (28120.2824)"
+        },
         "721dfe56-4a9a-452f-8e73-934e3ac45619": {
             "arch": "amd64",
             "build": "26200.9267",
@@ -533,6 +545,12 @@
             "build": "28000.2605",
             "created": 1784581855,
             "title": "Preview Update for Windows 11 (28000.2605)"
+        },
+        "7e51fea5-9210-4ee1-84f9-ceed9d7de836": {
+            "arch": "arm64",
+            "build": "28020.2818",
+            "created": 1788211386,
+            "title": "Windows 11 Insider Preview Feature Update (28020.2818)"
         },
         "7e634f65-c506-44b6-867c-538069b29cb1": {
             "arch": "arm64",
@@ -617,6 +635,12 @@
             "build": "26200.9340",
             "created": 1784048431,
             "title": ".NET Framework Security Update for Windows 11 - KB5100998 (26200.9340)"
+        },
+        "8cc32347-8fd4-4cd7-b705-f0c5a772dd71": {
+            "arch": "amd64",
+            "build": "28120.2824",
+            "created": 1788210881,
+            "title": "Windows 11 Insider Preview Feature Update (28120.2824)"
         },
         "8d126cbd-94e9-4023-aa8a-5e811eca50bd": {
             "arch": "arm64",

@@ -7,10 +7,6 @@
 "pending": {},
 "retry": [
 [
-"dpnsvr.exe",
-"075ca0b5e033ac1515980615ca78c0677796c4e6c03439ee6110d51b553967d1"
-],
-[
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "563ba711761821f9e3fcd5cac84e52a74b26f1a5e94208792e7940823a4618c7"
 ],
