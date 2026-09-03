@@ -3770,7 +3770,7 @@
 "ff18ae4e4e70d7fb0c65bb13612d8c2b891a936fc190eec1049b93c74e0f9378": "delta+"
 },
 "rasapi32_hotpatch.dll": {
-"01f1658a2cf2d8d6a4c1d5da978f71503488aadafcf273e1c168bf628702d13f": "pe",
+"01f1658a2cf2d8d6a4c1d5da978f71503488aadafcf273e1c168bf628702d13f": "vt",
 "7f7ddf4eed96fdc3aac69f02e0528805f1aa461a7005e7da0f120cb093a994de": "vt"
 },
 "sleep.exe": {
