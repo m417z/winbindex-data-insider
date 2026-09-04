@@ -300,12 +300,6 @@
             "created": 1786467637,
             "title": "Windows 11, version 24H2 (26100.9168)"
         },
-        "49f94ad8-c49c-4276-8d74-6721175e54a4": {
-            "arch": "amd64",
-            "build": "26200.9335",
-            "created": 1783257975,
-            "title": ".NET Framework Security Update for Windows 11 - KB5087051 (26200.9335) (4)"
-        },
         "4b046c03-f440-4f66-ac66-396c1ea86bf6": {
             "arch": "amd64",
             "build": "28120.2738",
@@ -989,6 +983,12 @@
             "build": "22621.9343",
             "created": 1786467652,
             "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 - KB5120713 (22621.9343)"
+        },
+        "ddaefaf4-7678-4b18-b3b8-36daa7993aec": {
+            "arch": "amd64",
+            "build": "26340.9233",
+            "created": 1788446229,
+            "title": "Windows 11 Insider Preview Quality Update (26340.9233)"
         },
         "deee09e7-795b-4ac6-ad80-a8680e97908d": {
             "arch": "arm64",
