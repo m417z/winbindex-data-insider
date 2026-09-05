@@ -1,7 +1,7 @@
 {
 "next": [
-"secur32.dll",
-"7377bf3a11eca490be92b23fdd09a2e1f65131b02442ef9d13554818a03221df"
+"twinui.appcore.dll",
+"16fad423e015076dbd77c2414e1b098785e8d397d9bcb5c2712abd75c942dba0"
 ],
 "next_updates": null,
 "pending": {},
@@ -13,6 +13,14 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
+],
+[
+"securityhealthcore.dll",
+"402de21ffd46d1b9690cb94ed1961311910cfdff7ac163601967180390bda2ef"
+],
+[
+"taskmgr.exe",
+"18d6ad7145d4f4fb4cff774de4bfa87936f075c7561378898f8c7a012fd75cba"
 ]
 ],
 "updates": null
