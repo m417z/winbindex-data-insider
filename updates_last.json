@@ -492,6 +492,12 @@
             "created": 1787333215,
             "title": "Windows 11 Insider Preview Quality Update (28120.2760)"
         },
+        "76c0e240-d070-43a8-bba3-f3699b2248fe": {
+            "arch": "amd64",
+            "build": "28000.9345",
+            "created": 1788792189,
+            "title": ".NET Framework Preview Update for Windows 11 - KB5122386 (28000.9345) (2)"
+        },
         "78c3a5e5-d313-4e57-88b6-1d6ba3bc282d": {
             "arch": "amd64",
             "build": "26200.8973",
@@ -671,6 +677,12 @@
             "build": "28120.2630",
             "created": 1785565174,
             "title": "Windows 11 Insider Preview Feature Update (28120.2630)"
+        },
+        "9adc2e8e-cc91-4195-b5d0-3523eee0a568": {
+            "arch": "amd64",
+            "build": "26200.9278",
+            "created": 1788715807,
+            "title": "Preview Update for Windows 11 (26200.9278)"
         },
         "9e9ce7b9-3e53-40b4-b486-c89655afc8fb": {
             "arch": "amd64",
