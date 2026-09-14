@@ -264,12 +264,6 @@
             "created": 1787331649,
             "title": "Windows 11 Insider Preview Feature Update (26220.9223)"
         },
-        "347ae910-5048-4865-bedc-c92c0fc3a65b": {
-            "arch": "amd64",
-            "build": "19045.7548",
-            "created": 1784065562,
-            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7548)"
-        },
         "361f3e9a-c406-4e84-a450-e77ca55014d0": {
             "arch": "arm64",
             "build": "26340.9354",
@@ -306,11 +300,11 @@
             "created": 1788059719,
             "title": ".NET Framework Security Update for Windows 11 - KB5120711 (28000.9344) (2)"
         },
-        "3eed2252-912c-4342-8afc-895bae4ae096": {
+        "3ef504f8-a287-4265-9831-cee3a8f5dfa4": {
             "arch": "arm64",
-            "build": "19045.7548",
-            "created": 1784065562,
-            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7548)"
+            "build": "28000.2956",
+            "created": 1789405493,
+            "title": "Windows 11, version 26H1 (28000.2956)"
         },
         "40e0a64b-c53f-42dc-ba76-8ebfd2e14926": {
             "arch": "amd64",
@@ -378,6 +372,12 @@
             "created": 1788886867,
             "title": "Windows 11 Insider Preview 29661.1000 (rs_prerelease)"
         },
+        "48af0364-6a27-4758-a2c1-c028ed0e3e28": {
+            "arch": "arm64",
+            "build": "19045.7727",
+            "created": 1789405285,
+            "title": "Feature update to Windows 10, version 22H2 (19045.7727)"
+        },
         "4b046c03-f440-4f66-ac66-396c1ea86bf6": {
             "arch": "amd64",
             "build": "28120.2738",
@@ -413,12 +413,6 @@
             "build": "26200.9168",
             "created": 1786470409,
             "title": "Feature update for Windows CPC OS, version 25H2 (26200.9168)"
-        },
-        "533720b8-f9c8-4193-887c-780a92eec1e8": {
-            "arch": "amd64",
-            "build": "28000.2525",
-            "created": 1784048413,
-            "title": "Windows 11, version 26H1 (28000.2525)"
         },
         "550f25cd-469b-4c98-999c-b2d663f9f56a": {
             "arch": "amd64",
@@ -456,18 +450,6 @@
             "created": 1788887429,
             "title": "Windows 11, version 26H1 (28000.2954)"
         },
-        "57ccb926-fd62-4c8c-9342-84cb7b6296e0": {
-            "arch": "arm64",
-            "build": "22631.7376",
-            "created": 1784048478,
-            "title": "Windows 11, version 23H2 (22631.7376)"
-        },
-        "57ee5844-e735-4dc8-a764-66b257e03b5b": {
-            "arch": "amd64",
-            "build": "26100.8875",
-            "created": 1784048417,
-            "title": "Windows 11, version 24H2 (26100.8875)"
-        },
         "5a2f54fc-cd21-47c2-93b5-8898b439ef90": {
             "arch": "amd64",
             "build": "26340.9212",
@@ -491,12 +473,6 @@
             "build": "17763.9020",
             "created": 1785265116,
             "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9020)"
-        },
-        "5b2d78ff-6654-4e90-8558-a58f0dc7a978": {
-            "arch": "arm64",
-            "build": "28000.2525",
-            "created": 1784048417,
-            "title": "Windows 11, version 26H1 (28000.2525)"
         },
         "5b70cb74-ee06-4847-bf29-9be4e58055d4": {
             "arch": "amd64",
@@ -546,12 +522,6 @@
             "created": 1785517921,
             "title": "Windows 11 Insider Preview Feature Update (28020.2623)"
         },
-        "65bb4ddb-1959-4006-96fa-07c5a6952d3b": {
-            "arch": "x86",
-            "build": "19044.7548",
-            "created": 1784048500,
-            "title": "Feature update to Windows 10, version 21H2 (19044.7548)"
-        },
         "66473ce5-67e3-4672-95f4-35a6912bd9f7": {
             "arch": "arm64",
             "build": "28120.2912",
@@ -582,23 +552,11 @@
             "created": 1784432658,
             "title": "Windows 11, version 24H2 (26100.8894)"
         },
-        "6a03461f-6073-40dc-aa42-52f5f45569f5": {
-            "arch": "amd64",
-            "build": "26200.9340",
-            "created": 1784048431,
-            "title": ".NET Framework Security Update for Windows 11 - KB5100998 (26200.9340)"
-        },
         "6a8c4c24-0dd2-46b9-9d8f-bd7a84ec5ad4": {
             "arch": "amd64",
             "build": "26200.9168",
             "created": 1786467611,
             "title": "Windows 11, version 25H2 (26200.9168)"
-        },
-        "6ab987db-6410-49b6-94d8-796e099814e5": {
-            "arch": "arm64",
-            "build": "28000.9340",
-            "created": 1784048407,
-            "title": ".NET Framework Security Update for Windows 11 - KB5101002 (28000.9340)"
         },
         "6b4cc4c9-525e-4904-9ac2-3cfbc0bce3da": {
             "arch": "amd64",
@@ -618,23 +576,11 @@
             "created": 1788886927,
             "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 - KB5126424 (22621.9346)"
         },
-        "6d0de3c7-c288-469a-9532-7a71c8bf243f": {
-            "arch": "arm64",
-            "build": "26100.33158",
-            "created": 1784048538,
-            "title": "Security Update for Azure Stack HCI (26100.33158)"
-        },
         "6d198db7-2a83-4708-ac13-2da1c139ea2d": {
             "arch": "amd64",
             "build": "28000.9347",
             "created": 1788886876,
             "title": ".NET Framework Security Update for Windows 11 - KB5126053 (28000.9347)"
-        },
-        "6d2607d1-4ca2-4976-a958-8e37a1ddf886": {
-            "arch": "amd64",
-            "build": "19044.7548",
-            "created": 1784048501,
-            "title": "Feature update to Windows 10, version 21H2 (19044.7548)"
         },
         "6eea6221-2fa8-495b-b3a5-18dee278d893": {
             "arch": "arm64",
@@ -659,12 +605,6 @@
             "build": "26200.9267",
             "created": 1786912187,
             "title": "Preview Update for Windows 11 (26200.9267)"
-        },
-        "730f22d3-120b-467d-a797-a4691265d8f4": {
-            "arch": "amd64",
-            "build": "22631.7376",
-            "created": 1784048477,
-            "title": "Windows 11, version 23H2 (22631.7376)"
         },
         "733d1b1e-8b61-41f5-990c-72d93ab27ea8": {
             "arch": "arm64",
@@ -762,12 +702,6 @@
             "created": 1786727189,
             "title": ".NET Framework Preview Update for Windows 11 - KB5122386 (28000.9345)"
         },
-        "82cd72da-d41e-48c4-9a75-1a0651b7529b": {
-            "arch": "amd64",
-            "build": "26100.33158",
-            "created": 1784049386,
-            "title": "Windows Server 2025 (26100.33158)"
-        },
         "82ea90d3-08d1-4bc0-8602-aa07b976532b": {
             "arch": "arm64",
             "build": "26220.9022",
@@ -785,12 +719,6 @@
             "build": "26200.9344",
             "created": 1787001360,
             "title": ".NET Framework Security Update for Windows 11 - KB5120708 (26200.9344) (3)"
-        },
-        "84f92676-c50f-47ba-8877-9cb3aded078f": {
-            "arch": "amd64",
-            "build": "26200.8875",
-            "created": 1784048419,
-            "title": "Windows 11, version 25H2 (26200.8875)"
         },
         "84fddaa0-855c-4fbe-8d92-1a4e0ec07239": {
             "arch": "arm64",
@@ -828,23 +756,11 @@
             "created": 1787797422,
             "title": "Windows 11 Insider Preview Feature Update (28120.2760)"
         },
-        "8b8561e4-2a36-458f-98c8-5232c57b1887": {
-            "arch": "arm64",
-            "build": "26200.9340",
-            "created": 1784048431,
-            "title": ".NET Framework Security Update for Windows 11 - KB5100998 (26200.9340)"
-        },
         "8cc32347-8fd4-4cd7-b705-f0c5a772dd71": {
             "arch": "amd64",
             "build": "28120.2824",
             "created": 1788210881,
             "title": "Windows 11 Insider Preview Feature Update (28120.2824)"
-        },
-        "8d126cbd-94e9-4023-aa8a-5e811eca50bd": {
-            "arch": "arm64",
-            "build": "26100.8875",
-            "created": 1784048468,
-            "title": "Windows 11, version 24H2 (26100.8875)"
         },
         "8deeb32c-e7bd-40b8-9542-5192214a83cf": {
             "arch": "arm64",
@@ -900,12 +816,6 @@
             "created": 1786556650,
             "title": "Security Update for Microsoft server operating system (Hotpatch capable) (26100.33222)"
         },
-        "9517ba00-6bf1-4223-b1bf-99eabf878a90": {
-            "arch": "x86",
-            "build": "17763.9020",
-            "created": 1784048511,
-            "title": "Feature update to Windows 10, version 1809 (17763.9020)"
-        },
         "9531141a-6621-4a9a-809b-f92c4599691b": {
             "arch": "amd64",
             "build": "28120.3002",
@@ -953,12 +863,6 @@
             "build": "28000.9345",
             "created": 1786727181,
             "title": ".NET Framework Preview Update for Windows 11 - KB5122386 (28000.9345)"
-        },
-        "9f192958-4f3a-472f-b578-9389dd739762": {
-            "arch": "amd64",
-            "build": "26200.8875",
-            "created": 1784058404,
-            "title": "Feature update for Windows CPC OS, version 25H2 (26200.8875)"
         },
         "a070cede-1173-46b7-b3bb-c69494f7f30a": {
             "arch": "arm64",
@@ -1050,12 +954,6 @@
             "created": 1788973311,
             "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7725)"
         },
-        "b045adcf-3361-4fd1-8afc-2533adf25431": {
-            "arch": "arm64",
-            "build": "26200.8875",
-            "created": 1784048456,
-            "title": "Windows 11, version 25H2 (26200.8875)"
-        },
         "b0605a8c-92ae-456c-b47c-81d48eae5f47": {
             "arch": "amd64",
             "build": "26200.9539",
@@ -1110,12 +1008,6 @@
             "created": 1785517931,
             "title": "Windows 11 Insider Preview Feature Update (28020.2623)"
         },
-        "b88092f3-6eba-41a3-907f-dd6b1e9c3b1e": {
-            "arch": "x86",
-            "build": "19045.7548",
-            "created": 1784065563,
-            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7548)"
-        },
         "ba211ae3-5323-4e1f-b63c-07da5b63ea0f": {
             "arch": "amd64",
             "build": "26220.9472",
@@ -1145,12 +1037,6 @@
             "build": "29651.1000",
             "created": 1787590810,
             "title": "Windows Server Insider Preview 29651.1000 (rs_flight)"
-        },
-        "beaf1a0b-db0d-466a-b1a1-35db3ea964c7": {
-            "arch": "arm64",
-            "build": "26100.9339",
-            "created": 1784048433,
-            "title": ".NET Framework Security Update for Windows 11 - KB5101001 (26100.9339)"
         },
         "c004689e-f068-47f7-85b8-ca8d08497eaf": {
             "arch": "arm64",
@@ -1200,12 +1086,6 @@
             "created": 1787651465,
             "title": "Windows 11 Insider Preview Feature Update (28120.2760)"
         },
-        "c40482d6-1db1-4ca1-adff-cf6261814cbd": {
-            "arch": "amd64",
-            "build": "26100.9339",
-            "created": 1784048433,
-            "title": ".NET Framework Security Update for Windows 11 - KB5101001 (26100.9339)"
-        },
         "c46e3fa7-38fc-407c-9ac8-5eb8c89ac51c": {
             "arch": "arm64",
             "build": "26300.9032",
@@ -1230,12 +1110,6 @@
             "created": 1788886991,
             "title": "Security Update for Azure Stack HCI (26100.33438)"
         },
-        "c8beceb8-b017-4a9b-bfa9-6eca45d6a7bc": {
-            "arch": "amd64",
-            "build": "22621.9339",
-            "created": 1784048479,
-            "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 - KB5101004 (22621.9339)"
-        },
         "cb51427d-cd3b-4a69-86c0-ab8c47723bf2": {
             "arch": "amd64",
             "build": "28000.2605",
@@ -1253,24 +1127,6 @@
             "build": "26100.9258",
             "created": 1787850086,
             "title": "Critical OOBE Update for Windows 11 - KB5122035 (26100.9258)"
-        },
-        "d22955b5-35a9-4b99-b5e9-c90b4786153d": {
-            "arch": "x86",
-            "build": "19045.7548",
-            "created": 1784048490,
-            "title": "Feature update to Windows 10, version 22H2 (19045.7548)"
-        },
-        "d3045ccb-b139-4a6d-97b0-09496b778119": {
-            "arch": "arm64",
-            "build": "19045.7548",
-            "created": 1784048489,
-            "title": "Feature update to Windows 10, version 22H2 (19045.7548)"
-        },
-        "d3a30113-1302-44f0-b9fc-6521dbda3ca2": {
-            "arch": "amd64",
-            "build": "26200.9340",
-            "created": 1784154578,
-            "title": ".NET Framework Security Update for Windows 11 - KB5100998 (26200.9340) (2)"
         },
         "d5f42a55-f44e-4aff-a1b1-02a8e61369de": {
             "arch": "x86",
@@ -1308,12 +1164,6 @@
             "created": 1787850077,
             "title": "Windows 11, version 24H2 (26100.9278)"
         },
-        "d9cbce10-1023-4527-bd6d-609e12cf9f5e": {
-            "arch": "arm64",
-            "build": "26200.8875",
-            "created": 1784058404,
-            "title": "Feature update for Windows CPC OS, version 25H2 (26200.8875)"
-        },
         "da2147f5-5b62-4ada-861e-1f9c0789a739": {
             "arch": "arm64",
             "build": "22631.7517",
@@ -1325,12 +1175,6 @@
             "build": "26100.8893",
             "created": 1784405398,
             "title": "Windows 11, version 24H2 (26100.8893)"
-        },
-        "dc55bd95-7152-4a05-93c9-fb55aa43ad3b": {
-            "arch": "amd64",
-            "build": "20348.5386",
-            "created": 1784048550,
-            "title": "Feature update to Microsoft server operating system, version 21H2 (20348.5386)"
         },
         "dd0767c2-7117-410a-a599-71f794ea0b12": {
             "arch": "amd64",
@@ -1362,11 +1206,11 @@
             "created": 1787850160,
             "title": "Windows 11, version 26H2 (26300.9278)"
         },
-        "e02e746f-e5f1-4df9-9cad-ddc74b388f76": {
+        "dfc70cae-9c31-49f0-a42c-b337feb729a4": {
             "arch": "amd64",
-            "build": "19045.7548",
-            "created": 1784048490,
-            "title": "Feature update to Windows 10, version 22H2 (19045.7548)"
+            "build": "28000.2956",
+            "created": 1789405212,
+            "title": "Windows 11, version 26H1 (28000.2956)"
         },
         "e2e47984-7a8d-4c95-b78b-dfbe248848ef": {
             "arch": "amd64",
@@ -1392,12 +1236,6 @@
             "created": 1784690561,
             "title": "Windows 11 Insider Preview Quality Update (28120.2546)"
         },
-        "e5f05bf4-3901-4592-8385-5c12d2105da1": {
-            "arch": "amd64",
-            "build": "17763.9020",
-            "created": 1784048512,
-            "title": "Feature update to Windows 10, version 1809 (17763.9020)"
-        },
         "e641ee6e-2254-41bd-8b0a-1f82f298818f": {
             "arch": "amd64",
             "build": "29634.1000",
@@ -1421,24 +1259,6 @@
             "build": "26100.8968",
             "created": 1784581252,
             "title": "Windows 11, version 24H2 (26100.8968)"
-        },
-        "e8b48a69-d629-46c3-9d9b-26a40f2294d2": {
-            "arch": "arm64",
-            "build": "22621.9339",
-            "created": 1784048479,
-            "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 - KB5101004 (22621.9339)"
-        },
-        "e9505fd6-4408-4761-adba-b28e84ac5cb4": {
-            "arch": "arm64",
-            "build": "19044.7548",
-            "created": 1784048501,
-            "title": "Feature update to Windows 10, version 21H2 (19044.7548)"
-        },
-        "ecbb8051-7e49-40b1-b356-8eaa743cd1c5": {
-            "arch": "amd64",
-            "build": "26100.33158",
-            "created": 1784048539,
-            "title": "Security Update for Azure Stack HCI (26100.33158)"
         },
         "ed7a5b5e-56ee-4527-abee-3488588f713a": {
             "arch": "amd64",
@@ -1470,11 +1290,23 @@
             "created": 1787000475,
             "title": "Windows 11 Insider Preview Feature Update (26220.9202)"
         },
+        "f2a3c168-f4ea-4b8c-9ec7-ff42e1d78ab4": {
+            "arch": "amd64",
+            "build": "19045.7727",
+            "created": 1789405286,
+            "title": "Feature update to Windows 10, version 22H2 (19045.7727)"
+        },
         "f2d98e30-41c5-4f61-bcd3-7a8e344f54c0": {
             "arch": "amd64",
             "build": "28000.3079",
             "created": 1789150912,
             "title": "Preview Update for Windows 11 (28000.3079)"
+        },
+        "f3083cc8-a73c-4803-8b0e-41a1998a8837": {
+            "arch": "x86",
+            "build": "19045.7727",
+            "created": 1789405286,
+            "title": "Feature update to Windows 10, version 22H2 (19045.7727)"
         },
         "f322908e-723d-4e4a-9606-c687956d38f0": {
             "arch": "amd64",
@@ -1517,12 +1349,6 @@
             "build": "22621.9346",
             "created": 1788886926,
             "title": "Cumulative Update for .NET Framework for Windows 11, version 23H2 - KB5126424 (22621.9346)"
-        },
-        "fa64f6cd-6a7b-4cdd-894b-70149d685ee7": {
-            "arch": "amd64",
-            "build": "28000.9340",
-            "created": 1784048407,
-            "title": ".NET Framework Security Update for Windows 11 - KB5101002 (28000.9340)"
         },
         "fb93e9db-686d-467b-bd4a-a2713565725c": {
             "arch": "amd64",
