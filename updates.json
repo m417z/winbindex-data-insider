@@ -1,0 +1,10 @@
+{
+    "builds": {
+        "47b617ee-13f4-41c7-8b23-14c4547ecddc": {
+            "arch": "amd64",
+            "build": "22631.7584",
+            "created": 1789409473,
+            "title": "Windows 11, version 23H2 (22631.7584)"
+        }
+    }
+}
