@@ -294,6 +294,12 @@
             "created": 1787331676,
             "title": "Windows 11 Insider Preview Quality Update (28120.2738)"
         },
+        "37f39805-af3b-4fb7-9d30-49aaa4e7bfe0": {
+            "arch": "amd64",
+            "build": "26200.9457",
+            "created": 1789409840,
+            "title": "Feature update for Windows CPC OS, version 25H2 (26200.9457)"
+        },
         "3927e6cb-c579-4e1c-a989-5335a647d180": {
             "arch": "arm64",
             "build": "26200.9267",
@@ -407,6 +413,12 @@
             "build": "19045.7727",
             "created": 1789405285,
             "title": "Feature update to Windows 10, version 22H2 (19045.7727)"
+        },
+        "48dc4928-11dd-4f6a-9e75-4070c89054b0": {
+            "arch": "amd64",
+            "build": "26300.9278",
+            "created": 1789479943,
+            "title": "Preview Update for Windows 11 (26300.9278)"
         },
         "4b046c03-f440-4f66-ac66-396c1ea86bf6": {
             "arch": "amd64",
@@ -900,6 +912,12 @@
             "created": 1789066560,
             "title": ".NET Framework Preview Update for Windows 11 - KB5125105 (26300.10003)"
         },
+        "9911b4ea-d740-4cfd-aaf1-ff3af90de759": {
+            "arch": "arm64",
+            "build": "26200.9457",
+            "created": 1789409840,
+            "title": "Feature update for Windows CPC OS, version 25H2 (26200.9457)"
+        },
         "9adc2e8e-cc91-4195-b5d0-3523eee0a568": {
             "arch": "amd64",
             "build": "26200.9278",
@@ -1212,6 +1230,12 @@
             "created": 1787850018,
             "title": "Critical OOBE Update for Windows 11 - KB5122035 (26100.9258) (2)"
         },
+        "d1b2edfe-c777-4177-beac-ca197feb0d51": {
+            "arch": "arm64",
+            "build": "26300.9278",
+            "created": 1789479944,
+            "title": "Preview Update for Windows 11 (26300.9278)"
+        },
         "d1f78e53-7a43-4357-9484-50c954f9308e": {
             "arch": "arm64",
             "build": "26100.9258",
@@ -1283,6 +1307,12 @@
             "build": "26340.9233",
             "created": 1788446229,
             "title": "Windows 11 Insider Preview Quality Update (26340.9233)"
+        },
+        "deafdbcf-880a-48ec-9bdd-be23a53f63ea": {
+            "arch": "arm64",
+            "build": "22631.7584",
+            "created": 1789412986,
+            "title": "Windows 11, version 23H2 (22631.7584)"
         },
         "deee09e7-795b-4ac6-ad80-a8680e97908d": {
             "arch": "arm64",

@@ -3,9 +3,28 @@
 "umpdc.dll",
 "38f702c61f6425daedb2d1bce46228f7a856e058bdee1e088f53d27c42d76ad1"
 ],
-"next_updates": null,
+"next_updates": [
+"bootvhd.dll",
+"e0c2de9beef384c37b66c437cf40b04f39889587ddd0c5d379b5f6bacbf5db45"
+],
 "pending": {},
 "retry": [
+[
+"agilevpn.sys",
+"6b8cce5e14814e86c03454e5bc6ac7e6ecb3e15a516ffb0ebba6a6d44d97d685"
+],
+[
+"aicontext.exe",
+"4cc645b3f6eb821bd4cf51f85e9ecc5f704f5a07bd7e2c7ed5fd65dd210e6d9f"
+],
+[
+"bootrec.exe",
+"75a6a9ba1223ea3c310cca8b0fb523def2e41f697f360ebc353248af0be70b86"
+],
+[
+"bootsvc.dll",
+"6f6ca8e19f1ef77498916bc2e39e061a449e8e983ca7b08f73ad4058830b4c21"
+],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "4ea2c850a6d7f9a889c9297b8bff7fe458b7291b59f032f720afacdc3ceb38f3"
@@ -116,6 +135,12 @@
 "a157d876-d4d1-46d4-8ebd-90e1f875ef42",
 "60fd6863-df98-4ea0-bc17-dff82d50449b",
 "bcee6e32-2ce6-4357-93f1-7c3f8faeda3b",
-"2300d07a-3477-4b9e-8498-93ca59cff8d4"
+"2300d07a-3477-4b9e-8498-93ca59cff8d4",
+"47b617ee-13f4-41c7-8b23-14c4547ecddc",
+"37f39805-af3b-4fb7-9d30-49aaa4e7bfe0",
+"9911b4ea-d740-4cfd-aaf1-ff3af90de759",
+"deafdbcf-880a-48ec-9bdd-be23a53f63ea",
+"48dc4928-11dd-4f6a-9e75-4070c89054b0",
+"d1b2edfe-c777-4177-beac-ca197feb0d51"
 ]
 }
