@@ -4,26 +4,14 @@
 "38f702c61f6425daedb2d1bce46228f7a856e058bdee1e088f53d27c42d76ad1"
 ],
 "next_updates": [
-"bootvhd.dll",
-"e0c2de9beef384c37b66c437cf40b04f39889587ddd0c5d379b5f6bacbf5db45"
+"usbaudio2.sys",
+"a14e10fd95d35acd6a939e1b031551111c356d412b615f6182c93c245b66d3c8"
 ],
 "pending": {},
 "retry": [
 [
-"agilevpn.sys",
-"6b8cce5e14814e86c03454e5bc6ac7e6ecb3e15a516ffb0ebba6a6d44d97d685"
-],
-[
-"aicontext.exe",
-"4cc645b3f6eb821bd4cf51f85e9ecc5f704f5a07bd7e2c7ed5fd65dd210e6d9f"
-],
-[
-"bootrec.exe",
-"75a6a9ba1223ea3c310cca8b0fb523def2e41f697f360ebc353248af0be70b86"
-],
-[
-"bootsvc.dll",
-"6f6ca8e19f1ef77498916bc2e39e061a449e8e983ca7b08f73ad4058830b4c21"
+"iesettingsync.exe",
+"561de64a47fa570e753db88b740cba45a4f667ff761777961ea55c6e1fa9fbd4"
 ],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
@@ -40,6 +28,34 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
+],
+[
+"setupplatform.exe",
+"068941ca20a9a85f43d51aed74bb31c31af8d3ef33e5d534278bd9f76431dcbf"
+],
+[
+"system.xaml.dll",
+"c9f76d7722e69b1957f79c3e08b8a3536b5bdb1783d9e351fa5beb5ff4689fa6"
+],
+[
+"systeminfo.exe",
+"1e5380846e1f60e47ae75211a6c0ed4acb3bc98e0c9e26b4110cbc4e4e08cbf6"
+],
+[
+"systeminfo.exe",
+"708417f7796cc82ffba5b9eb97e62dfbaee382743afaaa003625dc7bb09605b3"
+],
+[
+"systemsettingsadminflows.exe",
+"c83a93b403aa8bf4da058ca579cc3de1243d382cd9e60d5f34683f78e0b5d815"
+],
+[
+"tabtip.exe",
+"53bf86feb7720cf27993c98141cee3adc2ca73a4b701994a9e956eb29623dec1"
+],
+[
+"tsusbhub.sys",
+"04e0319de1e72164eaa22d3af766bdc06600c4d4a5b3f348e9104326188f5ffd"
 ]
 ],
 "updates": [
