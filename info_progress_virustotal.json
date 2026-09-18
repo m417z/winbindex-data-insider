@@ -1,7 +1,7 @@
 {
 "next": [
-"umpdc.dll",
-"38f702c61f6425daedb2d1bce46228f7a856e058bdee1e088f53d27c42d76ad1"
+"windows.system.systemmanagement.dll",
+"f62a22d1f73c19281b07271fd5a0fe20ddd632980fea9e6db1877078730af9b9"
 ],
 "next_updates": null,
 "pending": {},
@@ -23,40 +23,8 @@
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
 ],
 [
-"setupplatform.exe",
-"068941ca20a9a85f43d51aed74bb31c31af8d3ef33e5d534278bd9f76431dcbf"
-],
-[
-"tabtip.exe",
-"53bf86feb7720cf27993c98141cee3adc2ca73a4b701994a9e956eb29623dec1"
-],
-[
 "wermgr.exe",
 "a6d9ab570b539c2869aa2d8e87e804ec552d1c1d05ff787f9a6e5ab88fde4c04"
-],
-[
-"winlogon.exe",
-"c169b8d571b96ff397486d7b85c317854a9cf33fc9ac6559b4b88d83a224942e"
-],
-[
-"winnat.sys",
-"5bfcabe109ec7a3a958f58a7889c0d413372165e3937169d81501f622aba3c0b"
-],
-[
-"winusb.sys",
-"9d28c369f6e1c7447df812fdf06b36f1fc3d2063290a740fdf1ae25c55de94f1"
-],
-[
-"wpcmon.exe",
-"74ad37838ae6adc75466f246e7ecff0f14c6347516b777b80067930bd2932fb7"
-],
-[
-"wpr.exe",
-"2d097b223c1f6c4fbd718fb52ec6c5ddbb895cde904a9fe270f6ce7faed43730"
-],
-[
-"xusb22.sys",
-"aeada7e52cb86ea5a557f9731836db94119e9336e076ab67d689c46f9fe24a48"
 ]
 ],
 "updates": null
