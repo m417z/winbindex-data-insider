@@ -8379,6 +8379,8 @@
 "datamap.540a.dat",
 "datamarketsvc.dll",
 "datamigrationv1.sql",
+"datasanitization.exe",
+"datasanitization.exe.mui",
 "datascrn.sys",
 "datastorecachedumptool.exe",
 "datasvcutil.exe",
@@ -25598,6 +25600,7 @@
 "previousresult.png",
 "previousversions.adml",
 "previousversions.admx",
+"previousversions.svg",
 "prevtab.png",
 "prflbmsg.dll",
 "prflbmsg.dll.mui",
@@ -39557,6 +39560,7 @@
 "{0283ac0f-fff1-49ae-ada1-8a933130cad6}.cip",
 "{074d5fae-c4c2-4aed-9cf8-9b1a8c3745a6}.cip",
 "{0939ed82-bfd5-4d32-b58e-d31d3c49715a}.cip",
+"{11e75c2f-9dd9-4072-bf28-cec01974bb0c}.cip",
 "{1283ac0f-fff1-49ae-ada1-8a933130cad6}.cip",
 "{1678656c-05ef-481f-bc5b-ebd8c991502d}.cip",
 "{1939ed82-bfd5-4d32-b58e-d31d3c49715a}.cip",
@@ -39591,5 +39595,6 @@
 "{a615f85e-5c0d-4cbd-8721-d86f859a4e8b}.cip",
 "{ad3b492c-4cf6-49bb-a273-aa5291eee428}.cip",
 "{cdd5cb55-db68-4d71-aa38-3df2b6473a52}.cip",
-"{d7184352-2694-45f4-b36e-0340e99343fe}.cip"
+"{d7184352-2694-45f4-b36e-0340e99343fe}.cip",
+"{f73e6cb6-99cc-4149-be32-914c01a41b50}.cip"
 ]
