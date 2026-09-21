@@ -1,15 +1,11 @@
 {
 "next": [
-"windows.system.systemmanagement.dll",
-"f62a22d1f73c19281b07271fd5a0fe20ddd632980fea9e6db1877078730af9b9"
+"amsi.dll",
+"501f3db344653a2a0cf90b9946b179b04531d85bbaec67f5cd4c528fca0f50e3"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"drvinst.exe",
-"fdde37a8d0010d976a1e0e950409636447fc9a40d17f2eda89175d026a9b7c7e"
-],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "4ea2c850a6d7f9a889c9297b8bff7fe458b7291b59f032f720afacdc3ceb38f3"
@@ -27,8 +23,16 @@
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
 ],
 [
-"wpctok.exe",
-"b00ae178b412ba968cde18427376b7d5f3eb6c2be47bcc092862eb89b3d0714e"
+"windowsdefaultheatprocessor.dll",
+"a9f03fb66cf6372a478cd1982a76d75d1231601b0e14e257d360adad12ccfd49"
+],
+[
+"wkscli.dll",
+"eddf5bdf936fd2f35b29ad47636f7a9bc63135b1e84b0e38a3c4b343d98ea57f"
+],
+[
+"xblgamesavetask.exe",
+"5320b4c88ca0e56fce9d08c4213fa2468df9b18a0bb76a88d6e80a0d5ed00f44"
 ]
 ],
 "updates": null
