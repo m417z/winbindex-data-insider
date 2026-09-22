@@ -1,7 +1,7 @@
 {
 "next": [
-"amsi.dll",
-"501f3db344653a2a0cf90b9946b179b04531d85bbaec67f5cd4c528fca0f50e3"
+"apisampling.dll",
+"8b460e48a9b604c4e05232dce8cc5d6b1ae37ecf3a29bb3a2a56e68dc37e9c30"
 ],
 "next_updates": null,
 "pending": {},
@@ -21,18 +21,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
-],
-[
-"windowsdefaultheatprocessor.dll",
-"a9f03fb66cf6372a478cd1982a76d75d1231601b0e14e257d360adad12ccfd49"
-],
-[
-"wkscli.dll",
-"eddf5bdf936fd2f35b29ad47636f7a9bc63135b1e84b0e38a3c4b343d98ea57f"
-],
-[
-"xblgamesavetask.exe",
-"5320b4c88ca0e56fce9d08c4213fa2468df9b18a0bb76a88d6e80a0d5ed00f44"
 ]
 ],
 "updates": null
