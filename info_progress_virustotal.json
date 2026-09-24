@@ -1,7 +1,7 @@
 {
 "next": [
-"apisampling.dll",
-"8b460e48a9b604c4e05232dce8cc5d6b1ae37ecf3a29bb3a2a56e68dc37e9c30"
+"ddsmc.sys",
+"7ec52b30f0d68e31a528f7bdf799c624b242d15fedc1fe8c2b44a1cc99141d95"
 ],
 "next_updates": null,
 "pending": {},
@@ -25,10 +25,6 @@
 [
 "sppcext.dll",
 "700a8630e401ee4132990dc4cf07d4de5364b5a156aef20e262cc7fe1be5f066"
-],
-[
-"wpcmon.exe",
-"511994a80f136f4b1d44e09ba2197064c75503e2a49bccc404246e6124de5522"
 ]
 ],
 "updates": null
