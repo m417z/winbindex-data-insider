@@ -1,7 +1,7 @@
 {
 "next": [
-"ddsmc.sys",
-"7ec52b30f0d68e31a528f7bdf799c624b242d15fedc1fe8c2b44a1cc99141d95"
+"dmcertinst.exe",
+"99478234713105074ad64dae2c2f13adb9f6e2049f29be27e4807cfd6a3a3a53"
 ],
 "next_updates": null,
 "pending": {},
@@ -21,10 +21,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
-],
-[
-"sppcext.dll",
-"700a8630e401ee4132990dc4cf07d4de5364b5a156aef20e262cc7fe1be5f066"
 ]
 ],
 "updates": null
