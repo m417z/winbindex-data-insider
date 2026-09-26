@@ -1,4 +1,20 @@
 {
-"next": null,
-"updates": []
+"next": [
+"hotplug.dll",
+"131315c4fb30eddda2c94028c068b998c31ceb542d2087096bf7885e45b43de9"
+],
+"updates": [
+"bfe6ee0a-6652-49f1-825e-3203a50aaca1",
+"b16e93d0-e5aa-48ef-9894-f5256b09f8c1",
+"693744e6-e75c-486b-abf6-5f2c2854f0c3",
+"a4c8faa1-0968-4dea-a818-66666533b4c0",
+"dd9661d6-dcf0-42b3-b6ea-8ac2dfd99bd8",
+"8d4c3b4f-6a1d-4f91-a29b-b38ad36fba21",
+"63446a30-811d-4332-a796-1b18e51579b5",
+"4499d4f9-5b37-4ef3-be5a-1f14796e52a9",
+"05174aee-70c9-4853-86f2-87485df79b4d",
+"e8913b79-4904-48fc-8f5a-78c609d61116",
+"8ad91eff-78ee-4a86-b364-33a6578b38de",
+"de359397-a5f7-45ce-80d1-47fbdb12a3a5"
+]
 }
