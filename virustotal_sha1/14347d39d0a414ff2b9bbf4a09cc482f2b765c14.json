@@ -1,0 +1,1164 @@
+{
+    "data": {
+        "attributes": {
+            "type_description": "Win32 DLL",
+            "tlsh": "T11CA45C5E5A574C3AD9D56333F652830887BBB8A993517703820BF16C3B503C9EAC6ED2",
+            "vhash": "145056556d15151az1b7z1qz7e0aa",
+            "type_tags": [
+                "executable",
+                "windows",
+                "win32",
+                "pe",
+                "pedll"
+            ],
+            "creation_date": 1620101428,
+            "names": [
+                "msvcm80.dll",
+                "MSVCM80.DLL"
+            ],
+            "signature_info": {
+                "product": "Microsoft\u00ae Visual Studio\u00ae 2005",
+                "internal name": "MSVCM80.DLL",
+                "copyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+                "original name": "MSVCM80.DLL",
+                "file version": "8.00.50727.9680",
+                "description": "Microsoft\u00ae C Runtime Library"
+            },
+            "last_modification_date": 1687181793,
+            "type_tag": "pedll",
+            "times_submitted": 4,
+            "total_votes": {
+                "harmless": 0,
+                "malicious": 0
+            },
+            "size": 479232,
+            "type_extension": "dll",
+            "authentihash": "b9b6f576796726dffcf15553dbe90429a0add538b18121d4e26222cc560f51ed",
+            "last_submission_date": 1679612226,
+            "known_distributors": {
+                "filenames": [
+                    "msvcm80.dll"
+                ],
+                "products": [
+                    "windows-sql-cloud-sql-2017-web-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2022-enterprise-windows-2022-dc-v20230616",
+                    "Windows 11 Disk Image (ISO) 64-bit",
+                    "windows-sql-cloud-sql-2022-enterprise-windows-2022-dc-v20230510",
+                    "windows-cloud-windows-server-2022-dc-core-v20230615",
+                    "windows-sql-cloud-sql-2022-enterprise-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2022-standard-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2019-standard-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2019-standard-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2017-enterprise-windows-2022-dc-v20230616",
+                    "windows-cloud-windows-server-2022-dc-v20230615",
+                    "windows-sql-cloud-sql-2017-enterprise-windows-2022-dc-v20230510",
+                    "windows-cloud-windows-server-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2022-standard-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2022-web-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2019-web-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2022-standard-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2019-enterprise-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2017-web-windows-2022-dc-v20230510",
+                    "windows-cloud-windows-server-2022-dc-core-v20230510",
+                    "windows-sql-cloud-sql-2022-web-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2022-web-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2017-standard-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2017-standard-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2019-standard-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2017-standard-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2017-web-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2019-enterprise-windows-2022-dc-v20230414",
+                    "windows-sql-cloud-sql-2019-enterprise-windows-2022-dc-v20230616",
+                    "windows-sql-cloud-sql-2019-web-windows-2022-dc-v20230510",
+                    "windows-sql-cloud-sql-2019-web-windows-2022-dc-v20230414"
+                ],
+                "distributors": [
+                    "Microsoft"
+                ],
+                "data_sources": [
+                    "HashDB",
+                    "National Software Reference Library (NSRL)"
+                ]
+            },
+            "meaningful_name": "MSVCM80.DLL",
+            "trid": [
+                {
+                    "file_type": "Win32 Executable MS Visual C++ (generic)",
+                    "probability": 38.8
+                },
+                {
+                    "file_type": "Microsoft Visual C++ compiled executable (generic)",
+                    "probability": 20.5
+                },
+                {
+                    "file_type": "Win64 Executable (generic)",
+                    "probability": 13.0
+                },
+                {
+                    "file_type": "Win32 Dynamic Link Library (generic)",
+                    "probability": 8.1
+                },
+                {
+                    "file_type": "Win16 NE executable (generic)",
+                    "probability": 6.2
+                }
+            ],
+            "sandbox_verdicts": {
+                "C2AE": {
+                    "category": "undetected",
+                    "sandbox_name": "C2AE",
+                    "malware_classification": [
+                        "UNKNOWN_VERDICT"
+                    ]
+                }
+            },
+            "sha256": "fdfce185830fac6bc340f41c58402c4ba29a3bafbda560d8af301aafd4143c5f",
+            "tags": [
+                "assembly",
+                "known-distributor",
+                "pedll",
+                "detect-debug-environment",
+                "legit"
+            ],
+            "last_analysis_date": 1652956025,
+            "unique_sources": 4,
+            "first_submission_date": 1636673301,
+            "sha1": "14347d39d0a414ff2b9bbf4a09cc482f2b765c14",
+            "ssdeep": "6144:M6KTZsHDwx0TCAQpFTfnPyFIrCqq/KrvYhQetpBh1qfpIYAta54a4OjMQvyr:CsHDG0TMC7KchQapltHQ",
+            "md5": "d1eebace6ce6adcae5230ce7df97c1b9",
+            "pe_info": {
+                "exports": [
+                    "?DoCallBackInDefaultDomain@<CrtImplementationDetails>@@YAXP6GJPAX@Z0@Z",
+                    "?DoDllLanguageSupportValidation@<CrtImplementationDetails>@@YAXXZ",
+                    "?RegisterModuleUninitializer@<CrtImplementationDetails>@@YAXP$AAVEventHandler@System@@@Z",
+                    "?ThrowModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVString@System@@@Z",
+                    "?ThrowModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVString@System@@P$AAVException@3@@Z",
+                    "?ThrowNestedModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVException@System@@0@Z",
+                    "?_Addstd@ios_base@std@@SAXPAV12@@Z",
+                    "?_Atexit@@YAXP6AXXZ@Z",
+                    "?_BADOFF_func@std@@YAABJXZ",
+                    "?_Cerr_func@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@XZ",
+                    "?_Cin_func@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@1@XZ",
+                    "?_Clocptr_func@_Locimp@locale@std@@CAAAPAV123@XZ",
+                    "?_Clog_func@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@XZ",
+                    "?_Cosh@@YANNN@Z",
+                    "?_Cout_func@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@XZ",
+                    "?_Debug_message@std@@YAXPBD0@Z",
+                    "?_Dnorm@@YAFPAG@Z",
+                    "?_Dscale@@YAFPANJ@Z",
+                    "?_Dtentox@@YANNJPAH@Z",
+                    "?_Dtest@@YAFPAN@Z",
+                    "?_Dunscale@@YAFPAFPAN@Z",
+                    "?_Exp@@YAFPANNF@Z",
+                    "?_FCosh@@YAMMM@Z",
+                    "?_FDnorm@@YAFPAG@Z",
+                    "?_FDscale@@YAFPAMJ@Z",
+                    "?_FDtentox@@YAMMJPAH@Z",
+                    "?_FDtest@@YAFPAM@Z",
+                    "?_FDunscale@@YAFPAFPAM@Z",
+                    "?_FExp@@YAFPAMMF@Z",
+                    "?_FSinh@@YAMMM@Z",
+                    "?_Fiopen@std@@YAPAU_iobuf@@PBDHH@Z",
+                    "?_Fiopen@std@@YAPAU_iobuf@@PBGHH@Z",
+                    "?_Fiopen@std@@YAPAU_iobuf@@PB_WHH@Z",
+                    "?_Fpz_func@std@@YAAA_JXZ",
+                    "?_Getcoll@@YA?AU_Collvec@@XZ",
+                    "?_Getctype@@YA?AU_Ctypevec@@XZ",
+                    "?_Getcvt@@YA?AU_Cvtvec@@XZ",
+                    "?_Getdateorder@@YAHXZ",
+                    "?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ",
+                    "?_Getwctype@@YAFGPBU_Ctypevec@@@Z",
+                    "?_Getwctype@@YAF_WPBU_Ctypevec@@@Z",
+                    "?_Getwctypes@@YAPBGPBG0PAFPBU_Ctypevec@@@Z",
+                    "?_Getwctypes@@YAPB_WPB_W0PAFPBU_Ctypevec@@@Z",
+                    "?_Id_cnt_func@id@locale@std@@CAAAHXZ",
+                    "?_Id_func@?$codecvt@GDH@std@@SAAAVid@locale@2@XZ",
+                    "?_Id_func@?$codecvt@_WDH@std@@SAAAVid@locale@2@XZ",
+                    "?_Id_func@?$ctype@D@std@@SAAAVid@locale@2@XZ",
+                    "?_Id_func@?$ctype@G@std@@SAAAVid@locale@2@XZ",
+                    "?_Id_func@?$ctype@_W@std@@SAAAVid@locale@2@XZ",
+                    "?_Index_func@ios_base@std@@CAAAHXZ",
+                    "?_Init@locale@std@@CAPAV_Locimp@12@XZ",
+                    "?_Init_cnt_func@Init@ios_base@std@@CAAAHXZ",
+                    "?_Init_ctor@Init@ios_base@std@@CAXPAV123@@Z",
+                    "?_Init_dtor@Init@ios_base@std@@CAXPAV123@@Z",
+                    "?_Init_locks_ctor@_Init_locks@std@@CAXPAV12@@Z",
+                    "?_Init_locks_dtor@_Init_locks@std@@CAXPAV12@@Z",
+                    "?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z",
+                    "?_LCosh@@YAOOO@Z",
+                    "?_LDscale@@YAFPAOJ@Z",
+                    "?_LDtentox@@YAOOJPAH@Z",
+                    "?_LDtest@@YAFPAO@Z",
+                    "?_LDunscale@@YAFPAFPAO@Z",
+                    "?_LExp@@YAFPAOOF@Z",
+                    "?_LPoly@@YAOOPBOH@Z",
+                    "?_LSinh@@YAOOO@Z",
+                    "?_Locimp_Addfac@_Locimp@locale@std@@CAXPAV123@PAVfacet@23@I@Z",
+                    "?_Locimp_ctor@_Locimp@locale@std@@CAXPAV123@ABV123@@Z",
+                    "?_Locimp_dtor@_Locimp@locale@std@@CAXPAV123@@Z",
+                    "?_Locinfo_Addcats@_Locinfo@std@@SAAAV12@PAV12@HPBD@Z",
+                    "?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@HPBD@Z",
+                    "?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z",
+                    "?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z",
+                    "?_Lockit_ctor@_Lockit@std@@CAXPAV12@@Z",
+                    "?_Lockit_ctor@_Lockit@std@@CAXPAV12@H@Z",
+                    "?_Lockit_ctor@_Lockit@std@@SAXH@Z",
+                    "?_Lockit_dtor@_Lockit@std@@CAXPAV12@@Z",
+                    "?_Lockit_dtor@_Lockit@std@@SAXH@Z",
+                    "?_Makeloc@_Locimp@locale@std@@CAPAV123@ABV_Locinfo@3@HPAV123@PBV23@@Z",
+                    "?_Makeushloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z",
+                    "?_Makewloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z",
+                    "?_Makexloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z",
+                    "?_Mbrtowc@@YAHPAGPBDIPAHPBU_Cvtvec@@@Z",
+                    "?_Mbrtowc@@YAHPA_WPBDIPAHPBU_Cvtvec@@@Z",
+                    "?_Mtxdst@@YAXPAU_RTL_CRITICAL_SECTION@@@Z",
+                    "?_Mtxinit@@YAXPAU_RTL_CRITICAL_SECTION@@@Z",
+                    "?_Mtxlock@@YAXPAU_RTL_CRITICAL_SECTION@@@Z",
+                    "?_Mtxunlock@@YAXPAU_RTL_CRITICAL_SECTION@@@Z",
+                    "?_Mutex_Lock@_Mutex@std@@CAXPAV12@@Z",
+                    "?_Mutex_Unlock@_Mutex@std@@CAXPAV12@@Z",
+                    "?_Mutex_ctor@_Mutex@std@@CAXPAV12@@Z",
+                    "?_Mutex_dtor@_Mutex@std@@CAXPAV12@@Z",
+                    "?_Nomemory@std@@YAXXZ",
+                    "?_Once@@YAXPAJP6AXXZ@Z",
+                    "?_Poly@@YANNPBNH@Z",
+                    "?_Setgloballocale@locale@std@@CAXPAX@Z",
+                    "?_Sinh@@YANNN@Z",
+                    "?_Stod@@YANPBDPAPADJ@Z",
+                    "?_Stodx@@YANPBDPAPADJPAH@Z",
+                    "?_Stof@@YAMPBDPAPADJPAH@Z",
+                    "?_Stoflt@@YAHPBD0PAPADQAJH@Z",
+                    "?_Stofx@@YAMPBDPAPADJPAH@Z",
+                    "?_Stold@@YAOPBDPAPADJPAH@Z",
+                    "?_Stoldx@@YAOPBDPAPADJPAH@Z",
+                    "?_Stolx@@YAJPBDPAPADHPAH@Z",
+                    "?_Stopfx@@YAHPAPBDPAPAD@Z",
+                    "?_Stoul@@YAKPBDPAPADH@Z",
+                    "?_Stoulx@@YAKPBDPAPADHPAH@Z",
+                    "?_Stoxflt@@YAHPBD0PAPADQAJH@Z",
+                    "?_Strcoll@@YAHPBD000PBU_Collvec@@@Z",
+                    "?_Strxfrm@@YAIPAD0PBD1PBU_Collvec@@@Z",
+                    "?_Sync_func@ios_base@std@@CAAA_NXZ",
+                    "?_Throw@std@@YAXABVexception@stdext@@@Z",
+                    "?_Tolower@@YAHHPBU_Ctypevec@@@Z",
+                    "?_Toupper@@YAHHPBU_Ctypevec@@@Z",
+                    "?_Towlower@@YAGGPBU_Ctypevec@@@Z",
+                    "?_Towlower@@YA_W_WPBU_Ctypevec@@@Z",
+                    "?_Towupper@@YAGGPBU_Ctypevec@@@Z",
+                    "?_Towupper@@YA_W_WPBU_Ctypevec@@@Z",
+                    "?_Wcerr_func@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@1@XZ",
+                    "?_Wcerr_func@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@1@XZ",
+                    "?_Wcin_func@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@1@XZ",
+                    "?_Wcin_func@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@1@XZ",
+                    "?_Wclog_func@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@1@XZ",
+                    "?_Wclog_func@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@1@XZ",
+                    "?_Wcout_func@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@1@XZ",
+                    "?_Wcout_func@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@1@XZ",
+                    "?_Wcrtomb@@YAHPADGPAHPBU_Cvtvec@@@Z",
+                    "?_Wcrtomb@@YAHPAD_WPAHPBU_Cvtvec@@@Z",
+                    "?_Wcscoll@@YAHPBG000PBU_Collvec@@@Z",
+                    "?_Wcscoll@@YAHPB_W000PBU_Collvec@@@Z",
+                    "?_Wcsxfrm@@YAIPAG0PBG1PBU_Collvec@@@Z",
+                    "?_Wcsxfrm@@YAIPA_W0PB_W1PBU_Collvec@@@Z",
+                    "?_Xfsopen@std@@YAPAU_iobuf@@PB_W0H@Z",
+                    "?_Xinvarg@_String_base@std@@SAXXZ",
+                    "?_Xlen@_String_base@std@@SAXXZ",
+                    "?_Xran@_String_base@std@@SAXXZ",
+                    "?__Stodx@@YANPBDPAPADJPAH@Z",
+                    "?__Stofx@@YAMPBDPAPADJPAH@Z",
+                    "?__Stoldx@@YAOPBDPAPADJPAH@Z",
+                    "?__Wcrtomb_lk@@YAHPAD_WPAHPBU_Cvtvec@@@Z",
+                    "?__get_default_appdomain@@YAJPAPAUIUnknown@@@Z",
+                    "?__query_new_handler_m@@YAP6MHI@ZXZ",
+                    "?__release_appdomain@@YAXPAUIUnknown@@@Z",
+                    "?_beginthread@@YAIP6MXPAX@ZI0@Z",
+                    "?_beginthreadex@@YAIPAXIP6MI0@Z0IPAI@Z",
+                    "?_fpieee_flt@@YAHKPAU_EXCEPTION_POINTERS@@P6MHPAU_FPIEEE_RECORD@@@Z@Z",
+                    "?_set_invalid_parameter_handler@@YAP6AXPB_W00II@ZH@Z",
+                    "?_set_invalid_parameter_handler@@YAP6MXPB_W00II@ZP6MX000II@Z@Z",
+                    "?_set_new_handler@@YAP6MHI@ZP6MHI@Z@Z",
+                    "?_set_purecall_handler@@YAP6AXXZH@Z",
+                    "?_set_purecall_handler@@YAP6MXXZP6MXXZ@Z",
+                    "?_uncaught_exception_m@std@@YA_NXZ",
+                    "?classic@locale@std@@SAABV12@XZ",
+                    "?empty@locale@std@@SA?AV12@XZ",
+                    "?facet_Register@facet@locale@std@@CAXPAV123@@Z",
+                    "?global@locale@std@@SA?AV12@ABV12@@Z",
+                    "?resetiosflags@std@@YA?AU?$_Smanip@H@1@H@Z",
+                    "?set_new_handler@std@@YAP6MXXZP6MXXZ@Z",
+                    "?set_terminate@@YAP6MXXZP6MXXZ@Z",
+                    "?set_unexpected@@YAP6MXXZP6MXXZ@Z",
+                    "?setbase@std@@YA?AU?$_Smanip@H@1@H@Z",
+                    "?setiosflags@std@@YA?AU?$_Smanip@H@1@H@Z",
+                    "?setprecision@std@@YA?AU?$_Smanip@H@1@H@Z",
+                    "?setw@std@@YA?AU?$_Smanip@H@1@H@Z",
+                    "?signal@@YAP6MXH@ZHH@Z",
+                    "?signal@@YAP6MXH@ZHP6MXH@Z@Z",
+                    "__setusermatherr_m",
+                    "towctrans",
+                    "wctrans",
+                    "wctype"
+                ],
+                "resource_details": [
+                    {
+                        "lang": "ENGLISH US",
+                        "entropy": 3.532569169998169,
+                        "chi2": 66706.23,
+                        "filetype": "unknown",
+                        "sha256": "50e79cfa7427b1a8841c1cfffc235648df1510a10e51df07b7d2f7e44bfd70a6",
+                        "type": "RT_VERSION"
+                    }
+                ],
+                "rich_pe_header_hash": "cd3e3d63b30e44562ad20d04cac77ec2",
+                "imphash": "83e6ecedcb8a69cca8d85e1481140fa0",
+                "compiler_product_versions": [
+                    "id: 93, version: 4035 count=4",
+                    "[---] Unmarked objects count=156",
+                    "[IMP] VS2005 build 50727 count=5",
+                    "id: 126, version: 50327 count=1",
+                    "[ASM] VS2005 build 50727 count=1",
+                    "[ C ] VS2005 build 50727 count=15",
+                    "[C++] VS2005 build 50727 count=98",
+                    "[EXP] VS2005 build 50727 count=1",
+                    "[RES] VS2005 build 50727 count=1",
+                    "[LNK] VS2005 build 50727 count=1"
+                ],
+                "resource_langs": {
+                    "ENGLISH US": 1
+                },
+                "machine_type": 332,
+                "timestamp": 1620101428,
+                "resource_types": {
+                    "RT_VERSION": 1
+                },
+                "sections": [
+                    {
+                        "name": ".text",
+                        "chi2": 3037582.5,
+                        "virtual_address": 4096,
+                        "entropy": 5.44,
+                        "raw_size": 163840,
+                        "flags": "rx",
+                        "virtual_size": 161803,
+                        "md5": "74ea64ac4ed373521811915bee39a6db"
+                    },
+                    {
+                        "name": ".rdata",
+                        "chi2": 2633820.0,
+                        "virtual_address": 167936,
+                        "entropy": 6.08,
+                        "raw_size": 286720,
+                        "flags": "r",
+                        "virtual_size": 284771,
+                        "md5": "52027928b3675dcebbb3d743366ec39d"
+                    },
+                    {
+                        "name": ".data",
+                        "chi2": 554211.0,
+                        "virtual_address": 454656,
+                        "entropy": 3.65,
+                        "raw_size": 8192,
+                        "flags": "rw",
+                        "virtual_size": 39320,
+                        "md5": "bdaa1d13e44235c69513f77928a21b17"
+                    },
+                    {
+                        "name": ".rsrc",
+                        "chi2": 842149.5,
+                        "virtual_address": 495616,
+                        "entropy": 1.05,
+                        "raw_size": 4096,
+                        "flags": "r",
+                        "virtual_size": 976,
+                        "md5": "e9cc6b575e4f14449dd368325afbe922"
+                    },
+                    {
+                        "name": ".reloc",
+                        "chi2": 2041847.38,
+                        "virtual_address": 499712,
+                        "entropy": 1.94,
+                        "raw_size": 12288,
+                        "flags": "r",
+                        "virtual_size": 9294,
+                        "md5": "7305cff226dae5e3f3588c8eda3631ee"
+                    }
+                ],
+                "import_list": [
+                    {
+                        "library_name": "KERNEL32.dll",
+                        "imported_functions": [
+                            "CreateThread",
+                            "DeleteCriticalSection",
+                            "DisableThreadLibraryCalls",
+                            "ExitThread",
+                            "GetCurrentProcess",
+                            "GetCurrentProcessId",
+                            "GetCurrentThreadId",
+                            "GetLastError",
+                            "GetLocaleInfoA",
+                            "GetModuleHandleA",
+                            "GetProcAddress",
+                            "GetSystemTimeAsFileTime",
+                            "GetTickCount",
+                            "InitializeCriticalSection",
+                            "InterlockedCompareExchange",
+                            "InterlockedDecrement",
+                            "InterlockedExchange",
+                            "InterlockedIncrement",
+                            "IsDebuggerPresent",
+                            "MultiByteToWideChar",
+                            "QueryPerformanceCounter",
+                            "ResumeThread",
+                            "SetUnhandledExceptionFilter",
+                            "Sleep",
+                            "TerminateProcess",
+                            "UnhandledExceptionFilter",
+                            "WideCharToMultiByte"
+                        ]
+                    },
+                    {
+                        "library_name": "mscoree.dll",
+                        "imported_functions": [
+                            "_CorDllMain",
+                            "CorBindToRuntimeEx"
+                        ]
+                    },
+                    {
+                        "library_name": "MSVCR80.dll",
+                        "imported_functions": [
+                            "??2@YAPAXI@Z",
+                            "??3@YAXPAX@Z",
+                            "??_U@YAPAXI@Z",
+                            "??_V@YAXPAX@Z",
+                            "?_query_new_handler@@YAP6AHI@ZXZ",
+                            "?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z",
+                            "?_type_info_dtor_internal_method@type_info@@QAEXXZ",
+                            "?set_terminate@@YAP6AXXZP6AXXZ@Z",
+                            "?set_unexpected@@YAP6AXXZP6AXXZ@Z",
+                            "?terminate@@YAXXZ",
+                            "___fls_getvalue@4",
+                            "___fls_setvalue@8",
+                            "___lc_codepage_func",
+                            "___lc_collate_cp_func",
+                            "___lc_handle_func",
+                            "___mb_cur_max_l_func",
+                            "__clean_type_info_names_internal",
+                            "__CppXcptFilter",
+                            "__crtCompareStringA",
+                            "__crtCompareStringW",
+                            "__crtGetStringTypeW",
+                            "__crtLCMapStringA",
+                            "__crtLCMapStringW",
+                            "__CxxDetectRethrow",
+                            "__CxxExceptionFilter",
+                            "__CxxQueryExceptionSize",
+                            "__CxxRegisterExceptionObject",
+                            "__CxxUnregisterExceptionObject",
+                            "__dllonexit",
+                            "__FrameUnwindFilter",
+                            "__get_flsindex",
+                            "__iob_func",
+                            "__pctype_func",
+                            "__set_flsgetvalue",
+                            "__setusermatherr",
+                            "__uncaught_exception",
+                            "_adjust_fdiv",
+                            "_amsg_exit",
+                            "_cexit",
+                            "_create_locale",
+                            "_crt_debugger_hook",
+                            "_CxxThrowException",
+                            "_decode_pointer",
+                            "_dosmaperr",
+                            "_encode_pointer",
+                            "_encoded_null",
+                            "_endthread",
+                            "_endthreadex",
+                            "_errno",
+                            "_except_handler4_common",
+                            "_exit",
+                            "_fpieee_flt",
+                            "_free_locale",
+                            "_freefls",
+                            "_fsopen",
+                            "_get_invalid_parameter_handler",
+                            "_get_osplatform",
+                            "_get_purecall_handler",
+                            "_get_terminate",
+                            "_get_unexpected",
+                            "_Getdays",
+                            "_Getmonths",
+                            "_Gettnames",
+                            "_initptd",
+                            "_initterm",
+                            "_initterm_e",
+                            "_invalid_parameter",
+                            "_invalid_parameter_noinfo",
+                            "_invoke_watson",
+                            "_lock",
+                            "_malloc_crt",
+                            "_onexit",
+                            "_set_invalid_parameter_handler",
+                            "_set_purecall_handler",
+                            "_Strftime",
+                            "_strtoi64",
+                            "_strtoui64",
+                            "_ui64toa_s",
+                            "_unlock",
+                            "_wfsopen",
+                            "_XcptFilter",
+                            "abort",
+                            "calloc",
+                            "fclose",
+                            "fflush",
+                            "fgetc",
+                            "fgetpos",
+                            "fgetwc",
+                            "fputc",
+                            "fputs",
+                            "fputwc",
+                            "free",
+                            "fseek",
+                            "fsetpos",
+                            "fwrite",
+                            "isalnum",
+                            "isdigit",
+                            "islower",
+                            "isspace",
+                            "isupper",
+                            "localeconv",
+                            "malloc",
+                            "mbstowcs_s",
+                            "memchr",
+                            "memcmp",
+                            "memcpy",
+                            "memcpy_s",
+                            "memmove_s",
+                            "memset",
+                            "realloc",
+                            "setlocale",
+                            "setvbuf",
+                            "signal",
+                            "sprintf_s",
+                            "strcmp",
+                            "strcpy_s",
+                            "strcspn",
+                            "strlen",
+                            "strtod",
+                            "tolower",
+                            "towlower",
+                            "towupper",
+                            "ungetc",
+                            "ungetwc",
+                            "wcslen",
+                            "wcstombs_s"
+                        ]
+                    },
+                    {
+                        "library_name": "ole32.dll",
+                        "imported_functions": [
+                            "CoCreateInstance"
+                        ]
+                    }
+                ],
+                "entry_point": 152644
+            },
+            "magic": "PE32 executable for MS Windows (DLL) (GUI) Intel 80386 32-bit Mono/.Net assembly",
+            "last_analysis_stats": {
+                "harmless": 0,
+                "type-unsupported": 6,
+                "suspicious": 0,
+                "confirmed-timeout": 0,
+                "timeout": 0,
+                "failure": 0,
+                "malicious": 0,
+                "undetected": 66
+            },
+            "last_analysis_results": {
+                "Bkav": {
+                    "category": "undetected",
+                    "engine_name": "Bkav",
+                    "engine_version": "1.3.0.9899",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Lionic": {
+                    "category": "undetected",
+                    "engine_name": "Lionic",
+                    "engine_version": "7.5",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Elastic": {
+                    "category": "undetected",
+                    "engine_name": "Elastic",
+                    "engine_version": "4.0.36",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220503"
+                },
+                "MicroWorld-eScan": {
+                    "category": "undetected",
+                    "engine_name": "MicroWorld-eScan",
+                    "engine_version": "14.0.409.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "CMC": {
+                    "category": "undetected",
+                    "engine_name": "CMC",
+                    "engine_version": "2.10.2019.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20211026"
+                },
+                "CAT-QuickHeal": {
+                    "category": "undetected",
+                    "engine_name": "CAT-QuickHeal",
+                    "engine_version": "14.00",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "ALYac": {
+                    "category": "undetected",
+                    "engine_name": "ALYac",
+                    "engine_version": "1.1.3.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Cylance": {
+                    "category": "undetected",
+                    "engine_name": "Cylance",
+                    "engine_version": "2.3.1.101",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Sangfor": {
+                    "category": "undetected",
+                    "engine_name": "Sangfor",
+                    "engine_version": "2.14.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220517"
+                },
+                "CrowdStrike": {
+                    "category": "undetected",
+                    "engine_name": "CrowdStrike",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220418"
+                },
+                "Alibaba": {
+                    "category": "undetected",
+                    "engine_name": "Alibaba",
+                    "engine_version": "0.3.0.5",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20190527"
+                },
+                "K7GW": {
+                    "category": "undetected",
+                    "engine_name": "K7GW",
+                    "engine_version": "12.12.42401",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "K7AntiVirus": {
+                    "category": "undetected",
+                    "engine_name": "K7AntiVirus",
+                    "engine_version": "12.12.42401",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "BitDefenderTheta": {
+                    "category": "undetected",
+                    "engine_name": "BitDefenderTheta",
+                    "engine_version": "7.2.37796.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220518"
+                },
+                "VirIT": {
+                    "category": "undetected",
+                    "engine_name": "VirIT",
+                    "engine_version": "9.5.198",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220518"
+                },
+                "Cyren": {
+                    "category": "undetected",
+                    "engine_name": "Cyren",
+                    "engine_version": "6.5.1.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "SymantecMobileInsight": {
+                    "category": "type-unsupported",
+                    "engine_name": "SymantecMobileInsight",
+                    "engine_version": "2.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220208"
+                },
+                "Symantec": {
+                    "category": "undetected",
+                    "engine_name": "Symantec",
+                    "engine_version": "1.17.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "tehtris": {
+                    "category": "undetected",
+                    "engine_name": "tehtris",
+                    "engine_version": "v0.1.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "ESET-NOD32": {
+                    "category": "undetected",
+                    "engine_name": "ESET-NOD32",
+                    "engine_version": "25293",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Baidu": {
+                    "category": "undetected",
+                    "engine_name": "Baidu",
+                    "engine_version": "1.0.0.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20190318"
+                },
+                "TrendMicro-HouseCall": {
+                    "category": "undetected",
+                    "engine_name": "TrendMicro-HouseCall",
+                    "engine_version": "10.0.0.1040",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Paloalto": {
+                    "category": "undetected",
+                    "engine_name": "Paloalto",
+                    "engine_version": "0.9.0.1003",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "ClamAV": {
+                    "category": "undetected",
+                    "engine_name": "ClamAV",
+                    "engine_version": "0.105.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Kaspersky": {
+                    "category": "undetected",
+                    "engine_name": "Kaspersky",
+                    "engine_version": "21.0.1.45",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "BitDefender": {
+                    "category": "undetected",
+                    "engine_name": "BitDefender",
+                    "engine_version": "7.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "NANO-Antivirus": {
+                    "category": "undetected",
+                    "engine_name": "NANO-Antivirus",
+                    "engine_version": "1.0.146.25588",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "SUPERAntiSpyware": {
+                    "category": "undetected",
+                    "engine_name": "SUPERAntiSpyware",
+                    "engine_version": "5.6.0.1032",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220514"
+                },
+                "Avast": {
+                    "category": "undetected",
+                    "engine_name": "Avast",
+                    "engine_version": "21.1.5827.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Tencent": {
+                    "category": "undetected",
+                    "engine_name": "Tencent",
+                    "engine_version": "1.0.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Ad-Aware": {
+                    "category": "undetected",
+                    "engine_name": "Ad-Aware",
+                    "engine_version": "3.0.21.193",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Trustlook": {
+                    "category": "type-unsupported",
+                    "engine_name": "Trustlook",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "TACHYON": {
+                    "category": "undetected",
+                    "engine_name": "TACHYON",
+                    "engine_version": "2022-05-19.02",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Emsisoft": {
+                    "category": "undetected",
+                    "engine_name": "Emsisoft",
+                    "engine_version": "2021.5.0.7597",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Comodo": {
+                    "category": "undetected",
+                    "engine_name": "Comodo",
+                    "engine_version": "34634",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "F-Secure": {
+                    "category": "undetected",
+                    "engine_name": "F-Secure",
+                    "engine_version": "18.10.978.51",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "DrWeb": {
+                    "category": "undetected",
+                    "engine_name": "DrWeb",
+                    "engine_version": "7.0.56.4040",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Zillya": {
+                    "category": "undetected",
+                    "engine_name": "Zillya",
+                    "engine_version": "2.0.0.4635",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "TrendMicro": {
+                    "category": "undetected",
+                    "engine_name": "TrendMicro",
+                    "engine_version": "11.0.0.1006",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "McAfee-GW-Edition": {
+                    "category": "undetected",
+                    "engine_name": "McAfee-GW-Edition",
+                    "engine_version": "v2019.1.2+3728",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "SentinelOne": {
+                    "category": "undetected",
+                    "engine_name": "SentinelOne",
+                    "engine_version": "22.2.1.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220330"
+                },
+                "Trapmine": {
+                    "category": "type-unsupported",
+                    "engine_name": "Trapmine",
+                    "engine_version": "3.5.48.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220419"
+                },
+                "FireEye": {
+                    "category": "undetected",
+                    "engine_name": "FireEye",
+                    "engine_version": "35.24.1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Sophos": {
+                    "category": "undetected",
+                    "engine_name": "Sophos",
+                    "engine_version": "1.4.1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "APEX": {
+                    "category": "undetected",
+                    "engine_name": "APEX",
+                    "engine_version": "6.293",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "GData": {
+                    "category": "undetected",
+                    "engine_name": "GData",
+                    "engine_version": "A:25.33067B:27.27408",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Jiangmin": {
+                    "category": "undetected",
+                    "engine_name": "Jiangmin",
+                    "engine_version": "16.0.100",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220518"
+                },
+                "Webroot": {
+                    "category": "undetected",
+                    "engine_name": "Webroot",
+                    "engine_version": "1.0.0.403",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Avira": {
+                    "category": "undetected",
+                    "engine_name": "Avira",
+                    "engine_version": "8.3.3.14",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Kingsoft": {
+                    "category": "undetected",
+                    "engine_name": "Kingsoft",
+                    "engine_version": "2017.9.26.565",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Gridinsoft": {
+                    "category": "undetected",
+                    "engine_name": "Gridinsoft",
+                    "engine_version": "1.0.78.174",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Arcabit": {
+                    "category": "undetected",
+                    "engine_name": "Arcabit",
+                    "engine_version": "1.0.0.889",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "ViRobot": {
+                    "category": "undetected",
+                    "engine_name": "ViRobot",
+                    "engine_version": "2014.3.20.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "ZoneAlarm": {
+                    "category": "undetected",
+                    "engine_name": "ZoneAlarm",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Avast-Mobile": {
+                    "category": "type-unsupported",
+                    "engine_name": "Avast-Mobile",
+                    "engine_version": "220519-00",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Microsoft": {
+                    "category": "undetected",
+                    "engine_name": "Microsoft",
+                    "engine_version": "1.1.19200.6",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Cynet": {
+                    "category": "undetected",
+                    "engine_name": "Cynet",
+                    "engine_version": "4.0.0.27",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "BitDefenderFalx": {
+                    "category": "type-unsupported",
+                    "engine_name": "BitDefenderFalx",
+                    "engine_version": "2.0.936",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220103"
+                },
+                "AhnLab-V3": {
+                    "category": "undetected",
+                    "engine_name": "AhnLab-V3",
+                    "engine_version": "3.21.3.10230",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Acronis": {
+                    "category": "undetected",
+                    "engine_name": "Acronis",
+                    "engine_version": "1.2.0.108",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220426"
+                },
+                "McAfee": {
+                    "category": "undetected",
+                    "engine_name": "McAfee",
+                    "engine_version": "6.0.6.653",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "MAX": {
+                    "category": "undetected",
+                    "engine_name": "MAX",
+                    "engine_version": "2019.9.16.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "VBA32": {
+                    "category": "undetected",
+                    "engine_name": "VBA32",
+                    "engine_version": "5.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Malwarebytes": {
+                    "category": "undetected",
+                    "engine_name": "Malwarebytes",
+                    "engine_version": "4.2.2.27",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Zoner": {
+                    "category": "undetected",
+                    "engine_name": "Zoner",
+                    "engine_version": "2.2.2.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220518"
+                },
+                "Rising": {
+                    "category": "undetected",
+                    "engine_name": "Rising",
+                    "engine_version": "25.0.0.27",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Yandex": {
+                    "category": "undetected",
+                    "engine_name": "Yandex",
+                    "engine_version": "5.5.2.24",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220428"
+                },
+                "Ikarus": {
+                    "category": "undetected",
+                    "engine_name": "Ikarus",
+                    "engine_version": "6.0.24.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "MaxSecure": {
+                    "category": "undetected",
+                    "engine_name": "MaxSecure",
+                    "engine_version": "1.0.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Fortinet": {
+                    "category": "undetected",
+                    "engine_name": "Fortinet",
+                    "engine_version": "6.2.142.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220519"
+                },
+                "Cybereason": {
+                    "category": "type-unsupported",
+                    "engine_name": "Cybereason",
+                    "engine_version": "1.2.449",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20210330"
+                },
+                "Panda": {
+                    "category": "undetected",
+                    "engine_name": "Panda",
+                    "engine_version": "4.6.4.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220518"
+                }
+            },
+            "reputation": 0,
+            "first_seen_itw_date": 1620105028
+        },
+        "type": "file",
+        "id": "fdfce185830fac6bc340f41c58402c4ba29a3bafbda560d8af301aafd4143c5f",
+        "links": {
+            "self": "https://www.virustotal.com/ui/files/fdfce185830fac6bc340f41c58402c4ba29a3bafbda560d8af301aafd4143c5f"
+        }
+    }
+}
