@@ -1416,6 +1416,7 @@
 "ff9a053fb7e4173c897d092a5725638ba775cb3aeb3d7af83c197944e768d9d0": "delta"
 },
 "bfs_hotpatch.sys": {
+"ce1d9fcf7d0b0190bfe63a18a0169a7b361a491cef05c67f2ba3965b55f162de": "vt",
 "f87262952203519f12e179736bdccd9ffd40b8261741a0c3975c0056bc65ad73": "vt"
 },
 "cdrom.sys": {

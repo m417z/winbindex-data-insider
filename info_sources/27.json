@@ -3614,6 +3614,9 @@
 "ffb67372ea760f702fd6e8af16d66d6880a8f53cb7f4b11b495cd22484a609aa": "delta+",
 "ffebbb6e58289144aaed62355e06edd5e522462baac6443d503f4ccf13362419": "delta+"
 },
+"srv_hotpatch.sys": {
+"ca7d6dd8c6a1d8d2d7ed9600c3ee505684d4a1c26e821e75ec82b7b1658eaf00": "vt"
+},
 "system.enterpriseservices.dll": {
 "123c049cfd5ec2a7c5fb14095dc78dd0040b2fe416f2a9e7aab561d951ea6ef0": "pe",
 "288013acb35574dfb24fcd9779cecd2af1a82ae7c21967e7c679b19d6813de2b": "vt",

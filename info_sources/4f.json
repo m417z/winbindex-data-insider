@@ -1258,7 +1258,8 @@
 "ffa5fa83c71b7c7917557233930c344ebce584ad7b6f40d8141f3566b1b93cbf": "vt"
 },
 "computecore_hotpatch.dll": {
-"6f5e6a8f179b5358f11f50b2a611e19141dbc297cbc8c2ac80c3b7a6c576e012": "pe"
+"6f5e6a8f179b5358f11f50b2a611e19141dbc297cbc8c2ac80c3b7a6c576e012": "pe",
+"f1cb249ec676933eef3a03c1067e8604d5095baa41aad348229664ddd8bdfe3f": "pe"
 },
 "coreshellextframework.dll": {
 "0152dc38ddebb8a23e3204f8d18d8ddb112ebc14e9e306df6311a600b882fafd": "delta",

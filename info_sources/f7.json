@@ -140,7 +140,8 @@
 "afd_hotpatch.sys": {
 "295118b1d167a6c4ed49e38ecd090dc19e0a3167be43cfe1188f1ace0dfeed3f": "vt",
 "3d8105c1b727570e75a8ff655bf24c7d9c9cac3dd07f5cdba6bd262a194ccb55": "pe",
-"5b8b47bc2296d988b5efd0ca7eb087cceffb14c0ec4a0c59134085006e3f3d42": "vt"
+"5b8b47bc2296d988b5efd0ca7eb087cceffb14c0ec4a0c59134085006e3f3d42": "vt",
+"c2fc9578b7d6ad8e91fc5a676a103e3f9184bedc7c822cc9c7912ac2c7c43681": "vt"
 },
 "bthavctpsvc.dll": {
 "004ab346efed4f0303db6679fe52760271fcf6ef423a3a804a8a187a8e29dbdd": "vt",

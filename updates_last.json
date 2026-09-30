@@ -912,12 +912,6 @@
             "created": 1789059942,
             "title": "Windows 11, version 26H2 (26300.9539)"
         },
-        "973afe13-857e-44d3-9dd3-65f44ba2bdf1": {
-            "arch": "amd64",
-            "build": "28120.2630",
-            "created": 1785565174,
-            "title": "Windows 11 Insider Preview Feature Update (28120.2630)"
-        },
         "98ae5590-5c86-451d-97c9-5a12e68722e8": {
             "arch": "amd64",
             "build": "26300.10003",
@@ -989,6 +983,12 @@
             "build": "26340.9577",
             "created": 1790355629,
             "title": "Windows 11 Insider Preview Feature Update (26340.9577)"
+        },
+        "a59d6d31-4150-420e-9ac9-5d444d0037f2": {
+            "arch": "amd64",
+            "build": "26200.9106",
+            "created": 1790732350,
+            "title": "Windows 11, version 25H2 (26200.9106)"
         },
         "a72cc9ed-fc88-4073-bd0f-397f5e925e36": {
             "arch": "arm64",
@@ -1115,6 +1115,12 @@
             "build": "19045.7663",
             "created": 1786581069,
             "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7663)"
+        },
+        "bc03c91c-1240-4ab4-861f-8ccca812e563": {
+            "arch": "amd64",
+            "build": "26200.7979",
+            "created": 1790732789,
+            "title": "Windows 11, version 25H2 (26200.7979)"
         },
         "bce55af8-ab7e-4e5f-aab8-5ddbb6a5967d": {
             "arch": "amd64",
@@ -1445,6 +1451,12 @@
             "build": "26200.9267",
             "created": 1786726810,
             "title": "Windows 11, version 25H2 (26200.9267)"
+        },
+        "fe1dfb57-b7fb-4c7b-846b-e08ac403234f": {
+            "arch": "amd64",
+            "build": "26100.9448",
+            "created": 1790732451,
+            "title": "Windows 11, version 24H2 (26100.9448)"
         },
         "fe47c57f-a77f-41e3-9012-00b4187e3462": {
             "arch": "amd64",
