@@ -1080,6 +1080,12 @@
             "created": 1786467691,
             "title": "Feature update to Windows 10, version 1809 (17763.9121)"
         },
+        "a1d39cfb-fe29-45ef-800f-55d75c422c9d": {
+            "arch": "arm64",
+            "build": "22631.7584",
+            "created": 1791114594,
+            "title": "Cumulative Update for Windows 11, version 23H2 (22631.7584)"
+        },
         "a2d0e17d-0dc8-4a03-9032-975c06d1e677": {
             "arch": "x86",
             "build": "19045.7663",
