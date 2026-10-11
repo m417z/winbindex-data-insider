@@ -1,7 +1,7 @@
 {
 "next": [
-"shell32.dll",
-"d5b8980067176717087b7635c6d514a69f8e042b543062b152bc0ebfabf04f26"
+"usbmon.dll",
+"2baf0705235fd3f27664bc59487a9e0e497ec02fa113ceb62b7b42b758c997f6"
 ],
 "next_updates": null,
 "pending": {},
@@ -31,24 +31,28 @@
 "098edc4ac8ae9c1245be9719a854c252b9dd048af895f01944c3838cc83b572b"
 ],
 [
-"storport.sys",
-"5f0288a1fb585aba8393fc4a5cff961ae7845b7e9cec6f5af5aae705a3f9a8e3"
+"shellappruntime.exe",
+"4a34633afae3392d2498d1b11eff5efbd7416b46f5f6ca8334bf29c13559a3cb"
 ],
 [
-"useraccountcontrolsettings.exe",
-"a1d422bd24ef48ad754f4e0609c23fd67911438e62c1a24dfe5d332bad86683e"
+"ssh.exe",
+"2992d9f6488862d76c3ec6b5058677325176f554f672182ec71d7bd6fcd00219"
+],
+[
+"tcblaunch.exe",
+"df828f3723dd783e02da4c30c31bdea5ff734932c180d62ffb5e4d54031c9d52"
+],
+[
+"usb80236.sys",
+"5c80ac96bfdfe2c326c3905c0b7f51b13fb1521e144d4b6de6172755e4a79065"
+],
+[
+"usbaudio.sys",
+"871803d169f290cd5bedcf738c79e5100d049a7143562b1a1c9b5349faeb5de3"
 ],
 [
 "userdatasource.exe",
 "b366a2a84c30b03b60d56b474cde9e8c99c36a217568bf8877fedd8362da7f07"
-],
-[
-"useroobebroker.exe",
-"071f3d8517951f743b28c32a2135ce3577607b3c2673417dddab95d11d675fea"
-],
-[
-"winsetupmon.sys",
-"1f1c808d393716cc503a63f66a7a64f488a9da1a05239c039d11757fa6ffd596"
 ]
 ],
 "updates": null
