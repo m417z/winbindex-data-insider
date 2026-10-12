@@ -1,15 +1,11 @@
 {
 "next": [
-"usbmon.dll",
-"2baf0705235fd3f27664bc59487a9e0e497ec02fa113ceb62b7b42b758c997f6"
+"windows.ui.core.textinput.dll",
+"e4a17abb24bec8971fe3be0ccc36cc65fb3d2787201de6dc6a701a4a99c64865"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"imjpset.exe",
-"772e37eb9ebd043af09c3a1363ea3a00fec38e8a03a7a752701b8365f38acf5f"
-],
 [
 "microsoft.ceres.docparsing.formathandlers.common.configuration.dll",
 "4ea2c850a6d7f9a889c9297b8bff7fe458b7291b59f032f720afacdc3ceb38f3"
@@ -25,26 +21,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
-],
-[
-"setupplatform.dll",
-"098edc4ac8ae9c1245be9719a854c252b9dd048af895f01944c3838cc83b572b"
-],
-[
-"shellappruntime.exe",
-"4a34633afae3392d2498d1b11eff5efbd7416b46f5f6ca8334bf29c13559a3cb"
-],
-[
-"ssh.exe",
-"2992d9f6488862d76c3ec6b5058677325176f554f672182ec71d7bd6fcd00219"
-],
-[
-"tcblaunch.exe",
-"df828f3723dd783e02da4c30c31bdea5ff734932c180d62ffb5e4d54031c9d52"
-],
-[
-"usb80236.sys",
-"5c80ac96bfdfe2c326c3905c0b7f51b13fb1521e144d4b6de6172755e4a79065"
 ],
 [
 "usbaudio.sys",
