@@ -68,6 +68,32 @@ def update_info_sources(deleted_file_hashes: set):
     info_sources.save()
 
 
+def update_info_progress_virustotal(deleted_file_hashes: set):
+    info_progress_virustotal_path = config.out_path.joinpath('info_progress_virustotal.json')
+    if not info_progress_virustotal_path.is_file():
+        return
+
+    with open(info_progress_virustotal_path, 'r') as f:
+        info_progress_virustotal = json.load(f)
+
+    retry = info_progress_virustotal.get('retry')
+    if retry is not None:
+        info_progress_virustotal['retry'] = [x for x in retry if tuple(x) not in deleted_file_hashes]
+
+    pending = info_progress_virustotal.get('pending')
+    if pending is not None:
+        pending_new = {}
+        for name, file_hashes in pending.items():
+            file_hashes_new = [file_hash for file_hash in file_hashes if (name, file_hash) not in deleted_file_hashes]
+            if file_hashes_new:
+                pending_new[name] = file_hashes_new
+
+        info_progress_virustotal['pending'] = pending_new
+
+    with open(info_progress_virustotal_path, 'w') as f:
+        json.dump(info_progress_virustotal, f, indent=0, sort_keys=True)
+
+
 def delete_old_data(min_date: int):
     output_dir = config.out_path.joinpath('by_filename_compressed')
 
@@ -83,6 +109,9 @@ def delete_old_data(min_date: int):
 
     print('Updating info sources')
     update_info_sources(deleted_file_hashes)
+
+    print('Updating VirusTotal progress')
+    update_info_progress_virustotal(deleted_file_hashes)
 
     print('Done')
 
