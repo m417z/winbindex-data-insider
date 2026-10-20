@@ -108,12 +108,6 @@
             "created": 1791910834,
             "title": "Windows 11, version 24H2 (26100.9711)"
         },
-        "14ac67ad-beda-4cb3-9017-3a7badcaa1e0": {
-            "arch": "amd64",
-            "build": "26200.9345",
-            "created": 1787275692,
-            "title": ".NET Framework Preview Update for Windows 11 - KB5122385 (26200.9345) (2)"
-        },
         "16df4c62-9d99-47e5-ac31-a5ae03d7e113": {
             "arch": "amd64",
             "build": "26300.10008",
@@ -1091,6 +1085,12 @@
             "build": "19044.7807",
             "created": 1791916313,
             "title": "Feature update to Windows 10, version 21H2 (19044.7807)"
+        },
+        "a5586753-5af2-42f5-8da6-56b7a67a5247": {
+            "arch": "arm64",
+            "build": "26200.9363",
+            "created": 1792435124,
+            "title": ".NET Framework Security Update for Windows 11 - KB5127690 (26200.9363) (4)"
         },
         "a59d6d31-4150-420e-9ac9-5d444d0037f2": {
             "arch": "amd64",
