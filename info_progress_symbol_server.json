@@ -1,4 +1,18 @@
 {
-"next": null,
-"updates": []
+"next": [
+"microsoft.secureboot.commands.resources.dll",
+"50c18cbb3a34108582341c9d932bcda3197ab91ee96cecf22a19c8a753acc8dd"
+],
+"updates": [
+"02a7018c-6ad3-4177-bd5b-487c00c32031",
+"9775f6a3-8aa9-43c2-a875-e0fed7c1e81c",
+"d63ae637-0511-4ee2-a034-5ee555b16788",
+"02fcd0b0-08f7-4bff-bf92-c7d68bc14cc1",
+"22561d30-8f96-4955-af88-941862e1a719",
+"f81dbe37-942c-4c1e-9659-75874dbbf0e9",
+"84b44351-710a-4337-bd6f-0fc6c5f8e12b",
+"e40554cc-ac0b-4a07-b9a0-701d7893a07e",
+"73019af0-66fc-4a3c-8b16-8aadca5f51b9",
+"5486793c-ef16-4f21-b397-f0321a833424"
+]
 }
