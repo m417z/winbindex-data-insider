@@ -1434,6 +1434,12 @@
             "created": 1787850077,
             "title": "Windows 11, version 24H2 (26100.9278)"
         },
+        "da738987-592f-43e3-b0cc-76bf3361a33d": {
+            "arch": "amd64",
+            "build": "26300.10008",
+            "created": 1792871584,
+            "title": ".NET Framework Security Update for Windows 11 - KB5127694 (26300.10008) (2)"
+        },
         "dd0767c2-7117-410a-a599-71f794ea0b12": {
             "arch": "amd64",
             "build": "26200.9445",
