@@ -90,6 +90,12 @@
             "created": 1789060408,
             "title": "Windows 11, version 26H2 (26300.9539)"
         },
+        "1244b665-1cee-499e-93a4-5ea404d2c820": {
+            "arch": "arm64",
+            "build": "26300.9725",
+            "created": 1793176713,
+            "title": "Update for Windows 11 (26300.9725)"
+        },
         "1311894d-9ea7-43f6-b35f-253a4187d08c": {
             "arch": "arm64",
             "build": "19044.7811",
