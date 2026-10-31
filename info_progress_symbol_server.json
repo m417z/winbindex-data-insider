@@ -1,4 +1,18 @@
 {
-"next": null,
-"updates": []
+"next": [
+"nlslexicons0002.dll",
+"1ea190004470c3645de39e4a6fcc26cb22e2c511f0b395730983004a58da0f37"
+],
+"updates": [
+"aab2b64c-3521-4716-9060-632df5659bfd",
+"b91a877d-dfe5-4d08-b8a7-c2b9284b8421",
+"63e3467c-e031-4c2d-b7c8-e32b12753247",
+"d81e3877-2e88-4968-bb77-65b685f1da28",
+"6848e148-e484-4f7e-a9be-7b00db0f2013",
+"ea1b655b-a2a6-458c-a686-56734572d99c",
+"11f88fca-9267-48b6-8bdd-5044ca736f41",
+"132bf691-577f-47d7-96e8-4b9fb50d1832",
+"0aaa4b9b-83a8-452a-876d-61194aa75fdc",
+"c766ff18-0f9c-4628-9d0e-8aef2fcdd3fc"
+]
 }
