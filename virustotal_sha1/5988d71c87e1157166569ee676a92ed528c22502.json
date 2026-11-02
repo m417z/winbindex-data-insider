@@ -1,0 +1,1271 @@
+{
+    "data": {
+        "attributes": {
+            "type_description": "Win32 DLL",
+            "tlsh": "T17EC4F82337438EF1E48173F176C50322A7F7BC654625B313A2DBE5252F9A28D6573AA0",
+            "vhash": "155056655d15155az17#z6fc6a",
+            "type_tags": [
+                "executable",
+                "windows",
+                "win32",
+                "pe",
+                "pedll"
+            ],
+            "creation_date": 1571992053,
+            "names": [
+                "msvcp80.dll",
+                "MSVCP80.dll",
+                "MSVCP80.DLL",
+                "5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4-dropped.bin",
+                "5988D71C87E1157166569EE676A92ED528C22502",
+                "B16A09FC1D6FF8CB36AEEECC3D1189D1",
+                "x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727",
+                "NULL",
+                "f21872864_MSVCP80_DLL",
+                "E2EAC940F0D91D3EBB63F4967A2A9E09CC7B2688.dll",
+                "x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_no",
+                "b16a09fc1d6ff8cb36aeeecc3d1189d1",
+                "f20735416_MSVCP80.DLL"
+            ],
+            "signature_info": {
+                "product": "Microsoft\u00ae Visual Studio\u00ae 2005",
+                "internal name": "MSVCP80.DLL",
+                "copyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+                "original name": "MSVCP80.DLL",
+                "file version": "8.00.50727.9672",
+                "description": "Microsoft\u00ae C++ Runtime Library"
+            },
+            "last_modification_date": 1686477473,
+            "type_tag": "pedll",
+            "times_submitted": 30,
+            "total_votes": {
+                "harmless": 0,
+                "malicious": 0
+            },
+            "size": 548864,
+            "type_extension": "dll",
+            "authentihash": "675814646e80b2241708b4059a91c4573d602350627e0855c2d4a731ac2e6010",
+            "detectiteasy": {
+                "filetype": "PE32",
+                "values": [
+                    {
+                        "info": "DLL32",
+                        "version": "2005",
+                        "type": "Compiler",
+                        "name": "EP:Microsoft Visual C/C++"
+                    },
+                    {
+                        "version": "2005",
+                        "type": "Compiler",
+                        "name": "Microsoft Visual C/C++"
+                    },
+                    {
+                        "info": "DLL32",
+                        "version": "8.0 or 11.0",
+                        "type": "Linker",
+                        "name": "Microsoft Linker"
+                    }
+                ]
+            },
+            "last_submission_date": 1685927092,
+            "known_distributors": {
+                "filenames": [
+                    "msvcp80.dll",
+                    "msvcp80.dll-5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4"
+                ],
+                "products": [
+                    "windows-cloud-windows-server-2004-dc-core-v20211216",
+                    "windows-cloud-windows-server-2004-dc-core-v20210413",
+                    "Windows 10 Home - virtual machine installation",
+                    "windows-cloud-windows-server-2004-dc-core-v20210511",
+                    "windows-cloud-windows-server-2004-dc-core-v20210608",
+                    "windows-cloud-windows-server-2004-dc-core-v20210713",
+                    "windows-cloud-windows-server-2004-dc-core-v20211012",
+                    "windows-cloud-windows-server-2004-dc-core-v20210810",
+                    "windows-cloud-windows-server-2004-dc-core-v20210914"
+                ],
+                "distributors": [
+                    "Microsoft"
+                ],
+                "data_sources": [
+                    "HashDB",
+                    "National Software Reference Library (NSRL)",
+                    "monitor_hashdb_microsoft"
+                ]
+            },
+            "meaningful_name": "MSVCP80.DLL",
+            "trid": [
+                {
+                    "file_type": "Microsoft Visual C++ compiled executable (generic)",
+                    "probability": 32.2
+                },
+                {
+                    "file_type": "Win64 Executable (generic)",
+                    "probability": 20.5
+                },
+                {
+                    "file_type": "Win32 Dynamic Link Library (generic)",
+                    "probability": 12.8
+                },
+                {
+                    "file_type": "Win16 NE executable (generic)",
+                    "probability": 9.8
+                },
+                {
+                    "file_type": "Win32 Executable (generic)",
+                    "probability": 8.7
+                }
+            ],
+            "sandbox_verdicts": {
+                "Zenbox": {
+                    "category": "harmless",
+                    "sandbox_name": "Zenbox",
+                    "malware_classification": [
+                        "CLEAN"
+                    ]
+                },
+                "C2AE": {
+                    "category": "undetected",
+                    "sandbox_name": "C2AE",
+                    "malware_classification": [
+                        "UNKNOWN_VERDICT"
+                    ]
+                }
+            },
+            "sha256": "5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4",
+            "tags": [
+                "detect-debug-environment",
+                "idle",
+                "legit",
+                "checks-user-input",
+                "known-distributor",
+                "pedll"
+            ],
+            "last_analysis_date": 1684172459,
+            "unique_sources": 10,
+            "first_submission_date": 1576420942,
+            "sha1": "5988d71c87e1157166569ee676a92ed528c22502",
+            "ssdeep": "12288:oZY4lOHMwLwXBt+iar9teUa/hUgiW6QR7t5j3Ooc8NHkC2eK:oZY4lOHMM8wiC9tej3Ooc8NHkC2e",
+            "md5": "b16a09fc1d6ff8cb36aeeecc3d1189d1",
+            "pe_info": {
+                "exports": [
+                    "??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAD@Z",
+                    "??$?5DU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@PAD@Z",
+                    "??$?5DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?5GU?$char_traits@G@std@@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAG@Z",
+                    "??$?5GU?$char_traits@G@std@@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@PAG@Z",
+                    "??$?5GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?5MDU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$complex@M@0@@Z",
+                    "??$?5MGU?$char_traits@G@std@@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$complex@M@0@@Z",
+                    "??$?5M_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$complex@M@0@@Z",
+                    "??$?5NDU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$complex@N@0@@Z",
+                    "??$?5NGU?$char_traits@G@std@@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$complex@N@0@@Z",
+                    "??$?5N_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$complex@N@0@@Z",
+                    "??$?5ODU?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$complex@O@0@@Z",
+                    "??$?5OGU?$char_traits@G@std@@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$complex@O@0@@Z",
+                    "??$?5O_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$complex@O@0@@Z",
+                    "??$?5U?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAC@Z",
+                    "??$?5U?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAE@Z",
+                    "??$?5U?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@PAC@Z",
+                    "??$?5U?$char_traits@D@std@@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@PAE@Z",
+                    "??$?5_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AA_W@Z",
+                    "??$?5_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@PA_W@Z",
+                    "??$?5_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?6GU?$char_traits@G@std@@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@G@Z",
+                    "??$?6GU?$char_traits@G@std@@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@PBG@Z",
+                    "??$?6GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@ABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?6MDU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$complex@M@0@@Z",
+                    "??$?6MGU?$char_traits@G@std@@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@ABV?$complex@M@0@@Z",
+                    "??$?6M_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@ABV?$complex@M@0@@Z",
+                    "??$?6NDU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$complex@N@0@@Z",
+                    "??$?6NGU?$char_traits@G@std@@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@ABV?$complex@N@0@@Z",
+                    "??$?6N_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@ABV?$complex@N@0@@Z",
+                    "??$?6ODU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$complex@O@0@@Z",
+                    "??$?6OGU?$char_traits@G@std@@@std@@YAAAV?$basic_ostream@GU?$char_traits@G@std@@@0@AAV10@ABV?$complex@O@0@@Z",
+                    "??$?6O_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@ABV?$complex@O@0@@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@C@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@E@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBC@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z",
+                    "??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBE@Z",
+                    "??$?6_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@PB_W@Z",
+                    "??$?6_WU?$char_traits@_W@std@@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@_W@Z",
+                    "??$?6_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YAAAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AAV10@ABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?8GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?8GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?8GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?8M@std@@YA_NABMABV?$complex@M@0@@Z",
+                    "??$?8M@std@@YA_NABV?$complex@M@0@0@Z",
+                    "??$?8M@std@@YA_NABV?$complex@M@0@ABM@Z",
+                    "??$?8N@std@@YA_NABNABV?$complex@N@0@@Z",
+                    "??$?8N@std@@YA_NABV?$complex@N@0@0@Z",
+                    "??$?8N@std@@YA_NABV?$complex@N@0@ABN@Z",
+                    "??$?8O@std@@YA_NABOABV?$complex@O@0@@Z",
+                    "??$?8O@std@@YA_NABV?$complex@O@0@0@Z",
+                    "??$?8O@std@@YA_NABV?$complex@O@0@ABO@Z",
+                    "??$?8_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?8_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?8_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?9DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?9DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?9DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?9GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?9GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?9GU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?9M@std@@YA_NABMABV?$complex@M@0@@Z",
+                    "??$?9M@std@@YA_NABV?$complex@M@0@0@Z",
+                    "??$?9M@std@@YA_NABV?$complex@M@0@ABM@Z",
+                    "??$?9N@std@@YA_NABNABV?$complex@N@0@@Z",
+                    "??$?9N@std@@YA_NABV?$complex@N@0@0@Z",
+                    "??$?9N@std@@YA_NABV?$complex@N@0@ABN@Z",
+                    "??$?9O@std@@YA_NABOABV?$complex@O@0@@Z",
+                    "??$?9O@std@@YA_NABV?$complex@O@0@0@Z",
+                    "??$?9O@std@@YA_NABV?$complex@O@0@ABO@Z",
+                    "??$?9_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?9_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?9_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?DM@std@@YA?AV?$complex@M@0@ABMABV10@@Z",
+                    "??$?DM@std@@YA?AV?$complex@M@0@ABV10@0@Z",
+                    "??$?DM@std@@YA?AV?$complex@M@0@ABV10@ABM@Z",
+                    "??$?DN@std@@YA?AV?$complex@N@0@ABNABV10@@Z",
+                    "??$?DN@std@@YA?AV?$complex@N@0@ABV10@0@Z",
+                    "??$?DN@std@@YA?AV?$complex@N@0@ABV10@ABN@Z",
+                    "??$?DO@std@@YA?AV?$complex@O@0@ABOABV10@@Z",
+                    "??$?DO@std@@YA?AV?$complex@O@0@ABV10@0@Z",
+                    "??$?DO@std@@YA?AV?$complex@O@0@ABV10@ABO@Z",
+                    "??$?GM@std@@YA?AV?$complex@M@0@ABMABV10@@Z",
+                    "??$?GM@std@@YA?AV?$complex@M@0@ABV10@0@Z",
+                    "??$?GM@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$?GM@std@@YA?AV?$complex@M@0@ABV10@ABM@Z",
+                    "??$?GN@std@@YA?AV?$complex@N@0@ABNABV10@@Z",
+                    "??$?GN@std@@YA?AV?$complex@N@0@ABV10@0@Z",
+                    "??$?GN@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$?GN@std@@YA?AV?$complex@N@0@ABV10@ABN@Z",
+                    "??$?GO@std@@YA?AV?$complex@O@0@ABOABV10@@Z",
+                    "??$?GO@std@@YA?AV?$complex@O@0@ABV10@0@Z",
+                    "??$?GO@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$?GO@std@@YA?AV?$complex@O@0@ABV10@ABO@Z",
+                    "??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@0@Z",
+                    "??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@D@Z",
+                    "??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z",
+                    "??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@DABV10@@Z",
+                    "??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBDABV10@@Z",
+                    "??$?HGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@ABV10@0@Z",
+                    "??$?HGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@ABV10@G@Z",
+                    "??$?HGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@ABV10@PBG@Z",
+                    "??$?HGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@GABV10@@Z",
+                    "??$?HGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBGABV10@@Z",
+                    "??$?HM@std@@YA?AV?$complex@M@0@ABMABV10@@Z",
+                    "??$?HM@std@@YA?AV?$complex@M@0@ABV10@0@Z",
+                    "??$?HM@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$?HM@std@@YA?AV?$complex@M@0@ABV10@ABM@Z",
+                    "??$?HN@std@@YA?AV?$complex@N@0@ABNABV10@@Z",
+                    "??$?HN@std@@YA?AV?$complex@N@0@ABV10@0@Z",
+                    "??$?HN@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$?HN@std@@YA?AV?$complex@N@0@ABV10@ABN@Z",
+                    "??$?HO@std@@YA?AV?$complex@O@0@ABOABV10@@Z",
+                    "??$?HO@std@@YA?AV?$complex@O@0@ABV10@0@Z",
+                    "??$?HO@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$?HO@std@@YA?AV?$complex@O@0@ABV10@ABO@Z",
+                    "??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@ABV10@0@Z",
+                    "??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@ABV10@PB_W@Z",
+                    "??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@ABV10@_W@Z",
+                    "??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_WABV10@@Z",
+                    "??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@_WABV10@@Z",
+                    "??$?KM@std@@YA?AV?$complex@M@0@ABMABV10@@Z",
+                    "??$?KM@std@@YA?AV?$complex@M@0@ABV10@0@Z",
+                    "??$?KM@std@@YA?AV?$complex@M@0@ABV10@ABM@Z",
+                    "??$?KN@std@@YA?AV?$complex@N@0@ABNABV10@@Z",
+                    "??$?KN@std@@YA?AV?$complex@N@0@ABV10@0@Z",
+                    "??$?KN@std@@YA?AV?$complex@N@0@ABV10@ABN@Z",
+                    "??$?KO@std@@YA?AV?$complex@O@0@ABOABV10@@Z",
+                    "??$?KO@std@@YA?AV?$complex@O@0@ABV10@0@Z",
+                    "??$?KO@std@@YA?AV?$complex@O@0@ABV10@ABO@Z",
+                    "??$?MDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?MDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?MDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?MGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?MGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?MGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?M_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?M_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?M_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?NDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?NDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?NDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?NGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?NGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?NGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?N_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?N_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?N_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?ODU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?ODU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?ODU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?OGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?OGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?OGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?O_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?O_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?O_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$?PDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z",
+                    "??$?PDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+                    "??$?PDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$?PGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@0@Z",
+                    "??$?PGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@PBG@Z",
+                    "??$?PGU?$char_traits@G@std@@V?$allocator@G@1@@std@@YA_NPBGABV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$?P_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z",
+                    "??$?P_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@PB_W@Z",
+                    "??$?P_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA_NPB_WABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$_Fabs@M@std@@YAMABV?$complex@M@0@PAH@Z",
+                    "??$_Fabs@N@std@@YANABV?$complex@N@0@PAH@Z",
+                    "??$_Fabs@O@std@@YAOABV?$complex@O@0@PAH@Z",
+                    "??$abs@M@std@@YAMABV?$complex@M@0@@Z",
+                    "??$abs@N@std@@YANABV?$complex@N@0@@Z",
+                    "??$abs@O@std@@YAOABV?$complex@O@0@@Z",
+                    "??$arg@M@std@@YAMABV?$complex@M@0@@Z",
+                    "??$arg@N@std@@YANABV?$complex@N@0@@Z",
+                    "??$arg@O@std@@YAOABV?$complex@O@0@@Z",
+                    "??$conj@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$conj@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$conj@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$cos@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$cos@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$cos@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$cosh@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$cosh@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$cosh@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$exp@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$exp@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$exp@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z",
+                    "??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@D@Z",
+                    "??$getline@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@@Z",
+                    "??$getline@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@YAAAV?$basic_istream@GU?$char_traits@G@std@@@0@AAV10@AAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@0@G@Z",
+                    "??$getline@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@@Z",
+                    "??$getline@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@YAAAV?$basic_istream@_WU?$char_traits@_W@std@@@0@AAV10@AAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@_W@Z",
+                    "??$imag@M@std@@YAMABV?$complex@M@0@@Z",
+                    "??$imag@N@std@@YANABV?$complex@N@0@@Z",
+                    "??$imag@O@std@@YAOABV?$complex@O@0@@Z",
+                    "??$log10@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$log10@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$log10@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$log@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$log@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$log@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$norm@M@std@@YAMABV?$complex@M@0@@Z",
+                    "??$norm@N@std@@YANABV?$complex@N@0@@Z",
+                    "??$norm@O@std@@YAOABV?$complex@O@0@@Z",
+                    "??$polar@M@std@@YA?AV?$complex@M@0@ABM0@Z",
+                    "??$polar@M@std@@YA?AV?$complex@M@0@ABM@Z",
+                    "??$polar@N@std@@YA?AV?$complex@N@0@ABN0@Z",
+                    "??$polar@N@std@@YA?AV?$complex@N@0@ABN@Z",
+                    "??$polar@O@std@@YA?AV?$complex@O@0@ABO0@Z",
+                    "??$polar@O@std@@YA?AV?$complex@O@0@ABO@Z",
+                    "??$pow@M@std@@YA?AV?$complex@M@0@ABMABV10@@Z",
+                    "??$pow@M@std@@YA?AV?$complex@M@0@ABV10@0@Z",
+                    "??$pow@M@std@@YA?AV?$complex@M@0@ABV10@ABM@Z",
+                    "??$pow@M@std@@YA?AV?$complex@M@0@ABV10@H@Z",
+                    "??$pow@N@std@@YA?AV?$complex@N@0@ABNABV10@@Z",
+                    "??$pow@N@std@@YA?AV?$complex@N@0@ABV10@0@Z",
+                    "??$pow@N@std@@YA?AV?$complex@N@0@ABV10@ABN@Z",
+                    "??$pow@N@std@@YA?AV?$complex@N@0@ABV10@H@Z",
+                    "??$pow@O@std@@YA?AV?$complex@O@0@ABOABV10@@Z",
+                    "??$pow@O@std@@YA?AV?$complex@O@0@ABV10@0@Z",
+                    "??$pow@O@std@@YA?AV?$complex@O@0@ABV10@ABO@Z",
+                    "??$pow@O@std@@YA?AV?$complex@O@0@ABV10@H@Z",
+                    "??$real@M@std@@YAMABV?$complex@M@0@@Z",
+                    "??$real@N@std@@YANABV?$complex@N@0@@Z",
+                    "??$real@O@std@@YAOABV?$complex@O@0@@Z",
+                    "??$sin@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$sin@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$sin@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$sinh@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$sinh@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$sinh@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$sqrt@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$sqrt@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$sqrt@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$tan@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$tan@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$tan@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??$tanh@M@std@@YA?AV?$complex@M@0@ABV10@@Z",
+                    "??$tanh@N@std@@YA?AV?$complex@N@0@ABV10@@Z",
+                    "??$tanh@O@std@@YA?AV?$complex@O@0@ABV10@@Z",
+                    "??0?$_Complex_base@MU_C_float_complex@@@std@@QAE@ABM0@Z",
+                    "??0?$_Complex_base@NU_C_double_complex@@@std@@QAE@ABN0@Z",
+                    "??0?$_Complex_base@OU_C_ldouble_complex@@@std@@QAE@ABO0@Z",
+                    "??0?$_Mpunct@D@std@@IAE@PBDI_N@Z",
+                    "??0?$_Mpunct@D@std@@QAE@ABV_Locinfo@1@I_N@Z",
+                    "??0?$_Mpunct@D@std@@QAE@I_N@Z",
+                    "??0?$_Mpunct@G@std@@IAE@PBDI_N@Z",
+                    "??0?$_Mpunct@G@std@@QAE@ABV_Locinfo@1@I_N@Z"
+                ],
+                "resource_details": [
+                    {
+                        "lang": "ENGLISH US",
+                        "entropy": 3.546182155609131,
+                        "chi2": 66932.09,
+                        "filetype": "unknown",
+                        "sha256": "6132785a3a79ec993e6eaa14dacb1bff4c7767807a4b0f5786e718d9bb497da1",
+                        "type": "RT_VERSION"
+                    }
+                ],
+                "rich_pe_header_hash": "cb29d61b9036a224f39402e9fc651be0",
+                "imphash": "6488997e312be12f8300ea7b1c34d497",
+                "compiler_product_versions": [
+                    "id: 93, version: 4035 count=2",
+                    "[---] Unmarked objects count=134",
+                    "[IMP] VS2005 build 50727 count=3",
+                    "id: 126, version: 50327 count=1",
+                    "[ASM] VS2005 build 50727 count=3",
+                    "[C++] VS2005 build 50727 count=39",
+                    "[ C ] VS2005 build 50727 count=68",
+                    "[EXP] VS2005 build 50727 count=1",
+                    "[RES] VS2005 build 50727 count=1",
+                    "[LNK] VS2005 build 50727 count=1"
+                ],
+                "resource_langs": {
+                    "ENGLISH US": 1
+                },
+                "machine_type": 332,
+                "timestamp": 1571992053,
+                "resource_types": {
+                    "RT_VERSION": 1
+                },
+                "sections": [
+                    {
+                        "name": ".text",
+                        "chi2": 947068.88,
+                        "virtual_address": 4096,
+                        "flags": "rx",
+                        "raw_size": 212992,
+                        "entropy": 6.61,
+                        "virtual_size": 212566,
+                        "md5": "541e44fe52d2d0c200d891f73c284c36"
+                    },
+                    {
+                        "name": ".rdata",
+                        "chi2": 3121311.25,
+                        "virtual_address": 217088,
+                        "flags": "r",
+                        "raw_size": 299008,
+                        "entropy": 5.51,
+                        "virtual_size": 297452,
+                        "md5": "b9725d7d65020390e1371c51f300c69a"
+                    },
+                    {
+                        "name": ".data",
+                        "chi2": 304949.0,
+                        "virtual_address": 516096,
+                        "flags": "rw",
+                        "raw_size": 8192,
+                        "entropy": 3.99,
+                        "virtual_size": 9836,
+                        "md5": "813ddc77dd38981099fe8cc9749cde31"
+                    },
+                    {
+                        "name": ".rsrc",
+                        "chi2": 841225.62,
+                        "virtual_address": 528384,
+                        "flags": "r",
+                        "raw_size": 4096,
+                        "entropy": 1.05,
+                        "virtual_size": 976,
+                        "md5": "55b3a212970e2ad13c46530012cf4c32"
+                    },
+                    {
+                        "name": ".reloc",
+                        "chi2": 829022.88,
+                        "virtual_address": 532480,
+                        "flags": "r",
+                        "raw_size": 20480,
+                        "entropy": 4.98,
+                        "virtual_size": 16718,
+                        "md5": "b41b7c8ac999110e5f044b0594a8afd4"
+                    }
+                ],
+                "import_list": [
+                    {
+                        "library_name": "KERNEL32.dll",
+                        "imported_functions": [
+                            "DeleteCriticalSection",
+                            "DisableThreadLibraryCalls",
+                            "EnterCriticalSection",
+                            "GetCurrentProcess",
+                            "GetCurrentProcessId",
+                            "GetCurrentThreadId",
+                            "GetLocaleInfoA",
+                            "GetSystemTimeAsFileTime",
+                            "GetTickCount",
+                            "InitializeCriticalSection",
+                            "InterlockedCompareExchange",
+                            "InterlockedDecrement",
+                            "InterlockedExchange",
+                            "InterlockedIncrement",
+                            "IsDebuggerPresent",
+                            "LeaveCriticalSection",
+                            "MultiByteToWideChar",
+                            "QueryPerformanceCounter",
+                            "SetUnhandledExceptionFilter",
+                            "Sleep",
+                            "TerminateProcess",
+                            "UnhandledExceptionFilter",
+                            "WideCharToMultiByte"
+                        ]
+                    },
+                    {
+                        "library_name": "MSVCR80.dll",
+                        "imported_functions": [
+                            "??0bad_cast@std@@QAE@ABV01@@Z",
+                            "??0bad_cast@std@@QAE@PBD@Z",
+                            "??0exception@std@@QAE@ABQBD@Z",
+                            "??0exception@std@@QAE@ABQBDH@Z",
+                            "??0exception@std@@QAE@ABV01@@Z",
+                            "??0exception@std@@QAE@XZ",
+                            "??1bad_cast@std@@UAE@XZ",
+                            "??1exception@std@@UAE@XZ",
+                            "??2@YAPAXI@Z",
+                            "??3@YAXPAX@Z",
+                            "??_V@YAXPAX@Z",
+                            "?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z",
+                            "?_type_info_dtor_internal_method@type_info@@QAEXXZ",
+                            "?terminate@@YAXXZ",
+                            "?what@exception@std@@UBEPBDXZ",
+                            "___lc_codepage_func",
+                            "___lc_collate_cp_func",
+                            "___lc_handle_func",
+                            "___mb_cur_max_l_func",
+                            "__clean_type_info_names_internal",
+                            "__CppXcptFilter",
+                            "__crtCompareStringA",
+                            "__crtCompareStringW",
+                            "__crtGetStringTypeW",
+                            "__crtLCMapStringA",
+                            "__crtLCMapStringW",
+                            "__CxxFrameHandler3",
+                            "__dllonexit",
+                            "__iob_func",
+                            "__pctype_func",
+                            "__uncaught_exception",
+                            "_adjust_fdiv",
+                            "_amsg_exit",
+                            "_calloc_crt",
+                            "_create_locale",
+                            "_crt_debugger_hook",
+                            "_CxxThrowException",
+                            "_decode_pointer",
+                            "_encode_pointer",
+                            "_encoded_null",
+                            "_errno",
+                            "_except_handler4_common",
+                            "_free_locale",
+                            "_fsopen",
+                            "_get_osplatform",
+                            "_Getdays",
+                            "_Getmonths",
+                            "_Gettnames",
+                            "_initterm",
+                            "_initterm_e",
+                            "_invalid_parameter_noinfo",
+                            "_invoke_watson",
+                            "_lock",
+                            "_malloc_crt",
+                            "_onexit",
+                            "_realloc_crt",
+                            "_Strftime",
+                            "_strtoi64",
+                            "_strtoui64",
+                            "_ui64toa_s",
+                            "_unlock",
+                            "_wfsopen",
+                            "abort",
+                            "atan2",
+                            "cos",
+                            "exp",
+                            "fclose",
+                            "fflush",
+                            "fgetc",
+                            "fgetpos",
+                            "fgetwc",
+                            "fputc",
+                            "fputs",
+                            "fputwc",
+                            "free",
+                            "fseek",
+                            "fsetpos",
+                            "fwrite",
+                            "isalnum",
+                            "isdigit",
+                            "islower",
+                            "isspace",
+                            "isupper",
+                            "ldexp",
+                            "localeconv",
+                            "log",
+                            "mbstowcs_s",
+                            "memchr",
+                            "memcmp",
+                            "memcpy",
+                            "memcpy_s",
+                            "memmove_s",
+                            "memset",
+                            "pow",
+                            "setlocale",
+                            "setvbuf",
+                            "sin",
+                            "sprintf_s",
+                            "sqrt",
+                            "strcmp",
+                            "strcspn",
+                            "strlen",
+                            "strtod",
+                            "tan",
+                            "tolower",
+                            "towlower",
+                            "towupper",
+                            "ungetc",
+                            "ungetwc",
+                            "wcslen",
+                            "wcstombs_s"
+                        ]
+                    }
+                ],
+                "entry_point": 200142
+            },
+            "magic": "PE32 executable (DLL) (GUI) Intel 80386, for MS Windows",
+            "last_analysis_stats": {
+                "harmless": 0,
+                "type-unsupported": 5,
+                "suspicious": 0,
+                "confirmed-timeout": 0,
+                "timeout": 0,
+                "failure": 0,
+                "malicious": 0,
+                "undetected": 70
+            },
+            "last_analysis_results": {
+                "Bkav": {
+                    "category": "undetected",
+                    "engine_name": "Bkav",
+                    "engine_version": "2.0.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Lionic": {
+                    "category": "undetected",
+                    "engine_name": "Lionic",
+                    "engine_version": "7.5",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Elastic": {
+                    "category": "undetected",
+                    "engine_name": "Elastic",
+                    "engine_version": "4.0.88",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230511"
+                },
+                "Cynet": {
+                    "category": "undetected",
+                    "engine_name": "Cynet",
+                    "engine_version": "4.0.0.27",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "CMC": {
+                    "category": "undetected",
+                    "engine_name": "CMC",
+                    "engine_version": "2.4.2022.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "CAT-QuickHeal": {
+                    "category": "undetected",
+                    "engine_name": "CAT-QuickHeal",
+                    "engine_version": "22.00",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230514"
+                },
+                "ALYac": {
+                    "category": "undetected",
+                    "engine_name": "ALYac",
+                    "engine_version": "1.1.3.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Malwarebytes": {
+                    "category": "undetected",
+                    "engine_name": "Malwarebytes",
+                    "engine_version": "4.5.5.54",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Zillya": {
+                    "category": "undetected",
+                    "engine_name": "Zillya",
+                    "engine_version": "2.0.0.4873",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Sangfor": {
+                    "category": "undetected",
+                    "engine_name": "Sangfor",
+                    "engine_version": "2.23.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230512"
+                },
+                "K7AntiVirus": {
+                    "category": "undetected",
+                    "engine_name": "K7AntiVirus",
+                    "engine_version": "12.87.48232",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Alibaba": {
+                    "category": "undetected",
+                    "engine_name": "Alibaba",
+                    "engine_version": "0.3.0.5",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20190527"
+                },
+                "K7GW": {
+                    "category": "undetected",
+                    "engine_name": "K7GW",
+                    "engine_version": "12.87.48237",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "CrowdStrike": {
+                    "category": "undetected",
+                    "engine_name": "CrowdStrike",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20220812"
+                },
+                "BitDefenderTheta": {
+                    "category": "undetected",
+                    "engine_name": "BitDefenderTheta",
+                    "engine_version": "7.2.37796.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230503"
+                },
+                "VirIT": {
+                    "category": "undetected",
+                    "engine_name": "VirIT",
+                    "engine_version": "9.5.448",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Cyren": {
+                    "category": "undetected",
+                    "engine_name": "Cyren",
+                    "engine_version": "6.5.1.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "SymantecMobileInsight": {
+                    "category": "type-unsupported",
+                    "engine_name": "SymantecMobileInsight",
+                    "engine_version": "2.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230119"
+                },
+                "Symantec": {
+                    "category": "undetected",
+                    "engine_name": "Symantec",
+                    "engine_version": "1.20.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "tehtris": {
+                    "category": "undetected",
+                    "engine_name": "tehtris",
+                    "engine_version": "v0.1.4",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "ESET-NOD32": {
+                    "category": "undetected",
+                    "engine_name": "ESET-NOD32",
+                    "engine_version": "27239",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "APEX": {
+                    "category": "undetected",
+                    "engine_name": "APEX",
+                    "engine_version": "6.411",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230513"
+                },
+                "Paloalto": {
+                    "category": "undetected",
+                    "engine_name": "Paloalto",
+                    "engine_version": "0.9.0.1003",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "ClamAV": {
+                    "category": "undetected",
+                    "engine_name": "ClamAV",
+                    "engine_version": "1.1.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Kaspersky": {
+                    "category": "undetected",
+                    "engine_name": "Kaspersky",
+                    "engine_version": "22.0.1.28",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "BitDefender": {
+                    "category": "undetected",
+                    "engine_name": "BitDefender",
+                    "engine_version": "7.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "NANO-Antivirus": {
+                    "category": "undetected",
+                    "engine_name": "NANO-Antivirus",
+                    "engine_version": "1.0.146.25757",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "ViRobot": {
+                    "category": "undetected",
+                    "engine_name": "ViRobot",
+                    "engine_version": "2014.3.20.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "MicroWorld-eScan": {
+                    "category": "undetected",
+                    "engine_name": "MicroWorld-eScan",
+                    "engine_version": "14.0.409.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Avast": {
+                    "category": "undetected",
+                    "engine_name": "Avast",
+                    "engine_version": "22.11.7701.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Rising": {
+                    "category": "undetected",
+                    "engine_name": "Rising",
+                    "engine_version": "25.0.0.27",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Trustlook": {
+                    "category": "type-unsupported",
+                    "engine_name": "Trustlook",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "TACHYON": {
+                    "category": "undetected",
+                    "engine_name": "TACHYON",
+                    "engine_version": "2023-05-15.02",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Emsisoft": {
+                    "category": "undetected",
+                    "engine_name": "Emsisoft",
+                    "engine_version": "2022.6.0.32461",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Baidu": {
+                    "category": "undetected",
+                    "engine_name": "Baidu",
+                    "engine_version": "1.0.0.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20190318"
+                },
+                "F-Secure": {
+                    "category": "undetected",
+                    "engine_name": "F-Secure",
+                    "engine_version": "18.10.1137.128",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "DrWeb": {
+                    "category": "undetected",
+                    "engine_name": "DrWeb",
+                    "engine_version": "7.0.59.12300",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "VIPRE": {
+                    "category": "undetected",
+                    "engine_name": "VIPRE",
+                    "engine_version": "6.0.0.35",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "TrendMicro": {
+                    "category": "undetected",
+                    "engine_name": "TrendMicro",
+                    "engine_version": "11.0.0.1006",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "McAfee-GW-Edition": {
+                    "category": "undetected",
+                    "engine_name": "McAfee-GW-Edition",
+                    "engine_version": "v2021.2.0+4045",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Trapmine": {
+                    "category": "undetected",
+                    "engine_name": "Trapmine",
+                    "engine_version": "4.0.14.446",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230412"
+                },
+                "FireEye": {
+                    "category": "undetected",
+                    "engine_name": "FireEye",
+                    "engine_version": "35.24.1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Sophos": {
+                    "category": "undetected",
+                    "engine_name": "Sophos",
+                    "engine_version": "2.1.2.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Ikarus": {
+                    "category": "undetected",
+                    "engine_name": "Ikarus",
+                    "engine_version": "6.1.14.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Avast-Mobile": {
+                    "category": "type-unsupported",
+                    "engine_name": "Avast-Mobile",
+                    "engine_version": "230515-00",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Jiangmin": {
+                    "category": "undetected",
+                    "engine_name": "Jiangmin",
+                    "engine_version": "16.0.100",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Webroot": {
+                    "category": "undetected",
+                    "engine_name": "Webroot",
+                    "engine_version": "1.0.0.403",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Avira": {
+                    "category": "undetected",
+                    "engine_name": "Avira",
+                    "engine_version": "8.3.3.16",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Antiy-AVL": {
+                    "category": "undetected",
+                    "engine_name": "Antiy-AVL",
+                    "engine_version": "3.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Microsoft": {
+                    "category": "undetected",
+                    "engine_name": "Microsoft",
+                    "engine_version": "1.1.20300.3",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Gridinsoft": {
+                    "category": "undetected",
+                    "engine_name": "Gridinsoft",
+                    "engine_version": "1.0.117.174",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Xcitium": {
+                    "category": "undetected",
+                    "engine_name": "Xcitium",
+                    "engine_version": "35643",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Arcabit": {
+                    "category": "undetected",
+                    "engine_name": "Arcabit",
+                    "engine_version": "2022.0.0.18",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "SUPERAntiSpyware": {
+                    "category": "undetected",
+                    "engine_name": "SUPERAntiSpyware",
+                    "engine_version": "5.6.0.1032",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230514"
+                },
+                "ZoneAlarm": {
+                    "category": "undetected",
+                    "engine_name": "ZoneAlarm",
+                    "engine_version": "1.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "GData": {
+                    "category": "undetected",
+                    "engine_name": "GData",
+                    "engine_version": "A:25.35830B:27.31635",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Google": {
+                    "category": "undetected",
+                    "engine_name": "Google",
+                    "engine_version": "1684170075",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "BitDefenderFalx": {
+                    "category": "type-unsupported",
+                    "engine_name": "BitDefenderFalx",
+                    "engine_version": "2.0.936",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230511"
+                },
+                "AhnLab-V3": {
+                    "category": "undetected",
+                    "engine_name": "AhnLab-V3",
+                    "engine_version": "3.23.3.10396",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Acronis": {
+                    "category": "undetected",
+                    "engine_name": "Acronis",
+                    "engine_version": "1.2.0.114",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230219"
+                },
+                "McAfee": {
+                    "category": "undetected",
+                    "engine_name": "McAfee",
+                    "engine_version": "6.0.6.653",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "MAX": {
+                    "category": "undetected",
+                    "engine_name": "MAX",
+                    "engine_version": "2023.1.4.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "VBA32": {
+                    "category": "undetected",
+                    "engine_name": "VBA32",
+                    "engine_version": "5.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Cylance": {
+                    "category": "undetected",
+                    "engine_name": "Cylance",
+                    "engine_version": "2.0.0.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230426"
+                },
+                "Panda": {
+                    "category": "undetected",
+                    "engine_name": "Panda",
+                    "engine_version": "4.6.4.2",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Zoner": {
+                    "category": "undetected",
+                    "engine_name": "Zoner",
+                    "engine_version": "2.2.2.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "TrendMicro-HouseCall": {
+                    "category": "undetected",
+                    "engine_name": "TrendMicro-HouseCall",
+                    "engine_version": "10.0.0.1040",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Tencent": {
+                    "category": "undetected",
+                    "engine_name": "Tencent",
+                    "engine_version": "1.0.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Yandex": {
+                    "category": "undetected",
+                    "engine_name": "Yandex",
+                    "engine_version": "5.5.2.24",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230513"
+                },
+                "SentinelOne": {
+                    "category": "undetected",
+                    "engine_name": "SentinelOne",
+                    "engine_version": "23.2.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230404"
+                },
+                "MaxSecure": {
+                    "category": "undetected",
+                    "engine_name": "MaxSecure",
+                    "engine_version": "1.0.0.1",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230513"
+                },
+                "Fortinet": {
+                    "category": "undetected",
+                    "engine_name": "Fortinet",
+                    "engine_version": "6.4.258.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "AVG": {
+                    "category": "undetected",
+                    "engine_name": "AVG",
+                    "engine_version": "22.11.7701.0",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230515"
+                },
+                "Cybereason": {
+                    "category": "type-unsupported",
+                    "engine_name": "Cybereason",
+                    "engine_version": "1.2.449",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20210330"
+                },
+                "DeepInstinct": {
+                    "category": "undetected",
+                    "engine_name": "DeepInstinct",
+                    "engine_version": "3.1.0.15",
+                    "result": null,
+                    "method": "blacklist",
+                    "engine_update": "20230420"
+                }
+            },
+            "reputation": 0,
+            "first_seen_itw_date": 1571963253,
+            "monitor_info": {
+                "organizations": [
+                    "Microsoft"
+                ],
+                "filenames": [
+                    "msvcp80.dll-5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4"
+                ]
+            }
+        },
+        "type": "file",
+        "id": "5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4",
+        "links": {
+            "self": "https://www.virustotal.com/ui/files/5063c17f2b01a17119fbbdd64338368bd9169f832abe719bfbd2b4e65fb599d4"
+        }
+    }
+}
