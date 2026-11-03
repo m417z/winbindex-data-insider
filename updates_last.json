@@ -1776,6 +1776,12 @@
             "created": 1792774855,
             "title": "Windows 11 Insider Preview Feature Update (28020.3292)"
         },
+        "f8ad19ed-bff2-481b-a597-ca07631d91db": {
+            "arch": "amd64",
+            "build": "26200.9363",
+            "created": 1793698373,
+            "title": ".NET Framework Security Update for Windows 11 - KB5127690 (26200.9363) (4)"
+        },
         "f8eb7dfb-e1a6-42e4-8943-96acbce590ac": {
             "arch": "arm64",
             "build": "22621.9346",
