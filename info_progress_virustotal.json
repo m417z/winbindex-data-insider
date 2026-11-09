@@ -1,15 +1,11 @@
 {
 "next": [
-"coremessaging.dll",
-"f4904334670340b41fb6d26322927aa81ff1229ab434f90decf9ea368f52f768"
+"devauthe.sys",
+"103afec820601c5eb1ac319357835a357029630ea60ffad46bb27b6b52e14efc"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
-[
-"d3d9.dll",
-"35256d7c38396f90a094ab06ed2408d49c079157d3531574248405a6b557208b"
-],
 [
 "isolationproxy.exe",
 "cc1e829c2c1a5b231eee062b6f08f8f6f628ca599cb5b93936bda967834cf633"
@@ -23,24 +19,8 @@
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
 ],
 [
-"pcaui.exe",
-"b3832e9e28c210613bcabc0bf01c06e57a02be9774611cc8afe2ee9895ec0096"
-],
-[
 "sc.exe",
 "498a0c9979e39cf2bc1dc9a2fd86b165ccc83ac4c78053eb19d2dbc8516d3832"
-],
-[
-"voiceaccess.exe",
-"1ed4da0e17d840ebf6f4241433870b543fb75d85a22ebcb5a41d126c6db218dc"
-],
-[
-"werfault.exe",
-"c0625c181c4c288bd349a804ab03d84d91b03b5e8b82cf6a762bfd3405502fb5"
-],
-[
-"wlanext.exe",
-"30ab2d8ab54e2bc57397044a2d0e5057631f327c57b445fa97944402f52093e9"
 ]
 ],
 "updates": null
