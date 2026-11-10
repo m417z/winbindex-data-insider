@@ -233,18 +233,46 @@ def extract_update_files(local_dir: Path):
         if delete:
             from_file.unlink()
 
+    def list_7z_files(from_file: Path):
+        args = ['7z.exe', 'l', '-ba', '-slt', from_file]
+        output = subprocess.check_output(args, text=True)
+        return [line.removeprefix('Path = ') for line in output.splitlines() if line.startswith('Path = ')]
+
     def msu_extract(from_file: Path, to_dir: Path):
-        wim_file = from_file.with_suffix('.wim')
-        if wim_file.exists():
-            raise Exception(f'WIM file already exists: {wim_file}')
+        names = list_7z_files(from_file)
+        names_lower = {name.lower() for name in names}
 
-        psf_file = from_file.with_suffix('.psf')
-        if wim_file.exists():
-            raise Exception(f'PSF file already exists: {psf_file}')
+        # The WIM and PSF pair is usually named after the MSU file, but an MSU
+        # with a revision package carries the pair of the update it's based on.
+        wim_names = [
+            name
+            for name in names
+            if name.lower().endswith('.wim') and f'{Path(name).stem}.psf'.lower() in names_lower
+        ]
+        if len(wim_names) > 1:
+            raise Exception(f'Multiple WIM and PSF pairs in {from_file}: {wim_names}')
 
-        run_7z_extract(from_file, from_file.parent, [wim_file.name, psf_file.name])
+        if wim_names:
+            wim_file = from_file.with_name(wim_names[0])
+            psf_file = wim_file.with_suffix('.psf')
 
-        if wim_file.exists() and psf_file.exists():
+            # The -baseless variant (CAB and PSF) has the same manifests.
+            revision_cab_names = [
+                name
+                for name in names
+                if name.lower().startswith('revision-') and name.lower().endswith('.cab')
+                and not name.lower().endswith('-baseless.cab')
+            ]
+            revision_cab_files = [from_file.with_name(name) for name in revision_cab_names]
+
+            for file in [wim_file, psf_file] + revision_cab_files:
+                if file.exists():
+                    raise Exception(f'File already exists: {file}')
+
+            # Revision CAB files are extracted next to the MSU file to be
+            # extracted along with the other CAB files.
+            run_7z_extract(from_file, from_file.parent, [wim_file.name, psf_file.name] + revision_cab_names)
+
             run_7z_extract(wim_file, to_dir)
             wim_file.unlink()
 
@@ -254,8 +282,6 @@ def extract_update_files(local_dir: Path):
             description_file.unlink()
             psf_file.unlink()
             return
-        elif wim_file.exists() or psf_file.exists():
-            raise Exception(f'Could not extract {from_file}')
 
         # Try hotpatch.
         cab_file = from_file.with_name(re.sub(r'-(\w+)\.msu$', r'-Hotpatch-\g<1>.cab', from_file.name))
