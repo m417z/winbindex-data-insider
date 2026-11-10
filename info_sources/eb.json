@@ -1411,6 +1411,7 @@
 "hcitpmlib.dll": {
 "0e7bd6ab63bd5b18b21ed4ffd0f903108c0c9db20d3a4efc62267bd29e906923": "none",
 "6f56ed23e20a78fe2e1ad26e41656a287d7146d3f37240c363cbc6b0cbcc1a82": "delta+",
+"7c9fb921b772aa92b4d8f5d1ad4c72648c8857e20d4df93abcb9fd9d93a78556": "delta",
 "c5550f939e16810b19b8e87f786fae023e84464165a002d8c4a6b7edc94ee8cb": "delta+"
 },
 "hvsifiletrust.dll": {
