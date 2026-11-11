@@ -318,6 +318,12 @@
             "created": 1792252334,
             "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7807)"
         },
+        "345e7f26-ccaf-428d-a519-47a384cbc9d0": {
+            "arch": "amd64",
+            "build": "19045.7846",
+            "created": 1794390050,
+            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7846)"
+        },
         "35cf7f29-b228-4f0e-aab6-80cb6dd66495": {
             "arch": "amd64",
             "build": "29683.1000",
