@@ -1320,6 +1320,12 @@
             "created": 1789479944,
             "title": "Preview Update for Windows 11 (26300.9278)"
         },
+        "d2e1eafb-675d-40be-9888-24d339f9c2ba": {
+            "arch": "amd64",
+            "build": "26100.33650",
+            "created": 1794467291,
+            "title": "Security Update for Azure Stack HCI (26100.33650)"
+        },
         "d397976e-a38d-48a5-b3a0-7e6a0b3c2b27": {
             "arch": "amd64",
             "build": "19044.7811",
@@ -1331,6 +1337,12 @@
             "build": "26200.9711",
             "created": 1791910826,
             "title": "Windows 11, version 25H2 (26200.9711)"
+        },
+        "d571c012-3802-4bea-86c0-6a32713b2b2d": {
+            "arch": "amd64",
+            "build": "26100.33822",
+            "created": 1794467215,
+            "title": "Security Update for Azure Stack HCI (26100.33822)"
         },
         "d5fbb936-8902-4bef-983a-387ef64ee684": {
             "arch": "amd64",
