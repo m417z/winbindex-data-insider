@@ -372,6 +372,12 @@
             "created": 1789751152,
             "title": ".NET Framework Security Update for Windows 11 - KB5126053 (28000.9347) (2)"
         },
+        "3bb0402e-c62d-44f2-9d59-1f01908546b5": {
+            "arch": "arm64",
+            "build": "19045.7846",
+            "created": 1794581781,
+            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7846)"
+        },
         "3c67f186-0b5c-4c40-9dd6-21331d14c287": {
             "arch": "arm64",
             "build": "28020.3262",
@@ -929,6 +935,12 @@
             "build": "29695.1001",
             "created": 1792774821,
             "title": "Windows 11 Insider Preview 29695.1001 (rs_prerelease)"
+        },
+        "987540f3-44d9-4300-889d-46cf29ef7c6e": {
+            "arch": "x86",
+            "build": "19045.7846",
+            "created": 1794581781,
+            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7846)"
         },
         "987a1a70-5de2-4fb9-a55a-94a7a7ca2df8": {
             "arch": "x86",
