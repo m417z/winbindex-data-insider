@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Winbindex Insider</title>
+  </head>
+  <body>
+    <script>
+      var file = getParameterByName('file');
+      if (file) {
+        location = 'https://winbindex.m417z.com/?arch=insider&file=' + encodeURIComponent(file);
+      } else {
+        location = 'https://winbindex.m417z.com/?arch=insider';
+      }
+
+      // https://stackoverflow.com/a/901144
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+    </script>
+  </body>
+</html>
