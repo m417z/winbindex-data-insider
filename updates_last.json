@@ -36,6 +36,12 @@
             "created": 1794592841,
             "title": "Windows 11, version 26H2 (26300.10066)"
         },
+        "03a359aa-3581-4b2d-8cc2-94ab23106a64": {
+            "arch": "arm64",
+            "build": "28000.3612",
+            "created": 1794620888,
+            "title": "Preview Update for Windows 11 (28000.3612)"
+        },
         "04245d24-538c-421b-801f-e222314d2718": {
             "arch": "arm64",
             "build": "26200.9347",
@@ -480,6 +486,12 @@
             "created": 1793050121,
             "title": "Windows 11, version 24H2 (26100.9725)"
         },
+        "4f8c866e-4257-4eee-aa9b-04679bbc3035": {
+            "arch": "amd64",
+            "build": "20348.5873",
+            "created": 1794595414,
+            "title": "Cumulative Update for Microsoft server operating system version 21H2 (20348.5873)"
+        },
         "503c62b9-6834-46b3-97a6-4fa8bd8a94c0": {
             "arch": "arm64",
             "build": "26200.9725",
@@ -653,6 +665,12 @@
             "build": "28120.3542",
             "created": 1794592817,
             "title": "Windows 11 Insider Preview Feature Update (28120.3542)"
+        },
+        "71b63ff7-8c84-4957-8cab-c4783657beb2": {
+            "arch": "amd64",
+            "build": "17763.9488",
+            "created": 1794595512,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9488)"
         },
         "72e50079-51e2-4a6c-8794-8e6229e8640e": {
             "arch": "arm64",
@@ -869,6 +887,12 @@
             "build": "26200.7781",
             "created": 1790925191,
             "title": "Windows 11, version 25H2 (26200.7781)"
+        },
+        "8f0590a8-f150-4a56-9244-49d9dd911cb5": {
+            "arch": "amd64",
+            "build": "26100.33828",
+            "created": 1794595441,
+            "title": "Update for Microsoft server operating system (26100.33828)"
         },
         "8f245bea-1a41-480a-a8e9-30e576f864e5": {
             "arch": "amd64",
@@ -1242,6 +1266,12 @@
             "created": 1793379659,
             "title": "Windows 11 Insider Preview Feature Update (26220.9836)"
         },
+        "c7aab766-5c8c-4ede-97b4-6f14f15ce5e7": {
+            "arch": "arm64",
+            "build": "26100.33828",
+            "created": 1794595439,
+            "title": "Update for Microsoft server operating system (26100.33828)"
+        },
         "c7e3ab5d-0b82-4793-bc62-2ac396d69c09": {
             "arch": "x86",
             "build": "17763.9487",
@@ -1445,6 +1475,12 @@
             "build": "26200.9711",
             "created": 1791911924,
             "title": "Cumulative Update for Windows CPC OS (10.0.26200.9711) (26200.9711)"
+        },
+        "e4ef3944-8155-44d5-9e8b-d2dcecd59d1e": {
+            "arch": "x86",
+            "build": "17763.9488",
+            "created": 1794595188,
+            "title": "Cumulative Update for Windows 10 Version 1809 (17763.9488)"
         },
         "e67f397c-56e7-44a2-9566-0f1af5c01841": {
             "arch": "amd64",
