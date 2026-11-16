@@ -1,11 +1,19 @@
 {
 "next": [
-"devauthe.sys",
-"103afec820601c5eb1ac319357835a357029630ea60ffad46bb27b6b52e14efc"
+"dsadmin.dll",
+"6c41830424a06b305473be5a8810e6ddd1f329d33eae5b0ba1e5f0bccb7741f8"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
+[
+"dhcpcsvc6.dll",
+"0ecc3bbadbca57f058f93b4ab346741a213b263144c0ddf2bd4e931030f65dfd"
+],
+[
+"dispdiag.exe",
+"06811e15aa3e0e1a1337b15697735a4b678c384a22dc8f8ab3ac7a77836339ed"
+],
 [
 "isymwrapper.dll",
 "0c1203b4c01a5c99a55285c4c13dbb01948415f68321dd87ea0305b2fcb5ed06"
@@ -13,14 +21,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
-],
-[
-"pnputil.exe",
-"a4b75451b5a4a76f3a5096cfe8cd647f7de3c139eeb9f299be5700a161497124"
-],
-[
-"winsat.exe",
-"3e3232e09e50026baae8d74e5b5e28272380710c313ea9107cb4cc8356e4d96f"
 ]
 ],
 "updates": null
