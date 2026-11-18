@@ -1392,6 +1392,12 @@
             "created": 1790436920,
             "title": ".NET Framework Security Update for Windows 11 - KB5126054 (26300.10006)"
         },
+        "de38e33e-b4cc-430e-bfd9-a40b99c28034": {
+            "arch": "amd64",
+            "build": "28120.3542",
+            "created": 1794958797,
+            "title": "Windows 11 Insider Preview Quality Update (28120.3542)"
+        },
         "de9772af-3b3e-47df-b2f6-4e87eb627f12": {
             "arch": "arm64",
             "build": "28000.3231",
