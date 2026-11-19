@@ -42,12 +42,6 @@
             "created": 1794620888,
             "title": "Preview Update for Windows 11 (28000.3612)"
         },
-        "04245d24-538c-421b-801f-e222314d2718": {
-            "arch": "arm64",
-            "build": "26200.9347",
-            "created": 1789840635,
-            "title": ".NET Framework Security Update for Windows 11 - KB5126052 (26200.9347) (5)"
-        },
         "05174aee-70c9-4853-86f2-87485df79b4d": {
             "arch": "arm64",
             "build": "26220.9568",
@@ -425,6 +419,12 @@
             "build": "26100.9544",
             "created": 1790096441,
             "title": "Critical OOBE Update for Windows 11 - KB5128942 (26100.9544) (3)"
+        },
+        "40a04947-cc36-4c9a-9b1f-953c817e6030": {
+            "arch": "amd64",
+            "build": "19044.7850",
+            "created": 1795101733,
+            "title": "Cumulative Update for Windows 10 Version 21H2 (19044.7850)"
         },
         "4124635d-e3b4-44af-be5c-ccd8279d0989": {
             "arch": "amd64",
@@ -857,12 +857,6 @@
             "build": "28120.3151",
             "created": 1790960420,
             "title": "Windows 11 Insider Preview Feature Update (28120.3151)"
-        },
-        "8d88c17f-34a3-4687-b73e-7deed987d7c4": {
-            "arch": "amd64",
-            "build": "26200.9347",
-            "created": 1789840321,
-            "title": ".NET Framework Security Update for Windows 11 - KB5126052 (26200.9347) (5)"
         },
         "8da81770-3d9c-46ae-a8a0-1bab20d207bb": {
             "arch": "arm64",
