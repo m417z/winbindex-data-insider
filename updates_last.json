@@ -336,6 +336,12 @@
             "created": 1791396915,
             "title": "Windows 11 Insider Preview Feature Update (28120.3181)"
         },
+        "2b89885c-503c-4a90-9e49-24b8ba3e0d76": {
+            "arch": "amd64",
+            "build": "28000.9364",
+            "created": 1795290446,
+            "title": ".NET Framework Preview Update for Windows 11 - KB5137005 (28000.9364) (2)"
+        },
         "2c59bbde-1e7e-4bbd-b73b-e276b2fe9f27": {
             "arch": "arm64",
             "build": "19045.7807",
@@ -629,12 +635,6 @@
             "build": "26300.10008",
             "created": 1791910820,
             "title": ".NET Framework Security Update for Windows 11 - KB5127694 (26300.10008)"
-        },
-        "624f8f61-fd5b-4df9-b992-122be8fab976": {
-            "arch": "amd64",
-            "build": "26200.9550",
-            "created": 1790110215,
-            "title": "Preview Update for Windows 11 (26200.9550)"
         },
         "63446a30-811d-4332-a796-1b18e51579b5": {
             "arch": "amd64",
@@ -1379,6 +1379,12 @@
             "build": "22631.7654",
             "created": 1793049451,
             "title": "Cumulative Update for Windows 11, version 23H2 (22631.7654)"
+        },
+        "cad7fc90-514e-47b7-a6ec-328ec97ce4a2": {
+            "arch": "amd64",
+            "build": "26300.10009",
+            "created": 1795290436,
+            "title": ".NET Framework Preview Update for Windows 11 - KB5137006 (26300.10009) (2)"
         },
         "cae31273-b879-4fc8-9cfc-b3e7699ab1b4": {
             "arch": "arm64",
