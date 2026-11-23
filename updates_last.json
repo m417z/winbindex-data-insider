@@ -66,6 +66,12 @@
             "created": 1794334691,
             "title": "Feature update to Windows 10, version 21H2 (19044.7846)"
         },
+        "0856885a-8929-4c1a-8fed-7249fa654cb1": {
+            "arch": "arm64",
+            "build": "26100.10073",
+            "created": 1795436169,
+            "title": "Critical OOBE Update for Windows 11 - KB5135000 (26100.10073) (3)"
+        },
         "096acf58-d51e-463f-8d35-75b9b452800c": {
             "arch": "amd64",
             "build": "29712.1013",
@@ -467,6 +473,12 @@
             "build": "26340.10032",
             "created": 1795197610,
             "title": "Windows 11 Insider Preview Feature Update (26340.10032)"
+        },
+        "3e1c83f7-22f1-4abc-85d9-97d6ffd8d017": {
+            "arch": "amd64",
+            "build": "19045.7850",
+            "created": 1795448958,
+            "title": "Cumulative Update for Windows 10 Version 22H2 (19045.7850)"
         },
         "40a04947-cc36-4c9a-9b1f-953c817e6030": {
             "arch": "amd64",
