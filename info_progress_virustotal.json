@@ -1,11 +1,19 @@
 {
 "next": [
-"dsadmin.dll",
-"6c41830424a06b305473be5a8810e6ddd1f329d33eae5b0ba1e5f0bccb7741f8"
+"facerecognitionengineadapterresources_v2.dll",
+"3e909b21c4943f7719e740235f8c4a7ee2b6711a93f053e7235ac37268537ef9"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
+[
+"edputil.dll",
+"7de3592088b88bed5a1021988ff3609cc395f633577838693acb18b66aff06a9"
+],
+[
+"facedetectorresources.dll",
+"a225f6ff99b24af4b9444d5e4dbef65dd0f6a38326595df4f47aa471a2399674"
+],
 [
 "isymwrapper.dll",
 "0c1203b4c01a5c99a55285c4c13dbb01948415f68321dd87ea0305b2fcb5ed06"
@@ -13,14 +21,6 @@
 [
 "microsoft.ceres.docparsing.formathandlers.common.jpeginterop.dll",
 "ebfaad13cc741efb12338de190ecc924ad371fc24a8d167238fa6fb104ad4a75"
-],
-[
-"searchindexer.exe",
-"cd35446ee2fb7dce8466273dcc383967f76b89dc6c8c12fdae90bbb774155f16"
-],
-[
-"wlanext.exe",
-"84dfb65469a9a0dc5d4dd4d0a27743ea7c52d4904d5960fa524c5ce02952fcf4"
 ]
 ],
 "updates": null
