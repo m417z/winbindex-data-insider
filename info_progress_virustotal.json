@@ -1,18 +1,18 @@
 {
 "next": [
-"facerecognitionengineadapterresources_v2.dll",
-"3e909b21c4943f7719e740235f8c4a7ee2b6711a93f053e7235ac37268537ef9"
+"fwpolicyiomgr.dll",
+"286d198c4228156a2f2ca6000b78a4dd8f0dc3aa50ae26aca139f30e25ee7b80"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"edputil.dll",
-"7de3592088b88bed5a1021988ff3609cc395f633577838693acb18b66aff06a9"
+"facerecognitionengineadapterresourcescore.dll",
+"9ff4a45ade89d95ddb77a720b44b8b7603dd9f17078fb61773d97ae4c8f0e63f"
 ],
 [
-"facedetectorresources.dll",
-"a225f6ff99b24af4b9444d5e4dbef65dd0f6a38326595df4f47aa471a2399674"
+"facerecognitionengineadapterresourcessecure.dll",
+"bb7c6cdb36d8eac9657e4b811aa1c26fef00ef16923f636d574951cf5cdd060e"
 ],
 [
 "isymwrapper.dll",
