@@ -1,18 +1,14 @@
 {
 "next": [
-"fwpolicyiomgr.dll",
-"286d198c4228156a2f2ca6000b78a4dd8f0dc3aa50ae26aca139f30e25ee7b80"
+"iertutil.dll",
+"8864186c5394e1ef1ce5d4731e291ff099cfcd8c67ce7fe964f0dd7636ca45e6"
 ],
 "next_updates": null,
 "pending": {},
 "retry": [
 [
-"facerecognitionengineadapterresourcescore.dll",
-"9ff4a45ade89d95ddb77a720b44b8b7603dd9f17078fb61773d97ae4c8f0e63f"
-],
-[
-"facerecognitionengineadapterresourcessecure.dll",
-"bb7c6cdb36d8eac9657e4b811aa1c26fef00ef16923f636d574951cf5cdd060e"
+"fxsmon.dll",
+"c739e784576e58d5e49500cc9287302074cc22766b1b1a0e2123af13d301f2ed"
 ],
 [
 "isymwrapper.dll",
