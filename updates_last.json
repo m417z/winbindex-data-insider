@@ -48,6 +48,12 @@
             "created": 1794620888,
             "title": "Preview Update for Windows 11 (28000.3612)"
         },
+        "05cadc9a-850a-4585-9148-8d58299d4124": {
+            "arch": "amd64",
+            "build": "17763.8880",
+            "created": 1795780325,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.8880)"
+        },
         "071cf710-2c89-4852-9db6-9c67749ecee8": {
             "arch": "arm64",
             "build": "26200.9448",
@@ -251,6 +257,12 @@
             "build": "26200.7392",
             "created": 1790925133,
             "title": "Windows 11, version 25H2 (26200.7392)"
+        },
+        "20313117-0c40-4cfd-a4d2-683b9356e4bc": {
+            "arch": "amd64",
+            "build": "17763.9378",
+            "created": 1795780016,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9378)"
         },
         "219bd76e-d44a-4ee4-afeb-c95942eaabd7": {
             "arch": "arm64",
@@ -534,6 +546,12 @@
             "created": 1793050121,
             "title": "Windows 11, version 24H2 (26100.9725)"
         },
+        "4f024351-d4c8-43d5-a403-eeb7bbcf78c4": {
+            "arch": "amd64",
+            "build": "17763.8281",
+            "created": 1795780740,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.8281)"
+        },
         "4f8c866e-4257-4eee-aa9b-04679bbc3035": {
             "arch": "amd64",
             "build": "20348.5873",
@@ -702,6 +720,12 @@
             "created": 1793206836,
             "title": "Windows 11, version 26H2 (26300.9818)"
         },
+        "6d609422-1222-4701-aca2-88acaded2a83": {
+            "arch": "x86",
+            "build": "17763.8281",
+            "created": 1795780763,
+            "title": "Cumulative Update for Windows 10 Version 1809 (17763.8281)"
+        },
         "6f8bd7d2-36a4-4ef7-b498-93b4c95c8df4": {
             "arch": "amd64",
             "build": "28120.3542",
@@ -720,6 +744,12 @@
             "created": 1794595512,
             "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9488)"
         },
+        "725308f2-076b-42c1-b33a-ff946abb64b5": {
+            "arch": "amd64",
+            "build": "17763.9121",
+            "created": 1795780221,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9121)"
+        },
         "72e50079-51e2-4a6c-8794-8e6229e8640e": {
             "arch": "arm64",
             "build": "28120.3454",
@@ -731,6 +761,12 @@
             "build": "28120.3302",
             "created": 1792775718,
             "title": "Windows 11 Insider Preview Feature Update (28120.3302)"
+        },
+        "7353dd21-faf8-43ff-acaa-d542a5229294": {
+            "arch": "amd64",
+            "build": "17763.8027",
+            "created": 1795782007,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.8027)"
         },
         "744a0a32-7509-4748-a5ad-9a441f7569c5": {
             "arch": "x86",
@@ -785,6 +821,12 @@
             "build": "19045.7811",
             "created": 1793048534,
             "title": "Feature update to Windows 10, version 22H2 (19045.7811)"
+        },
+        "800581ef-12f9-4df8-880a-96a5d0343712": {
+            "arch": "x86",
+            "build": "17763.8647",
+            "created": 1795780414,
+            "title": "Cumulative Update for Windows 10 Version 1809 (17763.8647)"
         },
         "80338691-87c9-4f05-af86-d45e0cf883e0": {
             "arch": "amd64",
@@ -1019,6 +1061,12 @@
             "build": "28000.3230",
             "created": 1791910809,
             "title": "Critical OOBE Update for Windows 11 - KB5132441 (28000.3230)"
+        },
+        "9d5d10e1-5e23-41d3-9d02-9d6bbd708d0d": {
+            "arch": "amd64",
+            "build": "17763.8389",
+            "created": 1795780642,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.8389)"
         },
         "9e1ca263-6656-4cd9-ac64-8595cb4f5284": {
             "arch": "arm64",
@@ -1356,6 +1404,12 @@
             "created": 1793050105,
             "title": "Windows 11, version 26H1 (28000.3237)"
         },
+        "caedc226-1da4-47c5-8783-d505d24acec9": {
+            "arch": "amd64",
+            "build": "17763.8280",
+            "created": 1795780787,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.8280)"
+        },
         "cb0f12bf-cd10-404a-ba07-3b7fd181a813": {
             "arch": "arm64",
             "build": "26340.9750",
@@ -1385,6 +1439,12 @@
             "build": "19044.7846",
             "created": 1794334691,
             "title": "Feature update to Windows 10, version 21H2 (19044.7846)"
+        },
+        "d0cea409-8c55-4fd2-a7f4-f933442b1c49": {
+            "arch": "amd64",
+            "build": "17763.8647",
+            "created": 1795780414,
+            "title": "Cumulative Update for Windows 10 Version 1809 (17763.8647)"
         },
         "d155c57c-2c2b-44cc-899e-47dc9139716e": {
             "arch": "amd64",
@@ -1548,6 +1608,12 @@
             "created": 1794334534,
             "title": "Windows 11, version 24H2 (26100.9974)"
         },
+        "e81c4f1b-2137-4c19-af57-62b4c1dfa52e": {
+            "arch": "x86",
+            "build": "17763.8280",
+            "created": 1795780790,
+            "title": "Cumulative Update for Windows 10 Version 1809 (17763.8280)"
+        },
         "e8706433-04f4-4a00-b58f-df8ed1bab586": {
             "arch": "arm64",
             "build": "28000.3365",
@@ -1577,6 +1643,12 @@
             "build": "26200.9363",
             "created": 1791910834,
             "title": ".NET Framework Security Update for Windows 11 - KB5127690 (26200.9363) (2)"
+        },
+        "ef2dd4f0-7d72-4d49-95d3-b4ace294511d": {
+            "arch": "amd64",
+            "build": "17763.9376",
+            "created": 1795780108,
+            "title": "Cumulative Update for Windows Server 2019 (1809) (17763.9376)"
         },
         "f414424f-d586-43d0-8f78-2f36198dafd3": {
             "arch": "x86",
